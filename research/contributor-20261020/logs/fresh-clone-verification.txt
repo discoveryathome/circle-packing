@@ -1,0 +1,1 @@
+{"valid": true, "certificates": 305, "pair_checks": 57014150, "seconds": 82.17625295801554, "input_and_trial_hashes_checked": true}

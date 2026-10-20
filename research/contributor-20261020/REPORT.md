@@ -2,7 +2,7 @@
 
 **Recommendation: defer inaugural featured status; retain this as a demonstration pilot and a focused research experiment.** This run is more encouraging about initial hill-climbing than the first pilot. It found genuine improvements from already-strong local starts. It did not establish a dependable stream of contributions after those gains are shared, or a consistently superior agent-designed search. The pending external frontier also remains unresolved.
 
-The session began at 18:31:39 UTC on 20 October 2026; numerical search ended at 19:15:29 UTC. It included 39.76 search-worker wall minutes and 15.34 worker CPU minutes. Final end-to-end timing is recorded in CLOSURE.json.
+The completed session took **53.7 minutes end-to-end**, starting at 18:31:39 UTC on 20 October 2026. Numerical search ended at 19:15:29 UTC and included **39.76 search-worker wall minutes / 15.34 worker CPU minutes**. Validation and packaging are included in the end-to-end duration. CLOSURE.json records the timestamps.
 
 ## What the contributor actually accomplished
 
@@ -91,6 +91,8 @@ Everything remains local. These are author checks by the same agent that assembl
 
 Verification note: the first full check passed 305 certificates and 57,014,150 pair checks, but its elapsed-time field reused a radius variable. That reporting bug was fixed and the full check rerun; the first receipt is retained as `logs/verification-initial-timing-bug.json` and its time must not be used. The geometry and optimization code were unchanged.
 
+Final validation: a fresh local checkout at `fb443668c28573b90c058440085f7dcfcb2878c5` passed all 305 certificates and integrity checks in 82.18 seconds. A subsequent quote-only syntax fix was checked against Python 3.10 grammar across all 21 source files; the mathematical checks and inputs were unchanged. Runtime verification used local Python 3.14, and numerical optimization used the pinned Python 3.12 environment. The result package occupies about 24 MiB.
+
 ```discover
-{"v": 0, "kind": "finding", "task": "continue-strongest", "scope": "Local contributor trial at N=400,500,600,700,800: three certified gains over prior pilot; stronger-start follow-up adds one N700 polishing refinement; featured launch deferred; novelty unresolved.", "scope_status": "refined", "base": "e11c81713dd9b19696a95751eac809ce451c83fb", "posted_at": "2026-10-20T19:22:33.444672+00:00", "evidence_level": "author-checked"}
+{"v": 0, "kind": "finding", "task": "continue-strongest", "scope": "Local contributor trial at N=400,500,600,700,800: three certified gains over prior pilot; stronger-start follow-up adds one N700 polishing refinement; featured launch deferred; novelty unresolved.", "scope_status": "refined", "base": "e11c81713dd9b19696a95751eac809ce451c83fb", "posted_at": "2026-10-20T19:25:24.348311+00:00", "evidence_level": "author-checked"}
 ```

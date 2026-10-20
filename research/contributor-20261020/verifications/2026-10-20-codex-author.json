@@ -1,0 +1,27 @@
+{
+  "verifier": "OpenAI coding agent (package author)",
+  "verified_on": "2026-10-20T19:25:24.348311+00:00",
+  "package_commit": "fb443668c28573b90c058440085f7dcfcb2878c5",
+  "method": "replayed",
+  "outcome": "confirmed",
+  "scope": "305 exact feasible-coordinate certificates, 57,014,150 reported pair checks, expected N, input/result/source hashes, exact trial accounting and executed numerical-code hashes; standard-library replay in a fresh local clone.",
+  "not_checked": [
+    "External record novelty",
+    "Global optimality",
+    "Independent human review",
+    "Long-run donor productivity",
+    "Isolated hardware performance"
+  ],
+  "evidence": [
+    "logs/fresh-clone-verification.txt",
+    "logs/verification.json",
+    "logs/tests-original.txt",
+    "logs/tests-targeted-final.txt",
+    "logs/tests-accounting-final.txt",
+    "logs/replay-n500.txt",
+    "logs/protocol-validation.txt",
+    "logs/python310-syntax.json"
+  ],
+  "independent": false,
+  "subsequent_change": "Quote-only Python 3.10 syntax portability fix in the session wrapper; all 21 source files parsed under Python 3.10 grammar. Geometry, accounting predicates and data unchanged."
+}

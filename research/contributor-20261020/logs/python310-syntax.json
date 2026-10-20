@@ -1,0 +1,29 @@
+{
+  "pass": true,
+  "grammar": "Python 3.10",
+  "files": [
+    "code/analyze.py",
+    "code/check_accounting.py",
+    "code/finish_diagnostic.py",
+    "code/finish_schedule.py",
+    "code/frozen/certify.py",
+    "code/frozen/optimizer.py",
+    "code/frozen/verify.py",
+    "code/ipm_control.py",
+    "code/ipm_optimizer.py",
+    "code/matched.py",
+    "code/polish_control.py",
+    "code/replay_trial.py",
+    "code/run.py",
+    "code/status.py",
+    "code/strong_polish.py",
+    "code/targeted.py",
+    "code/test_accounting.py",
+    "code/test_targeted.py",
+    "code/verify_session.py",
+    "code/visualize.py",
+    "code/write_tables.py"
+  ],
+  "before_fix": "accepted",
+  "scope": "Syntax compatibility only; runtime checks use local Python versions."
+}

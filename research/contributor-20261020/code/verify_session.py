@@ -53,7 +53,7 @@ if (ROOT/'summary.json').exists():
     for row in json.loads((ROOT/'summary.json').read_text())['standings']:
         c=json.loads((ROOT/row['certificate']).read_text());r=Fraction(c['radius_numerator'])/int(c['denominator'])
         assert r==Fraction(row['retained_radius'])
-        original=json.loads((ROOT/'inputs'/f'n{row['n']}.json').read_text());start=Fraction(original['radius_numerator'])/int(original['denominator'])
+        original=json.loads((ROOT/'inputs'/f"n{row['n']}.json").read_text());start=Fraction(original['radius_numerator'])/int(original['denominator'])
         assert r-start==Fraction(row['certified_gain'])
         assert bool(row['meaningful'])==(r-start>gate(start))
 print(json.dumps({'valid':True,'certificates':count,'pair_checks':pairs,'seconds':time.monotonic()-started,'input_and_trial_hashes_checked':True}))

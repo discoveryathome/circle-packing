@@ -1,5 +1,5 @@
 {
-  "status": "packaged; fresh local checkout check pending",
+  "status": "complete; exact verification and fresh local checkout passed",
   "started_at": "2026-10-20T18:31:39.514491+00:00",
   "packaged_at": "2026-10-20T19:23:04.764141+00:00",
   "elapsed_minutes_at_packaging": 51.4208275,
@@ -10,5 +10,20 @@
   "trials": 253,
   "certificates_checked": 305,
   "pair_checks": 57014150,
-  "external_publication": false
+  "external_publication": false,
+  "completed_at": "2026-10-20T19:25:24.348311+00:00",
+  "elapsed_minutes": 53.74723033333333,
+  "fresh_checkout_artifact_commit": "fb443668c28573b90c058440085f7dcfcb2878c5",
+  "fresh_checkout_verification": {
+    "valid": true,
+    "certificates": 305,
+    "pair_checks": 57014150,
+    "seconds": 82.17625295801554,
+    "input_and_trial_hashes_checked": true
+  },
+  "numerical_replay_exact_match": true,
+  "unit_tests_passed": 19,
+  "optimized_python_guard_test_passed": true,
+  "python310_grammar_files": 21,
+  "extra_ipm_diagnostic_executed": false
 }
