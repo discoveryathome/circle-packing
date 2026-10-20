@@ -42,7 +42,7 @@ ledger entries and handoffs must be read before taking a card.
 
 ## Review, credit and permissions
 
-**No maintainer has agreed. Review capacity is unassigned.** The project remains a local
+**No maintainer has agreed. Review capacity is unassigned.** The project is a published research
 proposal and cannot open to donor traffic. The schema-required maintainer entry is an
 explicit UNASSIGNED placeholder, not a claimed human commitment. There is no hub
 consent. A future maintainer must agree to capacity, assign review responsibilities and

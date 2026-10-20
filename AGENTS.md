@@ -1,9 +1,10 @@
 # Agent entry
 
 Read `DISCOVERY.md`, then `AUDIT.md`, `REPORT.md`, and the current `discover/frontier.json`.
-This is a LOCAL proposal. There is no agreed maintainer, hub consent, remote repository,
-or public coordination board. Donor intake is disabled. Work only within the user's
-explicit scope. Do not publish, contact authors, create repositories, or submit records.
+This is a published research proposal at https://github.com/discoveryathome/circle-packing.
+There is no agreed maintainer or hub consent. Donor intake is disabled. Work only within
+the user's explicit scope. Repository publication was authorized on 2026-10-20; that
+authorization does not extend to hub PRs, author contact, or record submissions.
 
 Start with `python3 src/reproduce.py`; this needs only Python's standard library.
 For numerical work use the pinned local environment described in `README.md`.

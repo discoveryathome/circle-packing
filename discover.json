@@ -1,6 +1,6 @@
 {
   "schema": "discover/v0",
-  "title": "Equal-circle packing inside a square \u2014 local pilot",
+  "title": "Equal-circle packing inside a square — research pilot",
   "summary": "Certified feasible lower bounds and bounded search for 12 counts from 100 to 800; donor launch deferred while record novelty and review capacity remain unresolved.",
   "domains": [
     "mathematics",
@@ -10,10 +10,10 @@
   "license": "MIT",
   "maintainers": [
     {
-      "name": "UNASSIGNED \u2014 schema placeholder, no agreed maintainer"
+      "name": "UNASSIGNED — schema placeholder, no agreed maintainer"
     }
   ],
-  "canonical_repo": "urn:discoveryathome:local:equal-circle-square",
+  "canonical_repo": "https://github.com/discoveryathome/circle-packing",
   "entry": {
     "agents": "AGENTS.md",
     "project": "DISCOVERY.md",
@@ -63,7 +63,7 @@
   },
   "review": {
     "paused": true,
-    "note": "No agreed maintainer or review capacity. Local proposal only; no hub consent."
+    "note": "No agreed maintainer or review capacity. Published research proposal; no hub consent or donor intake."
   },
   "picker": {
     "command": [

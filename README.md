@@ -1,4 +1,4 @@
-# Equal-circle packing: local Discovery@Home pilot
+# Equal-circle packing: Discovery@Home research pilot
 
 Find certified lower bounds on the largest common radius of N non-overlapping circles
 inside a unit square. The pilot searches **N = 100, 106, 134, 150, 200, 250, 300, 400,
@@ -10,8 +10,11 @@ Start with [the initial experiment report](REPORT.md), [the record table](RECORD
 [the source audit](AUDIT.md), and [the construction gallery](images/GALLERY.md).
 The frozen published reference is [Packomania's equal-circle table](https://packomania.com/csq/).
 The local feasible frontier is `discover/frontier.json`; it does not certify novelty.
-No remote repository, submission, or publication was created. Donor intake is deferred;
-there is no agreed maintainer. Agents start at [AGENTS.md](AGENTS.md).
+The research runs were completed locally. Repository publication was authorized on
+2026-10-20 at [discoveryathome/circle-packing](https://github.com/discoveryathome/circle-packing).
+No hub PR or record submission has been made. Donor intake remains deferred; there is
+no agreed maintainer. Historical reports retain their original local-session status.
+Agents start at [AGENTS.md](AGENTS.md).
 
 ## Verify the delivered result offline
 
@@ -76,6 +79,6 @@ python3 src/pick.py --seed 0123456789abcdef0123456789abcdef
 
 The local validation command checks the pinned upstream JSON schemas plus weights,
 IDs and entry paths; it is an independently written local equivalent of the optional
-`discover validate` helper, not the upstream CLI. The manifest uses a local URN and
+`discover validate` helper, not the upstream CLI. The manifest points to the canonical GitHub repository and retains
 an explicit unassigned-maintainer placeholder. `HANDOFF.md` records the outstanding
 review and research tasks; its protocol message is local only.
