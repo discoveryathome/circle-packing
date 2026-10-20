@@ -1,0 +1,37 @@
+FIRST STEP reconcile-pending
+{
+  "targets": 12,
+  "baseline_improvements": [
+    600,
+    700
+  ],
+  "externally_accepted_new_records": 0,
+  "pending_claim_counts": [
+    600,
+    700,
+    800
+  ],
+  "pending_queue_source": "sources/packomania-pending.html",
+  "current_comparison": "data/frontier.json",
+  "historical_comparison": "data/historical.json",
+  "required_next_evidence": "Accessible pending witnesses/priority disposition; do not infer novelty from catalogue alone"
+}
+FIRST STEP verify-adversarial
+test_certifier_irrational_distance (test_verifier.VerificationTests.test_certifier_irrational_distance) ... ok
+test_duplicates (test_verifier.VerificationTests.test_duplicates) ... ok
+test_malformed (test_verifier.VerificationTests.test_malformed) ... ok
+test_overlap_one_integer_unit (test_verifier.VerificationTests.test_overlap_one_integer_unit) ... ok
+test_single (test_verifier.VerificationTests.test_single) ... ok
+test_tangent_grid (test_verifier.VerificationTests.test_tangent_grid) ... ok
+test_wall (test_verifier.VerificationTests.test_wall) ... ok
+test_wrong_count (test_verifier.VerificationTests.test_wrong_count) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+OK
+FIRST STEP continue-strongest
+{"n": 600, "pair_squared_slack_denominator": "1000000000000000000000000000000", "pair_squared_slack_numerator": "28132761547464", "pairs_checked": 179700, "radius_exact": "21479896578172/1000000000000000", "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0", "tightest_pair": [241, 254], "valid": true, "wall_slack_denominator": "1000000000000000", "wall_slack_numerator": "0"}
+FIRST STEP neighbor-transfer
+24 neighboring-count witnesses present; validate before search. No new experiment performed.
+VALID: upstream schemas, weights, card IDs, entry paths. LOCAL PROPOSAL; maintainer unassigned.

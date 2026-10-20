@@ -1,0 +1,53 @@
+{
+  "rows": [
+    {
+      "n": 600,
+      "published_radius": "0.021479376754",
+      "certified_radius": "0.021479896578172",
+      "absolute_gain": "5.19824172E-7",
+      "relative_gain": "0.00002420108264562172035170960529",
+      "classification": "historical-baseline-improvement_novelty-unresolved",
+      "certificate": "best/n600.json",
+      "certificate_sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "continuation_gain": "1.04331761E-7"
+    },
+    {
+      "n": 700,
+      "published_radius": "0.019903642828",
+      "certified_radius": "0.019903696933565",
+      "absolute_gain": "5.4105565E-8",
+      "relative_gain": "0.000002718374996354210099775409816",
+      "classification": "historical-baseline-improvement_novelty-unresolved",
+      "certificate": "best/n700.json",
+      "certificate_sha256": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2",
+      "continuation_gain": "2.0557E-11"
+    },
+    {
+      "n": 300,
+      "published_radius": "0.030219555704",
+      "certified_radius": "0.030219555704457",
+      "absolute_gain": "4.57E-13",
+      "relative_gain": "1.512265780729229479607573518E-11",
+      "classification": "numerical-tie",
+      "certificate": "best/n300.json",
+      "certificate_sha256": "f18578cff5862de099cadfa74b9e32d06ff695583e4689bdc681daef4552cc0f",
+      "continuation_gain": "4.5E-14"
+    },
+    {
+      "n": 100,
+      "published_radius": "0.051401071774",
+      "certified_radius": "0.051401071774379",
+      "absolute_gain": "3.79E-13",
+      "relative_gain": "7.373387108860015343694844879E-12",
+      "classification": "numerical-tie",
+      "certificate": "best/n100.json",
+      "certificate_sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "continuation_gain": "0E-15"
+    }
+  ],
+  "trials": 28,
+  "seconds": 118.81018533394672,
+  "time_limit": 240,
+  "completed_schedule": true,
+  "meaningful_improvements": 2
+}

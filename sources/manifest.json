@@ -1,0 +1,387 @@
+[
+  {
+    "path": "sources/packomania-csq.html",
+    "url": "https://packomania.com/csq/",
+    "retrieved_at": "2026-10-20T17:35:35.585387+00:00",
+    "sha256": "01995a5a57f2adcf839c340b1108b7b67c69993452aaac842e88cdac2bec1707",
+    "bytes": 1092184
+  },
+  {
+    "path": "sources/packomania-home.html",
+    "url": "https://www.packomania.com/",
+    "retrieved_at": "2026-10-20T17:35:34.887542+00:00",
+    "sha256": "9447c232a8b3abf9dfee2214930b0368ce6736cc7ea5edb1b9bc66586cf3377e",
+    "bytes": 19702
+  },
+  {
+    "path": "sources/packomania-pending.html",
+    "url": "https://www.packomania.com/pending-requests.html",
+    "retrieved_at": "2026-10-20T17:35:34.716782+00:00",
+    "sha256": "92ce2e3dd9802a85edda90ace95a1e7d81dac08297c3903bba46289cdb2a14ae",
+    "bytes": 5427
+  },
+  {
+    "path": "sources/aletheia-findings.html",
+    "url": "https://www.projectaletheia.org/findings?view=canonical",
+    "retrieved_at": "2026-10-20T17:35:34.574162+00:00",
+    "sha256": "f0dc91a159830f687483b88d6977b40060fcccbddce8b88a3f024efc5b92f837",
+    "bytes": 139460
+  },
+  {
+    "path": "sources/aletheia-datasets.html",
+    "url": "https://www.projectaletheia.org/datasets",
+    "retrieved_at": "2026-10-20T17:35:34.869045+00:00",
+    "sha256": "e2d95575f1be5ef29c9ab9e06276fad9a28296e988bb4546a80f061a7b3711cf",
+    "bytes": 21874
+  },
+  {
+    "path": "sources/aletheia-research.html",
+    "url": "https://www.projectaletheia.org/research",
+    "retrieved_at": "2026-10-20T17:35:35.122288+00:00",
+    "sha256": "4939b9c3f33ce53a4692b2f7ac7d2582701c41908182039111db5b8a4520ac14",
+    "bytes": 275890
+  },
+  {
+    "path": "sources/minmax47.html",
+    "url": "https://minmaxarena.com/en/problems/square-circle-packing/p01-n47-v1",
+    "retrieved_at": "2026-10-20T17:35:36.685303+00:00",
+    "sha256": "da4ca14a52faa547394bcdf7a0c7dbacb04ffcff02f5c43c9a4a76ed451d8503",
+    "bytes": 109372
+  },
+  {
+    "path": "sources/zerothesis.html",
+    "url": "https://zerothesis.com/challenges/circle-packing-square",
+    "retrieved_at": "2026-10-20T17:35:35.633718+00:00",
+    "sha256": "853b53b9befadebdb0ae9fde1187db75c65ffa81a0b44ebf5ed93a7d42bc0122",
+    "bytes": 24962
+  },
+  {
+    "path": "sources/liang-readme.md",
+    "url": "https://raw.githubusercontent.com/jasonzliang/circle-packing-sota/main/README.md",
+    "retrieved_at": "2026-10-20T17:35:35.254114+00:00",
+    "sha256": "dc0c8acd27b0302cb7068f9f9e3e6fcc29a5e62a716dc2fb24dd47d8aeecb155",
+    "bytes": 24168
+  },
+  {
+    "path": "sources/convexification.html",
+    "url": "https://arxiv.org/abs/2404.03091",
+    "retrieved_at": "2026-10-20T17:35:35.401634+00:00",
+    "sha256": "5ed4aea9998aa9b6c51aec0d1e9050a5e3b21e89d8f3aeffc6a82a3ddfe586d1",
+    "bytes": 39828
+  },
+  {
+    "path": "sources/csq47.txt",
+    "url": "https://packomania.com/csq/txt/csq47.txt",
+    "retrieved_at": "2026-10-20T17:35:35.901191+00:00",
+    "sha256": "8fcdf355d70511a0efc2fa0fe5a9e0cb4adad179a91b2dac3c66c555de2fcc48",
+    "bytes": 2765
+  },
+  {
+    "path": "sources/csq99.txt",
+    "url": "https://packomania.com/csq/txt/csq99.txt",
+    "retrieved_at": "2026-10-20T17:35:36.128052+00:00",
+    "sha256": "080100cb3401e55bc621239676b678184b75c9d603696a76ab45053ac131bad4",
+    "bytes": 5677
+  },
+  {
+    "path": "sources/csq100.txt",
+    "url": "https://packomania.com/csq/txt/csq100.txt",
+    "retrieved_at": "2026-10-20T17:35:36.143817+00:00",
+    "sha256": "78483e2d03e0b7fc77a7ece6bb6edab0068926668a4228d020cf104d4aa1b7b9",
+    "bytes": 5734
+  },
+  {
+    "path": "sources/csq101.txt",
+    "url": "https://packomania.com/csq/txt/csq101.txt",
+    "retrieved_at": "2026-10-20T17:35:36.381627+00:00",
+    "sha256": "a1ccd6a50d08928760ab31bc95f79b09b5a5a6430d53164e3eea22185d405047",
+    "bytes": 5790
+  },
+  {
+    "path": "sources/csq105.txt",
+    "url": "https://packomania.com/csq/txt/csq105.txt",
+    "retrieved_at": "2026-10-20T17:35:36.644234+00:00",
+    "sha256": "1a3795cdbaf7fbb884f2db46f6345638063d11b1e338cb0e9df32c35f9fee004",
+    "bytes": 6014
+  },
+  {
+    "path": "sources/csq106.txt",
+    "url": "https://packomania.com/csq/txt/csq106.txt",
+    "retrieved_at": "2026-10-20T17:35:36.649566+00:00",
+    "sha256": "502655197468394b35e70046614a99441f832197fea74816f35efaecd0328724",
+    "bytes": 6070
+  },
+  {
+    "path": "sources/csq107.txt",
+    "url": "https://packomania.com/csq/txt/csq107.txt",
+    "retrieved_at": "2026-10-20T17:35:36.896808+00:00",
+    "sha256": "68699c7087a489f92f875f800dda4cec469095d361ae3ed1bbac9b4bc4a99213",
+    "bytes": 6126
+  },
+  {
+    "path": "sources/csq133.txt",
+    "url": "https://packomania.com/csq/txt/csq133.txt",
+    "retrieved_at": "2026-10-20T17:35:37.166668+00:00",
+    "sha256": "ef23d510550ad6168b2426cd7d4e32ceadf70998fc2379625bf5c5bb896a279a",
+    "bytes": 7582
+  },
+  {
+    "path": "sources/csq134.txt",
+    "url": "https://packomania.com/csq/txt/csq134.txt",
+    "retrieved_at": "2026-10-20T17:35:37.342381+00:00",
+    "sha256": "ede5255d0b1eacfdf11bc7de49a83d6b5e7515987f69f8bf0e319c81af815e98",
+    "bytes": 7638
+  },
+  {
+    "path": "sources/csq135.txt",
+    "url": "https://packomania.com/csq/txt/csq135.txt",
+    "retrieved_at": "2026-10-20T17:35:37.346308+00:00",
+    "sha256": "a293ca4b8041b4a26501491d652bca3f396d3a965e96c3695758acf35b0d6ad5",
+    "bytes": 7694
+  },
+  {
+    "path": "sources/csq149.txt",
+    "url": "https://packomania.com/csq/txt/csq149.txt",
+    "retrieved_at": "2026-10-20T17:35:37.529581+00:00",
+    "sha256": "aabe6a4cbb9d2d911e9e5bb8ee442f4997919280014026269e922353d118ef6a",
+    "bytes": 8478
+  },
+  {
+    "path": "sources/csq150.txt",
+    "url": "https://packomania.com/csq/txt/csq150.txt",
+    "retrieved_at": "2026-10-20T17:35:37.861666+00:00",
+    "sha256": "8f38f494d98b7bc0508aa1deee54e07fc24e0c2084189c157996575137a43ba1",
+    "bytes": 8534
+  },
+  {
+    "path": "sources/csq151.txt",
+    "url": "https://packomania.com/csq/txt/csq151.txt",
+    "retrieved_at": "2026-10-20T17:35:37.987126+00:00",
+    "sha256": "b7393d03f7b554320d13cd6e49b2d3d8078ca3dcd0c6beb4ecde702008b2ecaf",
+    "bytes": 8590
+  },
+  {
+    "path": "sources/csq199.txt",
+    "url": "https://packomania.com/csq/txt/csq199.txt",
+    "retrieved_at": "2026-10-20T17:35:38.025797+00:00",
+    "sha256": "7751a9cfc8165236f8b2c46932cef582eaa46c78f5c6b4b02575a510ccd5d204",
+    "bytes": 11278
+  },
+  {
+    "path": "sources/csq200.txt",
+    "url": "https://packomania.com/csq/txt/csq200.txt",
+    "retrieved_at": "2026-10-20T17:35:38.150050+00:00",
+    "sha256": "9ff080385c5bd177335dd072483380ef19c3029e5731f29b1ea2f9f78e6bdf78",
+    "bytes": 11334
+  },
+  {
+    "path": "sources/csq201.txt",
+    "url": "https://packomania.com/csq/txt/csq201.txt",
+    "retrieved_at": "2026-10-20T17:35:38.502141+00:00",
+    "sha256": "5744961b38ff92b17b64499ec99bfd47c85b544bb6c75b0c331e52f33b5431c0",
+    "bytes": 11390
+  },
+  {
+    "path": "sources/csq249.txt",
+    "url": "https://packomania.com/csq/txt/csq249.txt",
+    "retrieved_at": "2026-10-20T17:35:38.661316+00:00",
+    "sha256": "cef9ef082ff99cf6c7b747b895697f80b64ec6f57672e06a52f6a73b99b03418",
+    "bytes": 14078
+  },
+  {
+    "path": "sources/csq250.txt",
+    "url": "https://packomania.com/csq/txt/csq250.txt",
+    "retrieved_at": "2026-10-20T17:35:38.631341+00:00",
+    "sha256": "050ec9de3307b110403c18f07b59718f9e8a978e5dcaa5dab39d8a70e74a0c63",
+    "bytes": 14134
+  },
+  {
+    "path": "sources/csq251.txt",
+    "url": "https://packomania.com/csq/txt/csq251.txt",
+    "retrieved_at": "2026-10-20T17:35:38.787579+00:00",
+    "sha256": "cd145c32f9c145561c50c54768b3c71a5c8e88b296ea1616630416e30aaba3e5",
+    "bytes": 14190
+  },
+  {
+    "path": "sources/csq299.txt",
+    "url": "https://packomania.com/csq/txt/csq299.txt",
+    "retrieved_at": "2026-10-20T17:35:39.117306+00:00",
+    "sha256": "968bf1b8cddbb98726b56359277cd4ee6a5a679bf8cc5a6ac4f9f7087c2d3c02",
+    "bytes": 16878
+  },
+  {
+    "path": "sources/csq300.txt",
+    "url": "https://packomania.com/csq/txt/csq300.txt",
+    "retrieved_at": "2026-10-20T17:35:39.260871+00:00",
+    "sha256": "d22e4e321c07aedd2d20f16447cea7364ecfa78fabac3096f5bfd4bd4500d119",
+    "bytes": 16934
+  },
+  {
+    "path": "sources/csq301.txt",
+    "url": "https://packomania.com/csq/txt/csq301.txt",
+    "retrieved_at": "2026-10-20T17:35:39.301408+00:00",
+    "sha256": "397c8ab2deba7ebccd92936a43d3adc3e731e025ed400225b6215b3a54e52866",
+    "bytes": 16990
+  },
+  {
+    "path": "sources/csq399.txt",
+    "url": "https://packomania.com/csq/txt/csq399.txt",
+    "retrieved_at": "2026-10-20T17:35:39.452689+00:00",
+    "sha256": "c0d6393843b51ecceb4c17e662d4d3623c1176ca28854b41d4398ebe68d42feb",
+    "bytes": 22478
+  },
+  {
+    "path": "sources/csq400.txt",
+    "url": "https://packomania.com/csq/txt/csq400.txt",
+    "retrieved_at": "2026-10-20T17:35:39.762675+00:00",
+    "sha256": "5d87f8d5378dbf3bd3c3c9f20c9d28f815bd29b3e2e05e9b830b61946f0bb1a6",
+    "bytes": 22534
+  },
+  {
+    "path": "sources/csq401.txt",
+    "url": "https://packomania.com/csq/txt/csq401.txt",
+    "retrieved_at": "2026-10-20T17:35:39.877607+00:00",
+    "sha256": "372d77cb3a7cedd769a80bc899c9fcc5c4db0c2a71a8f5147cf22318200ddf7d",
+    "bytes": 22590
+  },
+  {
+    "path": "sources/csq499.txt",
+    "url": "https://packomania.com/csq/txt/csq499.txt",
+    "retrieved_at": "2026-10-20T17:35:39.923992+00:00",
+    "sha256": "e217a0a62524c2622ce620f201f5caa6f6a1e28997de2ba765e3e63d0ad0dd22",
+    "bytes": 28078
+  },
+  {
+    "path": "sources/csq500.txt",
+    "url": "https://packomania.com/csq/txt/csq500.txt",
+    "retrieved_at": "2026-10-20T17:35:40.096895+00:00",
+    "sha256": "a2cb9f51772b09d4a2a2f57d8d1d9a0d8bb9012183b4437a7729065adef5c677",
+    "bytes": 28134
+  },
+  {
+    "path": "sources/csq501.txt",
+    "url": "https://packomania.com/csq/txt/csq501.txt",
+    "retrieved_at": "2026-10-20T17:35:40.437632+00:00",
+    "sha256": "71655f8ec1e6e3d0b885e6766ecb38f87ab2d500b99f976bba7f0ef492519478",
+    "bytes": 28190
+  },
+  {
+    "path": "sources/csq599.txt",
+    "url": "https://packomania.com/csq/txt/csq599.txt",
+    "retrieved_at": "2026-10-20T17:35:40.531807+00:00",
+    "sha256": "5a059ad3173e2a7202acbf11c65e693509accfaeae52937bf9ae2bd278679aaf",
+    "bytes": 33678
+  },
+  {
+    "path": "sources/csq600.txt",
+    "url": "https://packomania.com/csq/txt/csq600.txt",
+    "retrieved_at": "2026-10-20T17:35:40.578258+00:00",
+    "sha256": "24d36cfc6f21ed250b3faa7971e109ffabc2d0483a0b96968cb4df6e2fb25027",
+    "bytes": 33734
+  },
+  {
+    "path": "sources/csq601.txt",
+    "url": "https://packomania.com/csq/txt/csq601.txt",
+    "retrieved_at": "2026-10-20T17:35:40.728880+00:00",
+    "sha256": "5cb756ae134138aae668549ca5f97fda6f22a338e6932ae5191f0c0ed140a3a9",
+    "bytes": 33790
+  },
+  {
+    "path": "sources/csq699.txt",
+    "url": "https://packomania.com/csq/txt/csq699.txt",
+    "retrieved_at": "2026-10-20T17:35:41.196706+00:00",
+    "sha256": "07a8598ff3b987ef16ffe815820470a5776981ffdc6766626cd99869cd411e31",
+    "bytes": 39278
+  },
+  {
+    "path": "sources/csq700.txt",
+    "url": "https://packomania.com/csq/txt/csq700.txt",
+    "retrieved_at": "2026-10-20T17:35:41.307595+00:00",
+    "sha256": "5e33675bcab18c103c345b095532c52f3bde4b468503117d9e2e6b7f10e8a539",
+    "bytes": 39334
+  },
+  {
+    "path": "sources/csq701.txt",
+    "url": "https://packomania.com/csq/txt/csq701.txt",
+    "retrieved_at": "2026-10-20T17:35:41.340169+00:00",
+    "sha256": "97eff69a103fbf3bd18ca4e20c3fdef6e5c3ca41f9c663c26f9965144c2f1bd9",
+    "bytes": 39390
+  },
+  {
+    "path": "sources/csq799.txt",
+    "url": "https://packomania.com/csq/txt/csq799.txt",
+    "retrieved_at": "2026-10-20T17:35:41.517887+00:00",
+    "sha256": "bde3a10afdba77bb955a10b967600bb4f8dec6fbf1c9dc57130ea3f9f2d4f204",
+    "bytes": 44878
+  },
+  {
+    "path": "sources/csq800.txt",
+    "url": "https://packomania.com/csq/txt/csq800.txt",
+    "retrieved_at": "2026-10-20T17:35:41.952413+00:00",
+    "sha256": "e9aab22a43cbf2ca2b729f719f4ded990357d691f118ae5d10fb6112e140bcfb",
+    "bytes": 44934
+  },
+  {
+    "path": "sources/csq801.txt",
+    "url": "https://packomania.com/csq/txt/csq801.txt",
+    "retrieved_at": "2026-10-20T17:35:42.078403+00:00",
+    "sha256": "a5a603de243fe3c142d1ed49c597455d6ba0afcf0bd082d48cf870d4731f4b29",
+    "bytes": 44990
+  },
+  {
+    "path": "sources/lai-2023.pdf",
+    "url": "https://leria-info.univ-angers.fr/~jinkao.hao/papers/LaietalJOC2023.pdf",
+    "retrieved_at": "2026-10-20T17:41:51.883570+00:00",
+    "sha256": "ce91a16950826e8f686e416fac3741ad84326640c0ce78fad3d737fbcab06519",
+    "bytes": 5127570
+  },
+  {
+    "path": "sources/start.md",
+    "url": "https://discoveryathome.org/v0/start.md",
+    "retrieved_at": "2026-10-20T17:41:51.891583+00:00",
+    "sha256": "b2dcb025034a0710ea4bc040a0f01b58c7f469bea7e45f552a68b17e415b2142",
+    "bytes": 19144
+  },
+  {
+    "path": "sources/protocol.md",
+    "url": "https://raw.githubusercontent.com/discoveryathome/discover/main/spec/v0.md",
+    "retrieved_at": "2026-10-20T17:41:51.891971+00:00",
+    "sha256": "25bbb3c2ecb1b453ecb3e1a05d22c76cc1ba1d4de1f2541ad1557f2b43467c86",
+    "bytes": 78336
+  },
+  {
+    "path": "sources/schemas/catalog.schema.json",
+    "url": "https://raw.githubusercontent.com/discoveryathome/discover/main/spec/schemas/catalog.schema.json",
+    "retrieved_at": "2026-10-20T17:41:51.892499+00:00",
+    "sha256": "6d1ab7b1a06f0aa065a1c64eed0943b47c8b98978b5781957fb777cea7273549",
+    "bytes": 4864
+  },
+  {
+    "path": "sources/schemas/frontier.schema.json",
+    "url": "https://raw.githubusercontent.com/discoveryathome/discover/main/spec/schemas/frontier.schema.json",
+    "retrieved_at": "2026-10-20T17:41:51.892830+00:00",
+    "sha256": "ab2cc7788c090a8fca76f627b216b292ce1ae25b645af31c1ea67195bf23eb61",
+    "bytes": 6548
+  },
+  {
+    "path": "sources/schemas/message.schema.json",
+    "url": "https://raw.githubusercontent.com/discoveryathome/discover/main/spec/schemas/message.schema.json",
+    "retrieved_at": "2026-10-20T17:41:51.893143+00:00",
+    "sha256": "fca2c6ea31368944816ab376abddae5cd11035084df5b22c4275d971df144944",
+    "bytes": 3396
+  },
+  {
+    "path": "sources/schemas/manifest.schema.json",
+    "url": "https://raw.githubusercontent.com/discoveryathome/discover/main/spec/schemas/manifest.schema.json",
+    "retrieved_at": "2026-10-20T17:41:51.893503+00:00",
+    "sha256": "6b4a2899489d17b9961533fc2eff5491ce547a5dbb15eeff8abd4664390ac007",
+    "bytes": 7954
+  },
+  {
+    "path": "sources/schemas/package-task.schema.json",
+    "url": "https://raw.githubusercontent.com/discoveryathome/discover/main/spec/schemas/package-task.schema.json",
+    "retrieved_at": "2026-10-20T17:41:51.893795+00:00",
+    "sha256": "fed7fc79b186226162f1287a1131aedecd0dfa7d9c0c2f870af955b55f21ee14",
+    "bytes": 1725
+  }
+]

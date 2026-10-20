@@ -1,0 +1,335 @@
+[
+  {
+    "n": 100,
+    "published_radius": "0.051401071774",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 8,15",
+    "certified_radius": "0.051401071773883",
+    "radius_reduction": "1.17E-13",
+    "certificate": "certificates/baseline/n100.json"
+  },
+  {
+    "n": 101,
+    "published_radius": "0.051078356337",
+    "raw_decimal_feasible": true,
+    "raw_failure": null,
+    "certified_radius": "0.051078356337",
+    "radius_reduction": "0E-12",
+    "certificate": "certificates/baseline/n101.json"
+  },
+  {
+    "n": 105,
+    "published_radius": "0.050242948365",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 43,48",
+    "certified_radius": "0.050242948364896",
+    "radius_reduction": "1.04E-13",
+    "certificate": "certificates/baseline/n105.json"
+  },
+  {
+    "n": 106,
+    "published_radius": "0.050015200426",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 11,22",
+    "certified_radius": "0.050015200425752",
+    "radius_reduction": "2.48E-13",
+    "certificate": "certificates/baseline/n106.json"
+  },
+  {
+    "n": 107,
+    "published_radius": "0.049506166856",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 2,6",
+    "certified_radius": "0.049506166855614",
+    "radius_reduction": "3.86E-13",
+    "certificate": "certificates/baseline/n107.json"
+  },
+  {
+    "n": 133,
+    "published_radius": "0.044609641580",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 3,9",
+    "certified_radius": "0.044609641579668",
+    "radius_reduction": "3.32E-13",
+    "certificate": "certificates/baseline/n133.json"
+  },
+  {
+    "n": 134,
+    "published_radius": "0.044564244207",
+    "raw_decimal_feasible": true,
+    "raw_failure": null,
+    "certified_radius": "0.044564244207",
+    "radius_reduction": "0E-12",
+    "certificate": "certificates/baseline/n134.json"
+  },
+  {
+    "n": 135,
+    "published_radius": "0.044431198144",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 28,33",
+    "certified_radius": "0.044431198143908",
+    "radius_reduction": "9.2E-14",
+    "certificate": "certificates/baseline/n135.json"
+  },
+  {
+    "n": 149,
+    "published_radius": "0.042251862707",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 2,10",
+    "certified_radius": "0.042251862706667",
+    "radius_reduction": "3.33E-13",
+    "certificate": "certificates/baseline/n149.json"
+  },
+  {
+    "n": 150,
+    "published_radius": "0.042145465901",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 16,22",
+    "certified_radius": "0.042145465900914",
+    "radius_reduction": "8.6E-14",
+    "certificate": "certificates/baseline/n150.json"
+  },
+  {
+    "n": 151,
+    "published_radius": "0.041977097109",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 0,7",
+    "certified_radius": "0.041977097108716",
+    "radius_reduction": "2.84E-13",
+    "certificate": "certificates/baseline/n151.json"
+  },
+  {
+    "n": 199,
+    "published_radius": "0.036667425045",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 1,8",
+    "certified_radius": "0.036667425043969",
+    "radius_reduction": "1.031E-12",
+    "certificate": "certificates/baseline/n199.json"
+  },
+  {
+    "n": 200,
+    "published_radius": "0.036612798904",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 1,2",
+    "certified_radius": "0.036612798903303",
+    "radius_reduction": "6.97E-13",
+    "certificate": "certificates/baseline/n200.json"
+  },
+  {
+    "n": 201,
+    "published_radius": "0.036569597637",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 1,8",
+    "certified_radius": "0.036569597636578",
+    "radius_reduction": "4.22E-13",
+    "certificate": "certificates/baseline/n201.json"
+  },
+  {
+    "n": 249,
+    "published_radius": "0.032970267168",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 0,1",
+    "certified_radius": "0.032970267167154",
+    "radius_reduction": "8.46E-13",
+    "certificate": "certificates/baseline/n249.json"
+  },
+  {
+    "n": 250,
+    "published_radius": "0.032879800210",
+    "raw_decimal_feasible": false,
+    "raw_failure": "wall violation at 0",
+    "certified_radius": "0.032879800209",
+    "radius_reduction": "1E-12",
+    "certificate": "certificates/baseline/n250.json"
+  },
+  {
+    "n": 251,
+    "published_radius": "0.032799128200",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 8,9",
+    "certified_radius": "0.0327991281995",
+    "radius_reduction": "5E-13",
+    "certificate": "certificates/baseline/n251.json"
+  },
+  {
+    "n": 299,
+    "published_radius": "0.030249270165",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 8,14",
+    "certified_radius": "0.030249270164713",
+    "radius_reduction": "2.87E-13",
+    "certificate": "certificates/baseline/n299.json"
+  },
+  {
+    "n": 300,
+    "published_radius": "0.030219555704",
+    "raw_decimal_feasible": true,
+    "raw_failure": null,
+    "certified_radius": "0.030219555704",
+    "radius_reduction": "0E-12",
+    "certificate": "certificates/baseline/n300.json"
+  },
+  {
+    "n": 301,
+    "published_radius": "0.030204920385",
+    "raw_decimal_feasible": false,
+    "raw_failure": "wall violation at 7",
+    "certified_radius": "0.030204920384",
+    "radius_reduction": "1E-12",
+    "certificate": "certificates/baseline/n301.json"
+  },
+  {
+    "n": 399,
+    "published_radius": "0.026227153115",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 1,12",
+    "certified_radius": "0.026227153114649",
+    "radius_reduction": "3.51E-13",
+    "certificate": "certificates/baseline/n399.json"
+  },
+  {
+    "n": 400,
+    "published_radius": "0.026202507077",
+    "raw_decimal_feasible": false,
+    "raw_failure": "wall violation at 2",
+    "certified_radius": "0.026202507075863",
+    "radius_reduction": "1.137E-12",
+    "certificate": "certificates/baseline/n400.json"
+  },
+  {
+    "n": 401,
+    "published_radius": "0.026182872375",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 0,11",
+    "certified_radius": "0.026182872374092",
+    "radius_reduction": "9.08E-13",
+    "certificate": "certificates/baseline/n401.json"
+  },
+  {
+    "n": 47,
+    "published_radius": "0.073113151271",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 0,1",
+    "certified_radius": "0.073113151269953",
+    "radius_reduction": "1.047E-12",
+    "certificate": "certificates/baseline/n47.json"
+  },
+  {
+    "n": 499,
+    "published_radius": "0.023473661712",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 17,28",
+    "certified_radius": "0.023473661711919",
+    "radius_reduction": "8.1E-14",
+    "certificate": "certificates/baseline/n499.json"
+  },
+  {
+    "n": 500,
+    "published_radius": "0.023455498994",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 5,12",
+    "certified_radius": "0.0234554989935",
+    "radius_reduction": "5E-13",
+    "certificate": "certificates/baseline/n500.json"
+  },
+  {
+    "n": 501,
+    "published_radius": "0.023428002886",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 4,13",
+    "certified_radius": "0.023428002885245",
+    "radius_reduction": "7.55E-13",
+    "certificate": "certificates/baseline/n501.json"
+  },
+  {
+    "n": 599,
+    "published_radius": "0.021491273764",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 181,202",
+    "certified_radius": "0.021491273763807",
+    "radius_reduction": "1.93E-13",
+    "certificate": "certificates/baseline/n599.json"
+  },
+  {
+    "n": 600,
+    "published_radius": "0.021479376754",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 4,14",
+    "certified_radius": "0.021479376752868",
+    "radius_reduction": "1.132E-12",
+    "certificate": "certificates/baseline/n600.json"
+  },
+  {
+    "n": 601,
+    "published_radius": "0.021458665110",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 0,14",
+    "certified_radius": "0.021458665109659",
+    "radius_reduction": "3.41E-13",
+    "certificate": "certificates/baseline/n601.json"
+  },
+  {
+    "n": 699,
+    "published_radius": "0.019919281092",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 6,21",
+    "certified_radius": "0.019919281091664",
+    "radius_reduction": "3.36E-13",
+    "certificate": "certificates/baseline/n699.json"
+  },
+  {
+    "n": 700,
+    "published_radius": "0.019903642828",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 0,21",
+    "certified_radius": "0.019903642827564",
+    "radius_reduction": "4.36E-13",
+    "certificate": "certificates/baseline/n700.json"
+  },
+  {
+    "n": 701,
+    "published_radius": "0.019898772467",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 0,15",
+    "certified_radius": "0.019898772466245",
+    "radius_reduction": "7.55E-13",
+    "certificate": "certificates/baseline/n701.json"
+  },
+  {
+    "n": 799,
+    "published_radius": "0.018666015597",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 1,16",
+    "certified_radius": "0.01866601559637",
+    "radius_reduction": "6.3E-13",
+    "certificate": "certificates/baseline/n799.json"
+  },
+  {
+    "n": 800,
+    "published_radius": "0.018637592286",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 134,149",
+    "certified_radius": "0.01863759228589",
+    "radius_reduction": "1.1E-13",
+    "certificate": "certificates/baseline/n800.json"
+  },
+  {
+    "n": 801,
+    "published_radius": "0.018635391208",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 1,21",
+    "certified_radius": "0.018635391207614",
+    "radius_reduction": "3.86E-13",
+    "certificate": "certificates/baseline/n801.json"
+  },
+  {
+    "n": 99,
+    "published_radius": "0.051978606450",
+    "raw_decimal_feasible": false,
+    "raw_failure": "overlap 0,6",
+    "certified_radius": "0.051978606449403",
+    "radius_reduction": "5.97E-13",
+    "certificate": "certificates/baseline/n99.json"
+  }
+]

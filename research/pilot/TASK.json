@@ -1,0 +1,33 @@
+{
+  "card": "none",
+  "catalog_revision": 1,
+  "scope": "Initialize local pilot, audit sources, certify baselines, bounded discovery and continuation across 12 counts.",
+  "scope_status": "unchanged",
+  "outcome": "partial",
+  "evidence_level": "author-checked",
+  "not_checked": [
+    "Novelty against inaccessible pending witnesses",
+    "Global optimality",
+    "Independent human review",
+    "Performance under isolated hardware load"
+  ],
+  "next_questions": [
+    {
+      "question": "Are gains unclaimed after reconciliation?",
+      "why_it_matters": "Donations should target the actual frontier.",
+      "first_step": "python3 src/project_inspect.py audit",
+      "blocked_by": "Public numerical pending witnesses and eventual maintainer review"
+    },
+    {
+      "question": "Does N=600 retain useful short-session headroom after longer refinement?",
+      "why_it_matters": "One continuation improved; long-run yield is unknown.",
+      "first_step": "python3 src/verify.py certificates/frontier/n600.json --n 600",
+      "blocked_by": "Not blocked for authorized local research; donor launch still deferred"
+    }
+  ],
+  "credit": [
+    "Imported construction authors in data/records.json",
+    "Local AI-assisted pilot implementation"
+  ],
+  "ai_assistance": "Source audit, code, experiments and documentation assembled by OpenAI coding agent; no separate human review."
+}

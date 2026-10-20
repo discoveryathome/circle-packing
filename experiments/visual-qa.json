@@ -1,0 +1,10 @@
+{
+  "svg_structures_checked": 12,
+  "rendered_and_visually_inspected": [
+    100,
+    600,
+    700
+  ],
+  "renderer": "CairoSVG 2.9.1 with system Cairo",
+  "result": "Labels legible; all circles shown in square; no clipping in inspected examples."
+}

@@ -1,0 +1,85 @@
+{
+  "config": {
+    "counts": [
+      100,
+      106,
+      134,
+      150,
+      200,
+      250,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800
+    ],
+    "seeds": [
+      20261020,
+      20261021
+    ],
+    "modes": [
+      "local",
+      "contact",
+      "neighbor-remove",
+      "neighbor-insert",
+      "lattice",
+      "basin"
+    ],
+    "max_steps": 40,
+    "seconds_per_trial": 4.0,
+    "polish_seconds": 8.0,
+    "stage1_wall_limit_seconds": 720,
+    "continuation_counts": 4,
+    "continuation_seeds": [
+      20261022,
+      20261023
+    ],
+    "continuation_modes": [
+      "local",
+      "contact",
+      "basin"
+    ],
+    "continuation_seconds_per_trial": 7.0,
+    "continuation_wall_limit_seconds": 240,
+    "meaningful_absolute_gain": "0.0000000001",
+    "meaningful_relative_gain": "0.00000001",
+    "printed_radius_guard": "0.000000000001",
+    "basin_temperature_distance": 0.0002
+  },
+  "config_sha256": "515e1fe5d822c53d0fea52cf8a7669b827de9357be74b2a4b5234ac8fba0af59",
+  "counts": [
+    100,
+    106,
+    134,
+    150,
+    200,
+    250,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+  ],
+  "seeds": [
+    20261020,
+    20261021
+  ],
+  "started_at": "2026-10-20T17:37:17.447891+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "python": "3.12.11 (main, Aug 18 2025, 19:02:39) [Clang 20.1.4 ]",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "continuation_of": null,
+  "source_hashes": {
+    "src/baselines.py": "31f7e4e04f5804137c988cb39e748da5f4f2e20b1a84b86fafecd6dbde18f20c",
+    "src/acquire.py": "164845c6f61a4364a9666b96200ff6cfec4a6a7c721af7cad569f943663a475e",
+    "src/experiment.py": "7c6f33f46c72f5510a9b5fc73d6d3496c32de852e535234a8266d0b71559a322",
+    "src/optimizer.py": "9d8c960aa252f1d6ca779f0f04a9b6cd510aa5241d81417df8db3e8d35a85dbe",
+    "src/verify.py": "3b065d9d5140c63dcf33cad2c0ac93a0ad7afde8eb94136fb935a7e3ce5d6976",
+    "src/certify.py": "660ee7bacb23b4554cfe5f7ebd3f1ba2e5106fd2c29c26ef623b2c4e41d603e4"
+  },
+  "runtime_note": "Single solver worker; HiGHS threads=1; other machine load not controlled."
+}

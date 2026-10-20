@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/colkitt/discover-work/incubatedPilots/circle-packing/start-equal-circle-square/src/experiment.py", line 125, in <module>
+    run(a.out,load(a.config),a.continue_from)
+  File "/Users/colkitt/discover-work/incubatedPilots/circle-packing/start-equal-circle-square/src/experiment.py", line 79, in run
+    current[n],entry=trial(n,current[n],'polish',0,cfg['polish_seconds'],str(parent.relative_to(ROOT)))
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/colkitt/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/pathlib.py", line 682, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'start-equal-circle-square/experiments/stage1/best/n600.json' is not in the subpath of '/Users/colkitt/discover-work/incubatedPilots/circle-packing/start-equal-circle-square'

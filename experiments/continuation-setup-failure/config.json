@@ -1,0 +1,48 @@
+{
+  "counts": [
+    100,
+    106,
+    134,
+    150,
+    200,
+    250,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+  ],
+  "seeds": [
+    20261020,
+    20261021
+  ],
+  "modes": [
+    "local",
+    "contact",
+    "neighbor-remove",
+    "neighbor-insert",
+    "lattice",
+    "basin"
+  ],
+  "max_steps": 40,
+  "seconds_per_trial": 4.0,
+  "polish_seconds": 8.0,
+  "stage1_wall_limit_seconds": 720,
+  "continuation_counts": 4,
+  "continuation_seeds": [
+    20261022,
+    20261023
+  ],
+  "continuation_modes": [
+    "local",
+    "contact",
+    "basin"
+  ],
+  "continuation_seconds_per_trial": 7.0,
+  "continuation_wall_limit_seconds": 240,
+  "meaningful_absolute_gain": "0.0000000001",
+  "meaningful_relative_gain": "0.00000001",
+  "printed_radius_guard": "0.000000000001",
+  "basin_temperature_distance": 0.0002
+}

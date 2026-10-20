@@ -1,0 +1,152 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 1,
+  "assessed_on": "2026-10-20",
+  "priority_log": "discover/priority-log.md",
+  "status": "LOCAL proposal; donor intake deferred. Weights apply only to explicitly authorized local follow-up.",
+  "tracks": [
+    {
+      "id": "reconcile",
+      "weight": 40,
+      "useful_outcome": "Resolve pending-claim uncertainty before spending donated search time.",
+      "tasks": [
+        {
+          "id": "reconcile-pending",
+          "question": "Do the final N=600/700 certificates beat accessible earlier pending witnesses?",
+          "starting_points": [
+            "AUDIT.md",
+            "data/frontier.json",
+            "sources/packomania-pending.html"
+          ],
+          "methods": [
+            "Read primary public sources; compare exact witnesses with consistent units; track unavailable evidence explicitly."
+          ],
+          "acceptance_gate": "Hash-pinned public witnesses, exact checks, date/priority comparisons; unresolved when witnesses are inaccessible.",
+          "first_step": {
+            "command": [
+              "python3",
+              "src/project_inspect.py",
+              "audit"
+            ],
+            "expected": "12 targets; baseline improvements 600,700; zero externally accepted new records."
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "observational"
+          ],
+          "scope_change_triggers": [
+            "No witness available: preserve unresolved status; contact requires user authorization."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verification",
+      "weight": 25,
+      "useful_outcome": "An independently reviewed exact certificate path.",
+      "tasks": [
+        {
+          "id": "verify-adversarial",
+          "question": "Can the exact verifier accept an invalid packing or a mismatched instance?",
+          "starting_points": [
+            "src/verify.py",
+            "tests/test_verifier.py",
+            "METHODS.md"
+          ],
+          "methods": [
+            "Independent rational implementation, adversarial mutation, expected-N binding, integer overflow analysis."
+          ],
+          "acceptance_gate": "Any bug has a failing witness and regression; an independent review states exact scope and reviewer identity.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests",
+              "-p",
+              "test_verifier.py",
+              "-v"
+            ],
+            "expected": "8 verifier tests pass."
+          },
+          "bottleneck_link": "DISCOVERY.md#review-credit-and-permissions",
+          "claim_kind": [
+            "exact"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "continuation",
+      "weight": 30,
+      "useful_outcome": "Measure remaining headroom from the final strongest starts.",
+      "tasks": [
+        {
+          "id": "continue-strongest",
+          "question": "Do repeated short sessions from the final N=600/700 witnesses improve the refreshed frontier?",
+          "starting_points": [
+            "certificates/frontier/n600.json",
+            "certificates/frontier/n700.json",
+            "experiments/analysis.json",
+            "src/experiment.py"
+          ],
+          "methods": [
+            "Preregister equal total LP work; compare fresh-seed short restarts with a continuous run; certify all candidates."
+          ],
+          "acceptance_gate": "Meaningful certified gain beyond updated source precision; report nulls, budgets and pending uncertainty.",
+          "first_step": {
+            "command": [
+              "python3",
+              "src/verify.py",
+              "certificates/frontier/n600.json",
+              "--n",
+              "600"
+            ],
+            "expected": "valid=true; n=600; 179700 pairs checked."
+          },
+          "first_experiment": "Copy experiments/config.json, set fresh continuation seeds, then --continue-from experiments/continuation into a new output directory; never overwrite frozen results.",
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "exact",
+            "measured"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alternative-seeds",
+      "weight": 5,
+      "useful_outcome": "A small speculative check for a better basin, conditional on review capacity.",
+      "tasks": [
+        {
+          "id": "neighbor-transfer",
+          "question": "Can vacancy moves and neighboring-count starts escape the mature contact basins with longer local relaxation?",
+          "starting_points": [
+            "src/optimizer.py",
+            "experiments/stage1/trials.jsonl",
+            "AUDIT.md"
+          ],
+          "methods": [
+            "Speculative longer relaxation for N\u00b11 seeds; compare at equal work with incumbent perturbations. Motivated by vacancy-search literature."
+          ],
+          "acceptance_gate": "New exact feasible witness; compare against current frontier and record failed starts. Changed labeled edges alone do not prove a new topology.",
+          "first_step": {
+            "command": [
+              "python3",
+              "src/project_inspect.py",
+              "neighbors"
+            ],
+            "expected": "24 neighboring-count witnesses present."
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "exact",
+            "measured"
+          ]
+        }
+      ]
+    }
+  ]
+}

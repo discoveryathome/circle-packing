@@ -1,0 +1,116 @@
+{
+  "schema": "discover-frontier/v0",
+  "statement": "Exact feasible lower bounds for 12 selected equal-circle square packings. Two published-baseline improvements are novelty-unresolved; no new-record or global-optimality claim.",
+  "status": "Local proposal; donor intake deferred; no agreed maintainer",
+  "evidence_level": [
+    "author-checked"
+  ],
+  "claim_kind": [
+    "exact"
+  ],
+  "scope": "N in {100,106,134,150,200,250,300,400,500,600,700,800}; square [0,1]^2, identical radii, tangency allowed.",
+  "assumptions": [
+    {
+      "id": "novelty",
+      "statement": "Pending submissions and Aletheia numerical witnesses remain unreconciled. This does not affect the exact feasibility claim.",
+      "status": "open",
+      "link": "AUDIT.md"
+    }
+  ],
+  "sources": [
+    "https://packomania.com/csq/",
+    "https://www.packomania.com/pending-requests.html",
+    "AUDIT.md"
+  ],
+  "table": {
+    "path": "data/frontier.json",
+    "format": "json",
+    "key": [
+      "n"
+    ],
+    "value": "certified_radius",
+    "direction": "higher-is-better",
+    "object": "certificate",
+    "check_row": [
+      "python3",
+      "src/verify.py",
+      "{certificate}",
+      "--n",
+      "{n}"
+    ],
+    "check_row_minutes": 1,
+    "by": "by",
+    "source": "source",
+    "updated": "updated"
+  },
+  "artifacts": [
+    {
+      "path": "certificates/frontier/n100.json",
+      "sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "role": "feasible packing"
+    },
+    {
+      "path": "certificates/frontier/n106.json",
+      "sha256": "e900839b877b852e58775bb97bdec6a88bb767f499bc5e3bb3af168da9e7e633",
+      "role": "feasible packing"
+    },
+    {
+      "path": "certificates/frontier/n134.json",
+      "sha256": "51b1af652fc2addf87247e89317a0231d69c3870dc5dda7df568144deba93bed",
+      "role": "feasible packing"
+    },
+    {
+      "path": "certificates/frontier/n150.json",
+      "sha256": "e21e5ad83eb157ddcbe5fea29e422b4f76b9e0038a5a332d6594b7baeab9160b",
+      "role": "feasible packing"
+    },
+    {
+      "path": "certificates/frontier/n200.json",
+      "sha256": "941ef16137f6a9a5782fd3a304fce438c66f3a130e3b3f3a0e430b69cc7fa2b9",
+      "role": "feasible packing"
+    },
+    {
+      "path": "certificates/frontier/n250.json",
+      "sha256": "ee63b0716f4a95ac0dd8b522b7c69072d6dcf7e62ab4ae1bfdcdeb488105591f",
+      "role": "feasible packing"
+    },
+    {
+      "path": "certificates/frontier/n300.json",
+      "sha256": "f18578cff5862de099cadfa74b9e32d06ff695583e4689bdc681daef4552cc0f",
+      "role": "feasible packing"
+    },
+    {
+      "path": "certificates/frontier/n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "role": "feasible packing"
+    },
+    {
+      "path": "certificates/frontier/n500.json",
+      "sha256": "f10cbde233bd0e5ec97e40695812da9df69128bb3cc72e615284b46272d5dba6",
+      "role": "feasible packing"
+    },
+    {
+      "path": "certificates/frontier/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "role": "feasible packing"
+    },
+    {
+      "path": "certificates/frontier/n700.json",
+      "sha256": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2",
+      "role": "feasible packing"
+    },
+    {
+      "path": "certificates/frontier/n800.json",
+      "sha256": "b0bb52fa7fe03974cc8e11cebf26244c0f937c3ebdcb7bff8354f8a6bd172251",
+      "role": "feasible packing"
+    }
+  ],
+  "reproduce": "python3 src/reproduce.py",
+  "reproduce_full": "python3 src/reproduce.py --all-trials",
+  "reproduce_minutes": 2,
+  "prerequisites": [
+    "Python 3.10+ standard library; no network for verification"
+  ],
+  "review": "discover/review.md",
+  "updated_on": "2026-10-20"
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "n": 100,
+    "historical_side_length": "19.454847253",
+    "historical_radius_lower": "0.05140107177116981542557836008",
+    "historical_radius_upper": "0.05140107177645395578457148197",
+    "guard_side_length": "1e-9",
+    "source": "https://leria-info.univ-angers.fr/~jinkao.hao/papers/LaietalJOC2023.pdf",
+    "table": 4,
+    "by": "Prior best known, as tabulated by Lai et al. (2023)",
+    "note": "Published precision envelope, no coordinate witness for pre-2023 packing imported"
+  },
+  {
+    "n": 106,
+    "historical_side_length": "19.993921681",
+    "historical_radius_lower": "0.05001520041464769802832920790",
+    "historical_radius_upper": "0.05001520041965073857386441458",
+    "guard_side_length": "1e-9",
+    "source": "https://leria-info.univ-angers.fr/~jinkao.hao/papers/LaietalJOC2023.pdf",
+    "table": 6,
+    "by": "Prior best known, as tabulated by Lai et al. (2023)",
+    "note": "Published precision envelope, no coordinate witness for pre-2023 packing imported"
+  },
+  {
+    "n": 200,
+    "historical_side_length": "27.312853154",
+    "historical_radius_lower": "0.03661279890185826322178679762",
+    "historical_radius_upper": "0.03661279890453925730883894230",
+    "guard_side_length": "1e-9",
+    "source": "https://leria-info.univ-angers.fr/~jinkao.hao/papers/LaietalJOC2023.pdf",
+    "table": 4,
+    "by": "Prior best known, as tabulated by Lai et al. (2023)",
+    "note": "Published precision envelope, no coordinate witness for pre-2023 packing imported"
+  },
+  {
+    "n": 250,
+    "historical_side_length": "30.417031057",
+    "historical_radius_lower": "0.03287631847083213114033833196",
+    "historical_radius_upper": "0.03287631847299383577287162566",
+    "guard_side_length": "1e-9",
+    "source": "https://leria-info.univ-angers.fr/~jinkao.hao/papers/LaietalJOC2023.pdf",
+    "table": 6,
+    "by": "Prior best known, as tabulated by Lai et al. (2023)",
+    "note": "Published precision envelope, no coordinate witness for pre-2023 packing imported"
+  },
+  {
+    "n": 300,
+    "historical_side_length": "33.091154939",
+    "historical_radius_lower": "0.03021955570342507966873639739",
+    "historical_radius_upper": "0.03021955570525152276267160851",
+    "guard_side_length": "1e-9",
+    "source": "https://leria-info.univ-angers.fr/~jinkao.hao/papers/LaietalJOC2023.pdf",
+    "table": 4,
+    "by": "Prior best known, as tabulated by Lai et al. (2023)",
+    "note": "Published precision envelope, no coordinate witness for pre-2023 packing imported"
+  },
+  {
+    "n": 400,
+    "historical_side_length": "38.164523000",
+    "historical_radius_lower": "0.02620234504106857709079532903",
+    "historical_radius_upper": "0.02620234504244170286216970936",
+    "guard_side_length": "1e-9",
+    "source": "https://leria-info.univ-angers.fr/~jinkao.hao/papers/LaietalJOC2023.pdf",
+    "table": 6,
+    "by": "Prior best known, as tabulated by Lai et al. (2023)",
+    "note": "Published precision envelope, no coordinate witness for pre-2023 packing imported"
+  }
+]
