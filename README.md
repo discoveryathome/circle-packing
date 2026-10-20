@@ -33,10 +33,10 @@ illustrations of the certified coordinates, not substitutes for verification.
 
 ## Reproduce or extend numerical experiments
 
-Create a private virtual environment; no global install is needed:
+The search dependencies were resolved with CPython 3.12.11. Use Python 3.12 for the pinned numerical environment; the offline verifier needs only Python 3.10+. Create a private virtual environment:
 
 ```sh
-python3 -m venv .venv
+python3.12 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python -m unittest discover -s tests -v
 .venv/bin/python src/experiment.py --out experiments/replay-stage1

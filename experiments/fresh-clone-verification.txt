@@ -1,0 +1,6 @@
+Fresh local clone; no external network used.
+Verified commit: ecbc9d1fb559a80ebbe11f771b649e914b9828ff
+Command: python3 src/reproduce.py
+Interpreter: CPython 3.14.6, standard library only
+Exit status: 0
+{"ok": true, "certificates_checked": 50, "frontier_rows": 12, "all_trials": false, "seconds": 7.911}
