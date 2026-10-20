@@ -1,0 +1,16 @@
+{
+  "v": 0,
+  "kind": "handoff",
+  "task": "reconcile-pending",
+  "scope": "Resolve N=600/700 record novelty before enabling donated sessions",
+  "base": "562aa5aeb8bb558b517008b9404ecb31b0ef9027",
+  "posted_at": "2026-10-20T17:51:53Z",
+  "evidence_level": "local-only",
+  "request": {
+    "question": "Do the certified pilot gains beat earlier pending claims, and is there a willing maintainer?",
+    "first_step": "python3 src/project_inspect.py audit",
+    "success_test": "Hash-pinned comparable witnesses and an explicit review/priority disposition; otherwise retain unresolved status.",
+    "track": "reconcile",
+    "est_minutes": 30
+  }
+}
