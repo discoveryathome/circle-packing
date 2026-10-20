@@ -1,0 +1,31 @@
+{
+  "started_at": "2026-10-20T18:31:39.514491+00:00",
+  "budget_minutes": 45,
+  "seed": "b8059878f07ecc1232784d188fffb6bc",
+  "base": "e11c81713dd9b19696a95751eac809ce451c83fb",
+  "counts": [
+    400,
+    500,
+    600,
+    700,
+    800
+  ],
+  "hardware": {
+    "model": "Mac14,2",
+    "physical_cores": 8,
+    "memory_bytes": 25769803776
+  },
+  "initial_load_average": [
+    22.96,
+    19.91,
+    14.04
+  ],
+  "timing_caveat": "Shared machine under substantial load; report CPU work and wall time, not isolated performance.",
+  "input_sha256": {
+    "n800.json": "b0bb52fa7fe03974cc8e11cebf26244c0f937c3ebdcb7bff8354f8a6bd172251",
+    "n400.json": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+    "n600.json": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+    "n500.json": "f10cbde233bd0e5ec97e40695812da9df69128bb3cc72e615284b46272d5dba6",
+    "n700.json": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2"
+  }
+}
