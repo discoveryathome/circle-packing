@@ -5,9 +5,13 @@ import jsonschema
 ROOT=Path(__file__).resolve().parents[1]
 def main(first_steps=False):
     for f,schema in [('discover.json','manifest'),('discover/frontier.json','frontier'),
-                     ('discover/catalog.json','catalog'),('research/pilot/TASK.json','package-task')]:
+                     ('discover/catalog.json','catalog')]:
         jsonschema.Draft202012Validator(json.loads((ROOT/f'sources/schemas/{schema}.schema.json').read_text()),
             format_checker=jsonschema.FormatChecker()).validate(json.loads((ROOT/f).read_text()))
+    for package in sorted((ROOT/'research').glob('*/TASK.json')):
+        jsonschema.Draft202012Validator(json.loads((ROOT/'sources/schemas/package-task.schema.json').read_text())).validate(json.loads(package.read_text()))
+        for name in ['README.md','SOURCES.json','VERIFY.json']:
+            if not (package.parent/name).exists():raise ValueError('incomplete result package: '+str(package.parent/name))
     cat=json.loads((ROOT/'discover/catalog.json').read_text())
     if sum(t['weight'] for t in cat['tracks'])!=100:raise ValueError('weights do not sum to 100')
     ids=[task['id'] for tr in cat['tracks'] for task in tr['tasks']]

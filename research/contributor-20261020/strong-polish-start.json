@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-10-20T19:15:13.763126+00:00",
+  "inputs": [
+    {
+      "n": 700,
+      "path": "inputs/strong-polish-start/n700.json",
+      "sha256": "6d02a08ed764ba28cc992fc0eee01d532f33ea54c0615082899b903da6e30179"
+    },
+    {
+      "n": 800,
+      "path": "inputs/strong-polish-start/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685"
+    }
+  ]
+}

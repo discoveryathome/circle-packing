@@ -1,0 +1,12 @@
+{
+  "n": 800,
+  "added_approximate_pair_contacts": 271,
+  "removed_approximate_pair_contacts": 36,
+  "contact_relative_tolerance": 2e-05,
+  "max_center_displacement": 0.01736281845056141,
+  "median_center_displacement": 4.5095613498120084e-05,
+  "radius_gain_ppm": 57.92808848047209,
+  "radius_gain_pixels_at_570px": 0.0006153948541493676,
+  "zoom_square_side": 0.22,
+  "disclaimer": "Labeled near-contact differences do not establish non-isomorphic contact topology; geometry is actual scale."
+}

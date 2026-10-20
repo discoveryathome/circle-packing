@@ -1,0 +1,5 @@
+{"phase": "heldout-102-800-original", "n": 800, "attempt": 0, "mode": "polish", "radius": "0.018638081785221", "gain_vs_session_start": 4.894993309995099e-07, "meaningful": true, "wall_seconds": 17.607372708967887}
+{"phase": "heldout-102-800-original", "n": 800, "attempt": 1, "mode": "local", "radius": "0.018638173610066", "gain_vs_session_start": 5.813241759980436e-07, "meaningful": true, "wall_seconds": 10.39271462499164}
+{"phase": "heldout-102-800-original", "n": 800, "attempt": 2, "mode": "contact", "radius": "0.018575411054537", "gain_vs_session_start": -6.218123135300069e-05, "meaningful": false, "wall_seconds": 10.757667666999623}
+{"phase": "heldout-102-800-original", "n": 800, "attempt": 3, "mode": "basin", "radius": "0.017190856942148", "gain_vs_session_start": -0.0014467353437420012, "meaningful": false, "wall_seconds": 6.3309010829543695}
+BLOCK {"n": 800, "attempts": 4, "best_radius": "0.018638173610066", "start_radius": "0.01863759228589", "wall_seconds": 45.2970520000672, "cpu_seconds": 32.662234, "peak_rss_bytes": 144375808, "certificate": "certificates/heldout-102-800-original/n800.json", "end": "2026-10-20T18:54:03.308272+00:00"}

@@ -1,0 +1,10 @@
+{"phase": "aa-original-repeat", "n": 500, "attempt": 0, "mode": "polish", "radius": "0.0234554989935", "gain_vs_session_start": 0.0, "meaningful": false, "wall_seconds": 2.271713542053476}
+{"phase": "aa-original-repeat", "n": 500, "attempt": 1, "mode": "local", "radius": "0.023455596952977", "gain_vs_session_start": 9.795947700230734e-08, "meaningful": true, "wall_seconds": 5.893206667038612}
+{"phase": "aa-original-repeat", "n": 500, "attempt": 2, "mode": "contact", "radius": "0.023432967422176", "gain_vs_session_start": -2.2531571323997773e-05, "meaningful": false, "wall_seconds": 9.676481124944985}
+{"phase": "aa-original-repeat", "n": 500, "attempt": 3, "mode": "basin", "radius": "0.023264098741902", "gain_vs_session_start": -0.00019140025159800067, "meaningful": false, "wall_seconds": 10.279107375070453}
+{"phase": "aa-original-repeat", "n": 500, "attempt": 4, "mode": "local", "radius": "0.023455544134097", "gain_vs_session_start": 4.514059699992079e-08, "meaningful": false, "wall_seconds": 8.72264749999158}
+{"phase": "aa-original-repeat", "n": 500, "attempt": 5, "mode": "contact", "radius": "0.023455373560298", "gain_vs_session_start": -1.2543320199870367e-07, "meaningful": false, "wall_seconds": 5.842084042029455}
+{"phase": "aa-original-repeat", "n": 500, "attempt": 6, "mode": "basin", "radius": "0.023287508739919", "gain_vs_session_start": -0.00016799025358099975, "meaningful": false, "wall_seconds": 10.203780625015497}
+{"phase": "aa-original-repeat", "n": 500, "attempt": 7, "mode": "local", "radius": "0.02345545208546", "gain_vs_session_start": -4.690804000090365e-08, "meaningful": false, "wall_seconds": 5.707357916980982}
+{"phase": "aa-original-repeat", "n": 500, "attempt": 8, "mode": "contact", "radius": "0.023229929117359", "gain_vs_session_start": -0.0002255698761409984, "meaningful": false, "wall_seconds": 1.0860765830148011}
+BLOCK {"n": 500, "attempts": 9, "best_radius": "0.023455596952977", "start_radius": "0.0234554989935", "wall_seconds": 59.778538541984744, "cpu_seconds": 37.196148, "peak_rss_bytes": 129073152, "certificate": "certificates/aa-original-repeat/n500.json", "end": "2026-10-20T19:15:12.144816+00:00"}

@@ -1,0 +1,1 @@
+{"original_radius": "0.023455596952977", "replay_radius": "0.023455596952977", "absolute_delta": "0E-15", "lp": {"lp_steps": 9, "lp_failures": 0, "seconds": 12.424660708988085}}

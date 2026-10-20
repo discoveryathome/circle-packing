@@ -7,7 +7,9 @@ optimality. Primary progress: exact radius gains over source-backed incumbents a
 rounding guards. Secondary progress: reproducibility, verifier hardening, and reduced
 search cost measured under comparable conditions.
 
-Read `REPORT.md` for the bounded experiment and recommendation, `data/frontier.json`
+Read `research/contributor-20261020/REPORT.md` for the latest contributor-suitability test and proposed stronger witnesses. Those proposals have not been promoted to the recorded frontier.
+
+Read `REPORT.md` for the initial bounded experiment and recommendation, `data/frontier.json`
 for the local feasible witnesses, `data/records.json` for the frozen external comparison,
 and `AUDIT.md` for the distinction between historical advances and new-record claims.
 The protocol's authoritative local record is `discover/frontier.json`; its rows establish

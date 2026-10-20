@@ -1,0 +1,1 @@
+{"n": 500, "attempts": 8, "best_radius": "0.023455596955163", "start_radius": "0.0234554989935", "wall_seconds": 44.92161999992095, "cpu_seconds": 29.124941000000003, "peak_rss_bytes": 145424384, "certificate": "certificates/heldout-101-500-targeted/n500.json", "end": "2026-10-20T18:47:01.276736+00:00"}

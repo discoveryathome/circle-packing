@@ -1,0 +1,29 @@
+{
+  "base_commit": "e11c81713dd9b19696a95751eac809ce451c83fb",
+  "search_strategy_commit": "af6be839e2c83fa04353dcf4969af7a54858409d",
+  "git_blobs": {
+    "src/optimizer.py": "a9c8b67cddaa7d1aa08187b6787e2b1bd456990b",
+    "src/verify.py": "e58530c6972774c5595942fbd05b65a271a42e13",
+    "src/certify.py": "2e557026c6104203ae8d2fa9eae443616af089fa",
+    "data/records.json": "2781e8ad2b2a47ba55edb7ab1bc0940f76031b7f",
+    "sources/manifest.json": "58c5580c33c86e610697eb93796eba583cfabc40",
+    "certificates/frontier/n400.json": "282c3d14230bd5fa78f7ad149a3f504dc0ac9e59",
+    "certificates/frontier/n500.json": "409ec6b72875d04e12d9fceef9ebf7367215ff37",
+    "certificates/frontier/n600.json": "40538aafb8ef644f38f3701069b057dc45a19da6",
+    "certificates/frontier/n700.json": "3a1cb41496423606241b07f179715b5ae443ed58",
+    "certificates/frontier/n800.json": "9b7c71ec729a0571b180f4ab6330f24d7f3fde9a"
+  },
+  "live_inputs": {
+    "n800.json": "b0bb52fa7fe03974cc8e11cebf26244c0f937c3ebdcb7bff8354f8a6bd172251",
+    "n400.json": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+    "n600.json": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+    "n500.json": "f10cbde233bd0e5ec97e40695812da9df69128bb3cc72e615284b46272d5dba6",
+    "n700.json": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2"
+  },
+  "external_sources_manifest": "sources/manifest.json",
+  "external_manifest_sha256": "f2a55fc7bdbfb672ba18b22f733c42af5ad04a630df6d6e38c7baca398dc407f",
+  "frozen_original_coordinates": "inputs/nN.json",
+  "continued_inputs": "continuation-start.json",
+  "trial_input_and_output_hashes": "logs/*/trials.jsonl",
+  "note": "External source paths in the manifest are relative to the project root; local frozen input hashes are relative to this package inputs directory."
+}

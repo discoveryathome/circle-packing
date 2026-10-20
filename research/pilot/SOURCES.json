@@ -1,0 +1,17 @@
+{
+  "base_commit": null,
+  "base_explanation": "The initial pilot created a new local repository; there was no pre-existing project commit.",
+  "initial_artifact_commit": "562aa5aeb8bb558b517008b9404ecb31b0ef9027",
+  "source_manifest": "../../sources/manifest.json",
+  "source_manifest_sha256": "471af7a979bd881988bfb8f930cceda6f4cc29d2fe57322ab9a63b4448cc4e94",
+  "experiment_code_and_input_pins": [
+    "../../experiments/stage1/environment.json",
+    "../../experiments/continuation/environment.json"
+  ],
+  "git_blobs_at_initial_artifact": {
+    "src/optimizer.py": "a9c8b67cddaa7d1aa08187b6787e2b1bd456990b",
+    "src/verify.py": "e58530c6972774c5595942fbd05b65a271a42e13",
+    "src/certify.py": "2e557026c6104203ae8d2fa9eae443616af089fa",
+    "sources/manifest.json": "58c5580c33c86e610697eb93796eba583cfabc40"
+  }
+}

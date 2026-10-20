@@ -1,0 +1,60 @@
+{
+  "verification_profile": "exact-certificate",
+  "working_directory": "project root",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "research/contributor-20261020/code/verify_session.py"
+      ],
+      "timeout_seconds": 300,
+      "dependencies": "Python 3.10+ standard library only",
+      "inputs": [
+        "certificates/**/*.json",
+        "inputs/nN.json",
+        "logs/*/trials.jsonl",
+        "sources/manifest.json",
+        "continuation-start.json"
+      ]
+    },
+    {
+      "argv": [
+        "python3",
+        "research/contributor-20261020/code/test_accounting.py"
+      ],
+      "timeout_seconds": 30,
+      "dependencies": "Python standard library",
+      "meaning": "Adversarial checks of exact progress accounting."
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "research/contributor-20261020/code/test_targeted.py"
+      ],
+      "timeout_seconds": 60,
+      "dependencies": "../../requirements.txt"
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "research/contributor-20261020/code/replay_trial.py",
+        "exploration-original",
+        "500",
+        "1",
+        "--output",
+        "research/contributor-20261020/replay-n500.json"
+      ],
+      "timeout_seconds": 180,
+      "dependencies": "../../requirements.txt",
+      "meaning": "Optional floating-point replay; exact witness verification is the portable claim."
+    }
+  ],
+  "dependency_pins": "../../requirements.txt",
+  "source_and_input_pins": "SOURCES.json",
+  "coverage": "All trial and retained geometry with integers; row radii, hashes, expected N, frozen numerical code, starting-input hashes and public source hashes.",
+  "limits": [
+    "No novelty or optimality proof",
+    "No independent reviewer",
+    "Timed solver trajectories need not be bit-identical"
+  ]
+}

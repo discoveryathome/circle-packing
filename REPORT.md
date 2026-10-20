@@ -1,4 +1,6 @@
-# Pilot result and recommendation
+# Initial pilot result and recommendation
+
+A subsequent [contributor-session assessment](research/contributor-20261020/REPORT.md) tests stronger starts and agent-method changes. The measurements below describe the initial pilot only.
 
 **Defer broad donated-session launch.** The pilot demonstrates cheap, rigorous verification and some numerical headroom over a frozen catalogue. It does not establish unclaimed record headroom: the successful counts overlap independent pending claims, and no maintainer has agreed to review contributions. A focused local follow-up is justified; a public record-hunting launcher is premature.
 

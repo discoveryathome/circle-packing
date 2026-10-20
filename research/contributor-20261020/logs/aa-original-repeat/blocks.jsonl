@@ -1,0 +1,1 @@
+{"n": 500, "attempts": 9, "best_radius": "0.023455596952977", "start_radius": "0.0234554989935", "wall_seconds": 59.778538541984744, "cpu_seconds": 37.196148, "peak_rss_bytes": 129073152, "certificate": "certificates/aa-original-repeat/n500.json", "end": "2026-10-20T19:15:12.144816+00:00"}

@@ -1,5 +1,7 @@
 # Local handoff — no message was sent
 
+Latest local follow-up: [contributor suitability report](research/contributor-20261020/REPORT.md). It found stronger exact experimental witnesses at N=500,700,800; use its `certificates/best/` for any authorized further research after verification. These are proposals pending acceptance, and the original recorded frontier remains unchanged. The short stronger-start tests and longer-call diagnostics are in its experiment tables. No messages were sent.
+
 The 12-count pilot is complete. Read REPORT.md, RECORDS.md and AUDIT.md. Exact geometry
 and reproducible artifacts are available; novelty and human review are outstanding.
 The project should stay unlisted with donor intake disabled until those obligations are

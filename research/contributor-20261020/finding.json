@@ -1,0 +1,10 @@
+{
+  "v": 0,
+  "kind": "finding",
+  "task": "continue-strongest",
+  "scope": "Local contributor trial at N=400,500,600,700,800: three certified gains over prior pilot; stronger-start follow-up adds one N700 polishing refinement; featured launch deferred; novelty unresolved.",
+  "scope_status": "refined",
+  "base": "e11c81713dd9b19696a95751eac809ce451c83fb",
+  "posted_at": "2026-10-20T19:22:33.444672+00:00",
+  "evidence_level": "author-checked"
+}

@@ -4,7 +4,9 @@ Find certified lower bounds on the largest common radius of N non-overlapping ci
 inside a unit square. The pilot searches **N = 100, 106, 134, 150, 200, 250, 300, 400,
 500, 600, 700, 800**, with N=47 as a precision control.
 
-Start with [the experiment report](REPORT.md), [the record table](RECORDS.md),
+Latest: [the contributor-run suitability assessment](research/contributor-20261020/REPORT.md), [new experimental proposals](research/contributor-20261020/RESULTS.md), and [before/after demo](research/contributor-20261020/images/demo.svg). These author-checked follow-up results await the project’s acceptance process; the original recorded frontier is preserved.
+
+Start with [the initial experiment report](REPORT.md), [the record table](RECORDS.md),
 [the source audit](AUDIT.md), and [the construction gallery](images/GALLERY.md).
 The frozen published reference is [Packomania's equal-circle table](https://packomania.com/csq/).
 The local feasible frontier is `discover/frontier.json`; it does not certify novelty.

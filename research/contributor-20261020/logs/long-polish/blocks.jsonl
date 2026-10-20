@@ -1,0 +1,2 @@
+{"n": 500, "attempts": 1, "best_radius": "0.0234554989935", "start_radius": "0.0234554989935", "wall_seconds": 6.243786333943717, "cpu_seconds": 1.3964910000000001, "peak_rss_bytes": 93863936, "certificate": "certificates/long-polish/n500.json", "end": "2026-10-20T19:00:28.109130+00:00"}
+{"n": 800, "attempts": 1, "best_radius": "0.018638081785221", "start_radius": "0.01863759228589", "wall_seconds": 62.87432395899668, "cpu_seconds": 13.909516, "peak_rss_bytes": 125403136, "certificate": "certificates/long-polish/n800.json", "end": "2026-10-20T19:01:30.988407+00:00"}

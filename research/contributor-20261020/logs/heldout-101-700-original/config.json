@@ -1,0 +1,25 @@
+{
+  "phase": "heldout-101-700-original",
+  "arm": "original",
+  "counts": "700",
+  "seconds": 45.0,
+  "replicate": 101,
+  "inputs": "inputs",
+  "start": "2026-10-20T18:50:09.316049+00:00",
+  "code_sha256": {
+    "targeted.py": "80efe2cd732a6012bb02ee074e1018ae9f92c9ee5b1fdaa142b6a266cee0d865",
+    "run.py": "9c331128d1d2bb9f542c9b69558665c0fa72711dec7b06f90cfb3276cc783ad9",
+    "replay_trial.py": "bebf0206e020a461731156873616690f014e1d105a6dcb5520e3b9afbaa3a7c3",
+    "test_targeted.py": "33dabb584f4639b104571bc526d6651222c3cd1e6254471ef07aba79accf0ca4",
+    "verify_session.py": "31c2b98ef528ac387da5d6ad3d74dd4d904d6f38a279c5bcaae1ef5869c851ce",
+    "visualize.py": "a6528aab0193b515d39d7712ee898625eebfb96685330e8a627450b56d80cfd6",
+    "matched.py": "c2d985334b9396921e3c3d0be06778104014ee5bd51ebfa1fc6c6e05d3e0f319",
+    "polish_control.py": "7a2bcfe9d6974609a3bb0c7b1104e8a020d7ba2441912d0848e59851a7560866",
+    "finish_schedule.py": "3fb119b8bf3693921b7147eebcd60b4735977fa665077324257caefa7497d3a6",
+    "analyze.py": "1373fcfb514435d0f7851f1f080b251d068215a9c3d5c6b1d8f73ff1c60abc42",
+    "status.py": "9e0ee7c94afa55b1a56bbfb2e7429b1443e4f9f095d43e354cc404a7b5531bbd",
+    "frozen/optimizer.py": "9d8c960aa252f1d6ca779f0f04a9b6cd510aa5241d81417df8db3e8d35a85dbe",
+    "frozen/verify.py": "3b065d9d5140c63dcf33cad2c0ac93a0ad7afde8eb94136fb935a7e3ce5d6976",
+    "frozen/certify.py": "660ee7bacb23b4554cfe5f7ebd3f1ba2e5106fd2c29c26ef623b2c4e41d603e4"
+  }
+}

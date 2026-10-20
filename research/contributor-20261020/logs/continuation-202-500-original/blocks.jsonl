@@ -1,0 +1,1 @@
+{"n": 500, "attempts": 7, "best_radius": "0.023455596955163", "start_radius": "0.023455596955163", "wall_seconds": 60.11179891601205, "cpu_seconds": 16.533064, "peak_rss_bytes": 106364928, "certificate": "certificates/continuation-202-500-original/n500.json", "end": "2026-10-20T19:09:03.471270+00:00"}

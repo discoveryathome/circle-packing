@@ -1,0 +1,15 @@
+test_neighbor_counts_and_seed (test_optimizer.SolverTests.test_neighbor_counts_and_seed) ... ok
+test_recover_four_corners (test_optimizer.SolverTests.test_recover_four_corners) ... ok
+test_certifier_irrational_distance (test_verifier.VerificationTests.test_certifier_irrational_distance) ... ok
+test_duplicates (test_verifier.VerificationTests.test_duplicates) ... ok
+test_malformed (test_verifier.VerificationTests.test_malformed) ... ok
+test_overlap_one_integer_unit (test_verifier.VerificationTests.test_overlap_one_integer_unit) ... ok
+test_single (test_verifier.VerificationTests.test_single) ... ok
+test_tangent_grid (test_verifier.VerificationTests.test_tangent_grid) ... ok
+test_wall (test_verifier.VerificationTests.test_wall) ... ok
+test_wrong_count (test_verifier.VerificationTests.test_wrong_count) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.159s
+
+OK

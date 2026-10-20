@@ -1,0 +1,187 @@
+{
+  "frozen_at": "2026-10-20T19:01:33.649096+00:00",
+  "selection": "N=500/800 were successful in exploration; N=700 added after held-out gain. Strongest observed witnesses across completed phases, including long polish",
+  "inputs": [
+    {
+      "n": 500,
+      "path": "inputs/continuation-start/n500.json",
+      "sha256": "4664a67bf1f911d0e9a34fce9152a5cb2cb666c10903705580f6ec2459e28eb9",
+      "standing": {
+        "n": 500,
+        "initial_radius": "0.0234554989935",
+        "best_observed_radius": "0.023455596955163",
+        "retained_radius": "0.023455596955163",
+        "certified_gain": "9.7961663E-8",
+        "gain_ppm": 4.176490256171791,
+        "meaningful": true,
+        "gate": "2.34554989935E-10",
+        "published_radius": "0.023455498994",
+        "gain_vs_published": "9.7961163E-8",
+        "published_gate_pass": true,
+        "source": "https://packomania.com/csq/csq500.html",
+        "original_construction_by": "Packntile team (Packomania reference [26])",
+        "best_trial": {
+          "phase": "heldout-101-500-targeted",
+          "arm": "targeted",
+          "replicate": 101,
+          "n": 500,
+          "attempt": 3,
+          "mode": "shear",
+          "radius": "0.023455596955163",
+          "base_radius": "0.0234554989935",
+          "gain_vs_session_start": 9.79616630002178e-08,
+          "gain_vs_incumbent": 9.795685599819914e-08,
+          "meaningful": true,
+          "above_start_gate": true,
+          "wall_seconds": 6.239653291995637,
+          "cpu_seconds": 4.440398999999999,
+          "lp": {
+            "lp_steps": 10,
+            "lp_failures": 0,
+            "seconds": 5.2196223749779165
+          },
+          "soft": {
+            "seconds": 0.8684946660650894,
+            "iterations": 1000,
+            "function_calls": 1049,
+            "target": 0.0492200044371579,
+            "energy": 9.044698621879042e-09,
+            "status": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "budget_stop": false
+          },
+          "basin_accepted": true,
+          "certificate": "certificates/heldout-101-500-targeted-n500-003.json",
+          "input": "inputs/heldout-101-500-targeted-n500-003.json",
+          "certificate_sha256": "4664a67bf1f911d0e9a34fce9152a5cb2cb666c10903705580f6ec2459e28eb9",
+          "load_average": [
+            75.61181640625,
+            50.17431640625,
+            34.7783203125
+          ],
+          "utc": "2026-10-20T18:46:34.215598+00:00"
+        },
+        "certificate": "certificates/best/n500.json",
+        "image": "images/best/n500.svg",
+        "density_gain": 7.218577197489517e-06
+      }
+    },
+    {
+      "n": 700,
+      "path": "inputs/continuation-start/n700.json",
+      "sha256": "24b88dc5b1e16feb2f004f623ac137a79a2bf94c161a08adcce34f92fbc9f906",
+      "standing": {
+        "n": 700,
+        "initial_radius": "0.019903696933565",
+        "best_observed_radius": "0.01990592397728",
+        "retained_radius": "0.01990592397728",
+        "certified_gain": "0.000002227043715",
+        "gain_ppm": 111.89095786744923,
+        "meaningful": true,
+        "gate": "1.9903696933565E-10",
+        "published_radius": "0.019903642828",
+        "gain_vs_published": "0.00000228114928",
+        "published_gate_pass": true,
+        "source": "https://packomania.com/csq/csq700.html",
+        "original_construction_by": "Eckard Specht",
+        "best_trial": {
+          "phase": "heldout-102-700-original",
+          "arm": "original",
+          "replicate": 102,
+          "n": 700,
+          "attempt": 4,
+          "mode": "local",
+          "radius": "0.01990592397728",
+          "base_radius": "0.019903696933565",
+          "gain_vs_session_start": 2.2270437149973787e-06,
+          "gain_vs_incumbent": 1.9725899009989667e-06,
+          "meaningful": true,
+          "above_start_gate": true,
+          "wall_seconds": 7.775040082982741,
+          "cpu_seconds": 4.193398000000002,
+          "lp": {
+            "lp_steps": 3,
+            "lp_failures": 1,
+            "seconds": 7.43825841601938
+          },
+          "soft": {},
+          "basin_accepted": true,
+          "certificate": "certificates/heldout-102-700-original-n700-004.json",
+          "input": "inputs/heldout-102-700-original-n700-004.json",
+          "certificate_sha256": "24b88dc5b1e16feb2f004f623ac137a79a2bf94c161a08adcce34f92fbc9f906",
+          "load_average": [
+            41.54736328125,
+            43.80517578125,
+            38.96435546875
+          ],
+          "utc": "2026-10-20T18:54:49.439957+00:00"
+        },
+        "certificate": "certificates/best/n700.json",
+        "image": "images/best/n700.svg",
+        "density_gain": 0.00019496861054572317
+      }
+    },
+    {
+      "n": 800,
+      "path": "inputs/continuation-start/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "standing": {
+        "n": 800,
+        "initial_radius": "0.01863759228589",
+        "best_observed_radius": "0.018638671925985",
+        "retained_radius": "0.018638671925985",
+        "certified_gain": "0.000001079640095",
+        "gain_ppm": 57.92808848047209,
+        "meaningful": true,
+        "gate": "1.863759228589E-10",
+        "published_radius": "0.018637592286",
+        "gain_vs_published": "0.000001079639985",
+        "published_gate_pass": true,
+        "source": "https://packomania.com/csq/csq800.html",
+        "original_construction_by": "Eckard Specht",
+        "best_trial": {
+          "phase": "heldout-101-800-targeted",
+          "arm": "targeted",
+          "replicate": 101,
+          "n": 800,
+          "attempt": 2,
+          "mode": "patch",
+          "radius": "0.018638671925985",
+          "base_radius": "0.01863759228589",
+          "gain_vs_session_start": 1.0796400949988905e-06,
+          "gain_vs_incumbent": 5.913020209996622e-07,
+          "meaningful": true,
+          "above_start_gate": true,
+          "wall_seconds": 12.918389832950197,
+          "cpu_seconds": 7.794143000000002,
+          "lp": {
+            "lp_steps": 4,
+            "lp_failures": 1,
+            "seconds": 9.699945124913938
+          },
+          "soft": {
+            "seconds": 2.760992499999702,
+            "iterations": 1000,
+            "function_calls": 1115,
+            "target": 0.038723346575044726,
+            "energy": 6.021709165625301e-06,
+            "status": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "budget_stop": false
+          },
+          "basin_accepted": true,
+          "certificate": "certificates/heldout-101-800-targeted-n800-002.json",
+          "input": "inputs/heldout-101-800-targeted-n800-002.json",
+          "certificate_sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+          "load_average": [
+            45.015625,
+            48.57958984375,
+            39.66796875
+          ],
+          "utc": "2026-10-20T18:52:30.350939+00:00"
+        },
+        "certificate": "certificates/best/n800.json",
+        "image": "images/best/n800.svg",
+        "density_gain": 0.0001011465899911549
+      }
+    }
+  ]
+}

@@ -28,7 +28,19 @@ for replicate in [101,102]:
         byarm={b['arm']:b for b in blocks if b['replicate']==replicate and b['n']==n and b['phase'].startswith('heldout-')}
         if len(byarm)!=2:continue
         delta=D(byarm['targeted']['best_radius'])-D(byarm['original']['best_radius']);gate=max(D('1e-10'),D('1e-8')*D(byarm['original']['start_radius']))
-        matched.append({'replicate':replicate,'n':n,'targeted_minus_original':str(delta),'winner':'targeted' if delta>gate else 'original' if delta < -gate else 'tie','arms':byarm})
+        armrows={arm:[r for r in rows if r['phase']==b['phase']] for arm,b in byarm.items()}
+        cpu_budget=min(sum(r['cpu_seconds'] for r in rr) for rr in armrows.values())
+        cpu_radii={}
+        for arm,rr in armrows.items():
+            elapsed=0;value=D(byarm[arm]['start_radius'])
+            for trial in rr:
+                elapsed+=trial['cpu_seconds']
+                if elapsed<=cpu_budget+1e-9:value=max(value,D(trial['radius']))
+            cpu_radii[arm]=str(value)
+        cpu_delta=D(cpu_radii['targeted'])-D(cpu_radii['original'])
+        matched.append({'replicate':replicate,'n':n,'targeted_minus_original':str(delta),'winner':'targeted' if delta>gate else 'original' if delta < -gate else 'tie','arms':byarm,
+                        'posthoc_common_cpu_seconds':cpu_budget,'radii_at_completed_trial_cpu_budget':cpu_radii,
+                        'cpu_matched_delta':str(cpu_delta),'cpu_matched_winner':'targeted' if cpu_delta>gate else 'original' if cpu_delta < -gate else 'tie'})
 mode_stats=[]
 for stage in ['exploration','heldout','continuation']:
     for arm in ['original','targeted']:
@@ -41,7 +53,7 @@ lines=['# Certified results from this contributor session','','All radii describ
 for r in standings:lines.append(f"|{r['n']}|{r['initial_radius']}|{r['retained_radius']}|{r['certified_gain']}|{r['gain_ppm']:.6f}|[witness]({r['certificate']}) · [SVG]({r['image']})|")
 lines+=['','## External comparison','','The source catalogue and pending claims are distinct. See [source recheck](SOURCE_UPDATE.md).','','| N | Printed Packomania radius | Retained minus printed | Original construction credit | Standing |','|---:|---:|---:|---|---|']
 for r in standings:lines.append(f"|{r['n']}|[{r['published_radius']}]({r['source']})|{r['gain_vs_published']}|{r['original_construction_by']}|{'Published-baseline gain; novelty unresolved' if r['published_gate_pass'] else 'Numerical tie'}|")
-lines+=['','N=600 and 700 may retain earlier catalogue gains without making additional progress in this session. Raw smaller positive differences are preserved in summary.json and are not called meaningful gains.','']
+lines+=['','N=600 retains an earlier catalogue gain without additional progress in this session. N=700 improves an already-improved prior pilot witness. Raw smaller positive differences are preserved in summary.json and are not called meaningful gains.','']
 (ROOT/'RESULTS.md').write_text('\n'.join(lines))
 print(json.dumps({k:summary[k] for k in ['trials','completed_blocks','worker_wall_seconds','worker_cpu_seconds','peak_worker_rss_bytes']}))
 for r in standings:print(r['n'],r['retained_radius'],r['certified_gain'],r['gain_ppm'])

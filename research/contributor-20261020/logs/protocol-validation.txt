@@ -1,0 +1,1 @@
+VALID: upstream schemas, weights, card IDs, entry paths. LOCAL PROPOSAL; maintainer unassigned.

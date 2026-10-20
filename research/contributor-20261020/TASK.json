@@ -1,0 +1,44 @@
+{
+  "card": "continue-strongest",
+  "catalog_revision": 1,
+  "scope": "One 30\u201360-minute contributor-style session at N=400,500,600,700,800; compare original and contact-aware search, diagnose pure polishing, then continue from stronger new witnesses. Assess inaugural featured-project suitability.",
+  "scope_status": "refined",
+  "scope_change_reason": "User specifically requested a contributor-experience test; expanded the old N600/700 continuation card to controls and neighboring larger counts, with logged adaptive diagnostics.",
+  "bottleneck_link": "../../DISCOVERY.md#bottleneck-and-tracks",
+  "budget_minutes": 60,
+  "outcome": "partial",
+  "evidence_level": "author-checked",
+  "not_checked": [
+    "Novelty against inaccessible pending coordinates",
+    "Global optimality",
+    "Independent human review or maintainer acceptance",
+    "Performance on an idle PC or across operating systems",
+    "Long-run yield across a large population of independent donors",
+    "Causal necessity of a language model versus a knowledgeable human choosing the same methods"
+  ],
+  "next_questions": [
+    {
+      "question": "Do fresh contributors still obtain useful gains after starting from this session\u2019s strongest witnesses?",
+      "why_it_matters": "Initial gains alone do not establish sustained early-donor headroom.",
+      "first_step": "python3 research/contributor-20261020/code/verify_session.py",
+      "blocked_by": "Not blocked for authorized local tests; a larger serial contributor study remains unperformed."
+    },
+    {
+      "question": "Which new feasible bounds exceed earlier pending constructions?",
+      "why_it_matters": "A printed-catalogue gain is not a new-record priority claim.",
+      "first_step": "Read research/contributor-20261020/SOURCE_UPDATE.md and RESULTS.md.",
+      "blocked_by": "Comparable pending witnesses and independent review; no contact authorization is inferred."
+    },
+    {
+      "question": "Can a count-adaptive strategy beat longer polishing and standard perturbations under controlled CPU budgets?",
+      "why_it_matters": "The featured-project case should show a useful role for agent decisions beyond repeating a fixed optimizer.",
+      "first_step": "Read research/contributor-20261020/EXPERIMENTS.md, then preregister a new strategy and seeds from the stronger starts.",
+      "blocked_by": "Needs a new controlled experiment, not blocked by mathematics."
+    }
+  ],
+  "credit": [
+    "Original construction authors retained in ../../data/records.json and RESULTS.md",
+    "OpenAI coding agent: experimental method, execution, exact certificates, audit and documentation"
+  ],
+  "ai_assistance": "One OpenAI coding-agent session; no subagents or separate independent reviewer. Conventional numerical solvers performed the optimization."
+}

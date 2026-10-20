@@ -1,0 +1,20 @@
+{
+  "collected_at": "2026-10-20T18:50:35.684762+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "verification_python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "load_average": [
+    42.291015625,
+    49.56396484375,
+    38.64794921875
+  ],
+  "core_search_libraries": "attrs==26.1.0\nbeautifulsoup4==4.15.0\njsonschema==4.26.0\njsonschema-specifications==2025.9.1\nnumpy==2.5.4\nreferencing==0.37.0\nrpds-py==2026.9.1\nscipy==1.18.1\nsoupsieve==3.0.3\ntyping-extensions==4.16.0\n",
+  "single_worker_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "numerical_python": "CPython 3.12.11 in project .venv",
+  "search_code_commit": "af6be839e2c83fa04353dcf4969af7a54858409d",
+  "outside_work": "Substantial unrelated CPU load throughout; no isolated hardware benchmark",
+  "model_cost": "Agent inference cost and tokens were not separately instrumented"
+}

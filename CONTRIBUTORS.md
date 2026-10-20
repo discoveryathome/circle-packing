@@ -13,3 +13,5 @@ method to Claude Opus 5 and explicitly describes it as lattice refinement.
 
 Any local refinement inherits its parent construction's credit. The pilot's numerical
 work does not create a claim to earlier authors' constructions or pending submissions.
+
+The follow-up contributor session in `research/contributor-20261020/` was performed by the same OpenAI coding agent: contact-aware method, controlled comparisons, source recheck, exact accounting and visual explanation. Original construction credit is retained in its RESULTS.md. No independent human review or maintainer acceptance is implied.

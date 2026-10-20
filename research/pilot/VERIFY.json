@@ -2,5 +2,23 @@
   "verification_profile": "exact-certificate",
   "command": "python3 src/reproduce.py --all-trials",
   "coverage": "All stored baseline/frontier and stage trial geometry; values, source/witness hashes and comparison classifications.",
-  "limits": "No novelty, global-optimality, independent-human-review or publication claim."
+  "limits": "No novelty, global-optimality, independent-human-review or publication claim.",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "src/reproduce.py",
+        "--all-trials"
+      ],
+      "timeout_seconds": 300,
+      "dependencies": "Python 3.10+ standard library"
+    }
+  ],
+  "inputs": [
+    "../../sources/manifest.json",
+    "../../data/frontier.json",
+    "../../experiments/stage1",
+    "../../experiments/continuation"
+  ],
+  "dependency_pins": "../../requirements.txt"
 }

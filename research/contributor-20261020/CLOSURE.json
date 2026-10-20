@@ -1,0 +1,14 @@
+{
+  "status": "packaged; fresh local checkout check pending",
+  "started_at": "2026-10-20T18:31:39.514491+00:00",
+  "packaged_at": "2026-10-20T19:23:04.764141+00:00",
+  "elapsed_minutes_at_packaging": 51.4208275,
+  "numerical_search_ended_at": "2026-10-20T19:15:28.912587+00:00",
+  "worker_wall_seconds": 2385.565031039994,
+  "worker_cpu_seconds": 920.4095980000001,
+  "peak_worker_rss_bytes": 169476096,
+  "trials": 253,
+  "certificates_checked": 305,
+  "pair_checks": 57014150,
+  "external_publication": false
+}

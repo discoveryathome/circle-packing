@@ -1,0 +1,1 @@
+{"n": 700, "attempts": 5, "best_radius": "0.01990592397728", "start_radius": "0.019903696933565", "wall_seconds": 45.028363665915094, "cpu_seconds": 21.956735000000002, "peak_rss_bytes": 123092992, "certificate": "certificates/heldout-102-700-original/n700.json", "end": "2026-10-20T18:54:49.584005+00:00"}

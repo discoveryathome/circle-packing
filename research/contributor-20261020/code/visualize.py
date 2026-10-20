@@ -31,7 +31,9 @@ for r,color in zip([s for s in S['standings'] if s['meaningful']],[TEAL,CORAL,'#
         if row['n']!=r['n']:continue
         gain=(float(row['radius'])/float(r['initial_radius'])-1)*1e6;peak=max(peak,gain)
         minute=(datetime.datetime.fromisoformat(row['utc'])-START).total_seconds()/60
-        pts.append((x0+minute/maxminutes*w,y0+h-peak/maxppm*h))
+        x=x0+minute/maxminutes*w
+        pts.append((x,pts[-1][1]))
+        pts.append((x,y0+h-peak/maxppm*h))
     pts.append((x0+w,pts[-1][1]))
     out.append('<polyline fill="none" stroke="'+color+'" stroke-width="3" points="'+' '.join(f'{x:.2f},{y:.2f}' for x,y in pts)+'"/>')
     out.append(text(x0+w-100,pts[-1][1]-8,f"N={r['n']}",16,color))
