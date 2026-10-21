@@ -1,0 +1,71 @@
+{
+  "working_directory": "repository root",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "src/packing_task.py",
+        "check"
+      ],
+      "timeout_seconds": 60
+    },
+    {
+      "argv": [
+        "python3",
+        "src/packing_task.py",
+        "verify-session",
+        "research/readiness-20261021/smoke"
+      ],
+      "timeout_seconds": 60
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "src/discover.py",
+        "validate",
+        ".",
+        "--first-steps"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "argv": [
+        "python3",
+        "src/reproduce.py"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "argv": [
+        "python3",
+        "research/contributor-20261020/code/verify_session.py"
+      ],
+      "timeout_seconds": 300
+    },
+    {
+      "argv": [
+        "python3",
+        "research/readiness-20261021/check_manifest.py"
+      ],
+      "timeout_seconds": 60
+    }
+  ],
+  "dependencies": "Python 3.10+ standard library for certificates, comparison and manifests; Python3.12 plus requirements.txt for numerical smoke and full tests/schema validation.",
+  "limits": [
+    "Smoke execution is not research productivity evidence.",
+    "No independent reviewer.",
+    "Exact witnesses are portable; timed numerical paths can differ."
+  ]
+}

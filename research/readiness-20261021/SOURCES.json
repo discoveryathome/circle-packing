@@ -1,0 +1,17 @@
+{
+  "base_commit": "24a312af3c1c0a855b67c00f066a7eae6bcac359",
+  "working_start_index": "../../discover/working-starts.json",
+  "original_evidence": [
+    "../pilot/",
+    "../contributor-20261020/"
+  ],
+  "live_source_recheck_date": "2026-10-21",
+  "live_urls": [
+    "https://packomania.com/csq/",
+    "https://www.packomania.com/pending-requests.html",
+    "https://www.packomania.com/"
+  ],
+  "live_source_limits": "Read-only web inspection; no fresh raw snapshot or exhaustive priority audit.",
+  "current_file_bindings": "manifest.json",
+  "scientific_code_changes": "No historical optimizer, exact verifier, certificate, trial result or accepted-frontier file was modified."
+}

@@ -1,0 +1,31 @@
+FIRST STEP reconcile-pending
+{"valid": true, "working_counts": [100, 106, 134, 150, 200, 250, 300, 400, 500, 600, 700, 800], "intake": "closed"}
+FIRST STEP verify-adversarial
+test_certifier_irrational_distance (test_verifier.VerificationTests.test_certifier_irrational_distance) ... ok
+test_duplicates (test_verifier.VerificationTests.test_duplicates) ... ok
+test_malformed (test_verifier.VerificationTests.test_malformed) ... ok
+test_overlap_one_integer_unit (test_verifier.VerificationTests.test_overlap_one_integer_unit) ... ok
+test_single (test_verifier.VerificationTests.test_single) ... ok
+test_tangent_grid (test_verifier.VerificationTests.test_tangent_grid) ... ok
+test_wall (test_verifier.VerificationTests.test_wall) ... ok
+test_wrong_count (test_verifier.VerificationTests.test_wrong_count) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK
+FIRST STEP continue-strongest
+{
+  "n": 700,
+  "radius_exact": "19906357272343/1000000000000000",
+  "start_radius_exact": "19906357272343/1000000000000000",
+  "gain_exact": "0",
+  "gate_exact": "19906357272343/100000000000000000000000",
+  "meaningful": false,
+  "novelty": "not assessed"
+}
+FIRST STEP neighbor-transfer
+24 neighboring-count witnesses present; validate before search. No new experiment performed.
+FIRST STEP inspect-visual-evidence
+{"valid": true, "working_counts": [100, 106, 134, 150, 200, 250, 300, 400, 500, 600, 700, 800], "intake": "closed"}
+VALID: upstream schemas, weights, card IDs, entry paths. RESEARCH PROPOSAL; maintainer unassigned; donor intake paused.

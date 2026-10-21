@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-21T21:43:03.703495+00:00",
+  "actor": "same preparation author; not an independent reviewer",
+  "root_tests": {
+    "passed": 20,
+    "log": "tests.log"
+  },
+  "historical_accounting_tests": {
+    "passed": 5,
+    "log": "accounting-tests.log"
+  },
+  "historical_targeted_tests": {
+    "passed": 4,
+    "log": "targeted-tests.log"
+  },
+  "catalogue": {
+    "cards_passed": 5,
+    "schemas_passed": true,
+    "log": "first-steps.log"
+  },
+  "historical_pilot": {
+    "ok": true,
+    "certificates_checked": 50,
+    "frontier_rows": 12,
+    "all_trials": false,
+    "seconds": 4.054
+  },
+  "historical_contributor": {
+    "valid": true,
+    "certificates": 305,
+    "pair_checks": 57014150,
+    "seconds": 30.909913250012323,
+    "input_and_trial_hashes_checked": true
+  },
+  "software_smoke": {
+    "verified": true,
+    "counts": [
+      500
+    ],
+    "blocks": 3,
+    "attempts": 3,
+    "solver_or_certificate_errors": 0,
+    "new_gain": false,
+    "scientific_productivity_evidence": false
+  },
+  "browser": {
+    "file": "gallery-browser-check.json",
+    "all_12_counts_passed": true,
+    "linked_zoom_and_reset_passed": true,
+    "screenshot": "gallery-preview.jpg",
+    "mobile_not_tested": true
+  },
+  "resolved_failure": {
+    "log": "tests-initial-path-error.log",
+    "cause": "Temporary-directory symlink aliases on macOS were normalized differently when computing relative evidence paths. summarize now resolves its directory consistently.",
+    "final_tests_passed": true
+  },
+  "serial_study": "not run",
+  "independent_review": "pending",
+  "intake": "closed"
+}

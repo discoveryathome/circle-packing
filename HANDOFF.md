@@ -1,3 +1,13 @@
+# Current handoff — 21 October 2026
+
+Use [the pre-release package](research/readiness-20261021/README.md) and
+[review brief](research/readiness-20261021/REVIEW.md). New contributors should use the
+working-start index and QUICKSTART.md, which inherit the later 500/700/800 proposals.
+Independent review, external standing, serial yield and onboarding remain pending.
+No message has been sent. The dated original handoff follows for historical context.
+
+---
+
 # Local handoff — no message was sent
 
 Latest local follow-up: [contributor suitability report](research/contributor-20261020/REPORT.md). It found stronger exact experimental witnesses at N=500,700,800; use its `certificates/best/` for any authorized further research after verification. These are proposals pending acceptance, and the original recorded frontier remains unchanged. The short stronger-start tests and longer-call diagnostics are in its experiment tables. No messages were sent.

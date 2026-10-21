@@ -1,6 +1,6 @@
 # Agent entry
 
-Read `DISCOVERY.md`, then `AUDIT.md`, `REPORT.md`, and the current `discover/frontier.json`.
+Read `CURRENT.md`, `QUICKSTART.md` and `DISCOVERY.md`, then `AUDIT.md`, `REPORT.md`, and the current `discover/frontier.json`.
 This is a published research proposal at https://github.com/discoveryathome/circle-packing.
 There is no agreed maintainer or hub consent. Donor intake is disabled. Work only within
 the user's explicit scope. Repository publication was authorized on 2026-10-20; that
@@ -17,3 +17,8 @@ integer arithmetic, have an SVG, and pass the comparison policy in `AUDIT.md`.
 Record every negative experiment and its scope. Changes to the verifier require
 adversarial tests; changes to the frontier require an explicit review record. Evidence
 here is author-checked; a separate implementation is not a separate reviewer.
+
+For new research use `discover/working-starts.json` and `src/packing_task.py`.
+The working starts include newer author-checked proposals; they do not promote the
+formal frontier. Keep all historical packages immutable. Serial sessions must inherit
+the preceding session's exact best witnesses. The full study remains unperformed.

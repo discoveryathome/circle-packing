@@ -1,0 +1,34 @@
+{
+  "card": "none",
+  "catalog_revision": 2,
+  "scope": "User-directed pre-release preparation: strongest working starts, exact candidate comparison, a local visual explorer and prospective serial-trial scaffolding.",
+  "scope_status": "unchanged",
+  "outcome": "tooling",
+  "evidence_level": "author-checked",
+  "not_checked": [
+    "Independent review and maintainer acceptance",
+    "External record priority against unavailable pending witnesses",
+    "Full serial productivity study",
+    "Independent newcomer onboarding",
+    "Public traffic readiness"
+  ],
+  "next_questions": [
+    {
+      "question": "Do three serial sessions advance the strongest inherited witnesses beyond plain polishing?",
+      "why_it_matters": "Early gains do not establish sustained donor yield.",
+      "first_step": "Read serial-protocol.json and ../../QUICKSTART.md; prepare a fresh session.",
+      "blocked_by": "No technical blocker for authorized local study; independent onboarding and review require people."
+    },
+    {
+      "question": "Which constructions remain competitive with the current external frontier?",
+      "why_it_matters": "Local exact feasibility does not establish priority or novelty.",
+      "first_step": "Read REVIEW.md and compare accessible current coordinate witnesses.",
+      "blocked_by": "Some pending witnesses are unavailable and no reviewer has agreed."
+    }
+  ],
+  "credit": [
+    "Original construction credits in discover/working-starts.json retained.",
+    "OpenAI coding agent: preparation, tooling, visualization and author checks."
+  ],
+  "ai_assistance": "One coding agent, no delegated or independent reviewer."
+}

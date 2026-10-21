@@ -1,7 +1,7 @@
 {
   "schema": "discover/v0",
-  "title": "Equal-circle packing inside a square — research pilot",
-  "summary": "Certified feasible lower bounds and bounded search for 12 counts from 100 to 800; donor launch deferred while record novelty and review capacity remain unresolved.",
+  "title": "Equal-circle packing inside a square \u2014 research pilot",
+  "summary": "Exact circle-packing constructions with an interactive visual explorer, strongest inherited working starts and a prepared serial contributor trial; review and intake pending.",
   "domains": [
     "mathematics",
     "discrete-geometry",
@@ -10,15 +10,15 @@
   "license": "MIT",
   "maintainers": [
     {
-      "name": "UNASSIGNED — schema placeholder, no agreed maintainer"
+      "name": "UNASSIGNED \u2014 schema placeholder, no agreed maintainer"
     }
   ],
   "canonical_repo": "https://github.com/discoveryathome/circle-packing",
   "entry": {
     "agents": "AGENTS.md",
     "project": "DISCOVERY.md",
-    "contributing": "README.md",
-    "brief": "REPORT.md"
+    "contributing": "QUICKSTART.md",
+    "brief": "CURRENT.md"
   },
   "frontier": "discover/frontier.json",
   "catalog": "discover/catalog.json",
@@ -55,7 +55,7 @@
       "citation"
     ]
   },
-  "process_changed_on": "2026-10-20",
+  "process_changed_on": "2026-10-21",
   "requirements": {
     "ram_gb": 2,
     "disk_gb": 1,

@@ -12,7 +12,9 @@ Read `research/contributor-20261020/REPORT.md` for the latest contributor-suitab
 Read `REPORT.md` for the initial bounded experiment and recommendation, `data/frontier.json`
 for the local feasible witnesses, `data/records.json` for the frozen external comparison,
 and `AUDIT.md` for the distinction between historical advances and new-record claims.
-The protocol's authoritative local record is `discover/frontier.json`; its rows establish
+For current research, `discover/working-starts.json` pins the strongest saved witnesses,
+including newer proposals. See CURRENT.md and QUICKSTART.md. This working baseline is
+not scientific acceptance. The protocol's authoritative local record is `discover/frontier.json`; its rows establish
 only feasibility at the listed radii. External catalogue standing is kept as metadata.
 
 ## Bottleneck and tracks
@@ -24,9 +26,9 @@ successful counts among its claims. Many small instances have received much larg
 search budgets than this pilot can provide. The selected counts remain search targets,
 not proven optima.
 
-`discover/catalog.json` is the sole weighted priority source. Revision 1 emphasizes
+`discover/catalog.json` is the sole weighted priority source. Revision 2 emphasizes
 record reconciliation and verification, gives limited weight to continuation tests,
-and labels alternative seeding as speculative. Every card starts with an executable
+and labels alternative seeding as speculative. A visual-audit card checks faithful presentation. Every card starts with an executable
 positive control. `src/pick.py` implements the documented seeded weighted draw; local
 ledger entries and handoffs must be read before taking a card.
 
