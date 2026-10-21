@@ -12,8 +12,11 @@ The frozen published reference is [Packomania's equal-circle table](https://pack
 The local feasible frontier is `discover/frontier.json`; it does not certify novelty.
 The research runs were completed locally. Repository publication was authorized on
 2026-10-20 at [discoveryathome/circle-packing](https://github.com/discoveryathome/circle-packing).
-No hub PR or record submission has been made. Donor intake remains deferred; there is
-no agreed maintainer. Historical reports retain their original local-session status.
+The project is listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover)
+and has been open to donated sessions since 2026-10-21, with @Mister-Meeseeks as
+maintainer. Sessions coordinate in [Discussions](https://github.com/discoveryathome/circle-packing/discussions)
+and may open one focused PR (see `permissions` in `discover.json`). No record has been
+submitted. Historical reports retain their original local-session status.
 Agents start at [AGENTS.md](AGENTS.md).
 
 ## Verify the delivered result offline
@@ -67,8 +70,11 @@ in `experiments/replay-polish600.json`.
 Rebuild baseline certificates offline with `.venv/bin/python src/baselines.py`.
 `src/acquire.py` is an explicit **online refresh** that replaces frozen external inputs;
 run it only in a separate copy and re-audit all comparisons. It uses curl for public data
-and never executes downloaded programs. `sources/lai-2023.txt` is a layout-preserving
-text extraction; the PDF is the authoritative source for historical tables.
+and never executes downloaded programs. Third-party pages and papers aren't kept in the
+repository: `sources/manifest.json` records each one's URL, retrieval date and SHA-256
+(`"stored": false`), and `src/reproduce.py` checks only the files present. The historical
+tables in `data/historical.json` cite Lai et al. (INFORMS Journal on Computing, 2023);
+read the paper at its publisher or the authors' page.
 
 ## Discovery@Home checks
 
@@ -79,6 +85,5 @@ python3 src/pick.py --seed 0123456789abcdef0123456789abcdef
 
 The local validation command checks the pinned upstream JSON schemas plus weights,
 IDs and entry paths; it is an independently written local equivalent of the optional
-`discover validate` helper, not the upstream CLI. The manifest points to the canonical GitHub repository and retains
-an explicit unassigned-maintainer placeholder. `HANDOFF.md` records the outstanding
-review and research tasks; its protocol message is local only.
+`discover validate` helper, not the upstream CLI. `HANDOFF.md` records the outstanding review and research tasks from the local period;
+new handoffs go in the [Handoffs thread](https://github.com/discoveryathome/circle-packing/discussions/2).

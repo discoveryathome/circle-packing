@@ -4,70 +4,80 @@
     "url": "https://packomania.com/csq/",
     "retrieved_at": "2026-10-20T17:35:35.585387+00:00",
     "sha256": "01995a5a57f2adcf839c340b1108b7b67c69993452aaac842e88cdac2bec1707",
-    "bytes": 1092184
+    "bytes": 1092184,
+    "stored": false
   },
   {
     "path": "sources/packomania-home.html",
     "url": "https://www.packomania.com/",
     "retrieved_at": "2026-10-20T17:35:34.887542+00:00",
     "sha256": "9447c232a8b3abf9dfee2214930b0368ce6736cc7ea5edb1b9bc66586cf3377e",
-    "bytes": 19702
+    "bytes": 19702,
+    "stored": false
   },
   {
     "path": "sources/packomania-pending.html",
     "url": "https://www.packomania.com/pending-requests.html",
     "retrieved_at": "2026-10-20T17:35:34.716782+00:00",
     "sha256": "92ce2e3dd9802a85edda90ace95a1e7d81dac08297c3903bba46289cdb2a14ae",
-    "bytes": 5427
+    "bytes": 5427,
+    "stored": false
   },
   {
     "path": "sources/aletheia-findings.html",
     "url": "https://www.projectaletheia.org/findings?view=canonical",
     "retrieved_at": "2026-10-20T17:35:34.574162+00:00",
     "sha256": "f0dc91a159830f687483b88d6977b40060fcccbddce8b88a3f024efc5b92f837",
-    "bytes": 139460
+    "bytes": 139460,
+    "stored": false
   },
   {
     "path": "sources/aletheia-datasets.html",
     "url": "https://www.projectaletheia.org/datasets",
     "retrieved_at": "2026-10-20T17:35:34.869045+00:00",
     "sha256": "e2d95575f1be5ef29c9ab9e06276fad9a28296e988bb4546a80f061a7b3711cf",
-    "bytes": 21874
+    "bytes": 21874,
+    "stored": false
   },
   {
     "path": "sources/aletheia-research.html",
     "url": "https://www.projectaletheia.org/research",
     "retrieved_at": "2026-10-20T17:35:35.122288+00:00",
     "sha256": "4939b9c3f33ce53a4692b2f7ac7d2582701c41908182039111db5b8a4520ac14",
-    "bytes": 275890
+    "bytes": 275890,
+    "stored": false
   },
   {
     "path": "sources/minmax47.html",
     "url": "https://minmaxarena.com/en/problems/square-circle-packing/p01-n47-v1",
     "retrieved_at": "2026-10-20T17:35:36.685303+00:00",
     "sha256": "da4ca14a52faa547394bcdf7a0c7dbacb04ffcff02f5c43c9a4a76ed451d8503",
-    "bytes": 109372
+    "bytes": 109372,
+    "stored": false
   },
   {
     "path": "sources/zerothesis.html",
     "url": "https://zerothesis.com/challenges/circle-packing-square",
     "retrieved_at": "2026-10-20T17:35:35.633718+00:00",
     "sha256": "853b53b9befadebdb0ae9fde1187db75c65ffa81a0b44ebf5ed93a7d42bc0122",
-    "bytes": 24962
+    "bytes": 24962,
+    "stored": false
   },
   {
     "path": "sources/liang-readme.md",
     "url": "https://raw.githubusercontent.com/jasonzliang/circle-packing-sota/main/README.md",
     "retrieved_at": "2026-10-20T17:35:35.254114+00:00",
     "sha256": "dc0c8acd27b0302cb7068f9f9e3e6fcc29a5e62a716dc2fb24dd47d8aeecb155",
-    "bytes": 24168
+    "bytes": 24168,
+    "stored": false
   },
   {
     "path": "sources/convexification.html",
     "url": "https://arxiv.org/abs/2404.03091",
     "retrieved_at": "2026-10-20T17:35:35.401634+00:00",
     "sha256": "5ed4aea9998aa9b6c51aec0d1e9050a5e3b21e89d8f3aeffc6a82a3ddfe586d1",
-    "bytes": 39828
+    "bytes": 39828,
+    "stored": false
   },
   {
     "path": "sources/csq47.txt",
@@ -333,7 +343,8 @@
     "url": "https://leria-info.univ-angers.fr/~jinkao.hao/papers/LaietalJOC2023.pdf",
     "retrieved_at": "2026-10-20T17:41:51.883570+00:00",
     "sha256": "ce91a16950826e8f686e416fac3741ad84326640c0ce78fad3d737fbcab06519",
-    "bytes": 5127570
+    "bytes": 5127570,
+    "stored": false
   },
   {
     "path": "sources/start.md",

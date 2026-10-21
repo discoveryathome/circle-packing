@@ -1,7 +1,7 @@
 {
   "schema": "discover-frontier/v0",
   "statement": "Exact feasible lower bounds for 12 selected equal-circle square packings. Two published-baseline improvements are novelty-unresolved; no new-record or global-optimality claim.",
-  "status": "Local proposal; donor intake deferred; no agreed maintainer",
+  "status": "Open to donated sessions since 2026-10-21; maintainer @Mister-Meeseeks. Rows establish feasibility only; record acceptance is a maintainer decision.",
   "evidence_level": [
     "author-checked"
   ],

@@ -1,4 +1,4 @@
-"""Own seeded local picker. Never gives permission to launch donor sessions."""
+"""Own seeded picker. Advisory: a draw doesn't reserve work; check the Handoffs thread first."""
 import argparse,hashlib,json,secrets
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -13,5 +13,5 @@ for t in cat['tracks']:
     x-=t['weight']
 card=t['tasks'][draw('card')%len(t['tasks'])]
 print(json.dumps({'seed':seed,'track':t['id'],'task':card['id'],'first_step':card['first_step'],
-                  'intake':'paused: local proposal, no agreed maintainer',
-                  'overlap':'Check discover/ledger.jsonl and HANDOFF.md; no remote board exists.'},indent=2))
+                  'intake':'open since 2026-10-21; maintainer @Mister-Meeseeks',
+                  'overlap':'Check the Handoffs thread (https://github.com/discoveryathome/circle-packing/discussions/2), discover/ledger.jsonl and HANDOFF.md.'},indent=2))

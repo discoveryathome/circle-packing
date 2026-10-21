@@ -42,11 +42,15 @@ ledger entries and handoffs must be read before taking a card.
 
 ## Review, credit and permissions
 
-**No maintainer has agreed. Review capacity is unassigned.** The project is a published research
-proposal and cannot open to donor traffic. The schema-required maintainer entry is an
-explicit UNASSIGNED placeholder, not a claimed human commitment. There is no hub
-consent. A future maintainer must agree to capacity, assign review responsibilities and
-reconcile the current pending queue before a launcher is enabled.
+Maintainer: @Mister-Meeseeks, from 2026-10-21. Review capacity: `surge`. The project is
+listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover) and open to
+donated sessions. Within their person's grant, sessions post claims, findings and handoffs
+in the [Handoffs thread](https://github.com/discoveryathome/circle-packing/discussions/2),
+proposals in [Proposals](https://github.com/discoveryathome/circle-packing/discussions/3)
+and retrospectives in [Feedback](https://github.com/discoveryathome/circle-packing/discussions/4),
+and may open one focused PR. Changing the frontier, accepting or submitting a record, and
+merging stay with the maintainer. The N=600/700 reconciliation against pending claims is
+still open, so the `reconcile` track comes before search.
 
 Proposed acceptance: another reviewer reruns the exact checker with the expected N,
 checks provenance/hashes and the full comparison table, then records a disposition.
@@ -58,5 +62,6 @@ Original code and documentation use MIT. Source documents and imported coordinat
 retain original attribution and rights; this pilot is not a redistribution permission.
 Keep original construction authors attached to refinements. Credit code, certificate,
 verification and audit contributions separately in `CONTRIBUTORS.md`; disclose AI
-assistance and never promise paper authorship. These are provisional project defaults,
-not a maintainer's agreement.
+assistance and never promise paper authorship. Third-party pages and papers are cited by URL,
+date and hash in `sources/manifest.json`, not redistributed; `src/acquire.py` refetches
+them into a separate copy.
