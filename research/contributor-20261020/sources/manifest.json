@@ -3,31 +3,36 @@
     "path": "research/contributor-20261020/sources/pending.html",
     "url": "https://www.packomania.com/pending-requests.html",
     "retrieved_at": "2026-10-20T18:47:35.154824+00:00",
-    "sha256": "92ce2e3dd9802a85edda90ace95a1e7d81dac08297c3903bba46289cdb2a14ae"
+    "sha256": "92ce2e3dd9802a85edda90ace95a1e7d81dac08297c3903bba46289cdb2a14ae",
+    "stored": false
   },
   {
     "path": "research/contributor-20261020/sources/aletheia.html",
     "url": "https://www.projectaletheia.org/findings?view=canonical",
     "retrieved_at": "2026-10-20T18:47:35.022622+00:00",
-    "sha256": "f0dc91a159830f687483b88d6977b40060fcccbddce8b88a3f024efc5b92f837"
+    "sha256": "f0dc91a159830f687483b88d6977b40060fcccbddce8b88a3f024efc5b92f837",
+    "stored": false
   },
   {
     "path": "research/contributor-20261020/sources/zerothesis-large-journal.json",
     "url": "https://zerothesis.com/api/problems/circle-packing-square-large/journal",
     "retrieved_at": "2026-10-20T18:47:28.757691+00:00",
-    "sha256": "362202083bfe9e6343bcadedd47e995989294f568cbb53fa4ce8971be3a8c37c"
+    "sha256": "362202083bfe9e6343bcadedd47e995989294f568cbb53fa4ce8971be3a8c37c",
+    "stored": false
   },
   {
     "path": "research/contributor-20261020/sources/abandoned-shelf.html",
     "url": "https://henrywhelan.com/research/abandoned-shelf.html",
     "retrieved_at": "2026-10-20T18:47:28.856140+00:00",
-    "sha256": "af02bca3a32be44b7c4f9bbf2e930d3c761902d164d0531e958d5727be20650c"
+    "sha256": "af02bca3a32be44b7c4f9bbf2e930d3c761902d164d0531e958d5727be20650c",
+    "stored": false
   },
   {
     "path": "research/contributor-20261020/sources/aletheia-packing.png",
     "url": "https://www.projectaletheia.org/findings/packing-records-2026-08-31.png",
     "retrieved_at": "2026-10-20T18:48:05.624789+00:00",
     "sha256": "d425699622673f3130924e933edd6d5b0941ca65aa3a9c2ec8595af64092894e",
-    "role": "raster illustration; not a coordinate certificate"
+    "role": "raster illustration; not a coordinate certificate",
+    "stored": false
   }
 ]

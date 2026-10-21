@@ -2,7 +2,8 @@
 
 Author-checked only. The exact geometry checker is a separate implementation from the
 optimizer, but the same agent assembled both. This is not independent human review.
-No maintainer has agreed; no contribution was externally accepted or submitted.
+Maintainer: @Mister-Meeseeks, from 2026-10-21 (review capacity `surge`). No contribution has
+been independently reviewed, externally accepted or submitted yet.
 
 The verifier checks local feasible lower bounds, not optimality or novelty.
 `experiments/verification.json` and `experiments/fresh-clone-verification.txt` record the

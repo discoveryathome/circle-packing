@@ -22,5 +22,5 @@ SOFTWARE.
 
 Applies to original pilot code and documentation. Downloaded source snapshots,
 publications and constructions retain their authors' rights and attribution;
-this license does not relicense them. Local research use only unless their
-redistribution terms are checked before publication. No publication is authorized.
+this license does not relicense them. Third-party pages and papers are cited
+by URL and hash in sources/manifest.json, not redistributed.
