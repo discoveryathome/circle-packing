@@ -13,6 +13,6 @@ else:
     rows=json.loads((ROOT/'data/frontier.json').read_text())
     print(json.dumps({'targets':len(rows),'baseline_improvements':[r['n'] for r in rows if r['classification'].startswith('published')],
                       'externally_accepted_new_records':0,'pending_claim_counts':[600,700,800],
-                      'pending_queue_source':'sources/packomania-pending.html',
+                      'pending_queue_source':'https://www.packomania.com/pending-requests.html',
                       'current_comparison':'data/frontier.json','historical_comparison':'data/historical.json',
                       'required_next_evidence':'Accessible pending witnesses/priority disposition; do not infer novelty from catalogue alone'},indent=2))

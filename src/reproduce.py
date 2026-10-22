@@ -11,7 +11,10 @@ def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
 def main(all_trials=False):
     start=time.monotonic();count=0
+    # Third-party pages and papers aren't redistributed ("stored": false); their URL, date and
+    # hash stay on record, and src/acquire.py refetches them into a separate copy.
     for source in load(ROOT/'sources/manifest.json'):
+        if source.get('stored',True)==False and not (ROOT/source['path']).exists():continue
         if sha(ROOT/source['path'])!=source['sha256']:raise ValueError('source hash mismatch: '+source['path'])
     for path in sorted((ROOT/'certificates').glob('**/*.json')):
         load_verify(path);count+=1

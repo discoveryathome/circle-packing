@@ -14,9 +14,8 @@ Latest local follow-up: [contributor suitability report](research/contributor-20
 
 The 12-count pilot is complete. Read REPORT.md, RECORDS.md and AUDIT.md. Exact geometry
 and reproducible artifacts are available; novelty and human review are outstanding.
-The project should stay unlisted with donor intake disabled until those obligations are
-resolved and a maintainer agrees. This handoff is for the local project ledger only;
-there is no remote posting destination or authorization to contact anyone.
+Novelty reconciliation comes before more search. Never contact record keepers or other
+authors on the project's behalf; that is the maintainer's decision.
 
 Numerical follow-up remains useful at N=600, where continuation found a meaningful
 additional gain, but later perturbations only polished the same radius. N=700's

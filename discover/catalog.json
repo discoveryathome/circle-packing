@@ -3,7 +3,7 @@
   "priority_revision": 2,
   "assessed_on": "2026-10-21",
   "priority_log": "discover/priority-log.md",
-  "status": "Pre-release preparation; intake closed. Local working starts include unaccepted contributor proposals; serial trial not completed.",
+  "status": "Open since 2026-10-21. Reconcile and verify before spending donated search time; record acceptance stays with the maintainer.",
   "tracks": [
     {
       "id": "reconcile",
@@ -17,6 +17,9 @@
             "discover/working-starts.json",
             "research/contributor-20261020/RESULTS.md",
             "research/readiness-20261021/REVIEW.md"
+            "AUDIT.md",
+            "data/frontier.json",
+            "https://www.packomania.com/pending-requests.html"
           ],
           "methods": [
             "Read primary public sources; compare exact witnesses with consistent units; track unavailable evidence explicitly."
@@ -129,7 +132,7 @@
             "AUDIT.md"
           ],
           "methods": [
-            "Speculative longer relaxation for N\u00b11 seeds; compare at equal work with incumbent perturbations. Motivated by vacancy-search literature."
+            "Speculative longer relaxation for N±1 seeds; compare at equal work with incumbent perturbations. Motivated by vacancy-search literature."
           ],
           "acceptance_gate": "New exact feasible witness; compare against current frontier and record failed starts. Changed labeled edges alone do not prove a new topology.",
           "first_step": {

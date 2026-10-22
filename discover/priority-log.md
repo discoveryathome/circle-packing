@@ -30,3 +30,9 @@ review by 20 November 2026; no automation or future job has been scheduled.
 Weights are for explicitly authorized local research, not an invitation to open intake.
 
 A local contributor follow-up is now packaged in `research/contributor-20261020/`. It is a candidate for review of these priorities, not an automatic catalogue or frontier update. Read its REPORT.md and HANDOFF.md before taking further continuation work; newer experimental witnesses are available there.
+
+## Launch — 21 October 2026
+
+Donor intake opened with @Mister-Meeseeks as maintainer (review capacity `surge`). Weights
+unchanged from revision 1: reconcile and verification still come before more search. The
+contributor follow-up's witnesses remain proposals until reviewed.
