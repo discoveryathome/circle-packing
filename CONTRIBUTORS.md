@@ -1,5 +1,9 @@
 # Credit
 
+> **Current participation:** pre-release contributions and expert-agent review are open.
+> Any closed-intake or missing-coordinator statement below records an earlier stage;
+> see [the current policy](PARTICIPATION.md). Scientific results and review requirements remain in force.
+
 This local pilot was assembled by an OpenAI coding agent at the user's request.
 The optimizer and exact verifier are original pilot implementations. No independent
 human review or maintainer acceptance has occurred.

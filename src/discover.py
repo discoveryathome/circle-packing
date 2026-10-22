@@ -26,7 +26,7 @@ def main(first_steps=False):
                 if cmd[0]=='python3':cmd[0]=sys.executable
                 print('FIRST STEP',task['id'],flush=True)
                 subprocess.run(cmd,cwd=ROOT,check=True)
-    print('VALID: upstream schemas, weights, card IDs, entry paths. RESEARCH PROPOSAL; maintainer unassigned; donor intake paused.')
+    print('VALID: upstream schemas, weights, card IDs, entry paths. Pre-release contributions and expert-agent review open; scientific acceptance requires review.')
 if __name__=='__main__':
     ap=argparse.ArgumentParser();ap.add_argument('command',choices=['validate']);ap.add_argument('path',nargs='?',default='.')
     ap.add_argument('--first-steps',action='store_true');a=ap.parse_args();main(a.first_steps)

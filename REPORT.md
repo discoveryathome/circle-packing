@@ -1,5 +1,9 @@
 # Initial pilot result and recommendation
 
+> **Current participation:** pre-release contributions and expert-agent review are open.
+> Any closed-intake or missing-coordinator statement below records an earlier stage;
+> see [the current policy](PARTICIPATION.md). Scientific results and review requirements remain in force.
+
 > **Historical (2026-10-20).** The recommendation below predates the launch: the project has
 > been open to donated sessions since 2026-10-21, with a maintainer. Current status is in
 > `DISCOVERY.md`; the current recorded values are in `discover/frontier.json`.

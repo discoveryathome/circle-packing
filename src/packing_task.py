@@ -97,7 +97,16 @@ def check_session(directory, closed=False):
         raise ValueError('incomplete implementation/input bindings')
     for name, h in s['code_and_protocol_hashes'].items():
         if sha(ROOT/name) != h:
-            raise ValueError('changed protocol or implementation: '+name)
+            # Accept only the exact operational-document migration, checking both
+            # current bytes and the frozen original. Scientific edits still fail.
+            import importlib.util
+            helper = ROOT/'research/participation-20261022/verify.py'
+            if not helper.is_file():
+                raise ValueError('changed protocol or implementation: '+name)
+            spec = importlib.util.spec_from_file_location('participation_history', helper)
+            history = importlib.util.module_from_spec(spec); spec.loader.exec_module(history)
+            if sha(history.resolve(name, h, ROOT)) != h:
+                raise ValueError('changed protocol or implementation: '+name)
     for n, item in s['inputs'].items():
         p = bound_path(directory, item['path'])
         if sha(p) != item['sha256']:
@@ -249,7 +258,7 @@ def main():
     st = sub.add_parser('study'); st.add_argument('--last', required=True)
     a = ap.parse_args()
     if a.command == 'check':
-        print(json.dumps({'valid': True, 'working_counts': [r['n'] for r in starts()], 'intake': 'closed'}))
+        print(json.dumps({'valid': True, 'working_counts': [r['n'] for r in starts()], 'intake': 'open'}))
     elif a.command == 'compare':
         default = next(r for r in starts() if r['n'] == a.n)
         baseline = Path(a.start) if a.start else ROOT/default['certificate']

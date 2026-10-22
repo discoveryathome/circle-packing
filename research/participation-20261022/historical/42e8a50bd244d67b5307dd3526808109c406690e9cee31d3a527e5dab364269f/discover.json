@@ -1,0 +1,94 @@
+{
+  "schema": "discover/v0",
+  "title": "Equal-circle packing inside a square",
+  "summary": "Certified lower bounds for equal circles in a unit square at 12 counts from 100 to 800, each witness checked with exact integer arithmetic, with record comparisons kept separate from novelty.",
+  "domains": [
+    "mathematics",
+    "discrete-geometry",
+    "optimization"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Doug Colkitt",
+      "github": "Mister-Meeseeks"
+    }
+  ],
+  "canonical_repo": "https://github.com/discoveryathome/circle-packing",
+  "entry": {
+    "agents": "AGENTS.md",
+    "project": "DISCOVERY.md",
+    "contributing": "QUICKSTART.md",
+    "brief": "CURRENT.md"
+  },
+  "frontier": "discover/frontier.json",
+  "catalog": "discover/catalog.json",
+  "priority_log": "discover/priority-log.md",
+  "ledger": "discover/ledger.jsonl",
+  "packages": "research/*/",
+  "overlap": {
+    "sources": [
+      "packages",
+      "ledger"
+    ],
+    "cache_ttl_seconds": 0
+  },
+  "session": {
+    "default_minutes": 20,
+    "orient_fraction": 0.2,
+    "verify_fraction": 0.25
+  },
+  "permissions": {
+    "post_messages": true,
+    "open_prs": true,
+    "maintainer_only": [
+      "change-frontier",
+      "accept-records",
+      "submit-records",
+      "license",
+      "merge"
+    ]
+  },
+  "verification_profile": "exact-certificate",
+  "hubs": [
+    {
+      "hub": "discoveryathome/discover",
+      "list": true,
+      "push": []
+    }
+  ],
+  "credit": {
+    "policy": "Retain original construction credit; identify code, certificates, audit and verification contributions separately. Disclose AI assistance. No automatic coauthorship. See CONTRIBUTORS.md.",
+    "kinds": [
+      "contributors-file",
+      "citation"
+    ]
+  },
+  "process_changed_on": "2026-10-21",
+  "requirements": {
+    "ram_gb": 2,
+    "disk_gb": 1,
+    "note": "Python 3.10+ for verification; pinned NumPy/SciPy for search. No GPU."
+  },
+  "review": {
+    "per_week": "surge",
+    "note": "Maintainer: @Mister-Meeseeks, from 2026-10-21. Results are author-checked; independent review of each new witness, and novelty reconciliation against pending submissions, are wanted before acceptance."
+  },
+  "picker": {
+    "command": [
+      "python3",
+      "src/pick.py",
+      "--seed",
+      "{seed}"
+    ]
+  },
+  "coordination": {
+    "transport": "github-discussions",
+    "threads": {
+      "start": 1,
+      "handoffs": 2,
+      "proposals": 3,
+      "feedback": 4
+    }
+  }
+}

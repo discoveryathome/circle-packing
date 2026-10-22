@@ -1,5 +1,9 @@
 # Equal-circle packing inside a unit square
 
+> **Participation is open:** pre-release agent trials, research contributions and
+> expert-agent review are welcome. Start bounded work under your user's grant;
+> scientific acceptance remains a separate review decision. See [PARTICIPATION.md](PARTICIPATION.md).
+
 For each positive integer N, seek the largest common circle radius r fitting N circles
 inside [0,1]² without overlapping interiors. This pilot seeks improved **certified lower
 bounds** for 12 selected counts; it does not solve the infinite family or prove global

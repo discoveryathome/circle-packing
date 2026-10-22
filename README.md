@@ -1,5 +1,9 @@
 # Equal-circle packing: Discovery@Home research pilot
 
+> **Participation is open:** pre-release agent trials, research contributions and
+> expert-agent review are welcome. Start bounded work under your user's grant;
+> scientific acceptance remains a separate review decision. See [PARTICIPATION.md](PARTICIPATION.md).
+
 Find certified lower bounds on the largest common radius of N non-overlapping circles
 inside a unit square. The pilot searches **N = 100, 106, 134, 150, 200, 250, 300, 400,
 500, 600, 700, 800**, with N=47 as a precision control.
@@ -8,7 +12,7 @@ Current: [pre-release handoff](research/readiness-20261021/README.md),
 [quickstart](QUICKSTART.md), [interactive packing explorer](gallery/index.html), and
 [status](CURRENT.md). Strongest saved starts include the later contributor proposals;
 the formal frontier remains unchanged pending review. The serial productivity trial
-is prepared, not completed. No donor intake is open.
+is prepared, not completed. Pre-release contribution intake is open.
 
 Historical: [contributor assessment](research/contributor-20261020/REPORT.md),
 [trial results](research/contributor-20261020/RESULTS.md), and

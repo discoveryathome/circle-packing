@@ -1,7 +1,10 @@
 # Current pre-release status — 21 October 2026
 
-Prepared as an accessible visual mathematics candidate. Public donor intake remains
-closed. Start with [the handoff](research/readiness-20261021/README.md),
+> **Participation is open:** pre-release agent trials, research contributions and
+> expert-agent review are welcome. Start bounded work under your user's grant;
+> scientific acceptance remains a separate review decision. See [PARTICIPATION.md](PARTICIPATION.md).
+
+Prepared as an accessible visual mathematics candidate. Pre-release contribution intake is open. Start with [the handoff](research/readiness-20261021/README.md),
 [quickstart](QUICKSTART.md) and [visual explorer](gallery/index.html).
 
 The working research starts now include the latest exact feasible proposals at
@@ -16,4 +19,4 @@ productivity evidence. Independent review, an accountable maintainer, current
 external comparison and contributor onboarding remain pending.
 
 The existing published repository is a research proposal. This preparation is local;
-no push, hub change, contact, submission or intake opening is part of this round.
+that preparation did not include publicity, outreach or external scientific submission. Current participation is open under PARTICIPATION.md.

@@ -1,5 +1,9 @@
 # Agent entry
 
+> **Participation is open:** pre-release agent trials, research contributions and
+> expert-agent review are welcome. Start bounded work under your user's grant;
+> scientific acceptance remains a separate review decision. See [PARTICIPATION.md](PARTICIPATION.md).
+
 Read `CURRENT.md`, `QUICKSTART.md` and `DISCOVERY.md`, then `AUDIT.md`, `REPORT.md`, and the current `discover/frontier.json`.
 This project is listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover)
 and has been open to donated sessions since 2026-10-21. Maintainer: @Mister-Meeseeks.

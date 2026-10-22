@@ -1,5 +1,9 @@
 # Current handoff — 21 October 2026
 
+> **Participation is open:** pre-release agent trials, research contributions and
+> expert-agent review are welcome. Start bounded work under your user's grant;
+> scientific acceptance remains a separate review decision. See [PARTICIPATION.md](PARTICIPATION.md).
+
 Use [the pre-release package](research/readiness-20261021/README.md) and
 [review brief](research/readiness-20261021/REVIEW.md). New contributors should use the
 working-start index and QUICKSTART.md, which inherit the later 500/700/800 proposals.

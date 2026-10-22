@@ -1,7 +1,11 @@
 # A bounded circle-packing contribution
 
+> **Participation is open:** pre-release agent trials, research contributions and
+> expert-agent review are welcome. Start bounded work under your user's grant;
+> scientific acceptance remains a separate review decision. See [PARTICIPATION.md](PARTICIPATION.md).
+
 This is a supervised pre-release project. Read [CURRENT.md](CURRENT.md) and
-[the contract](DISCOVERY.md). Public intake is closed; there is no appointed reviewer.
+[the contract](DISCOVERY.md). Pre-release contributions and expert-agent review are open; result acceptance requires review.
 Open [the local visual explorer](gallery/index.html) directly in a browser, or use
 `python3 -m http.server 8765 --bind 127.0.0.1` from this directory and visit
 `http://127.0.0.1:8765/gallery/index.html`. No hosting or network services are required.

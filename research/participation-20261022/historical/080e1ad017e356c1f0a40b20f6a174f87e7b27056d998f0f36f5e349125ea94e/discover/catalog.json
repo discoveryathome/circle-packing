@@ -1,0 +1,184 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 2,
+  "assessed_on": "2026-10-21",
+  "priority_log": "discover/priority-log.md",
+  "status": "Pre-release preparation; intake closed. Local working starts include unaccepted contributor proposals; serial trial not completed.",
+  "tracks": [
+    {
+      "id": "reconcile",
+      "weight": 30,
+      "useful_outcome": "Resolve pending-claim uncertainty before spending donated search time.",
+      "tasks": [
+        {
+          "id": "reconcile-pending",
+          "question": "Do the strongest saved N=500/600/700/800 constructions beat accessible earlier pending witnesses?",
+          "starting_points": [
+            "discover/working-starts.json",
+            "research/contributor-20261020/RESULTS.md",
+            "research/readiness-20261021/REVIEW.md"
+          ],
+          "methods": [
+            "Read primary public sources; compare exact witnesses with consistent units; track unavailable evidence explicitly."
+          ],
+          "acceptance_gate": "Hash-pinned public witnesses, exact checks, date/priority comparisons; unresolved when witnesses are inaccessible.",
+          "first_step": {
+            "command": [
+              "python3",
+              "src/packing_task.py",
+              "check"
+            ],
+            "expected": "12 hash-pinned working starts pass; no record acceptance asserted."
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "observational"
+          ],
+          "scope_change_triggers": [
+            "No witness available: preserve unresolved status; contact requires user authorization."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verification",
+      "weight": 20,
+      "useful_outcome": "An independently reviewed exact certificate path.",
+      "tasks": [
+        {
+          "id": "verify-adversarial",
+          "question": "Can the exact verifier accept an invalid packing or a mismatched instance?",
+          "starting_points": [
+            "src/verify.py",
+            "tests/test_verifier.py",
+            "METHODS.md"
+          ],
+          "methods": [
+            "Independent rational implementation, adversarial mutation, expected-N binding, integer overflow analysis."
+          ],
+          "acceptance_gate": "Any bug has a failing witness and regression; an independent review states exact scope and reviewer identity.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests",
+              "-p",
+              "test_verifier.py",
+              "-v"
+            ],
+            "expected": "8 verifier tests pass."
+          },
+          "bottleneck_link": "DISCOVERY.md#review-credit-and-permissions",
+          "claim_kind": [
+            "exact"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "continuation",
+      "weight": 35,
+      "useful_outcome": "Measure remaining headroom from the final strongest starts.",
+      "tasks": [
+        {
+          "id": "continue-strongest",
+          "question": "Do three serial sessions improve the strongest inherited packings beyond repeated polishing?",
+          "starting_points": [
+            "discover/working-starts.json",
+            "QUICKSTART.md",
+            "research/readiness-20261021/serial-protocol.json"
+          ],
+          "methods": [
+            "Execute the prospective fixed portfolio, inherit every exact improvement, retain nulls and compare with full-budget plain polishing."
+          ],
+          "acceptance_gate": "Exact three-session product gate plus separate review; no solver-superiority, novelty or intake decision is automatic.",
+          "first_step": {
+            "command": [
+              "python3",
+              "src/packing_task.py",
+              "compare",
+              "research/contributor-20261020/certificates/best/n700.json",
+              "--n",
+              "700"
+            ],
+            "expected": "Valid N700 witness; zero gain against latest working start."
+          },
+          "first_experiment": "Follow QUICKSTART.md into a new research/serial-trials/session-01 directory; do not write to historical packages.",
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "exact",
+            "measured"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alternative-seeds",
+      "weight": 5,
+      "useful_outcome": "A small speculative check for a better basin, conditional on review capacity.",
+      "tasks": [
+        {
+          "id": "neighbor-transfer",
+          "question": "Can vacancy moves and neighboring-count starts escape the mature contact basins with longer local relaxation?",
+          "starting_points": [
+            "src/optimizer.py",
+            "experiments/stage1/trials.jsonl",
+            "AUDIT.md"
+          ],
+          "methods": [
+            "Speculative longer relaxation for N\u00b11 seeds; compare at equal work with incumbent perturbations. Motivated by vacancy-search literature."
+          ],
+          "acceptance_gate": "New exact feasible witness; compare against current frontier and record failed starts. Changed labeled edges alone do not prove a new topology.",
+          "first_step": {
+            "command": [
+              "python3",
+              "src/project_inspect.py",
+              "neighbors"
+            ],
+            "expected": "24 neighboring-count witnesses present."
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "exact",
+            "measured"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visual-audit",
+      "weight": 10,
+      "useful_outcome": "A faithful, understandable visual account of certified geometry.",
+      "tasks": [
+        {
+          "id": "inspect-visual-evidence",
+          "question": "Does the explorer faithfully represent the certified constructions and size of the gains?",
+          "starting_points": [
+            "gallery/index.html",
+            "gallery/template.html",
+            "src/build_gallery.py"
+          ],
+          "methods": [
+            "Compare coordinate certificates, labels, equal-scale views, unchanged cases and source credits; test target selection and linked zoom."
+          ],
+          "acceptance_gate": "No exaggerated radius growth or fabricated intermediate feasible states; all displayed targets and links agree with exact evidence.",
+          "first_step": {
+            "command": [
+              "python3",
+              "src/packing_task.py",
+              "check"
+            ],
+            "expected": "All displayed working certificates and previous inputs are verified."
+          },
+          "bottleneck_link": "DISCOVERY.md#review-credit-and-permissions",
+          "claim_kind": [
+            "measured"
+          ]
+        }
+      ]
+    }
+  ]
+}
