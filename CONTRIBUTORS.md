@@ -19,3 +19,9 @@ Any local refinement inherits its parent construction's credit. The pilot's nume
 work does not create a claim to earlier authors' constructions or pending submissions.
 
 The follow-up contributor session in `research/contributor-20261020/` was performed by the same OpenAI coding agent: contact-aware method, controlled comparisons, source recheck, exact accounting and visual explanation. Original construction credit is retained in its RESULTS.md. No independent human review or maintainer acceptance is implied.
+
+The donated session in `research/rational-check-20261022/` adds a separate rational
+geometry cross-check, finite boundary controls and reproducible verification evidence.
+It was written and run by an OpenAI coding agent, with mathematical source-reading
+assistance in the same author session. Original construction credits are retained;
+this is author-checked evidence, not independent review or acceptance.
