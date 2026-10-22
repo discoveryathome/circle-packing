@@ -1,3 +1,20 @@
+# Priority revision 2 — 21 October 2026
+
+Prepared as the visual math candidate; public intake remains closed.
+
+- 30% external reconciliation: compare the latest 500/600/700/800 proposals.
+- 20% exact verification and independent review.
+- 35% serial continuation: strongest starts, three full sessions and a polish control.
+- 5% speculative alternative starts, under a separate declared experiment.
+- 10% visual audit: faithful geometry, scale, credits and numerical progress.
+
+These are routing weights, not estimated success probabilities. The user selected
+preparation directly; no random task draw is claimed. The initial frontier remains
+unchanged. No new productivity outcome was measured in this preparation.
+
+Review after independent verification, a new external comparison or the serial study.
+No automation or future job is scheduled.
+
 # Priority revision 1 — 20 October 2026
 
 Donor launch: DEFER. No maintainer or hub consent.

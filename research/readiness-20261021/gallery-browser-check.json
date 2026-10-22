@@ -1,0 +1,82 @@
+{
+  "targets": [
+    {
+      "after": 100,
+      "before": 100,
+      "gain": "No additional gain",
+      "n": "100"
+    },
+    {
+      "after": 106,
+      "before": 106,
+      "gain": "No additional gain",
+      "n": "106"
+    },
+    {
+      "after": 134,
+      "before": 134,
+      "gain": "No additional gain",
+      "n": "134"
+    },
+    {
+      "after": 150,
+      "before": 150,
+      "gain": "No additional gain",
+      "n": "150"
+    },
+    {
+      "after": 200,
+      "before": 200,
+      "gain": "No additional gain",
+      "n": "200"
+    },
+    {
+      "after": 250,
+      "before": 250,
+      "gain": "No additional gain",
+      "n": "250"
+    },
+    {
+      "after": 300,
+      "before": 300,
+      "gain": "No additional gain",
+      "n": "300"
+    },
+    {
+      "after": 400,
+      "before": 400,
+      "gain": "No additional gain",
+      "n": "400"
+    },
+    {
+      "after": 500,
+      "before": 500,
+      "gain": "+4.176 ppm",
+      "n": "500"
+    },
+    {
+      "after": 600,
+      "before": 600,
+      "gain": "No additional gain",
+      "n": "600"
+    },
+    {
+      "after": 700,
+      "before": 700,
+      "gain": "+133.661 ppm",
+      "n": "700"
+    },
+    {
+      "after": 800,
+      "before": 800,
+      "gain": "+57.928 ppm",
+      "n": "800"
+    }
+  ],
+  "zoom": {
+    "after": "0.33333333333333337 0.33333333333333337 0.3333333333333333 0.3333333333333333",
+    "before": "0.33333333333333337 0.33333333333333337 0.3333333333333333 0.3333333333333333",
+    "label": "3×"
+  },
+  "scope": "Desktop Chrome; selection, exact displayed circle counts, unchanged cases, linked zoom and reset. No mobile viewport test."
+}

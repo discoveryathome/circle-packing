@@ -1,0 +1,25 @@
+test_neighbor_counts_and_seed (test_optimizer.SolverTests.test_neighbor_counts_and_seed) ... ok
+test_recover_four_corners (test_optimizer.SolverTests.test_recover_four_corners) ... ok
+test_bindings_and_stale_inputs (test_packing_task.PreparedSessionTests.test_bindings_and_stale_inputs) ... ok
+test_all_attempt_maximum_not_last_and_polish_control (test_packing_task.ProgressTests.test_all_attempt_maximum_not_last_and_polish_control) ... ok
+test_exact_gate_and_repeat (test_packing_task.ProgressTests.test_exact_gate_and_repeat) ... ok
+test_false_score_tampered_geometry_and_duplicate_attempt (test_packing_task.ProgressTests.test_false_score_tampered_geometry_and_duplicate_attempt) ... ok
+test_invalid_geometry_and_wrong_count (test_packing_task.ProgressTests.test_invalid_geometry_and_wrong_count) ... ok
+test_partial_and_duplicate_blocks_rejected (test_packing_task.ProgressTests.test_partial_and_duplicate_blocks_rejected) ... ok
+test_paths_cannot_escape (test_packing_task.ProgressTests.test_paths_cannot_escape) ... ok
+test_small_gain_still_inherited (test_packing_task.ProgressTests.test_small_gain_still_inherited) ... ok
+test_smoke_cannot_count_as_study (test_packing_task.ProgressTests.test_smoke_cannot_count_as_study) ... ok
+test_full_chain_inherits_best_and_does_not_pass_on_one_count (test_packing_task.SerialChainTests.test_full_chain_inherits_best_and_does_not_pass_on_one_count) ... ok
+test_certifier_irrational_distance (test_verifier.VerificationTests.test_certifier_irrational_distance) ... ok
+test_duplicates (test_verifier.VerificationTests.test_duplicates) ... ok
+test_malformed (test_verifier.VerificationTests.test_malformed) ... ok
+test_overlap_one_integer_unit (test_verifier.VerificationTests.test_overlap_one_integer_unit) ... ok
+test_single (test_verifier.VerificationTests.test_single) ... ok
+test_tangent_grid (test_verifier.VerificationTests.test_tangent_grid) ... ok
+test_wall (test_verifier.VerificationTests.test_wall) ... ok
+test_wrong_count (test_verifier.VerificationTests.test_wrong_count) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 3.135s
+
+OK

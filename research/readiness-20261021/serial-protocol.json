@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "status": "Prepared; serial study not run.",
+  "question": "Do successive bounded sessions produce useful gains after inheriting every strongest local construction?",
+  "sessions": 3,
+  "counts": [
+    400,
+    500,
+    600,
+    700,
+    800
+  ],
+  "session_wall_minutes": 45,
+  "search_seconds_per_count_arm": 60,
+  "arms": [
+    "polish",
+    "original",
+    "targeted"
+  ],
+  "search_worker_wall_budget_seconds": 900,
+  "threads": 1,
+  "starting_index": "discover/working-starts.json",
+  "seed": "OS-generated 128-bit seed per session, recorded before search",
+  "order": "Seeded count/arm ordering; sequential execution; identical session inputs for all arms",
+  "inheritance": "Session 1 uses the working starts. Every later session inherits the exact maximum over every valid previous attempt and previous starts, including sub-gate gains. No baseline resets.",
+  "gain_gate": "radius gain > max(1e-10, 1e-8 * session starting radius), computed with exact fractions",
+  "product_gate": {
+    "sessions_with_gain_at_least": 2,
+    "distinct_counts_with_gain_at_least": 2,
+    "later_session_nonpolish_gain_required": true,
+    "meaning": "At least one session 2 or 3 gain also clears the gate over its same-start full-budget polish control; a finite product readiness gate, not a success-probability or novelty estimate."
+  },
+  "null_policy": "Keep all attempts, solver failures/timeouts, initial states, hashes, measured CPU/wall time, and all unchanged counts. Partial sessions do not pass the gate.",
+  "comparisons": "Equal wall allowances; report actual CPU and solver work. No causal agent benefit or solver superiority claim from this study. Adaptive-method comparison is a separate protocol.",
+  "release_gate": "Independent geometric/provenance review, current external standing, named maintainer/review capacity and contributor onboarding are still required.",
+  "novelty": "Public catalogue and pending witnesses need separate reconciliation; local yield is not record priority.",
+  "changes": "Any method or budget change needs a new protocol/version before search; do not rewrite this package."
+}

@@ -1,0 +1,26 @@
+{
+  "session_number": 1,
+  "smoke": true,
+  "rows": [
+    {
+      "n": 500,
+      "radius_exact": "23455596955367/1000000000000000",
+      "start_radius_exact": "23455596955367/1000000000000000",
+      "gain_exact": "0",
+      "gate_exact": "23455596955367/100000000000000000000000",
+      "meaningful": false,
+      "novelty": "not assessed",
+      "best_source": "inputs/n500.json",
+      "best_sha256": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "polish_radius_exact": "23455596955367/1000000000000000",
+      "beyond_polish_gate": false
+    }
+  ],
+  "attempts": 3,
+  "blocks": 3,
+  "session_sha256": "6f5d14f82f4f9e3170313b6cca4a905dadca073e637f14f9069e8d7f899e65d5",
+  "attempts_sha256": "d6beda42eff3172571e05c914c7f10c6a3f7fac6aed9aac556ebea8e592a5ea2",
+  "blocks_sha256": "fd8438d82d716357aefbd59b36fd3d2a6c919e1292946e25d567462752d889d9",
+  "solver_or_certificate_errors": 0,
+  "evidence": "author-run unless independently reviewed; local feasibility only"
+}

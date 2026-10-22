@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "status": "Author-checked working starts; not a promotion of the accepted frontier or a novelty claim.",
+  "base_commit": "24a312af3c1c0a855b67c00f066a7eae6bcac359",
+  "source_frontier": "discover/frontier.json",
+  "rows": [
+    {
+      "n": 100,
+      "certificate": "certificates/frontier/n100.json",
+      "sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "radius_exact": "51401071774379/1000000000000000",
+      "previous_certificate": "certificates/frontier/n100.json",
+      "previous_sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "construction_credit": "Bernardetta Addis, Marco Locatelli, Fabio Schoen (Packomania reference [20])",
+      "source": "https://packomania.com/csq/csq100.html"
+    },
+    {
+      "n": 106,
+      "certificate": "certificates/frontier/n106.json",
+      "sha256": "e900839b877b852e58775bb97bdec6a88bb767f499bc5e3bb3af168da9e7e633",
+      "radius_exact": "3125950026631/62500000000000",
+      "previous_certificate": "certificates/frontier/n106.json",
+      "previous_sha256": "e900839b877b852e58775bb97bdec6a88bb767f499bc5e3bb3af168da9e7e633",
+      "construction_credit": "Xiangjing Lai, Jin-Kao Hao, Renbin Xiao, Fred Glover",
+      "source": "https://packomania.com/csq/csq106.html"
+    },
+    {
+      "n": 134,
+      "certificate": "certificates/frontier/n134.json",
+      "sha256": "51b1af652fc2addf87247e89317a0231d69c3870dc5dda7df568144deba93bed",
+      "radius_exact": "8912848841419/200000000000000",
+      "previous_certificate": "certificates/frontier/n134.json",
+      "previous_sha256": "51b1af652fc2addf87247e89317a0231d69c3870dc5dda7df568144deba93bed",
+      "construction_credit": "Wenqi Huang, Tao Ye; David W. Cantrell",
+      "source": "https://packomania.com/csq/csq134.html"
+    },
+    {
+      "n": 150,
+      "certificate": "certificates/frontier/n150.json",
+      "sha256": "e21e5ad83eb157ddcbe5fea29e422b4f76b9e0038a5a332d6594b7baeab9160b",
+      "radius_exact": "2634091618827/62500000000000",
+      "previous_certificate": "certificates/frontier/n150.json",
+      "previous_sha256": "e21e5ad83eb157ddcbe5fea29e422b4f76b9e0038a5a332d6594b7baeab9160b",
+      "construction_credit": "Wenqi Huang, Tao Ye; David W. Cantrell",
+      "source": "https://packomania.com/csq/csq150.html"
+    },
+    {
+      "n": 200,
+      "certificate": "certificates/frontier/n200.json",
+      "sha256": "941ef16137f6a9a5782fd3a304fce438c66f3a130e3b3f3a0e430b69cc7fa2b9",
+      "radius_exact": "1830639945191/50000000000000",
+      "previous_certificate": "certificates/frontier/n200.json",
+      "previous_sha256": "941ef16137f6a9a5782fd3a304fce438c66f3a130e3b3f3a0e430b69cc7fa2b9",
+      "construction_credit": "Wenqi Huang, Tao Ye; David W. Cantrell",
+      "source": "https://packomania.com/csq/csq200.html"
+    },
+    {
+      "n": 250,
+      "certificate": "certificates/frontier/n250.json",
+      "sha256": "ee63b0716f4a95ac0dd8b522b7c69072d6dcf7e62ab4ae1bfdcdeb488105591f",
+      "radius_exact": "32879800209483/1000000000000000",
+      "previous_certificate": "certificates/frontier/n250.json",
+      "previous_sha256": "ee63b0716f4a95ac0dd8b522b7c69072d6dcf7e62ab4ae1bfdcdeb488105591f",
+      "construction_credit": "Xiangjing Lai, Jin-Kao Hao, Renbin Xiao, Fred Glover",
+      "source": "https://packomania.com/csq/csq250.html"
+    },
+    {
+      "n": 300,
+      "certificate": "certificates/frontier/n300.json",
+      "sha256": "f18578cff5862de099cadfa74b9e32d06ff695583e4689bdc681daef4552cc0f",
+      "radius_exact": "30219555704457/1000000000000000",
+      "previous_certificate": "certificates/frontier/n300.json",
+      "previous_sha256": "f18578cff5862de099cadfa74b9e32d06ff695583e4689bdc681daef4552cc0f",
+      "construction_credit": "Packomania reference [25]",
+      "source": "https://packomania.com/csq/csq300.html"
+    },
+    {
+      "n": 400,
+      "certificate": "certificates/frontier/n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "radius_exact": "13101253538109/500000000000000",
+      "previous_certificate": "certificates/frontier/n400.json",
+      "previous_sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "construction_credit": "Xiangjing Lai, Jin-Kao Hao, Renbin Xiao, Fred Glover",
+      "source": "https://packomania.com/csq/csq400.html"
+    },
+    {
+      "n": 500,
+      "certificate": "research/contributor-20261020/certificates/best/n500.json",
+      "sha256": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "radius_exact": "23455596955367/1000000000000000",
+      "previous_certificate": "certificates/frontier/n500.json",
+      "previous_sha256": "f10cbde233bd0e5ec97e40695812da9df69128bb3cc72e615284b46272d5dba6",
+      "construction_credit": "Packntile team (Packomania reference [26])",
+      "source": "https://packomania.com/csq/csq500.html"
+    },
+    {
+      "n": 600,
+      "certificate": "certificates/frontier/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "radius_exact": "5369974144543/250000000000000",
+      "previous_certificate": "certificates/frontier/n600.json",
+      "previous_sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "construction_credit": "Eckard Specht",
+      "source": "https://packomania.com/csq/csq600.html"
+    },
+    {
+      "n": 700,
+      "certificate": "research/contributor-20261020/certificates/best/n700.json",
+      "sha256": "6d02a08ed764ba28cc992fc0eee01d532f33ea54c0615082899b903da6e30179",
+      "radius_exact": "19906357272343/1000000000000000",
+      "previous_certificate": "certificates/frontier/n700.json",
+      "previous_sha256": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2",
+      "construction_credit": "Eckard Specht",
+      "source": "https://packomania.com/csq/csq700.html"
+    },
+    {
+      "n": 800,
+      "certificate": "research/contributor-20261020/certificates/best/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "radius_exact": "3727734385197/200000000000000",
+      "previous_certificate": "certificates/frontier/n800.json",
+      "previous_sha256": "b0bb52fa7fe03974cc8e11cebf26244c0f937c3ebdcb7bff8354f8a6bd172251",
+      "construction_credit": "Eckard Specht",
+      "source": "https://packomania.com/csq/csq800.html"
+    }
+  ]
+}

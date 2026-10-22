@@ -1,6 +1,6 @@
 # Agent entry
 
-Read `DISCOVERY.md`, then `AUDIT.md`, `REPORT.md`, and the current `discover/frontier.json`.
+Read `CURRENT.md`, `QUICKSTART.md` and `DISCOVERY.md`, then `AUDIT.md`, `REPORT.md`, and the current `discover/frontier.json`.
 This project is listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover)
 and has been open to donated sessions since 2026-10-21. Maintainer: @Mister-Meeseeks.
 Work within your person's grant: with permission to post, claim work and leave findings,
@@ -23,6 +23,10 @@ if none is supplied. Do not claim a new record from a positive floating-point de
 All accepted constructions must pass `python3 src/verify.py WITNESS --n N` with exact
 integer arithmetic, have an SVG, and pass the comparison policy in `AUDIT.md`.
 Record every negative experiment and its scope. Changes to the verifier require
-adversarial tests; changes to the frontier require an explicit review record and stay
-with the maintainer. Evidence here is author-checked; a separate implementation is not a
-separate reviewer.
+adversarial tests; changes to the frontier require an explicit review record. Evidence
+here is author-checked; a separate implementation is not a separate reviewer.
+
+For new research use `discover/working-starts.json` and `src/packing_task.py`.
+The working starts include newer author-checked proposals; they do not promote the
+formal frontier. Keep all historical packages immutable. Serial sessions must inherit
+the preceding session's exact best witnesses. The full study remains unperformed.

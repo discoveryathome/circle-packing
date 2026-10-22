@@ -1,19 +1,22 @@
 {
   "schema": "discover-catalog/v0",
-  "priority_revision": 1,
-  "assessed_on": "2026-10-20",
+  "priority_revision": 2,
+  "assessed_on": "2026-10-21",
   "priority_log": "discover/priority-log.md",
   "status": "Open since 2026-10-21. Reconcile and verify before spending donated search time; record acceptance stays with the maintainer.",
   "tracks": [
     {
       "id": "reconcile",
-      "weight": 40,
+      "weight": 30,
       "useful_outcome": "Resolve pending-claim uncertainty before spending donated search time.",
       "tasks": [
         {
           "id": "reconcile-pending",
-          "question": "Do the final N=600/700 certificates beat accessible earlier pending witnesses?",
+          "question": "Do the strongest saved N=500/600/700/800 constructions beat accessible earlier pending witnesses?",
           "starting_points": [
+            "discover/working-starts.json",
+            "research/contributor-20261020/RESULTS.md",
+            "research/readiness-20261021/REVIEW.md"
             "AUDIT.md",
             "data/frontier.json",
             "https://www.packomania.com/pending-requests.html"
@@ -25,10 +28,10 @@
           "first_step": {
             "command": [
               "python3",
-              "src/project_inspect.py",
-              "audit"
+              "src/packing_task.py",
+              "check"
             ],
-            "expected": "12 targets; baseline improvements 600,700; zero externally accepted new records."
+            "expected": "12 hash-pinned working starts pass; no record acceptance asserted."
           },
           "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
           "claim_kind": [
@@ -42,7 +45,7 @@
     },
     {
       "id": "verification",
-      "weight": 25,
+      "weight": 20,
       "useful_outcome": "An independently reviewed exact certificate path.",
       "tasks": [
         {
@@ -80,33 +83,33 @@
     },
     {
       "id": "continuation",
-      "weight": 30,
+      "weight": 35,
       "useful_outcome": "Measure remaining headroom from the final strongest starts.",
       "tasks": [
         {
           "id": "continue-strongest",
-          "question": "Do repeated short sessions from the final N=600/700 witnesses improve the refreshed frontier?",
+          "question": "Do three serial sessions improve the strongest inherited packings beyond repeated polishing?",
           "starting_points": [
-            "certificates/frontier/n600.json",
-            "certificates/frontier/n700.json",
-            "experiments/analysis.json",
-            "src/experiment.py"
+            "discover/working-starts.json",
+            "QUICKSTART.md",
+            "research/readiness-20261021/serial-protocol.json"
           ],
           "methods": [
-            "Preregister equal total LP work; compare fresh-seed short restarts with a continuous run; certify all candidates."
+            "Execute the prospective fixed portfolio, inherit every exact improvement, retain nulls and compare with full-budget plain polishing."
           ],
-          "acceptance_gate": "Meaningful certified gain beyond updated source precision; report nulls, budgets and pending uncertainty.",
+          "acceptance_gate": "Exact three-session product gate plus separate review; no solver-superiority, novelty or intake decision is automatic.",
           "first_step": {
             "command": [
               "python3",
-              "src/verify.py",
-              "certificates/frontier/n600.json",
+              "src/packing_task.py",
+              "compare",
+              "research/contributor-20261020/certificates/best/n700.json",
               "--n",
-              "600"
+              "700"
             ],
-            "expected": "valid=true; n=600; 179700 pairs checked."
+            "expected": "Valid N700 witness; zero gain against latest working start."
           },
-          "first_experiment": "Copy experiments/config.json, set fresh continuation seeds, then --continue-from experiments/continuation into a new output directory; never overwrite frozen results.",
+          "first_experiment": "Follow QUICKSTART.md into a new research/serial-trials/session-01 directory; do not write to historical packages.",
           "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
           "claim_kind": [
             "exact",
@@ -143,6 +146,38 @@
           "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
           "claim_kind": [
             "exact",
+            "measured"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visual-audit",
+      "weight": 10,
+      "useful_outcome": "A faithful, understandable visual account of certified geometry.",
+      "tasks": [
+        {
+          "id": "inspect-visual-evidence",
+          "question": "Does the explorer faithfully represent the certified constructions and size of the gains?",
+          "starting_points": [
+            "gallery/index.html",
+            "gallery/template.html",
+            "src/build_gallery.py"
+          ],
+          "methods": [
+            "Compare coordinate certificates, labels, equal-scale views, unchanged cases and source credits; test target selection and linked zoom."
+          ],
+          "acceptance_gate": "No exaggerated radius growth or fabricated intermediate feasible states; all displayed targets and links agree with exact evidence.",
+          "first_step": {
+            "command": [
+              "python3",
+              "src/packing_task.py",
+              "check"
+            ],
+            "expected": "All displayed working certificates and previous inputs are verified."
+          },
+          "bottleneck_link": "DISCOVERY.md#review-credit-and-permissions",
+          "claim_kind": [
             "measured"
           ]
         }

@@ -4,7 +4,15 @@ Find certified lower bounds on the largest common radius of N non-overlapping ci
 inside a unit square. The pilot searches **N = 100, 106, 134, 150, 200, 250, 300, 400,
 500, 600, 700, 800**, with N=47 as a precision control.
 
-Latest: [the contributor-run suitability assessment](research/contributor-20261020/REPORT.md), [new experimental proposals](research/contributor-20261020/RESULTS.md), and [before/after demo](research/contributor-20261020/images/demo.svg). These author-checked follow-up results await the project’s acceptance process; the original recorded frontier is preserved.
+Current: [pre-release handoff](research/readiness-20261021/README.md),
+[quickstart](QUICKSTART.md), [interactive packing explorer](gallery/index.html), and
+[status](CURRENT.md). Strongest saved starts include the later contributor proposals;
+the formal frontier remains unchanged pending review. The serial productivity trial
+is prepared, not completed. No donor intake is open.
+
+Historical: [contributor assessment](research/contributor-20261020/REPORT.md),
+[trial results](research/contributor-20261020/RESULTS.md), and
+[static before/after demo](research/contributor-20261020/images/demo.svg).
 
 Start with [the initial experiment report](REPORT.md), [the record table](RECORDS.md),
 [the source audit](AUDIT.md), and [the construction gallery](images/GALLERY.md).

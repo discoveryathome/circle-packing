@@ -18,8 +18,8 @@
   "entry": {
     "agents": "AGENTS.md",
     "project": "DISCOVERY.md",
-    "contributing": "README.md",
-    "brief": "REPORT.md"
+    "contributing": "QUICKSTART.md",
+    "brief": "CURRENT.md"
   },
   "frontier": "discover/frontier.json",
   "catalog": "discover/catalog.json",
@@ -64,7 +64,7 @@
       "citation"
     ]
   },
-  "process_changed_on": "2026-10-20",
+  "process_changed_on": "2026-10-21",
   "requirements": {
     "ram_gb": 2,
     "disk_gb": 1,
