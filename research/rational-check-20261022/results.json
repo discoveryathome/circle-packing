@@ -1,0 +1,441 @@
+{
+  "status": "author-checked; no independent review or acceptance implied",
+  "base_commit": "978d4bd925ba4ab62e5ceb2a3b3a108d3e283f1a",
+  "round_seed": "db3fcbb737f3095b0d122f377d40c7d1",
+  "python": "3.13.5",
+  "verifier_sha256": "3b065d9d5140c63dcf33cad2c0ac93a0ad7afde8eb94136fb935a7e3ce5d6976",
+  "audit_sha256": "26c4bb383a004271dc23441ca594039d2840cf2645961c501e0544b674faecff",
+  "working_starts_sha256": "889c6d4bad7cceec20319f7f30dc03746018910e58efe074b4ee95e4f9dce903",
+  "grid_domain": "All unordered point multisets on {0,...,Q}^2, R=1,...,floor(Q/2)+1; N=1,2 for Q=1,...,12; N=3 for Q=1,...,5.",
+  "grid_cases": 306333,
+  "grid_results": [
+    {
+      "n": 1,
+      "q": 1,
+      "accepted": 0,
+      "rejected": 4
+    },
+    {
+      "n": 1,
+      "q": 2,
+      "accepted": 1,
+      "rejected": 17
+    },
+    {
+      "n": 1,
+      "q": 3,
+      "accepted": 4,
+      "rejected": 28
+    },
+    {
+      "n": 1,
+      "q": 4,
+      "accepted": 10,
+      "rejected": 65
+    },
+    {
+      "n": 1,
+      "q": 5,
+      "accepted": 20,
+      "rejected": 88
+    },
+    {
+      "n": 1,
+      "q": 6,
+      "accepted": 35,
+      "rejected": 161
+    },
+    {
+      "n": 1,
+      "q": 7,
+      "accepted": 56,
+      "rejected": 200
+    },
+    {
+      "n": 1,
+      "q": 8,
+      "accepted": 84,
+      "rejected": 321
+    },
+    {
+      "n": 1,
+      "q": 9,
+      "accepted": 120,
+      "rejected": 380
+    },
+    {
+      "n": 1,
+      "q": 10,
+      "accepted": 165,
+      "rejected": 561
+    },
+    {
+      "n": 1,
+      "q": 11,
+      "accepted": 220,
+      "rejected": 644
+    },
+    {
+      "n": 1,
+      "q": 12,
+      "accepted": 286,
+      "rejected": 897
+    },
+    {
+      "n": 2,
+      "q": 1,
+      "accepted": 0,
+      "rejected": 10
+    },
+    {
+      "n": 2,
+      "q": 2,
+      "accepted": 0,
+      "rejected": 90
+    },
+    {
+      "n": 2,
+      "q": 3,
+      "accepted": 0,
+      "rejected": 272
+    },
+    {
+      "n": 2,
+      "q": 4,
+      "accepted": 16,
+      "rejected": 959
+    },
+    {
+      "n": 2,
+      "q": 5,
+      "accepted": 78,
+      "rejected": 1920
+    },
+    {
+      "n": 2,
+      "q": 6,
+      "accepted": 228,
+      "rejected": 4672
+    },
+    {
+      "n": 2,
+      "q": 7,
+      "accepted": 522,
+      "rejected": 7798
+    },
+    {
+      "n": 2,
+      "q": 8,
+      "accepted": 1076,
+      "rejected": 15529
+    },
+    {
+      "n": 2,
+      "q": 9,
+      "accepted": 2022,
+      "rejected": 23228
+    },
+    {
+      "n": 2,
+      "q": 10,
+      "accepted": 3516,
+      "rejected": 40770
+    },
+    {
+      "n": 2,
+      "q": 11,
+      "accepted": 5748,
+      "rejected": 56892
+    },
+    {
+      "n": 2,
+      "q": 12,
+      "accepted": 9020,
+      "rejected": 91535
+    },
+    {
+      "n": 3,
+      "q": 1,
+      "accepted": 0,
+      "rejected": 20
+    },
+    {
+      "n": 3,
+      "q": 2,
+      "accepted": 0,
+      "rejected": 330
+    },
+    {
+      "n": 3,
+      "q": 3,
+      "accepted": 0,
+      "rejected": 1632
+    },
+    {
+      "n": 3,
+      "q": 4,
+      "accepted": 8,
+      "rejected": 8767
+    },
+    {
+      "n": 3,
+      "q": 5,
+      "accepted": 140,
+      "rejected": 25168
+    }
+  ],
+  "boundary_controls": [
+    {
+      "case": "single maximal circle",
+      "accepted": true
+    },
+    {
+      "case": "oblique tangency 6-8-10",
+      "accepted": true
+    },
+    {
+      "case": "oblique one-unit overlap",
+      "accepted": false
+    },
+    {
+      "case": "oblique one-unit separation",
+      "accepted": true
+    },
+    {
+      "case": "prime denominator",
+      "accepted": true
+    },
+    {
+      "case": "duplicate centers",
+      "accepted": false
+    },
+    {
+      "case": "axis 0 lower wall one-unit violation",
+      "accepted": false
+    },
+    {
+      "case": "axis 0 upper wall one-unit violation",
+      "accepted": false
+    },
+    {
+      "case": "axis 1 lower wall one-unit violation",
+      "accepted": false
+    },
+    {
+      "case": "axis 1 upper wall one-unit violation",
+      "accepted": false
+    },
+    {
+      "case": "16-digit denominator tangency",
+      "accepted": true
+    },
+    {
+      "case": "16-digit denominator one-unit overlap",
+      "accepted": false
+    },
+    {
+      "case": "80-digit denominator tangency",
+      "accepted": true
+    },
+    {
+      "case": "80-digit denominator one-unit overlap",
+      "accepted": false
+    },
+    {
+      "case": "200-digit denominator tangency",
+      "accepted": true
+    },
+    {
+      "case": "200-digit denominator one-unit overlap",
+      "accepted": false
+    }
+  ],
+  "format_controls_rejected": [
+    "wrong schema",
+    "Boolean count",
+    "fractional count",
+    "zero count",
+    "count over limit",
+    "count/centers mismatch",
+    "numeric denominator",
+    "zero denominator",
+    "negative denominator",
+    "leading-zero denominator",
+    "201-digit denominator",
+    "zero radius",
+    "negative radius",
+    "floating radius",
+    "noninteger radius string",
+    "nonfinite radius string",
+    "wrong coordinate arity",
+    "numeric coordinate",
+    "noncanonical coordinate",
+    "expected N differs from valid certificate"
+  ],
+  "working_starts": [
+    {
+      "n": 100,
+      "certificate": "certificates/frontier/n100.json",
+      "sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "radius_exact": "51401071774379/1000000000000000",
+      "pairs_checked": 4950,
+      "rational_geometry_agrees": true,
+      "square_symmetries_with_relabelling": 8,
+      "rescaling_factor": 97,
+      "wrong_counts_rejected": 2,
+      "construction_credit": "Bernardetta Addis, Marco Locatelli, Fabio Schoen (Packomania reference [20])",
+      "source": "https://packomania.com/csq/csq100.html"
+    },
+    {
+      "n": 106,
+      "certificate": "certificates/frontier/n106.json",
+      "sha256": "e900839b877b852e58775bb97bdec6a88bb767f499bc5e3bb3af168da9e7e633",
+      "radius_exact": "3125950026631/62500000000000",
+      "pairs_checked": 5565,
+      "rational_geometry_agrees": true,
+      "square_symmetries_with_relabelling": 8,
+      "rescaling_factor": 97,
+      "wrong_counts_rejected": 2,
+      "construction_credit": "Xiangjing Lai, Jin-Kao Hao, Renbin Xiao, Fred Glover",
+      "source": "https://packomania.com/csq/csq106.html"
+    },
+    {
+      "n": 134,
+      "certificate": "certificates/frontier/n134.json",
+      "sha256": "51b1af652fc2addf87247e89317a0231d69c3870dc5dda7df568144deba93bed",
+      "radius_exact": "8912848841419/200000000000000",
+      "pairs_checked": 8911,
+      "rational_geometry_agrees": true,
+      "square_symmetries_with_relabelling": 8,
+      "rescaling_factor": 97,
+      "wrong_counts_rejected": 2,
+      "construction_credit": "Wenqi Huang, Tao Ye; David W. Cantrell",
+      "source": "https://packomania.com/csq/csq134.html"
+    },
+    {
+      "n": 150,
+      "certificate": "certificates/frontier/n150.json",
+      "sha256": "e21e5ad83eb157ddcbe5fea29e422b4f76b9e0038a5a332d6594b7baeab9160b",
+      "radius_exact": "2634091618827/62500000000000",
+      "pairs_checked": 11175,
+      "rational_geometry_agrees": true,
+      "square_symmetries_with_relabelling": 8,
+      "rescaling_factor": 97,
+      "wrong_counts_rejected": 2,
+      "construction_credit": "Wenqi Huang, Tao Ye; David W. Cantrell",
+      "source": "https://packomania.com/csq/csq150.html"
+    },
+    {
+      "n": 200,
+      "certificate": "certificates/frontier/n200.json",
+      "sha256": "941ef16137f6a9a5782fd3a304fce438c66f3a130e3b3f3a0e430b69cc7fa2b9",
+      "radius_exact": "1830639945191/50000000000000",
+      "pairs_checked": 19900,
+      "rational_geometry_agrees": true,
+      "square_symmetries_with_relabelling": 8,
+      "rescaling_factor": 97,
+      "wrong_counts_rejected": 2,
+      "construction_credit": "Wenqi Huang, Tao Ye; David W. Cantrell",
+      "source": "https://packomania.com/csq/csq200.html"
+    },
+    {
+      "n": 250,
+      "certificate": "certificates/frontier/n250.json",
+      "sha256": "ee63b0716f4a95ac0dd8b522b7c69072d6dcf7e62ab4ae1bfdcdeb488105591f",
+      "radius_exact": "32879800209483/1000000000000000",
+      "pairs_checked": 31125,
+      "rational_geometry_agrees": true,
+      "square_symmetries_with_relabelling": 8,
+      "rescaling_factor": 97,
+      "wrong_counts_rejected": 2,
+      "construction_credit": "Xiangjing Lai, Jin-Kao Hao, Renbin Xiao, Fred Glover",
+      "source": "https://packomania.com/csq/csq250.html"
+    },
+    {
+      "n": 300,
+      "certificate": "certificates/frontier/n300.json",
+      "sha256": "f18578cff5862de099cadfa74b9e32d06ff695583e4689bdc681daef4552cc0f",
+      "radius_exact": "30219555704457/1000000000000000",
+      "pairs_checked": 44850,
+      "rational_geometry_agrees": true,
+      "square_symmetries_with_relabelling": 8,
+      "rescaling_factor": 97,
+      "wrong_counts_rejected": 2,
+      "construction_credit": "Packomania reference [25]",
+      "source": "https://packomania.com/csq/csq300.html"
+    },
+    {
+      "n": 400,
+      "certificate": "certificates/frontier/n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "radius_exact": "13101253538109/500000000000000",
+      "pairs_checked": 79800,
+      "rational_geometry_agrees": true,
+      "square_symmetries_with_relabelling": 8,
+      "rescaling_factor": 97,
+      "wrong_counts_rejected": 2,
+      "construction_credit": "Xiangjing Lai, Jin-Kao Hao, Renbin Xiao, Fred Glover",
+      "source": "https://packomania.com/csq/csq400.html"
+    },
+    {
+      "n": 500,
+      "certificate": "research/contributor-20261020/certificates/best/n500.json",
+      "sha256": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "radius_exact": "23455596955367/1000000000000000",
+      "pairs_checked": 124750,
+      "rational_geometry_agrees": true,
+      "square_symmetries_with_relabelling": 8,
+      "rescaling_factor": 97,
+      "wrong_counts_rejected": 2,
+      "construction_credit": "Packntile team (Packomania reference [26])",
+      "source": "https://packomania.com/csq/csq500.html"
+    },
+    {
+      "n": 600,
+      "certificate": "certificates/frontier/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "radius_exact": "5369974144543/250000000000000",
+      "pairs_checked": 179700,
+      "rational_geometry_agrees": true,
+      "square_symmetries_with_relabelling": 8,
+      "rescaling_factor": 97,
+      "wrong_counts_rejected": 2,
+      "construction_credit": "Eckard Specht",
+      "source": "https://packomania.com/csq/csq600.html"
+    },
+    {
+      "n": 700,
+      "certificate": "research/contributor-20261020/certificates/best/n700.json",
+      "sha256": "6d02a08ed764ba28cc992fc0eee01d532f33ea54c0615082899b903da6e30179",
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650,
+      "rational_geometry_agrees": true,
+      "square_symmetries_with_relabelling": 8,
+      "rescaling_factor": 97,
+      "wrong_counts_rejected": 2,
+      "construction_credit": "Eckard Specht",
+      "source": "https://packomania.com/csq/csq700.html"
+    },
+    {
+      "n": 800,
+      "certificate": "research/contributor-20261020/certificates/best/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "radius_exact": "3727734385197/200000000000000",
+      "pairs_checked": 319600,
+      "rational_geometry_agrees": true,
+      "square_symmetries_with_relabelling": 8,
+      "rescaling_factor": 97,
+      "wrong_counts_rejected": 2,
+      "construction_credit": "Eckard Specht",
+      "source": "https://packomania.com/csq/csq800.html"
+    }
+  ],
+  "disagreements": 0,
+  "elapsed_seconds": 44.306,
+  "not_checked": [
+    "All possible JSON encodings or resource-limit behavior",
+    "Solver correctness or floating-point replay",
+    "External records, pending claims, novelty or global optimality",
+    "Scientific acceptance or independent reviewer signoff"
+  ]
+}
