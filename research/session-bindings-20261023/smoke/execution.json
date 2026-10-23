@@ -1,0 +1,11 @@
+{
+  "started_at": "2026-10-23T09:10:35.029144+00:00",
+  "session_sha256": "1bd3f69a7e7535a148e66762b08a9c63c7b1608b8eb73002477e024a43bd9de8",
+  "python": "3.12.11 (main, Jun 12 2025, 12:40:51) [Clang 20.1.4 ]",
+  "numpy": "2.5.4",
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "implementation": "candidate",
+  "tests": 32,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.11 (main, Jun 12 2025, 12:40:51) [Clang 20.1.4 ]",
+  "checker_sha256": "8d23c5d444003dcb5f60ead9c06c95db8d98a2539dc06e269bf126585cd90aad"
+}

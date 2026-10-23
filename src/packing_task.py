@@ -191,6 +191,8 @@ def summarize(directory):
     if len(blocks) != len(expected) or {(b['n'], b['arm']) for b in blocks} != expected:
         raise ValueError('partial/duplicate session blocks')
     best = {n: bound_path(directory, s['inputs'][str(n)]['path']) for n in s['counts']}
+    input_hashes = {n: sha(path) for n, path in best.items()}
+    arm_best = {(n, arm): read(best[n]) for n, arm in expected}
     polish = {n: radius(read(best[n])) for n in s['counts']}
     seen = set()
     for t in trials:
@@ -206,6 +208,18 @@ def summarize(directory):
         r = radius(c)
         if str(r) != t['radius_exact']:
             raise ValueError('false attempted radius')
+        key = (t['n'], t['arm'])
+        if t['error'] is None:
+            provenance = c.get('provenance')
+            bindings = {'session_seed': s['seed'], 'arm': t['arm'],
+                        'input_sha256': t['input_sha256'],
+                        'base_input_sha256': input_hashes[t['n']]}
+            if not isinstance(provenance, dict) or any(provenance.get(k) != v for k, v in bindings.items()):
+                raise ValueError('attempt provenance does not match session/input')
+        elif not isinstance(t['error'], str) or not t['error'] or c != arm_best[key]:
+            raise ValueError('failed attempt does not retain its arm best')
+        if r > radius(arm_best[key]):
+            arm_best[key] = c
         if r > radius(read(best[t['n']])):
             best[t['n']] = path
         if t['arm'] == 'polish':

@@ -1,0 +1,8 @@
+{
+  "implementation": "base 978d4bd",
+  "tests": 12,
+  "failed_controls": 21,
+  "errors": 0,
+  "expected_negative_control_failures": 21,
+  "python": "3.12.11 (main, Jun 12 2025, 12:40:51) [Clang 20.1.4 ]"
+}

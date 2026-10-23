@@ -1,0 +1,3 @@
+{"n": 500, "arm": "polish", "attempts": 1, "wall_seconds": 0.3530832329997793, "cpu_seconds": 0.35304166999999964, "peak_rss_platform_units": 88780, "load_average": [2.392578125, 1.74609375, 1.6611328125]}
+{"n": 500, "arm": "original", "attempts": 1, "wall_seconds": 0.3861638469970785, "cpu_seconds": 0.3861332599999998, "peak_rss_platform_units": 89924, "load_average": [2.392578125, 1.74609375, 1.6611328125]}
+{"n": 500, "arm": "targeted", "attempts": 1, "wall_seconds": 0.3895064129610546, "cpu_seconds": 0.38944766200000025, "peak_rss_platform_units": 90948, "load_average": [2.392578125, 1.74609375, 1.6611328125]}
