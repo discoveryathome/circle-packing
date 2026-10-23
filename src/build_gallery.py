@@ -1,5 +1,6 @@
 """Build a self-contained local explorer from exactly verified witnesses; no network."""
 import json
+from html import escape
 from pathlib import Path
 from packing_task import ROOT, read, starts, radius
 
@@ -18,8 +19,10 @@ def build():
                      'certificate': '../'+row['certificate'], 'previous': '../'+row['previous_certificate'],
                      'sha256': row['sha256'], 'credit': row['construction_credit'], 'source': row['source']})
     template = (ROOT/'gallery/template.html').read_text()
+    intake = escape(read(ROOT/'PARTICIPATION.json')['intake'])
     payload = json.dumps(data, separators=(',', ':')).replace('<', '\\u003c')
-    (ROOT/'gallery/index.html').write_text(template.replace('/*PACKING_DATA*/[]', payload))
+    (ROOT/'gallery/index.html').write_text(template.replace('/*PACKING_DATA*/[]', payload)
+                                        .replace('<!--PARTICIPATION_INTAKE-->', intake))
     print(f'Built gallery/index.html from {len(data)} verified pairs; no external scripts or fonts.')
 
 

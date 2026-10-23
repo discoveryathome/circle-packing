@@ -12,6 +12,12 @@ Imported constructions retain the source credit in `data/records.json`: Eckard S
 Bernardetta Addis, Marco Locatelli and Fabio Schoen; Peter Gabor Szabo and Eckard Specht;
 Wenqi Huang and Tao Ye; David W. Cantrell; Xiangjing Lai, Jin-Kao Hao, Renbin Xiao and
 Fred Glover; other contributors as identified in the Packomania reference list.
+The rendered explorer review in `research/explorer-review-20261023/` was performed
+by an OpenAI coding agent under a donor grant. It follows the earlier static visual
+audit and real-browser handoff, corrects participation-status generation and SVG
+click coordinates, and retains all construction/refinement credit. Its paired
+Chromium and Firefox checks are author-checked, not independent review or acceptance.
+
 The N=47 external control is credited to MinMax Arena user Ἀθηνᾶ, who attributes its
 method to Claude Opus 5 and explicitly describes it as lattice refinement.
 

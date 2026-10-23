@@ -1,0 +1,858 @@
+{
+  "status": "author-checked; no independent review or acceptance",
+  "engine": "firefox",
+  "browser": "157.0",
+  "page_sha256": "ac49e36da441087189581366be199f83be85627412060bbe794d624ab202b70f",
+  "audit_sha256": "19d2a9c5e35626602fdc0803844f77185069e3fe549f57da23458b3800c7cad2",
+  "policy_sha256": "4b2f4da8bedfa4cfd4ffc0329596b55c0448fc1b2f1503cb3bb819ca944bd3c9",
+  "index_sha256": "889c6d4bad7cceec20319f7f30dc03746018910e58efe074b4ee95e4f9dce903",
+  "views": [
+    {
+      "label": "desktop",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "Pre-release research preview \u00b7 Contributor intake open",
+      "targets": [
+        {
+          "n": 100,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 100,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.051401071774379",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 100,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.051401071774379",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 106,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 106,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.050015200426096",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 106,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.050015200426096",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 134,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 134,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.044564244207095",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 134,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.044564244207095",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 150,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 150,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.042145465901232",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 150,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.042145465901232",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 200,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 200,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.036612798903820",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 200,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.036612798903820",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 250,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 250,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.032879800209483",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 250,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.032879800209483",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 300,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 300,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.030219555704457",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 300,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.030219555704457",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 400,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 400,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.026202507076218",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 400,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.026202507076218",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 500,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 500,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.023455498993500",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 500,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.023455596955367",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "+4.176 ppm",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 600,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 600,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.021479896578172",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 600,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.021479896578172",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 700,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 700,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.019903696933565",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 700,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.019906357272343",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "+133.661 ppm",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 800,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 800,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.018637592285890",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 800,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.018638671925985",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "+57.928 ppm",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        }
+      ],
+      "clicks": [
+        {
+          "pane": "before",
+          "relative_click": [
+            0.25,
+            0.75
+          ],
+          "event": {
+            "x": 0.24863883014768362,
+            "y": 0.7495765248313546,
+            "clientX": 276,
+            "clientY": 588
+          },
+          "expected_center": [
+            0.24863883014768362,
+            0.7495765248313546
+          ],
+          "actual_center": [
+            0.24863883014768362,
+            0.7495765248313546
+          ],
+          "maximum_coordinate_error": 0.0,
+          "views_linked": true
+        },
+        {
+          "pane": "after",
+          "relative_click": [
+            0.75,
+            0.25
+          ],
+          "event": {
+            "x": 0.7495463399682194,
+            "y": 0.24866908229887486,
+            "clientX": 1163,
+            "clientY": 312
+          },
+          "expected_center": [
+            0.7495463399682194,
+            0.24866908229887486
+          ],
+          "actual_center": [
+            0.7495463399682194,
+            0.24866908229887486
+          ],
+          "maximum_coordinate_error": 0.0,
+          "views_linked": true
+        },
+        {
+          "pane": "before",
+          "relative_click": [
+            0.02,
+            0.98
+          ],
+          "event": {
+            "x": 0.01996369333937764,
+            "y": 0.9782516616396606,
+            "clientX": 150,
+            "clientY": 714
+          },
+          "expected_center": [
+            0.16666666666666666,
+            0.8333333333333334
+          ],
+          "actual_center": [
+            0.16666666666666666,
+            0.8333333333333334
+          ],
+          "maximum_coordinate_error": 0.0,
+          "views_linked": true
+        },
+        {
+          "pane": "after",
+          "relative_click": [
+            0.4,
+            0.6
+          ],
+          "event": {
+            "x": 0.4798548010876402,
+            "y": 0.5197882572538219,
+            "clientX": 970,
+            "clientY": 505
+          },
+          "expected_center": [
+            0.4798548010876402,
+            0.5197882572538219
+          ],
+          "actual_center": [
+            0.4798548010876402,
+            0.5197882572538219
+          ],
+          "maximum_coordinate_error": 0.0,
+          "views_linked": true
+        }
+      ],
+      "slider_zoom": 5.0,
+      "slider_linked": true,
+      "reset_passed": true,
+      "horizontal_overflow": false
+    },
+    {
+      "label": "narrow",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "Pre-release research preview \u00b7 Contributor intake open",
+      "targets": [
+        {
+          "n": 100,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 100,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.051401071774379",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 100,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.051401071774379",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 106,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 106,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.050015200426096",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 106,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.050015200426096",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 134,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 134,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.044564244207095",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 134,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.044564244207095",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 150,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 150,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.042145465901232",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 150,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.042145465901232",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 200,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 200,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.036612798903820",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 200,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.036612798903820",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 250,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 250,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.032879800209483",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 250,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.032879800209483",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 300,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 300,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.030219555704457",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 300,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.030219555704457",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 400,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 400,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.026202507076218",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 400,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.026202507076218",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 500,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 500,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.023455498993500",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 500,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.023455596955367",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "+4.176 ppm",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 600,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 600,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.021479896578172",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 600,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.021479896578172",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "No additional gain",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 700,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 700,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.019903696933565",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 700,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.019906357272343",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "+133.661 ppm",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        },
+        {
+          "n": 800,
+          "panes": [
+            {
+              "pane": "before",
+              "circles": 800,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.018637592285890",
+              "certificate_hash_matches": true
+            },
+            {
+              "pane": "after",
+              "circles": 800,
+              "maximum_coordinate_error": 0.0,
+              "radius_label": "Radius 0.018638671925985",
+              "certificate_hash_matches": true
+            }
+          ],
+          "gain_label": "+57.928 ppm",
+          "gain_matches": true,
+          "exact_text_matches": true,
+          "credit_matches": true,
+          "hash_text_matches": true,
+          "equal_scale": true,
+          "reset_views_linked": true
+        }
+      ],
+      "clicks": [
+        {
+          "pane": "before",
+          "relative_click": [
+            0.25,
+            0.75
+          ],
+          "event": {
+            "x": 0.2484472133219242,
+            "y": 0.7477225922048092,
+            "clientX": 114,
+            "clientY": 502
+          },
+          "expected_center": [
+            0.2484472133219242,
+            0.7477225922048092
+          ],
+          "actual_center": [
+            0.2484472133219242,
+            0.7477225922048092
+          ],
+          "maximum_coordinate_error": 0.0,
+          "views_linked": true
+        },
+        {
+          "pane": "after",
+          "relative_click": [
+            0.75,
+            0.25
+          ],
+          "event": {
+            "x": 0.74844722263515,
+            "y": 0.24772258289158344,
+            "clientX": 275,
+            "clientY": 341
+          },
+          "expected_center": [
+            0.74844722263515,
+            0.24772258289158344
+          ],
+          "actual_center": [
+            0.74844722263515,
+            0.24772258289158344
+          ],
+          "maximum_coordinate_error": 0.0,
+          "views_linked": true
+        },
+        {
+          "pane": "before",
+          "relative_click": [
+            0.02,
+            0.98
+          ],
+          "event": {
+            "x": 0.018633544445037842,
+            "y": 0.9775362610816956,
+            "clientX": 40,
+            "clientY": 576
+          },
+          "expected_center": [
+            0.16666666666666666,
+            0.8333333333333334
+          ],
+          "actual_center": [
+            0.16666666666666666,
+            0.8333333333333334
+          ],
+          "maximum_coordinate_error": 0.0,
+          "views_linked": true
+        },
+        {
+          "pane": "after",
+          "relative_click": [
+            0.4,
+            0.6
+          ],
+          "event": {
+            "x": 0.4795031070243567,
+            "y": 0.5197308456990868,
+            "clientX": 162,
+            "clientY": 454
+          },
+          "expected_center": [
+            0.4795031070243567,
+            0.5197308456990868
+          ],
+          "actual_center": [
+            0.4795031070243567,
+            0.5197308456990868
+          ],
+          "maximum_coordinate_error": 0.0,
+          "views_linked": true
+        }
+      ],
+      "slider_zoom": 5.0,
+      "slider_linked": true,
+      "reset_passed": true,
+      "horizontal_overflow": false
+    }
+  ],
+  "page_errors": [],
+  "failures": [],
+  "not_checked": [
+    "HTTP delivery, physical touch devices, other engines in this invocation",
+    "Wheel zoom or drag panning, which are not advertised or implemented",
+    "External novelty, global optimality or scientific acceptance"
+  ]
+}
