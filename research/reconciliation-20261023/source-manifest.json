@@ -1,0 +1,96 @@
+{
+  "repository": "https://github.com/0100001001101111/aletheia-packing-records",
+  "commit": "d137d44c6eec540b98909231d0e902f0fe4b9b1e",
+  "retrieved_utc_range": [
+    "2026-10-23T08:58:37.604Z",
+    "2026-10-23T08:58:38.246Z"
+  ],
+  "attribution": "Bo Brothers / Project Aletheia",
+  "license_status": "Proposed terms conditional on owner approval; no redistribution assumed",
+  "files": {
+    "ARTIFACTS.sha256": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/ARTIFACTS.sha256",
+      "sha256": "928f836535d32b539758534b3809b8b75651f029bcd0879364120c49d873464f",
+      "bytes": 1241,
+      "git_blob_sha1": "7e29e6bcb889b757ee3d0fd91716d955214a28b6"
+    },
+    "CORRECTION_2026-08-31_V1.md": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/CORRECTION_2026-08-31_V1.md",
+      "sha256": "9f2447b3b53ffbe1b238a281af39ad0be6fc9660be60a7d34843af8b476b279a",
+      "bytes": 1709,
+      "git_blob_sha1": "d295c96acfce7e51aaa7d785117d002349769fae"
+    },
+    "LICENSE.md": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/LICENSE.md",
+      "sha256": "c78a673662bec75ad1a434013f07bd9d083080f72340d8d69f6240ede9766847",
+      "bytes": 1496,
+      "git_blob_sha1": "5ef8bec83ddf0d7abe74e9ec782a9f6e076b6532"
+    },
+    "PROVENANCE.md": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/PROVENANCE.md",
+      "sha256": "2522da1c9ded49b4b762489d4d0dc25d2c56f7d02cf675a445e4edf579422113",
+      "bytes": 869,
+      "git_blob_sha1": "89c8dad00e00bb85ea3769c5ec904aff7c3d1cba"
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/README.md",
+      "sha256": "5d439540e532ef42a3181f779117cff5629d7efb27fe8e8f3f1538fcb8de28ba",
+      "bytes": 4112,
+      "git_blob_sha1": "539624f3a4eb6b7a66c1d092569556909e3732f3"
+    },
+    "checks/PACKING_N600_SEED_2026083001_EXACT_CHECK.json": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/checks/PACKING_N600_SEED_2026083001_EXACT_CHECK.json",
+      "sha256": "5740e8b536c7ed8d54138fe41227683afdb5856d1f0dde39662c06cbfb32f958",
+      "bytes": 2101,
+      "git_blob_sha1": "26766b48594d08a9153be6d194187243e86c8ebc"
+    },
+    "checks/PACKING_N600_SEED_2026083001_MPMATH_CHECK.json": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/checks/PACKING_N600_SEED_2026083001_MPMATH_CHECK.json",
+      "sha256": "29d9d6efaa88400ef860cdafce67b1ed16dfcf9b5dd99b6a0a0aac3f4a64342d",
+      "bytes": 1762,
+      "git_blob_sha1": "a8c7b4afcc6ea9b06adae1a87013f58ea5c0b1f4"
+    },
+    "checks/PACKING_N700_SEED_2026083001_EXACT_CHECK.json": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/checks/PACKING_N700_SEED_2026083001_EXACT_CHECK.json",
+      "sha256": "7b608d1a92af327f2d17b25f3539dfba1195ead114703efcc5fdd892615ac847",
+      "bytes": 2101,
+      "git_blob_sha1": "fe8f2927c09be65c4a5f8167e840aad5d8c52453"
+    },
+    "checks/PACKING_N700_SEED_2026083001_MPMATH_CHECK.json": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/checks/PACKING_N700_SEED_2026083001_MPMATH_CHECK.json",
+      "sha256": "47162a0e614e9189cab57cb757674fe41e53fc78273864686cd64fd1de6ab2bc",
+      "bytes": 1762,
+      "git_blob_sha1": "b481abebe59129596635498f20dfafbdd3fb6290"
+    },
+    "checks/PACKING_N800_SEED_2026083001_EXACT_CHECK.json": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/checks/PACKING_N800_SEED_2026083001_EXACT_CHECK.json",
+      "sha256": "a154a55d9a337a37e7be7bb8870f8ece7af3822d216a2b0df81f002ee166ec7f",
+      "bytes": 2099,
+      "git_blob_sha1": "fd43025802b1573e53f0950a04b5df9dfd3e7c8b"
+    },
+    "checks/PACKING_N800_SEED_2026083001_MPMATH_CHECK.json": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/checks/PACKING_N800_SEED_2026083001_MPMATH_CHECK.json",
+      "sha256": "9e6f906257c132ab6e6b4a7de00f24a91273ab5772fc4e7bbcefe952906651fa",
+      "bytes": 1758,
+      "git_blob_sha1": "a1a404af6dfca95b0f6e11be044d1d267f86b234"
+    },
+    "data/PACKING_N600_SEED_2026083001_CANDIDATE.txt": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/data/PACKING_N600_SEED_2026083001_CANDIDATE.txt",
+      "sha256": "b9794492f37d28e8d4f92900ef19ebd85f58530f97f5936c245e584c89f8b9b9",
+      "bytes": 53155,
+      "git_blob_sha1": "7f6a97b067eda5d3c73e42d136e81dc7e0f6be78"
+    },
+    "data/PACKING_N700_SEED_2026083001_CANDIDATE.txt": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/data/PACKING_N700_SEED_2026083001_CANDIDATE.txt",
+      "sha256": "14ca8170ff3089e63d6e0730f4e4b7e199e3610109880d84d0be5b959d364ede",
+      "bytes": 61954,
+      "git_blob_sha1": "dfb705fa199a4b5384d9bcd101ffa7e3334e4519"
+    },
+    "data/PACKING_N800_SEED_2026083001_CANDIDATE.txt": {
+      "url": "https://raw.githubusercontent.com/0100001001101111/aletheia-packing-records/d137d44c6eec540b98909231d0e902f0fe4b9b1e/data/PACKING_N800_SEED_2026083001_CANDIDATE.txt",
+      "sha256": "076bc719aa8124ea567c0f85bb9629242670006ea60e5e243737f0dc4190e66d",
+      "bytes": 70756,
+      "git_blob_sha1": "9846d66e65e9f90bebef5962fbfcf43d0db44f92"
+    }
+  }
+}
