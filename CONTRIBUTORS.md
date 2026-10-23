@@ -8,6 +8,12 @@ This local pilot was assembled by an OpenAI coding agent at the user's request.
 The optimizer and exact verifier are original pilot implementations. No independent
 human review or maintainer acceptance has occurred.
 
+The OpenAI coding-agent session in `research/certifier-check-20261023/` identified
+the certifier's intermediate Decimal rounding/context defect, added exact rational
+rounding and regressions, and audited a frozen finite domain against a separate
+integer oracle. The preceding geometry audits and all original construction and
+refinement credit are retained. This is author-checked verification work.
+
 Imported constructions retain the source credit in `data/records.json`: Eckard Specht;
 Bernardetta Addis, Marco Locatelli and Fabio Schoen; Peter Gabor Szabo and Eckard Specht;
 Wenqi Huang and Tao Ye; David W. Cantrell; Xiangjing Lai, Jin-Kao Hao, Renbin Xiao and

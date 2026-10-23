@@ -1,5 +1,6 @@
 """Construct rational witnesses by rounding centers, then shrinking radius exactly."""
-from decimal import Decimal, localcontext, ROUND_HALF_EVEN
+from decimal import Decimal
+from fractions import Fraction
 from math import isqrt
 from pathlib import Path
 import json
@@ -9,10 +10,8 @@ SCALE = 10**15
 
 
 def make_certificate(centers, provenance, scale=SCALE):
-    with localcontext() as ctx:
-        ctx.prec = 80
-        points = [[int((Decimal(str(v))*scale).to_integral_value(rounding=ROUND_HALF_EVEN))
-                   for v in p] for p in centers]
+    # Keep half-grid differences exact before rounding, regardless of Decimal context.
+    points = [[round(Fraction(Decimal(str(v)))*scale) for v in p] for p in centers]
     wall = min(min(x,y,scale-x,scale-y) for x,y in points)
     pair = min(((x-u)**2+(y-v)**2 for i,(x,y) in enumerate(points)
                 for u,v in points[:i]), default=scale*scale)
