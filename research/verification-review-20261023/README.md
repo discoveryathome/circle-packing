@@ -99,9 +99,11 @@ controls, not additional coverage of all possible defects.
 
 The result remains scoped to the enumerated domain and saved witnesses.
 The project's eight original verifier tests and baseline reproduction (50 certificates,
-12 frontier rows) passed before this work. The broader suite passed 18 tests; its
-optimizer module could not import because NumPy is absent. Numerical optimizer tests
-were therefore not run, and no solver dependencies were installed for this review.
+12 frontier rows) passed before this work. The initial environment lacked NumPy.
+During the continued donation, a private Python 3.12.11 environment was installed
+with the exact project requirements, and all **20 tests** passed, including the two
+optimizer tests. This closes that initial validation gap; the saved audit remains
+the original frozen-source run.
 Production verification, construction data,
 working starts, and accepted-result records are not modified by this package.
 
