@@ -1,0 +1,38 @@
+{
+  "status": "author-checked escaping falsifier; no independent review",
+  "base_commit": "978d4bd925ba4ab62e5ceb2a3b3a108d3e283f1a",
+  "initial_pr12_head": "63a56972bbabb5a1fbad214727b27c94a505a232",
+  "mutation": "Remove only the html.escape wrapper from the generator's intake assignment in a disposable checkout.",
+  "normal_generator_sha256": "730bcd0e9376f6df5d01d2c77558097b94f91a9b7207c06557c0d9eebd735921",
+  "mutant_generator_sha256": "e77941def1716581f7545580658679b29e7ed0730328c50e51a1526a57be891f",
+  "original_audit_sha256": "e61307c19e0c0cfa35e523b7c3ca0230e486b812a769568ce15be7e5bcfd5367",
+  "revised_audit_sha256": "7d21ed91a856c4d442ee2d57f56636c8e7f1ff00d4c32c686ba32a831efcbc87",
+  "original_mutant_result": {
+    "exit_code": 0,
+    "failures": [],
+    "rich_fixture_matches": true
+  },
+  "revised_mutant_result": {
+    "exit_code": 1,
+    "failures": [
+      "generation fixture: <open & review>"
+    ],
+    "rich_fixture_escaped_markup_matches": false
+  },
+  "normal_revised_result": {
+    "exit_code": 0,
+    "failures": [],
+    "all_three_markup_checks_pass": true,
+    "scientific_payload_sha256": "a47673178006035dd1838eec5d7371fe162eafc16997718ee1f2497159ac3faf"
+  },
+  "independent_HTMLParser_reference": {
+    "expected_text": "Pre-release research preview · Contributor intake <open & review>",
+    "mutant_text": "Pre-release research preview · Contributor intake ",
+    "unexpected_tag": "open",
+    "rendered_text_matches": false
+  },
+  "limits": [
+    "Controlled missing-escaping mutation and three declared fixtures only",
+    "No additional browser interaction or production behavior change in this follow-up"
+  ]
+}
