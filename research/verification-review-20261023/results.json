@@ -1,0 +1,1144 @@
+{
+  "status": "author-checked; no independent review or acceptance",
+  "base_commit": "978d4bd925ba4ab62e5ceb2a3b3a108d3e283f1a",
+  "seed": "c68557875f8ed1f9b2d61ce46a7dc42e",
+  "predecessor_pr": "https://github.com/discoveryathome/circle-packing/pull/8",
+  "predecessor_head": "b01a3aea620366ec693adfb83bbd6d286dff73c7",
+  "predecessor_source_pins": {
+    "src/verify.py": "3b065d9d5140c63dcf33cad2c0ac93a0ad7afde8eb94136fb935a7e3ce5d6976",
+    "discover/working-starts.json": "889c6d4bad7cceec20319f7f30dc03746018910e58efe074b4ee95e4f9dce903",
+    "research/rational-check-20261022/audit.py": "26c4bb383a004271dc23441ca594039d2840cf2645961c501e0544b674faecff",
+    "research/rational-check-20261022/README.md": "c9437bb7b0a4bae0665b653d506e10ef42f7b1dd5c8bd35da812655b56044f01",
+    "research/rational-check-20261022/results.json": "3bb429def43d18c243d52e0a83be8363865263d9c510f07c69998bcce16ada00"
+  },
+  "review_source_sha256": "7df78a434ea075ad20e1fae06345d7d0532710dbe13da9417c3f7608b5a38f2c",
+  "bigint_source_sha256": "99a7323b9d13e83de88a0ffb3b7d3c1fc3e8be62c243aacec8be66a2a2f78f5a",
+  "python": "3.13.5",
+  "node": "v22.23.4",
+  "predecessor_replay": {
+    "compared_fields": [
+      "audit_sha256",
+      "base_commit",
+      "boundary_controls",
+      "disagreements",
+      "format_controls_rejected",
+      "grid_cases",
+      "grid_domain",
+      "grid_results",
+      "not_checked",
+      "round_seed",
+      "status",
+      "verifier_sha256",
+      "working_starts",
+      "working_starts_sha256"
+    ],
+    "excluded_runtime_fields": [
+      "elapsed_seconds",
+      "python"
+    ],
+    "python": "3.13.5",
+    "elapsed_seconds": 51.386
+  },
+  "grid_results": [
+    {
+      "n": 1,
+      "q": 1,
+      "accepted": 0,
+      "rejected": 4,
+      "signature_sha256": "6a33a504c8d16194914401f4f46532de96e1b63119fc5981341c6b65c6c27096"
+    },
+    {
+      "n": 1,
+      "q": 2,
+      "accepted": 1,
+      "rejected": 17,
+      "signature_sha256": "9cc5ad05c867e1f3ac8bbec7e3e88f02873e3bcc22ca7742fd92a9152c1d2daf"
+    },
+    {
+      "n": 1,
+      "q": 3,
+      "accepted": 4,
+      "rejected": 28,
+      "signature_sha256": "5b96aad9797aead5c199fc010e5764e1ae670dd68cb398d7a392057ad66dd1c6"
+    },
+    {
+      "n": 1,
+      "q": 4,
+      "accepted": 10,
+      "rejected": 65,
+      "signature_sha256": "44b2231e4d02a5ba7a2d21806472e643fd35d9b925436ed236103c1e586bba2d"
+    },
+    {
+      "n": 1,
+      "q": 5,
+      "accepted": 20,
+      "rejected": 88,
+      "signature_sha256": "3a871b08e1b445763ce9754ce65b728f5f1777daf8f711025a018011720a4558"
+    },
+    {
+      "n": 1,
+      "q": 6,
+      "accepted": 35,
+      "rejected": 161,
+      "signature_sha256": "4f5f0312de30bb0858f6ddde865ef7de4ffc4967a9b9085dca4181b1db52a75f"
+    },
+    {
+      "n": 1,
+      "q": 7,
+      "accepted": 56,
+      "rejected": 200,
+      "signature_sha256": "977eb75379b12e033a024c534506a1fb0f758910e5824ec15556dedf3fa21381"
+    },
+    {
+      "n": 1,
+      "q": 8,
+      "accepted": 84,
+      "rejected": 321,
+      "signature_sha256": "b2f9d8e2d97622e248322a77375983636aaeb32cff09008fff62513b7e8eb13c"
+    },
+    {
+      "n": 1,
+      "q": 9,
+      "accepted": 120,
+      "rejected": 380,
+      "signature_sha256": "5d4a55552bbe6c9bf1037ec8c690ddf154605c0b93bed8ed2e8e75dfeba17ecb"
+    },
+    {
+      "n": 1,
+      "q": 10,
+      "accepted": 165,
+      "rejected": 561,
+      "signature_sha256": "a9b4cb34b0107d86730195784b474202e29e54ee50ea38973fec9632ead75e60"
+    },
+    {
+      "n": 1,
+      "q": 11,
+      "accepted": 220,
+      "rejected": 644,
+      "signature_sha256": "a3ca48d967e031ad31cebd0489365acee87d69c6dcd46555d40126ae52912e8e"
+    },
+    {
+      "n": 1,
+      "q": 12,
+      "accepted": 286,
+      "rejected": 897,
+      "signature_sha256": "510c8dfc43419e97c2d3122080d586916f3bec8252ed86f60200ad4f0489d81b"
+    },
+    {
+      "n": 2,
+      "q": 1,
+      "accepted": 0,
+      "rejected": 10,
+      "signature_sha256": "bb1ad350d4a9708d010c2b31d96f014921895bb63f6ebb9a3378d985cafe7e64"
+    },
+    {
+      "n": 2,
+      "q": 2,
+      "accepted": 0,
+      "rejected": 90,
+      "signature_sha256": "305d1f9b118063ef1d3237b0e485a87d78fc326bff6eddf9f037e84505b4ec5a"
+    },
+    {
+      "n": 2,
+      "q": 3,
+      "accepted": 0,
+      "rejected": 272,
+      "signature_sha256": "11df3a5ee9aa0739b815730cfcdc9cc5d0e21128bfbf06ea344d26dedb30a13d"
+    },
+    {
+      "n": 2,
+      "q": 4,
+      "accepted": 16,
+      "rejected": 959,
+      "signature_sha256": "1441a5ac4f51be8544b5ffae03d48cfa0ad2fdedd7789bfe71a8460a47e3b027"
+    },
+    {
+      "n": 2,
+      "q": 5,
+      "accepted": 78,
+      "rejected": 1920,
+      "signature_sha256": "cbdf6d361587410c5f401f2d0e9a0f05776d433ebc1584f9a78bab707f7a9194"
+    },
+    {
+      "n": 2,
+      "q": 6,
+      "accepted": 228,
+      "rejected": 4672,
+      "signature_sha256": "edcd088eec2a700a3d4dd050d35c3d09bde4edfb70d36e7fb35c91565bd853d4"
+    },
+    {
+      "n": 2,
+      "q": 7,
+      "accepted": 522,
+      "rejected": 7798,
+      "signature_sha256": "5fbde3f3615412971debb97b5903453d2d569cb67b1a694cd4f294fdaa9cc0df"
+    },
+    {
+      "n": 2,
+      "q": 8,
+      "accepted": 1076,
+      "rejected": 15529,
+      "signature_sha256": "514a6d8ec9a46276d77a1e769dbda148b7cd11cc87f8671976835e57fb5fef7f"
+    },
+    {
+      "n": 2,
+      "q": 9,
+      "accepted": 2022,
+      "rejected": 23228,
+      "signature_sha256": "c214e8a87cab291018f1f6ff0e4921bb3c686e7d1af8be3d38fdb0aa6c21895e"
+    },
+    {
+      "n": 2,
+      "q": 10,
+      "accepted": 3516,
+      "rejected": 40770,
+      "signature_sha256": "1643777cff2c87e24001c5b0dfe7ce3350dc150a66836fb956d033008bac32b5"
+    },
+    {
+      "n": 2,
+      "q": 11,
+      "accepted": 5748,
+      "rejected": 56892,
+      "signature_sha256": "bdbd77558852c72559c430f42b1a93d403fafff5d29ec81bff675b151b997d6d"
+    },
+    {
+      "n": 2,
+      "q": 12,
+      "accepted": 9020,
+      "rejected": 91535,
+      "signature_sha256": "4657541e08741666ce7600825b3a8005f9c36a94ee33c2f00a9ec70389f9d5a7"
+    },
+    {
+      "n": 3,
+      "q": 1,
+      "accepted": 0,
+      "rejected": 20,
+      "signature_sha256": "9a78e969b33f64b9069cbf379a2ee24f1fff7c30f0c68ad836eb2eebbc3877b1"
+    },
+    {
+      "n": 3,
+      "q": 2,
+      "accepted": 0,
+      "rejected": 330,
+      "signature_sha256": "8c6ba6facef6be3e4dd834b8f9920359a015bdc822b02b7ab5aae3fd9f1c2d40"
+    },
+    {
+      "n": 3,
+      "q": 3,
+      "accepted": 0,
+      "rejected": 1632,
+      "signature_sha256": "4661ac0ce138e0d59a386e4cb158224899fcd43113de6768f980f8e16e701ee3"
+    },
+    {
+      "n": 3,
+      "q": 4,
+      "accepted": 8,
+      "rejected": 8767,
+      "signature_sha256": "c71c9127ff3c2fe114f6bd9d698183caada3e71891fa29446d2c29eef8816946"
+    },
+    {
+      "n": 3,
+      "q": 5,
+      "accepted": 140,
+      "rejected": 25168,
+      "signature_sha256": "694fa445949f45cd15430f2da8aa448726b4f78553aa66545987837e7e8ff997"
+    }
+  ],
+  "grid_cases": 306333,
+  "accepted": 23375,
+  "rejected": 282958,
+  "controls": [
+    {
+      "label": "maximal singleton",
+      "accepted": true
+    },
+    {
+      "label": "singleton requested as two",
+      "accepted": false
+    },
+    {
+      "label": "6-8-10 tangency",
+      "accepted": true
+    },
+    {
+      "label": "6-7 overlap",
+      "accepted": false
+    },
+    {
+      "label": "6-9 separation",
+      "accepted": true
+    },
+    {
+      "label": "duplicate centers",
+      "accepted": false
+    },
+    {
+      "label": "too large radius",
+      "accepted": false
+    },
+    {
+      "label": "zero radius",
+      "accepted": false
+    },
+    {
+      "label": "negative denominator",
+      "accepted": false
+    },
+    {
+      "label": "metadata count mismatch",
+      "accepted": false
+    },
+    {
+      "label": "16-digit pair offset -1",
+      "accepted": false
+    },
+    {
+      "label": "16-digit pair offset 0",
+      "accepted": true
+    },
+    {
+      "label": "16-digit pair offset 1",
+      "accepted": true
+    },
+    {
+      "label": "16-digit axis 0 upper False wall violation",
+      "accepted": false
+    },
+    {
+      "label": "16-digit axis 0 upper True wall violation",
+      "accepted": false
+    },
+    {
+      "label": "16-digit axis 1 upper False wall violation",
+      "accepted": false
+    },
+    {
+      "label": "16-digit axis 1 upper True wall violation",
+      "accepted": false
+    },
+    {
+      "label": "80-digit pair offset -1",
+      "accepted": false
+    },
+    {
+      "label": "80-digit pair offset 0",
+      "accepted": true
+    },
+    {
+      "label": "80-digit pair offset 1",
+      "accepted": true
+    },
+    {
+      "label": "80-digit axis 0 upper False wall violation",
+      "accepted": false
+    },
+    {
+      "label": "80-digit axis 0 upper True wall violation",
+      "accepted": false
+    },
+    {
+      "label": "80-digit axis 1 upper False wall violation",
+      "accepted": false
+    },
+    {
+      "label": "80-digit axis 1 upper True wall violation",
+      "accepted": false
+    },
+    {
+      "label": "200-digit pair offset -1",
+      "accepted": false
+    },
+    {
+      "label": "200-digit pair offset 0",
+      "accepted": true
+    },
+    {
+      "label": "200-digit pair offset 1",
+      "accepted": true
+    },
+    {
+      "label": "200-digit axis 0 upper False wall violation",
+      "accepted": false
+    },
+    {
+      "label": "200-digit axis 0 upper True wall violation",
+      "accepted": false
+    },
+    {
+      "label": "200-digit axis 1 upper False wall violation",
+      "accepted": false
+    },
+    {
+      "label": "200-digit axis 1 upper True wall violation",
+      "accepted": false
+    }
+  ],
+  "working_starts": [
+    {
+      "n": 100,
+      "certificate": "certificates/frontier/n100.json",
+      "sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "radius_exact": "51401071774379/1000000000000000",
+      "previous_certificate": "certificates/frontier/n100.json",
+      "previous_sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "construction_credit": "Bernardetta Addis, Marco Locatelli, Fabio Schoen (Packomania reference [20])",
+      "source": "https://packomania.com/csq/csq100.html",
+      "cross_runtime": {
+        "n": 100,
+        "results": [
+          {
+            "label": "original",
+            "signature": "1|100|51401071774379|1000000000000000|1|235725713468158|4950\n"
+          },
+          {
+            "label": "symmetry-0",
+            "signature": "1|100|51401071774379|1000000000000000|1|235725713468158|4950\n"
+          },
+          {
+            "label": "symmetry-1",
+            "signature": "1|100|51401071774379|1000000000000000|1|235725713468158|4950\n"
+          },
+          {
+            "label": "symmetry-2",
+            "signature": "1|100|51401071774379|1000000000000000|1|235725713468158|4950\n"
+          },
+          {
+            "label": "symmetry-3",
+            "signature": "1|100|51401071774379|1000000000000000|1|235725713468158|4950\n"
+          },
+          {
+            "label": "symmetry-4",
+            "signature": "1|100|51401071774379|1000000000000000|1|235725713468158|4950\n"
+          },
+          {
+            "label": "symmetry-5",
+            "signature": "1|100|51401071774379|1000000000000000|1|235725713468158|4950\n"
+          },
+          {
+            "label": "symmetry-6",
+            "signature": "1|100|51401071774379|1000000000000000|1|235725713468158|4950\n"
+          },
+          {
+            "label": "symmetry-7",
+            "signature": "1|100|51401071774379|1000000000000000|1|235725713468158|4950\n"
+          },
+          {
+            "label": "scale-97",
+            "signature": "1|100|4985903962114763|97000000000000000|97|2217943238021898622|4950\n"
+          },
+          {
+            "label": "requested-99",
+            "signature": "0\n"
+          },
+          {
+            "label": "requested-101",
+            "signature": "0\n"
+          }
+        ]
+      }
+    },
+    {
+      "n": 106,
+      "certificate": "certificates/frontier/n106.json",
+      "sha256": "e900839b877b852e58775bb97bdec6a88bb767f499bc5e3bb3af168da9e7e633",
+      "radius_exact": "3125950026631/62500000000000",
+      "previous_certificate": "certificates/frontier/n106.json",
+      "previous_sha256": "e900839b877b852e58775bb97bdec6a88bb767f499bc5e3bb3af168da9e7e633",
+      "construction_credit": "Xiangjing Lai, Jin-Kao Hao, Renbin Xiao, Fred Glover",
+      "source": "https://packomania.com/csq/csq106.html",
+      "cross_runtime": {
+        "n": 106,
+        "results": [
+          {
+            "label": "original",
+            "signature": "1|106|50015200426096|1000000000000000|0|24649|5565\n"
+          },
+          {
+            "label": "symmetry-0",
+            "signature": "1|106|50015200426096|1000000000000000|0|24649|5565\n"
+          },
+          {
+            "label": "symmetry-1",
+            "signature": "1|106|50015200426096|1000000000000000|0|24649|5565\n"
+          },
+          {
+            "label": "symmetry-2",
+            "signature": "1|106|50015200426096|1000000000000000|0|24649|5565\n"
+          },
+          {
+            "label": "symmetry-3",
+            "signature": "1|106|50015200426096|1000000000000000|0|24649|5565\n"
+          },
+          {
+            "label": "symmetry-4",
+            "signature": "1|106|50015200426096|1000000000000000|0|24649|5565\n"
+          },
+          {
+            "label": "symmetry-5",
+            "signature": "1|106|50015200426096|1000000000000000|0|24649|5565\n"
+          },
+          {
+            "label": "symmetry-6",
+            "signature": "1|106|50015200426096|1000000000000000|0|24649|5565\n"
+          },
+          {
+            "label": "symmetry-7",
+            "signature": "1|106|50015200426096|1000000000000000|0|24649|5565\n"
+          },
+          {
+            "label": "scale-97",
+            "signature": "1|106|4851474441331312|97000000000000000|0|231922441|5565\n"
+          },
+          {
+            "label": "requested-105",
+            "signature": "0\n"
+          },
+          {
+            "label": "requested-107",
+            "signature": "0\n"
+          }
+        ]
+      }
+    },
+    {
+      "n": 134,
+      "certificate": "certificates/frontier/n134.json",
+      "sha256": "51b1af652fc2addf87247e89317a0231d69c3870dc5dda7df568144deba93bed",
+      "radius_exact": "8912848841419/200000000000000",
+      "previous_certificate": "certificates/frontier/n134.json",
+      "previous_sha256": "51b1af652fc2addf87247e89317a0231d69c3870dc5dda7df568144deba93bed",
+      "construction_credit": "Wenqi Huang, Tao Ye; David W. Cantrell",
+      "source": "https://packomania.com/csq/csq134.html",
+      "cross_runtime": {
+        "n": 134,
+        "results": [
+          {
+            "label": "original",
+            "signature": "1|134|44564244207095|1000000000000000|1|142497090001765|8911\n"
+          },
+          {
+            "label": "symmetry-0",
+            "signature": "1|134|44564244207095|1000000000000000|1|142497090001765|8911\n"
+          },
+          {
+            "label": "symmetry-1",
+            "signature": "1|134|44564244207095|1000000000000000|1|142497090001765|8911\n"
+          },
+          {
+            "label": "symmetry-2",
+            "signature": "1|134|44564244207095|1000000000000000|1|142497090001765|8911\n"
+          },
+          {
+            "label": "symmetry-3",
+            "signature": "1|134|44564244207095|1000000000000000|1|142497090001765|8911\n"
+          },
+          {
+            "label": "symmetry-4",
+            "signature": "1|134|44564244207095|1000000000000000|1|142497090001765|8911\n"
+          },
+          {
+            "label": "symmetry-5",
+            "signature": "1|134|44564244207095|1000000000000000|1|142497090001765|8911\n"
+          },
+          {
+            "label": "symmetry-6",
+            "signature": "1|134|44564244207095|1000000000000000|1|142497090001765|8911\n"
+          },
+          {
+            "label": "symmetry-7",
+            "signature": "1|134|44564244207095|1000000000000000|1|142497090001765|8911\n"
+          },
+          {
+            "label": "scale-97",
+            "signature": "1|134|4322731688088215|97000000000000000|97|1340755119826606885|8911\n"
+          },
+          {
+            "label": "requested-133",
+            "signature": "0\n"
+          },
+          {
+            "label": "requested-135",
+            "signature": "0\n"
+          }
+        ]
+      }
+    },
+    {
+      "n": 150,
+      "certificate": "certificates/frontier/n150.json",
+      "sha256": "e21e5ad83eb157ddcbe5fea29e422b4f76b9e0038a5a332d6594b7baeab9160b",
+      "radius_exact": "2634091618827/62500000000000",
+      "previous_certificate": "certificates/frontier/n150.json",
+      "previous_sha256": "e21e5ad83eb157ddcbe5fea29e422b4f76b9e0038a5a332d6594b7baeab9160b",
+      "construction_credit": "Wenqi Huang, Tao Ye; David W. Cantrell",
+      "source": "https://packomania.com/csq/csq150.html",
+      "cross_runtime": {
+        "n": 150,
+        "results": [
+          {
+            "label": "original",
+            "signature": "1|150|42145465901232|1000000000000000|1|278704404388589|11175\n"
+          },
+          {
+            "label": "symmetry-0",
+            "signature": "1|150|42145465901232|1000000000000000|1|278704404388589|11175\n"
+          },
+          {
+            "label": "symmetry-1",
+            "signature": "1|150|42145465901232|1000000000000000|1|278704404388589|11175\n"
+          },
+          {
+            "label": "symmetry-2",
+            "signature": "1|150|42145465901232|1000000000000000|1|278704404388589|11175\n"
+          },
+          {
+            "label": "symmetry-3",
+            "signature": "1|150|42145465901232|1000000000000000|1|278704404388589|11175\n"
+          },
+          {
+            "label": "symmetry-4",
+            "signature": "1|150|42145465901232|1000000000000000|1|278704404388589|11175\n"
+          },
+          {
+            "label": "symmetry-5",
+            "signature": "1|150|42145465901232|1000000000000000|1|278704404388589|11175\n"
+          },
+          {
+            "label": "symmetry-6",
+            "signature": "1|150|42145465901232|1000000000000000|1|278704404388589|11175\n"
+          },
+          {
+            "label": "symmetry-7",
+            "signature": "1|150|42145465901232|1000000000000000|1|278704404388589|11175\n"
+          },
+          {
+            "label": "scale-97",
+            "signature": "1|150|4088110192419504|97000000000000000|97|2622329740892233901|11175\n"
+          },
+          {
+            "label": "requested-149",
+            "signature": "0\n"
+          },
+          {
+            "label": "requested-151",
+            "signature": "0\n"
+          }
+        ]
+      }
+    },
+    {
+      "n": 200,
+      "certificate": "certificates/frontier/n200.json",
+      "sha256": "941ef16137f6a9a5782fd3a304fce438c66f3a130e3b3f3a0e430b69cc7fa2b9",
+      "radius_exact": "1830639945191/50000000000000",
+      "previous_certificate": "certificates/frontier/n200.json",
+      "previous_sha256": "941ef16137f6a9a5782fd3a304fce438c66f3a130e3b3f3a0e430b69cc7fa2b9",
+      "construction_credit": "Wenqi Huang, Tao Ye; David W. Cantrell",
+      "source": "https://packomania.com/csq/csq200.html",
+      "cross_runtime": {
+        "n": 200,
+        "results": [
+          {
+            "label": "original",
+            "signature": "1|200|36612798903820|1000000000000000|0|0|19900\n"
+          },
+          {
+            "label": "symmetry-0",
+            "signature": "1|200|36612798903820|1000000000000000|0|0|19900\n"
+          },
+          {
+            "label": "symmetry-1",
+            "signature": "1|200|36612798903820|1000000000000000|0|0|19900\n"
+          },
+          {
+            "label": "symmetry-2",
+            "signature": "1|200|36612798903820|1000000000000000|0|0|19900\n"
+          },
+          {
+            "label": "symmetry-3",
+            "signature": "1|200|36612798903820|1000000000000000|0|0|19900\n"
+          },
+          {
+            "label": "symmetry-4",
+            "signature": "1|200|36612798903820|1000000000000000|0|0|19900\n"
+          },
+          {
+            "label": "symmetry-5",
+            "signature": "1|200|36612798903820|1000000000000000|0|0|19900\n"
+          },
+          {
+            "label": "symmetry-6",
+            "signature": "1|200|36612798903820|1000000000000000|0|0|19900\n"
+          },
+          {
+            "label": "symmetry-7",
+            "signature": "1|200|36612798903820|1000000000000000|0|0|19900\n"
+          },
+          {
+            "label": "scale-97",
+            "signature": "1|200|3551441493670540|97000000000000000|0|0|19900\n"
+          },
+          {
+            "label": "requested-199",
+            "signature": "0\n"
+          },
+          {
+            "label": "requested-201",
+            "signature": "0\n"
+          }
+        ]
+      }
+    },
+    {
+      "n": 250,
+      "certificate": "certificates/frontier/n250.json",
+      "sha256": "ee63b0716f4a95ac0dd8b522b7c69072d6dcf7e62ab4ae1bfdcdeb488105591f",
+      "radius_exact": "32879800209483/1000000000000000",
+      "previous_certificate": "certificates/frontier/n250.json",
+      "previous_sha256": "ee63b0716f4a95ac0dd8b522b7c69072d6dcf7e62ab4ae1bfdcdeb488105591f",
+      "construction_credit": "Xiangjing Lai, Jin-Kao Hao, Renbin Xiao, Fred Glover",
+      "source": "https://packomania.com/csq/csq250.html",
+      "cross_runtime": {
+        "n": 250,
+        "results": [
+          {
+            "label": "original",
+            "signature": "1|250|32879800209483|1000000000000000|0|90532579853494|31125\n"
+          },
+          {
+            "label": "symmetry-0",
+            "signature": "1|250|32879800209483|1000000000000000|0|90532579853494|31125\n"
+          },
+          {
+            "label": "symmetry-1",
+            "signature": "1|250|32879800209483|1000000000000000|0|90532579853494|31125\n"
+          },
+          {
+            "label": "symmetry-2",
+            "signature": "1|250|32879800209483|1000000000000000|0|90532579853494|31125\n"
+          },
+          {
+            "label": "symmetry-3",
+            "signature": "1|250|32879800209483|1000000000000000|0|90532579853494|31125\n"
+          },
+          {
+            "label": "symmetry-4",
+            "signature": "1|250|32879800209483|1000000000000000|0|90532579853494|31125\n"
+          },
+          {
+            "label": "symmetry-5",
+            "signature": "1|250|32879800209483|1000000000000000|0|90532579853494|31125\n"
+          },
+          {
+            "label": "symmetry-6",
+            "signature": "1|250|32879800209483|1000000000000000|0|90532579853494|31125\n"
+          },
+          {
+            "label": "symmetry-7",
+            "signature": "1|250|32879800209483|1000000000000000|0|90532579853494|31125\n"
+          },
+          {
+            "label": "scale-97",
+            "signature": "1|250|3189340620319851|97000000000000000|0|851821043841525046|31125\n"
+          },
+          {
+            "label": "requested-249",
+            "signature": "0\n"
+          },
+          {
+            "label": "requested-251",
+            "signature": "0\n"
+          }
+        ]
+      }
+    },
+    {
+      "n": 300,
+      "certificate": "certificates/frontier/n300.json",
+      "sha256": "f18578cff5862de099cadfa74b9e32d06ff695583e4689bdc681daef4552cc0f",
+      "radius_exact": "30219555704457/1000000000000000",
+      "previous_certificate": "certificates/frontier/n300.json",
+      "previous_sha256": "f18578cff5862de099cadfa74b9e32d06ff695583e4689bdc681daef4552cc0f",
+      "construction_credit": "Packomania reference [25]",
+      "source": "https://packomania.com/csq/csq300.html",
+      "cross_runtime": {
+        "n": 300,
+        "results": [
+          {
+            "label": "original",
+            "signature": "1|300|30219555704457|1000000000000000|0|120878222817998|44850\n"
+          },
+          {
+            "label": "symmetry-0",
+            "signature": "1|300|30219555704457|1000000000000000|0|120878222817998|44850\n"
+          },
+          {
+            "label": "symmetry-1",
+            "signature": "1|300|30219555704457|1000000000000000|0|120878222817998|44850\n"
+          },
+          {
+            "label": "symmetry-2",
+            "signature": "1|300|30219555704457|1000000000000000|0|120878222817998|44850\n"
+          },
+          {
+            "label": "symmetry-3",
+            "signature": "1|300|30219555704457|1000000000000000|0|120878222817998|44850\n"
+          },
+          {
+            "label": "symmetry-4",
+            "signature": "1|300|30219555704457|1000000000000000|0|120878222817998|44850\n"
+          },
+          {
+            "label": "symmetry-5",
+            "signature": "1|300|30219555704457|1000000000000000|0|120878222817998|44850\n"
+          },
+          {
+            "label": "symmetry-6",
+            "signature": "1|300|30219555704457|1000000000000000|0|120878222817998|44850\n"
+          },
+          {
+            "label": "symmetry-7",
+            "signature": "1|300|30219555704457|1000000000000000|0|120878222817998|44850\n"
+          },
+          {
+            "label": "scale-97",
+            "signature": "1|300|2931296903332329|97000000000000000|0|1137343198494543182|44850\n"
+          },
+          {
+            "label": "requested-299",
+            "signature": "0\n"
+          },
+          {
+            "label": "requested-301",
+            "signature": "0\n"
+          }
+        ]
+      }
+    },
+    {
+      "n": 400,
+      "certificate": "certificates/frontier/n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "radius_exact": "13101253538109/500000000000000",
+      "previous_certificate": "certificates/frontier/n400.json",
+      "previous_sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "construction_credit": "Xiangjing Lai, Jin-Kao Hao, Renbin Xiao, Fred Glover",
+      "source": "https://packomania.com/csq/csq400.html",
+      "cross_runtime": {
+        "n": 400,
+        "results": [
+          {
+            "label": "original",
+            "signature": "1|400|26202507076218|1000000000000000|0|65273592969605|79800\n"
+          },
+          {
+            "label": "symmetry-0",
+            "signature": "1|400|26202507076218|1000000000000000|0|65273592969605|79800\n"
+          },
+          {
+            "label": "symmetry-1",
+            "signature": "1|400|26202507076218|1000000000000000|0|65273592969605|79800\n"
+          },
+          {
+            "label": "symmetry-2",
+            "signature": "1|400|26202507076218|1000000000000000|0|65273592969605|79800\n"
+          },
+          {
+            "label": "symmetry-3",
+            "signature": "1|400|26202507076218|1000000000000000|0|65273592969605|79800\n"
+          },
+          {
+            "label": "symmetry-4",
+            "signature": "1|400|26202507076218|1000000000000000|0|65273592969605|79800\n"
+          },
+          {
+            "label": "symmetry-5",
+            "signature": "1|400|26202507076218|1000000000000000|0|65273592969605|79800\n"
+          },
+          {
+            "label": "symmetry-6",
+            "signature": "1|400|26202507076218|1000000000000000|0|65273592969605|79800\n"
+          },
+          {
+            "label": "symmetry-7",
+            "signature": "1|400|26202507076218|1000000000000000|0|65273592969605|79800\n"
+          },
+          {
+            "label": "scale-97",
+            "signature": "1|400|2541643186393146|97000000000000000|0|614159236251013445|79800\n"
+          },
+          {
+            "label": "requested-399",
+            "signature": "0\n"
+          },
+          {
+            "label": "requested-401",
+            "signature": "0\n"
+          }
+        ]
+      }
+    },
+    {
+      "n": 500,
+      "certificate": "research/contributor-20261020/certificates/best/n500.json",
+      "sha256": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "radius_exact": "23455596955367/1000000000000000",
+      "previous_certificate": "certificates/frontier/n500.json",
+      "previous_sha256": "f10cbde233bd0e5ec97e40695812da9df69128bb3cc72e615284b46272d5dba6",
+      "construction_credit": "Packntile team (Packomania reference [26])",
+      "source": "https://packomania.com/csq/csq500.html",
+      "cross_runtime": {
+        "n": 500,
+        "results": [
+          {
+            "label": "original",
+            "signature": "1|500|23455596955367|1000000000000000|0|89943098074369|124750\n"
+          },
+          {
+            "label": "symmetry-0",
+            "signature": "1|500|23455596955367|1000000000000000|0|89943098074369|124750\n"
+          },
+          {
+            "label": "symmetry-1",
+            "signature": "1|500|23455596955367|1000000000000000|0|89943098074369|124750\n"
+          },
+          {
+            "label": "symmetry-2",
+            "signature": "1|500|23455596955367|1000000000000000|0|89943098074369|124750\n"
+          },
+          {
+            "label": "symmetry-3",
+            "signature": "1|500|23455596955367|1000000000000000|0|89943098074369|124750\n"
+          },
+          {
+            "label": "symmetry-4",
+            "signature": "1|500|23455596955367|1000000000000000|0|89943098074369|124750\n"
+          },
+          {
+            "label": "symmetry-5",
+            "signature": "1|500|23455596955367|1000000000000000|0|89943098074369|124750\n"
+          },
+          {
+            "label": "symmetry-6",
+            "signature": "1|500|23455596955367|1000000000000000|0|89943098074369|124750\n"
+          },
+          {
+            "label": "symmetry-7",
+            "signature": "1|500|23455596955367|1000000000000000|0|89943098074369|124750\n"
+          },
+          {
+            "label": "scale-97",
+            "signature": "1|500|2275192904670599|97000000000000000|0|846274609781737921|124750\n"
+          },
+          {
+            "label": "requested-499",
+            "signature": "0\n"
+          },
+          {
+            "label": "requested-501",
+            "signature": "0\n"
+          }
+        ]
+      }
+    },
+    {
+      "n": 600,
+      "certificate": "certificates/frontier/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "radius_exact": "5369974144543/250000000000000",
+      "previous_certificate": "certificates/frontier/n600.json",
+      "previous_sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "construction_credit": "Eckard Specht",
+      "source": "https://packomania.com/csq/csq600.html",
+      "cross_runtime": {
+        "n": 600,
+        "results": [
+          {
+            "label": "original",
+            "signature": "1|600|21479896578172|1000000000000000|0|28132761547464|179700\n"
+          },
+          {
+            "label": "symmetry-0",
+            "signature": "1|600|21479896578172|1000000000000000|0|28132761547464|179700\n"
+          },
+          {
+            "label": "symmetry-1",
+            "signature": "1|600|21479896578172|1000000000000000|0|28132761547464|179700\n"
+          },
+          {
+            "label": "symmetry-2",
+            "signature": "1|600|21479896578172|1000000000000000|0|28132761547464|179700\n"
+          },
+          {
+            "label": "symmetry-3",
+            "signature": "1|600|21479896578172|1000000000000000|0|28132761547464|179700\n"
+          },
+          {
+            "label": "symmetry-4",
+            "signature": "1|600|21479896578172|1000000000000000|0|28132761547464|179700\n"
+          },
+          {
+            "label": "symmetry-5",
+            "signature": "1|600|21479896578172|1000000000000000|0|28132761547464|179700\n"
+          },
+          {
+            "label": "symmetry-6",
+            "signature": "1|600|21479896578172|1000000000000000|0|28132761547464|179700\n"
+          },
+          {
+            "label": "symmetry-7",
+            "signature": "1|600|21479896578172|1000000000000000|0|28132761547464|179700\n"
+          },
+          {
+            "label": "scale-97",
+            "signature": "1|600|2083549968082684|97000000000000000|0|264701153400088776|179700\n"
+          },
+          {
+            "label": "requested-599",
+            "signature": "0\n"
+          },
+          {
+            "label": "requested-601",
+            "signature": "0\n"
+          }
+        ]
+      }
+    },
+    {
+      "n": 700,
+      "certificate": "research/contributor-20261020/certificates/best/n700.json",
+      "sha256": "6d02a08ed764ba28cc992fc0eee01d532f33ea54c0615082899b903da6e30179",
+      "radius_exact": "19906357272343/1000000000000000",
+      "previous_certificate": "certificates/frontier/n700.json",
+      "previous_sha256": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2",
+      "construction_credit": "Eckard Specht",
+      "source": "https://packomania.com/csq/csq700.html",
+      "cross_runtime": {
+        "n": 700,
+        "results": [
+          {
+            "label": "original",
+            "signature": "1|700|19906357272343|1000000000000000|1|49195770797542|244650\n"
+          },
+          {
+            "label": "symmetry-0",
+            "signature": "1|700|19906357272343|1000000000000000|1|49195770797542|244650\n"
+          },
+          {
+            "label": "symmetry-1",
+            "signature": "1|700|19906357272343|1000000000000000|1|49195770797542|244650\n"
+          },
+          {
+            "label": "symmetry-2",
+            "signature": "1|700|19906357272343|1000000000000000|1|49195770797542|244650\n"
+          },
+          {
+            "label": "symmetry-3",
+            "signature": "1|700|19906357272343|1000000000000000|1|49195770797542|244650\n"
+          },
+          {
+            "label": "symmetry-4",
+            "signature": "1|700|19906357272343|1000000000000000|1|49195770797542|244650\n"
+          },
+          {
+            "label": "symmetry-5",
+            "signature": "1|700|19906357272343|1000000000000000|1|49195770797542|244650\n"
+          },
+          {
+            "label": "symmetry-6",
+            "signature": "1|700|19906357272343|1000000000000000|1|49195770797542|244650\n"
+          },
+          {
+            "label": "symmetry-7",
+            "signature": "1|700|19906357272343|1000000000000000|1|49195770797542|244650\n"
+          },
+          {
+            "label": "scale-97",
+            "signature": "1|700|1930916655417271|97000000000000000|97|462883007434072678|244650\n"
+          },
+          {
+            "label": "requested-699",
+            "signature": "0\n"
+          },
+          {
+            "label": "requested-701",
+            "signature": "0\n"
+          }
+        ]
+      }
+    },
+    {
+      "n": 800,
+      "certificate": "research/contributor-20261020/certificates/best/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "radius_exact": "3727734385197/200000000000000",
+      "previous_certificate": "certificates/frontier/n800.json",
+      "previous_sha256": "b0bb52fa7fe03974cc8e11cebf26244c0f937c3ebdcb7bff8354f8a6bd172251",
+      "construction_credit": "Eckard Specht",
+      "source": "https://packomania.com/csq/csq800.html",
+      "cross_runtime": {
+        "n": 800,
+        "results": [
+          {
+            "label": "original",
+            "signature": "1|800|18638671925985|1000000000000000|0|76914344898256|319600\n"
+          },
+          {
+            "label": "symmetry-0",
+            "signature": "1|800|18638671925985|1000000000000000|0|76914344898256|319600\n"
+          },
+          {
+            "label": "symmetry-1",
+            "signature": "1|800|18638671925985|1000000000000000|0|76914344898256|319600\n"
+          },
+          {
+            "label": "symmetry-2",
+            "signature": "1|800|18638671925985|1000000000000000|0|76914344898256|319600\n"
+          },
+          {
+            "label": "symmetry-3",
+            "signature": "1|800|18638671925985|1000000000000000|0|76914344898256|319600\n"
+          },
+          {
+            "label": "symmetry-4",
+            "signature": "1|800|18638671925985|1000000000000000|0|76914344898256|319600\n"
+          },
+          {
+            "label": "symmetry-5",
+            "signature": "1|800|18638671925985|1000000000000000|0|76914344898256|319600\n"
+          },
+          {
+            "label": "symmetry-6",
+            "signature": "1|800|18638671925985|1000000000000000|0|76914344898256|319600\n"
+          },
+          {
+            "label": "symmetry-7",
+            "signature": "1|800|18638671925985|1000000000000000|0|76914344898256|319600\n"
+          },
+          {
+            "label": "scale-97",
+            "signature": "1|800|1807951176820545|97000000000000000|0|723687071147690704|319600\n"
+          },
+          {
+            "label": "requested-799",
+            "signature": "0\n"
+          },
+          {
+            "label": "requested-801",
+            "signature": "0\n"
+          }
+        ]
+      }
+    }
+  ],
+  "original_working_pairs": 1074976,
+  "working_pairs_per_runtime_including_transforms": 10749760,
+  "disagreements": 0,
+  "elapsed_seconds": 67.421,
+  "not_checked": [
+    "Arbitrary N, Q, encodings, JSON parsing equivalence or resource limits",
+    "Certifier rounding/maximality, solver correctness or numerical performance",
+    "External records, novelty, global optimality or scientific acceptance",
+    "Independent human review or serial-study local package"
+  ]
+}

@@ -19,3 +19,10 @@ Any local refinement inherits its parent construction's credit. The pilot's nume
 work does not create a claim to earlier authors' constructions or pending submissions.
 
 The follow-up contributor session in `research/contributor-20261020/` was performed by the same OpenAI coding agent: contact-aware method, controlled comparisons, source recheck, exact accounting and visual explanation. Original construction credit is retained in its RESULTS.md. No independent human review or maintainer acceptance is implied.
+
+The OpenAI coding-agent session in `research/verification-review-20261023/` reviewed
+the predecessor Fraction audit in PR 8 (`b01a3aea620366ec693adfb83bbd6d286dff73c7`)
+and added a Node.js BigInt geometry cross-check, finite-domain accounting, replay,
+and scoped verification documentation. The predecessor audit and all original
+construction/refinement credits remain with their prior contributors. This work is
+author-checked; no independent scientific review, new construction, or acceptance is implied.
