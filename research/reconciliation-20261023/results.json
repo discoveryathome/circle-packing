@@ -1,0 +1,398 @@
+{
+  "status": "author-checked numerical reconciliation; no independent review or acceptance",
+  "base_commit": "978d4bd925ba4ab62e5ceb2a3b3a108d3e283f1a",
+  "seed": "c68557875f8ed1f9b2d61ce46a7dc42e",
+  "python": "3.12.11 (main, Jun 12 2025, 12:40:51) [Clang 20.1.4 ]",
+  "audit_sha256": "ec9fbdbccbd0b447fd44518315c4200aa58a48b737e44f5d07a661fae6f910c7",
+  "source_manifest_sha256": "b76f904a08b5501029abeaab1877b18c4f5ab0e2ee6e2d0e91fa9d32038d4197",
+  "verifier_sha256": "3b065d9d5140c63dcf33cad2c0ac93a0ad7afde8eb94136fb935a7e3ce5d6976",
+  "working_start_index_sha256": "889c6d4bad7cceec20319f7f30dc03746018910e58efe074b4ee95e4f9dce903",
+  "external_source_commit": "d137d44c6eec540b98909231d0e902f0fe4b9b1e",
+  "external_attribution": "Bo Brothers / Project Aletheia",
+  "source_files_redistributed": false,
+  "records": [
+    {
+      "n": 600,
+      "source_file": "data/PACKING_N600_SEED_2026083001_CANDIDATE.txt",
+      "source_sha256": "b9794492f37d28e8d4f92900ef19ebd85f58530f97f5936c245e584c89f8b9b9",
+      "coordinate_scale": "1000000000000000000000000",
+      "translation": "x+1/2,y+1/2; radii unchanged",
+      "row_radius_exact": "4295875354381028395243/200000000000000000000000",
+      "pairs_per_geometry_pass": 179700,
+      "minimum_wall_exact": "10739688389656693034979/500000000000000000000000",
+      "minimum_pair_squared_exact": "1845454507310825241105520751246936537525713913/1000000000000000000000000000000000000000000000000",
+      "minimum_pair_source_indices": [
+        245,
+        259
+      ],
+      "rational_oracle_agrees": true,
+      "native_checks": {
+        "row-radius": {
+          "valid": true,
+          "n": 600,
+          "radius_exact": "21479376771905141976215/1000000000000000000000000",
+          "wall_slack_numerator": "7408244093743",
+          "wall_slack_denominator": "1000000000000000000000000",
+          "pair_squared_slack_numerator": "1272992611031287579244390955022809013",
+          "pair_squared_slack_denominator": "1000000000000000000000000000000000000000000000000",
+          "tightest_pair": [
+            244,
+            258
+          ],
+          "pairs_checked": 179700,
+          "normalized_json_sha256": "dbba59ff9159dbd6239e6615fb8634852c56417f4d840ba0e6f636929a5e28e9"
+        },
+        "grid-24-max": {
+          "valid": true,
+          "n": 600,
+          "radius_exact": "21479376779313367924353/1000000000000000000000000",
+          "wall_slack_numerator": "18145605",
+          "wall_slack_denominator": "1000000000000000000000000",
+          "pair_squared_slack_numerator": "77899030987307403839477",
+          "pair_squared_slack_denominator": "1000000000000000000000000000000000000000000000000",
+          "tightest_pair": [
+            244,
+            258
+          ],
+          "pairs_checked": 179700,
+          "normalized_json_sha256": "38dd09de63b2acc49ea48943cf75e898e12e79e062e8f82b98cd3617f39c732c"
+        },
+        "public-grid-101-max": {
+          "valid": true,
+          "n": 600,
+          "radius_exact": "2147937677931336792435345333619189507511634335902592795709860126783031076603618257014873085383241024/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "wall_slack_numerator": "1814560454666380810492488365664097407204290139873216968923396381742985126914616758976",
+          "wall_slack_denominator": "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "pair_squared_slack_numerator": "6513227128418996600464384235355203955125750914073948546104601553876667581982529944808992950093725696",
+          "pair_squared_slack_denominator": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "tightest_pair": [
+            244,
+            258
+          ],
+          "pairs_checked": 179700,
+          "normalized_json_sha256": "2bbff085e75c5008581f580d7e24129df1a3c96c483f3550a054e53c19d39e46"
+        }
+      },
+      "source_report_integer_minima_and_grid_floor_match": true,
+      "fixed_center_radius_lower_bound": "33561526217677137381802270837799836054869286498478012432966564480984860571931535265857391959113141/1562500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "fixed_center_radius_strict_upper_bound": "85917507117253471697413813344767580300465373436103711828394405071321243064144730280594923415329641/4000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "corrected_public_radius": "0.02147937677931336792435345333619189507511634335902592795709860126783031076603618257014873085383241024",
+      "working_certificate": "certificates/frontier/n600.json",
+      "working_sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "working_construction_credit": "Eckard Specht",
+      "working_radius_exact": "5369974144543/250000000000000",
+      "working_pairs_checked": 179700,
+      "working_radius_exceeds_external_fixed_center_limit": true,
+      "positive_squared_comparison_cross_product_margin": "5582545314721057620349047066466404642880437500000000000000000000000000",
+      "working_minus_external_radius_lower_bound": "2079195434528302586186655232419699534626563896288171605594928678756935855269719405076584670359/4000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "working_minus_external_radius_upper_bound": "812185716612618197729162200163945130713501521987567033435519015139428068464734142608040886859/1562500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "delta_lower_decimal_display": "5.197988586320756465466638081049248836566E-7",
+      "delta_upper_decimal_display": "5.197988586320756465466638081049248836566E-7"
+    },
+    {
+      "n": 700,
+      "source_file": "data/PACKING_N700_SEED_2026083001_CANDIDATE.txt",
+      "source_sha256": "14ca8170ff3089e63d6e0730f4e4b7e199e3610109880d84d0be5b959d364ede",
+      "coordinate_scale": "1000000000000000000000000",
+      "translation": "x+1/2,y+1/2; radii unchanged",
+      "row_radius_exact": "19903642845244116954587/1000000000000000000000000",
+      "pairs_per_geometry_pass": 244650,
+      "minimum_wall_exact": "9951821428179991047003/500000000000000000000000",
+      "minimum_pair_squared_exact": "1584619995814109228081691151248385692691800617/1000000000000000000000000000000000000000000000000",
+      "minimum_pair_source_indices": [
+        543,
+        560
+      ],
+      "rational_oracle_agrees": true,
+      "native_checks": {
+        "row-radius": {
+          "valid": true,
+          "n": 700,
+          "radius_exact": "19903642845244116954587/1000000000000000000000000",
+          "wall_slack_numerator": "11115865139419",
+          "wall_slack_denominator": "1000000000000000000000000",
+          "pair_squared_slack_numerator": "1769959918569382919058198367010438341",
+          "pair_squared_slack_denominator": "1000000000000000000000000000000000000000000000000",
+          "tightest_pair": [
+            542,
+            559
+          ],
+          "pairs_checked": 244650,
+          "normalized_json_sha256": "8fec6218807a89863fe888e1bd5bd0814862e1ac12d8994229e46e8e50ddf1e1"
+        },
+        "grid-24-max": {
+          "valid": true,
+          "n": 700,
+          "radius_exact": "19903642856359920804145/1000000000000000000000000",
+          "wall_slack_numerator": "61289861",
+          "wall_slack_denominator": "1000000000000000000000000",
+          "pair_squared_slack_numerator": "1743802400158895076517",
+          "pair_squared_slack_denominator": "1000000000000000000000000000000000000000000000000",
+          "tightest_pair": [
+            542,
+            559
+          ],
+          "pairs_checked": 244650,
+          "normalized_json_sha256": "5c291c9bbfb526d6c1e4ea018e8fb81cd67286911464d2b54b747b7bd2ca8de1"
+        },
+        "public-grid-101-max": {
+          "valid": true,
+          "n": 700,
+          "radius_exact": "1990364285635992080414501095152789833198973658477548808811217087782022076562630386337076619834542754/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "wall_slack_numerator": "6128986098904847210166801026341522451191188782912217977923437369613662923380165457246",
+          "wall_slack_denominator": "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "pair_squared_slack_numerator": "648063795249058790972619238766143250358869216495995226353491633762146610911492201780003758984381936",
+          "pair_squared_slack_denominator": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "tightest_pair": [
+            542,
+            559
+          ],
+          "pairs_checked": 244650,
+          "normalized_json_sha256": "feb53d9aa7c63a52d4d83242d5897e09a58d1807da29293c61958bd74c5b87be"
+        }
+      },
+      "source_report_integer_minima_and_grid_floor_match": true,
+      "fixed_center_radius_lower_bound": "995182142817996040207250547576394916599486829238774404405608543891011038281315193168538309917271377/50000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "fixed_center_radius_strict_upper_bound": "398072857127198416082900219030557966639794731695509761762243417556404415312526077267415323966908551/20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "corrected_public_radius": "0.01990364285635992080414501095152789833198973658477548808811217087782022076562630386337076619834542754",
+      "working_certificate": "research/contributor-20261020/certificates/best/n700.json",
+      "working_sha256": "6d02a08ed764ba28cc992fc0eee01d532f33ea54c0615082899b903da6e30179",
+      "working_construction_credit": "Eckard Specht",
+      "working_radius_exact": "19906357272343/1000000000000000",
+      "working_pairs_checked": 244650,
+      "working_radius_exceeds_external_fixed_center_limit": true,
+      "positive_squared_comparison_cross_product_margin": "432243602542944209147444751614307308199383000000000000000000000000000000",
+      "working_minus_external_radius_lower_bound": "54288319661583917099780969442033360205268304490238237756582443595584687473922732584676033091449/20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "working_minus_external_radius_upper_bound": "135720799153959792749452423605083400513170761225595594391456108988961718684806831461690082728623/50000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "delta_lower_decimal_display": "0.000002714415983079195854989048472101668010263",
+      "delta_upper_decimal_display": "0.000002714415983079195854989048472101668010263"
+    },
+    {
+      "n": 800,
+      "source_file": "data/PACKING_N800_SEED_2026083001_CANDIDATE.txt",
+      "source_sha256": "076bc719aa8124ea567c0f85bb9629242670006ea60e5e243737f0dc4190e66d",
+      "coordinate_scale": "1000000000000000000000000",
+      "translation": "x+1/2,y+1/2; radii unchanged",
+      "row_radius_exact": "18637592296199977923367/1000000000000000000000000",
+      "pairs_per_geometry_pass": 319600,
+      "minimum_wall_exact": "18637592336768538103797/1000000000000000000000000",
+      "minimum_pair_squared_exact": "1389439392446290330219107235399641642622989149/1000000000000000000000000000000000000000000000000",
+      "minimum_pair_source_indices": [
+        12,
+        23
+      ],
+      "rational_oracle_agrees": true,
+      "native_checks": {
+        "row-radius": {
+          "valid": true,
+          "n": 800,
+          "radius_exact": "18637592296199977923367/1000000000000000000000000",
+          "wall_slack_numerator": "40568560180430",
+          "wall_slack_denominator": "1000000000000000000000000",
+          "pair_squared_slack_numerator": "6048799267723628250075248931724522393",
+          "pair_squared_slack_denominator": "1000000000000000000000000000000000000000000000000",
+          "tightest_pair": [
+            11,
+            22
+          ],
+          "pairs_checked": 319600,
+          "normalized_json_sha256": "729d6a57ff0fb18fd1c754b0c91c41ae7fa3a4913ab69325d2d3ef5ea68684ed"
+        },
+        "grid-24-max": {
+          "valid": true,
+          "n": 800,
+          "radius_exact": "18637592336768517873493/1000000000000000000000000",
+          "wall_slack_numerator": "20230304",
+          "wall_slack_denominator": "1000000000000000000000000",
+          "pair_squared_slack_numerator": "7521714944831614904953",
+          "pair_squared_slack_denominator": "1000000000000000000000000000000000000000000000000",
+          "tightest_pair": [
+            11,
+            22
+          ],
+          "pairs_checked": 319600,
+          "normalized_json_sha256": "a526ac28984fd6d2b3aef4df6d2cace5bdaa5c36bd1ba4461e5b7008129aa6a1"
+        },
+        "public-grid-101-max": {
+          "valid": true,
+          "n": 800,
+          "radius_exact": "1863759233676851787349305044720107162570826540500351479481853408661754556406518746010543808969481479/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "wall_slack_numerator": "2023030394955279892837429173459499648520518146591338245443593481253989456191030518521",
+          "wall_slack_denominator": "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "pair_squared_slack_numerator": "6148272746128188751873859562101660333541701419835872042390632162509911415463217655647366391503890236",
+          "pair_squared_slack_denominator": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "tightest_pair": [
+            11,
+            22
+          ],
+          "pairs_checked": 319600,
+          "normalized_json_sha256": "c240169874f4ea40a5240774dc4ae8064bf3534a83c36ea3860d34044ebde001"
+        }
+      },
+      "source_report_integer_minima_and_grid_floor_match": true,
+      "fixed_center_radius_lower_bound": "1863759233676851787349305044720107162570826540500351479481853408661754556406518746010543808969481479/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "fixed_center_radius_strict_upper_bound": "46593980841921294683732626118002679064270663512508786987046335216543863910162968650263595224237037/2500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "corrected_public_radius": "0.01863759233676851787349305044720107162570826540500351479481853408661754556406518746010543808969481479",
+      "working_certificate": "research/contributor-20261020/certificates/best/n800.json",
+      "working_sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "working_construction_credit": "Eckard Specht",
+      "working_radius_exact": "3727734385197/200000000000000",
+      "working_pairs_checked": 319600,
+      "working_radius_exceeds_external_fixed_center_limit": true,
+      "positive_squared_comparison_cross_product_margin": "6438888468609082150946584014334295080434040000000000000000000000000000",
+      "working_minus_external_radius_lower_bound": "2698973041205316267373881997320935729336487491213012953664783456136089837031349736404775762963/2500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "working_minus_external_radius_upper_bound": "107958921648212650694955279892837429173459499648520518146591338245443593481253989456191030518521/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "delta_lower_decimal_display": "0.000001079589216482126506949552798928374291735",
+      "delta_upper_decimal_display": "0.000001079589216482126506949552798928374291735"
+    }
+  ],
+  "negative_controls": [
+    {
+      "control": "N600:next-unit-24",
+      "rejected": true,
+      "error": "overlap 244,258"
+    },
+    {
+      "control": "N600:next-unit-101",
+      "rejected": true,
+      "error": "overlap 244,258"
+    },
+    {
+      "control": "N600:wrong-count",
+      "rejected": true,
+      "error": "wrong circle count for requested instance"
+    },
+    {
+      "control": "N600:untranslated-centered-coordinates",
+      "rejected": true,
+      "error": "wall violation at 0"
+    },
+    {
+      "control": "N600:changed-source-byte",
+      "rejected": true,
+      "error": "source hash mismatch"
+    },
+    {
+      "control": "N600:truncated-rows",
+      "rejected": true,
+      "error": "source count mismatch"
+    },
+    {
+      "control": "N600:duplicate-index",
+      "rejected": true,
+      "error": "source columns or index sequence mismatch"
+    },
+    {
+      "control": "N600:nonfinite-token",
+      "rejected": true,
+      "error": "expected exact 24-place decimal tokens"
+    },
+    {
+      "control": "N600:inconsistent-radius",
+      "rejected": true,
+      "error": "inconsistent or nonpositive row radius"
+    },
+    {
+      "control": "N700:next-unit-24",
+      "rejected": true,
+      "error": "overlap 542,559"
+    },
+    {
+      "control": "N700:next-unit-101",
+      "rejected": true,
+      "error": "overlap 542,559"
+    },
+    {
+      "control": "N700:wrong-count",
+      "rejected": true,
+      "error": "wrong circle count for requested instance"
+    },
+    {
+      "control": "N700:untranslated-centered-coordinates",
+      "rejected": true,
+      "error": "wall violation at 0"
+    },
+    {
+      "control": "N700:changed-source-byte",
+      "rejected": true,
+      "error": "source hash mismatch"
+    },
+    {
+      "control": "N700:truncated-rows",
+      "rejected": true,
+      "error": "source count mismatch"
+    },
+    {
+      "control": "N700:duplicate-index",
+      "rejected": true,
+      "error": "source columns or index sequence mismatch"
+    },
+    {
+      "control": "N700:nonfinite-token",
+      "rejected": true,
+      "error": "expected exact 24-place decimal tokens"
+    },
+    {
+      "control": "N700:inconsistent-radius",
+      "rejected": true,
+      "error": "inconsistent or nonpositive row radius"
+    },
+    {
+      "control": "N800:next-unit-24",
+      "rejected": true,
+      "error": "overlap 11,22"
+    },
+    {
+      "control": "N800:next-unit-101",
+      "rejected": true,
+      "error": "overlap 11,22"
+    },
+    {
+      "control": "N800:wrong-count",
+      "rejected": true,
+      "error": "wrong circle count for requested instance"
+    },
+    {
+      "control": "N800:untranslated-centered-coordinates",
+      "rejected": true,
+      "error": "wall violation at 0"
+    },
+    {
+      "control": "N800:changed-source-byte",
+      "rejected": true,
+      "error": "source hash mismatch"
+    },
+    {
+      "control": "N800:truncated-rows",
+      "rejected": true,
+      "error": "source count mismatch"
+    },
+    {
+      "control": "N800:duplicate-index",
+      "rejected": true,
+      "error": "source columns or index sequence mismatch"
+    },
+    {
+      "control": "N800:nonfinite-token",
+      "rejected": true,
+      "error": "expected exact 24-place decimal tokens"
+    },
+    {
+      "control": "N800:inconsistent-radius",
+      "rejected": true,
+      "error": "inconsistent or nonpositive row radius"
+    },
+    {
+      "control": "N800:source-retracted-rounded-up-display",
+      "rejected": true,
+      "error": "overlap 11,22"
+    }
+  ],
+  "seconds": 13.875,
+  "not_checked": [
+    "N500 numerical pending witness; other private/new/unindexed candidates",
+    "Independent date of first public availability or maintainer receipt/acceptance",
+    "External solver correctness, execution history, optimality or universal novelty",
+    "Arbitrary import formats, metadata encodings or a license-approval determination"
+  ]
+}

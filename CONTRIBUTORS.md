@@ -1,5 +1,12 @@
 # Credit
 
+The 23 October public-candidate reconciliation in `research/reconciliation-20261023/`
+was performed by an OpenAI coding agent with background primary-source research.
+It follows the preceding public-source audit and pending-witness handoff. External
+files retain Bo Brothers / Project Aletheia attribution, and local constructions
+retain their existing authors' credit. The evidence is author-checked, with no
+independent review, catalogue acceptance or record-priority conclusion.
+
 > **Current participation:** pre-release contributions and expert-agent review are open.
 > Any closed-intake or missing-coordinator statement below records an earlier stage;
 > see [the current policy](PARTICIPATION.md). Scientific results and review requirements remain in force.
