@@ -33,10 +33,12 @@ class ProgressTests(unittest.TestCase):
         (directory/'inputs').mkdir(); (directory/'certificates').mkdir()
         task.write(directory/'inputs/n4.json',cert(200000000000))
         task.write(directory/'session.json',{'counts':[4],'arms':['polish','original','targeted'],
-                   'inputs':{'4':{'path':'inputs/n4.json'}},'session_number':1,'smoke':False})
+                   'inputs':{'4':{'path':'inputs/n4.json'}},'session_number':1,'smoke':False,'seed':'0'*32})
         rows=[]
         for i,(arm,r) in enumerate([('polish',210000000000),('original',220000000000),('original',190000000000),('targeted',200000000001)]):
-            p=directory/'certificates'/f'{i}.json'; task.write(p,cert(r))
+            c=cert(r); input_hash=task.sha(directory/'inputs/n4.json')
+            c['provenance']={'session_seed':'0'*32,'arm':arm,'input_sha256':input_hash,'base_input_sha256':input_hash}
+            p=directory/'certificates'/f'{i}.json'; task.write(p,c)
             rows.append({'n':4,'arm':arm,'certificate':str(p.relative_to(directory)),'sha256':task.sha(p),
                          'input':'inputs/n4.json','input_sha256':task.sha(directory/'inputs/n4.json'),
                          'radius_exact':str(task.radius(cert(r))),'error':None})
@@ -76,7 +78,7 @@ class ProgressTests(unittest.TestCase):
             p=Path(d); rows=self.fixture(p)
             for i,row in enumerate(rows):
                 c=cert(200000000001 if i==1 else 200000000000)
-                file=p/row['certificate'];file.write_text(json.dumps(c))
+                file=p/row['certificate'];c['provenance']=task.read(file)['provenance'];file.write_text(json.dumps(c))
                 row.update(sha256=task.sha(file),radius_exact=str(task.radius(c)))
             (p/'attempts.jsonl').write_text(''.join(json.dumps(x)+'\n' for x in rows))
             r=task.summarize(p)['rows'][0]
@@ -126,6 +128,9 @@ class SerialChainTests(unittest.TestCase):
                     attempts=[]
                     for arm in ['polish','original','targeted']:
                         c=cert(int(start['radius_numerator'])+(10000000000 if arm=='original' else 0))
+                        input_hash=task.sha(current/'inputs/n4.json')
+                        c['provenance']={'session_seed':task.read(current/'session.json')['seed'],'arm':arm,
+                            'input_sha256':input_hash,'base_input_sha256':input_hash}
                         cp=current/'certificates'/f'{arm}.json';task.write(cp,c)
                         attempts.append({'n':4,'arm':arm,'certificate':str(cp.relative_to(current)),'sha256':task.sha(cp),
                             'input':'inputs/n4.json','input_sha256':task.sha(current/'inputs/n4.json'),'radius_exact':str(task.radius(c)),'error':None})

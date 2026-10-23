@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "session_number": 1,
+  "smoke": true,
+  "prepared_at": "2026-10-23T09:09:23.035440+00:00",
+  "seed": "2774897528bf1504e62fb37973463530",
+  "counts": [
+    500
+  ],
+  "arms": [
+    "polish",
+    "original",
+    "targeted"
+  ],
+  "seconds_per_count_arm": 0.2,
+  "previous": null,
+  "inputs": {
+    "500": {
+      "path": "inputs/n500.json",
+      "sha256": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "source": "research/contributor-20261020/certificates/best/n500.json"
+    }
+  },
+  "code_and_protocol_hashes": {
+    "src/packing_task.py": "8d23c5d444003dcb5f60ead9c06c95db8d98a2539dc06e269bf126585cd90aad",
+    "src/run_packing_trial.py": "de287f66f652e44395873658b79e5d5221011614681d76bc758ac46ff1af084f",
+    "src/verify.py": "3b065d9d5140c63dcf33cad2c0ac93a0ad7afde8eb94136fb935a7e3ce5d6976",
+    "requirements.txt": "0d93d0eceacf17fc95e021828be83479e17a51d113d184e98b100607318006ea",
+    "research/readiness-20261021/serial-protocol.json": "b7dcb6524f388b750f34a964fa9152bfff7cbeb812c0f334d5bbc9c521672135",
+    "discover/working-starts.json": "889c6d4bad7cceec20319f7f30dc03746018910e58efe074b4ee95e4f9dce903",
+    "research/contributor-20261020/code/targeted.py": "80efe2cd732a6012bb02ee074e1018ae9f92c9ee5b1fdaa142b6a266cee0d865",
+    "research/contributor-20261020/code/frozen/certify.py": "660ee7bacb23b4554cfe5f7ebd3f1ba2e5106fd2c29c26ef623b2c4e41d603e4",
+    "research/contributor-20261020/code/frozen/optimizer.py": "9d8c960aa252f1d6ca779f0f04a9b6cd510aa5241d81417df8db3e8d35a85dbe",
+    "research/contributor-20261020/code/frozen/verify.py": "3b065d9d5140c63dcf33cad2c0ac93a0ad7afde8eb94136fb935a7e3ce5d6976",
+    "certificates/baseline/n399.json": "0c3d9b90f3f83bb8bb84c3bb276246dadaa750f425ae84bf964fa3f8c25fa211",
+    "certificates/baseline/n401.json": "aae40f75714a8e6a14b1d76d12b1bb3402b70f183b20ae5ff929f9e47374bfe0",
+    "certificates/baseline/n499.json": "fc8387648f73b55e186d273b6903ff803f78527e41ba156fe1460cb96b89f650",
+    "certificates/baseline/n501.json": "6714b08f8fa281deb8bd30db6478aeae7e71b22757b158305d760083c543dffa",
+    "certificates/baseline/n599.json": "338bb9ceed49ab904f3b5f1174b6d00279b914f3a088dc1015f8b2bfa0d263a6",
+    "certificates/baseline/n601.json": "e06d72f11b52033b2502b8e7be742f7cc9d3b89576da50cb28050a3afbad1749",
+    "certificates/baseline/n699.json": "0c2e7ac16646d5fb7ccc103d2796b42a8e8081d95ce620f7dff1e37c40f243e4",
+    "certificates/baseline/n701.json": "020819775e2e44d22ad97303e7a1b99f7b6e6e996298d260d9c7eea07cdaa02a",
+    "certificates/baseline/n799.json": "3caba225b8cf9ddf7b7f72f164d499cb1cdda38a9276e78479962fcbdec8f5da",
+    "certificates/baseline/n801.json": "968972b8034a299c2d85a843da468f67601228110865dcda67985cf564ae441c"
+  },
+  "credit": "Inherited original construction authors in discover/working-starts.json; record contributor identity and prior context in HANDOFF.md."
+}

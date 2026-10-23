@@ -1,0 +1,872 @@
+{
+  "status": "author-checked; no independent review or acceptance",
+  "base_commit": "978d4bd925ba4ab62e5ceb2a3b3a108d3e283f1a",
+  "seed": "c68557875f8ed1f9b2d61ce46a7dc42e",
+  "python": "3.12.11 (main, Jun 12 2025, 12:40:51) [Clang 20.1.4 ]",
+  "original_checker_sha256": "a6252a9d93302290aa5d9c4e41e73c3cc236d2d9ce2874348a4cc1be1d030016",
+  "candidate_checker_sha256": "8d23c5d444003dcb5f60ead9c06c95db8d98a2539dc06e269bf126585cd90aad",
+  "audit_sha256": "d688619010950ff086281e74ee29c2a0cc4ca5f1b3ebf543ea029cdfd792955e",
+  "unchanged_verifier_sha256": "3b065d9d5140c63dcf33cad2c0ac93a0ad7afde8eb94136fb935a7e3ce5d6976",
+  "historical_smoke": {
+    "attempts": 3,
+    "saved_summary_exactly_reproduced": true,
+    "source_files_unchanged": true,
+    "file_sha256": {
+      "HANDOFF.md": "1ab61bfed9e2e01ea4fd0837c2884d045371375531fe47fa2612f6d67d532d40",
+      "attempt-inputs/n500-original-000.json": "9bdcd5a4b44dc53868263556dac68fc35187cb8a8588bde0b3f9a78c36eaa5aa",
+      "attempt-inputs/n500-polish-000.json": "57f47b4d2393722fd27d89d8b6e56b9cbe44d9b82aa3d226a1f477da36aff420",
+      "attempt-inputs/n500-targeted-000.json": "2ab5c4cdfe83040996766048fea6f3f171574296c1bae329305af43743f7c056",
+      "attempts.jsonl": "d6beda42eff3172571e05c914c7f10c6a3f7fac6aed9aac556ebea8e592a5ea2",
+      "best/n500.json": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "blocks.jsonl": "fd8438d82d716357aefbd59b36fd3d2a6c919e1292946e25d567462752d889d9",
+      "certificates/n500-original-000.json": "f5a42014f72e285d46029b418f8ee4b5523c878433510dfad1b71eebb7ae34ab",
+      "certificates/n500-polish-000.json": "b8e3a8297423c99e8086c37f97d376ae535a5cb2e14418b44445ed6a218dfecb",
+      "certificates/n500-targeted-000.json": "2d0195566a0d3750d1f45d9929de4d516bd0248074c394d247a63b628a38b264",
+      "execution.json": "f65e280f331751cfd076a9abbe7a343fbe5a55a00293be0c4832739d1bcf7e9a",
+      "images/n500.svg": "a36d0d5784d5824d70613c9afa1d9a8e63149545e68ae51301b2820473960c9d",
+      "inputs/n500.json": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "order.json": "0f06f0cdbda27502bc3a021d1584cb968ab28c29ab1cf901e72ceb9949933fd2",
+      "session.json": "6f5d14f82f4f9e3170313b6cca4a905dadca073e637f14f9069e8d7f899e65d5",
+      "summary.json": "7d56c40cf14c636dbd87b596dbf6c083b6021516cabd8a6b1841727f5fdfd316"
+    }
+  },
+  "real_provenance_controls": [
+    {
+      "control": "original:mismatch:session_seed",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "original:missing:session_seed",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "original:mismatch:arm",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "original:missing:arm",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "original:mismatch:input_sha256",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "original:missing:input_sha256",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "original:mismatch:base_input_sha256",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "original:missing:base_input_sha256",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "original:provenance:missing-object",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "original:provenance:null",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "original:provenance:list",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "original:provenance:string",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "original:provenance:number",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:mismatch:session_seed",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:missing:session_seed",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:mismatch:arm",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:missing:arm",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:mismatch:input_sha256",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:missing:input_sha256",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:mismatch:base_input_sha256",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:missing:base_input_sha256",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:provenance:missing-object",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:provenance:null",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:provenance:list",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:provenance:string",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "polish:provenance:number",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:mismatch:session_seed",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:missing:session_seed",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:mismatch:arm",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:missing:arm",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:mismatch:input_sha256",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:missing:input_sha256",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:mismatch:base_input_sha256",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:missing:base_input_sha256",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:provenance:missing-object",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:provenance:null",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:provenance:list",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:provenance:string",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    },
+    {
+      "control": "targeted:provenance:number",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "attempt provenance does not match session/input"
+      }
+    }
+  ],
+  "synthetic_fallback_controls": [
+    {
+      "control": "polish:initial:radius-19",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:initial:radius-21",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:initial:radius-22",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:initial:metadata",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:improved:radius-19",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:improved:radius-20",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:improved:radius-21",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:improved:metadata",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:tie:last-tie-provenance",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:error-empty",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:error-false",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:error-zero",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:error-list",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "polish:error-object",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:initial:radius-19",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:initial:radius-21",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:initial:radius-22",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:initial:metadata",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:improved:radius-19",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:improved:radius-20",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:improved:radius-21",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:improved:metadata",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:tie:last-tie-provenance",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:error-empty",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:error-false",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:error-zero",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:error-list",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "original:error-object",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:initial:radius-19",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:initial:radius-21",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:initial:radius-22",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:initial:metadata",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:improved:radius-19",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:improved:radius-20",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:improved:radius-21",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:improved:metadata",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:tie:last-tie-provenance",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:error-empty",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:error-false",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:error-zero",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:error-list",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    },
+    {
+      "control": "targeted:error-object",
+      "original": {
+        "accepted": true
+      },
+      "candidate": {
+        "accepted": false,
+        "error": "failed attempt does not retain its arm best"
+      }
+    }
+  ],
+  "valid_sequence_domain": {
+    "arm_orders": 6,
+    "states_per_attempt": [
+      "error",
+      19,
+      20,
+      21,
+      22
+    ],
+    "attempts_per_arm": 2,
+    "cases_per_implementation": 93750,
+    "successful_attempts_per_implementation": 450000,
+    "fallback_attempts_per_implementation": 112500,
+    "meaningful_cases": 89376,
+    "attempt_pairs_per_implementation": 3375000,
+    "case_stream_sha256": "ae9f170ab6a2e2c02e7845c7f7d37569efc204ada3158e0bb8aeea219ea92d69",
+    "summary_or_oracle_disagreements": 0
+  },
+  "seconds": 1072.129,
+  "not_checked": [
+    "Unavailable retained 317-attempt serial-study archive",
+    "Solver execution/authenticity, numerical correctness, timing or causality",
+    "Arbitrary JSON representations, unbounded event sequences or all metadata types",
+    "Scientific acceptance, external standing, novelty or optimality"
+  ]
+}
