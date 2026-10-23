@@ -1,0 +1,4032 @@
+{
+  "status": "author-checked; no independent review or acceptance",
+  "base_commit": "978d4bd925ba4ab62e5ceb2a3b3a108d3e283f1a",
+  "seed": "c68557875f8ed1f9b2d61ce46a7dc42e",
+  "python": "3.12.11",
+  "audit_sha256": "f5501346a61c0f4a11832d085af665b3c13fd6e25b33036e979a453e8f3865ae",
+  "verifier_sha256": "446159f708054bab25647f4af25117616d1bc021ecf4f55f8c4dd976330128e6",
+  "working_index_sha256": "889c6d4bad7cceec20319f7f30dc03746018910e58efe074b4ee95e4f9dce903",
+  "base_json_files_scanned": 943,
+  "witnesses_checked": 572,
+  "working_starts_checked": 12,
+  "stored_witness_pairs": 83289042,
+  "count_cap_control": {
+    "n": 10000,
+    "pairs_checked": 49995000,
+    "sha256": "911cb2629b827f2b9c76aa4b77d94ee24e1b4fd492befd3cdf53af1a16154608",
+    "n10001_rejected": true
+  },
+  "failures": [],
+  "witnesses": [
+    {
+      "path": "certificates/baseline/n100.json",
+      "sha256": "71b3df6b09253637040ff4cb970a57f68d36f9dfad0b257f4a100f48381292a1",
+      "n": 100,
+      "radius_exact": "51401071773883/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "certificates/baseline/n101.json",
+      "sha256": "c7ad6eb8f2fd4075b64056bee4368886ce12efe8b7e8d8ec2f4cdb02920745e7",
+      "n": 101,
+      "radius_exact": "51078356337000/1000000000000000",
+      "pairs_checked": 5050
+    },
+    {
+      "path": "certificates/baseline/n105.json",
+      "sha256": "c1b4a6b027d69e1bff4145ef345fcd65777ee7f2dbcfe12f347a2a1c8984f73d",
+      "n": 105,
+      "radius_exact": "50242948364896/1000000000000000",
+      "pairs_checked": 5460
+    },
+    {
+      "path": "certificates/baseline/n106.json",
+      "sha256": "c05c9a052ba093e660e5793417560f20a1fbe679aa9e05b039227f5840ab5de9",
+      "n": 106,
+      "radius_exact": "50015200425752/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "certificates/baseline/n107.json",
+      "sha256": "db339d5dd5a283172990375532670dc7cb858d2e4d6b8399dc1acf66b6bbff71",
+      "n": 107,
+      "radius_exact": "49506166855614/1000000000000000",
+      "pairs_checked": 5671
+    },
+    {
+      "path": "certificates/baseline/n133.json",
+      "sha256": "87d9389826cbd1377e4946022ecdad9816c55d3a65fb5e1e191a93097557f8ca",
+      "n": 133,
+      "radius_exact": "44609641579668/1000000000000000",
+      "pairs_checked": 8778
+    },
+    {
+      "path": "certificates/baseline/n134.json",
+      "sha256": "d0806fc44867badebddd7916674d7c866d5e5b98bcc000a3b0d8eab6b2b3553a",
+      "n": 134,
+      "radius_exact": "44564244207000/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "certificates/baseline/n135.json",
+      "sha256": "cfd7f2474a53e391470d477377cc96eb6be93889e83eb1b382980766d1f0cf8c",
+      "n": 135,
+      "radius_exact": "44431198143908/1000000000000000",
+      "pairs_checked": 9045
+    },
+    {
+      "path": "certificates/baseline/n149.json",
+      "sha256": "31ef53149d199a4db2a32abf6235c239cd7b2fd2afac685ed444b972614fe988",
+      "n": 149,
+      "radius_exact": "42251862706667/1000000000000000",
+      "pairs_checked": 11026
+    },
+    {
+      "path": "certificates/baseline/n150.json",
+      "sha256": "7d075b884610a8bd76dc2e4d8f84ed58d55b1fc5f3914f5ab1109d9dde8e9a2e",
+      "n": 150,
+      "radius_exact": "42145465900914/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "certificates/baseline/n151.json",
+      "sha256": "796ec269e5ae0fd82997cf664989c3bc00e50adcd187465bbc414085d44496f3",
+      "n": 151,
+      "radius_exact": "41977097108716/1000000000000000",
+      "pairs_checked": 11325
+    },
+    {
+      "path": "certificates/baseline/n199.json",
+      "sha256": "bd6ceca332a73712b4fa1d59d383bc6ce69a527247d14e89add513c9fe707372",
+      "n": 199,
+      "radius_exact": "36667425043969/1000000000000000",
+      "pairs_checked": 19701
+    },
+    {
+      "path": "certificates/baseline/n200.json",
+      "sha256": "8bcae750941e34dd7a7fb6c4248504276368677e78127dd5caa1483254fea5c5",
+      "n": 200,
+      "radius_exact": "36612798903303/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "certificates/baseline/n201.json",
+      "sha256": "7c291a69fc8ac93f2c7436813b6e063ebb4b2bd817575560a83eb71fd3056937",
+      "n": 201,
+      "radius_exact": "36569597636578/1000000000000000",
+      "pairs_checked": 20100
+    },
+    {
+      "path": "certificates/baseline/n249.json",
+      "sha256": "3a90154082e0adb24bb99f3aef0f71a1733d5a7eae5c3a5183c28a118e357deb",
+      "n": 249,
+      "radius_exact": "32970267167154/1000000000000000",
+      "pairs_checked": 30876
+    },
+    {
+      "path": "certificates/baseline/n250.json",
+      "sha256": "9a6abf578c2f915ed53da92bb6c368fe233f0729e2fff117bf4678d31d053c12",
+      "n": 250,
+      "radius_exact": "32879800209000/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "certificates/baseline/n251.json",
+      "sha256": "e24f626942a503d2747482c79657330db88295b7599614fe2597838c4ca2e43c",
+      "n": 251,
+      "radius_exact": "32799128199500/1000000000000000",
+      "pairs_checked": 31375
+    },
+    {
+      "path": "certificates/baseline/n299.json",
+      "sha256": "8324be46fe802bb16e0efc2aa2dc2d7651609c0c634af4024c3ea47477b8cbf3",
+      "n": 299,
+      "radius_exact": "30249270164713/1000000000000000",
+      "pairs_checked": 44551
+    },
+    {
+      "path": "certificates/baseline/n300.json",
+      "sha256": "422429460eb0d9c77b53157229c86703b114a2d9a2467f5cf07eba1e304fc97e",
+      "n": 300,
+      "radius_exact": "30219555704000/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "certificates/baseline/n301.json",
+      "sha256": "8a322095fa1fb982791cae7d7efa16820d272634e86de4ad58c6d6a5028c4a9f",
+      "n": 301,
+      "radius_exact": "30204920384000/1000000000000000",
+      "pairs_checked": 45150
+    },
+    {
+      "path": "certificates/baseline/n399.json",
+      "sha256": "0c3d9b90f3f83bb8bb84c3bb276246dadaa750f425ae84bf964fa3f8c25fa211",
+      "n": 399,
+      "radius_exact": "26227153114649/1000000000000000",
+      "pairs_checked": 79401
+    },
+    {
+      "path": "certificates/baseline/n400.json",
+      "sha256": "32e4ac981e67394cfa80b5d4b3c46dbaa305bab1a86fbb52d359f743e61e2afd",
+      "n": 400,
+      "radius_exact": "26202507075863/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "certificates/baseline/n401.json",
+      "sha256": "aae40f75714a8e6a14b1d76d12b1bb3402b70f183b20ae5ff929f9e47374bfe0",
+      "n": 401,
+      "radius_exact": "26182872374092/1000000000000000",
+      "pairs_checked": 80200
+    },
+    {
+      "path": "certificates/baseline/n47.json",
+      "sha256": "7ece888606ba54945c7257ef50542694097eb51e5eb68708c3ccfdbff36ab129",
+      "n": 47,
+      "radius_exact": "73113151269953/1000000000000000",
+      "pairs_checked": 1081
+    },
+    {
+      "path": "certificates/baseline/n499.json",
+      "sha256": "fc8387648f73b55e186d273b6903ff803f78527e41ba156fe1460cb96b89f650",
+      "n": 499,
+      "radius_exact": "23473661711919/1000000000000000",
+      "pairs_checked": 124251
+    },
+    {
+      "path": "certificates/baseline/n500.json",
+      "sha256": "f10cbde233bd0e5ec97e40695812da9df69128bb3cc72e615284b46272d5dba6",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "certificates/baseline/n501.json",
+      "sha256": "6714b08f8fa281deb8bd30db6478aeae7e71b22757b158305d760083c543dffa",
+      "n": 501,
+      "radius_exact": "23428002885245/1000000000000000",
+      "pairs_checked": 125250
+    },
+    {
+      "path": "certificates/baseline/n599.json",
+      "sha256": "338bb9ceed49ab904f3b5f1174b6d00279b914f3a088dc1015f8b2bfa0d263a6",
+      "n": 599,
+      "radius_exact": "21491273763807/1000000000000000",
+      "pairs_checked": 179101
+    },
+    {
+      "path": "certificates/baseline/n600.json",
+      "sha256": "7ac805e9eb2bd08eff913e29d463f0bc06c0320689e3934caed0b29bc0e3ddb7",
+      "n": 600,
+      "radius_exact": "21479376752868/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "certificates/baseline/n601.json",
+      "sha256": "e06d72f11b52033b2502b8e7be742f7cc9d3b89576da50cb28050a3afbad1749",
+      "n": 601,
+      "radius_exact": "21458665109659/1000000000000000",
+      "pairs_checked": 180300
+    },
+    {
+      "path": "certificates/baseline/n699.json",
+      "sha256": "0c2e7ac16646d5fb7ccc103d2796b42a8e8081d95ce620f7dff1e37c40f243e4",
+      "n": 699,
+      "radius_exact": "19919281091664/1000000000000000",
+      "pairs_checked": 243951
+    },
+    {
+      "path": "certificates/baseline/n700.json",
+      "sha256": "7dcf25c12653fd7551dc22a5377f36e17775e342b874b6aaa25e0fc616c0e5e7",
+      "n": 700,
+      "radius_exact": "19903642827564/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "certificates/baseline/n701.json",
+      "sha256": "020819775e2e44d22ad97303e7a1b99f7b6e6e996298d260d9c7eea07cdaa02a",
+      "n": 701,
+      "radius_exact": "19898772466245/1000000000000000",
+      "pairs_checked": 245350
+    },
+    {
+      "path": "certificates/baseline/n799.json",
+      "sha256": "3caba225b8cf9ddf7b7f72f164d499cb1cdda38a9276e78479962fcbdec8f5da",
+      "n": 799,
+      "radius_exact": "18666015596370/1000000000000000",
+      "pairs_checked": 318801
+    },
+    {
+      "path": "certificates/baseline/n800.json",
+      "sha256": "b0bb52fa7fe03974cc8e11cebf26244c0f937c3ebdcb7bff8354f8a6bd172251",
+      "n": 800,
+      "radius_exact": "18637592285890/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "certificates/baseline/n801.json",
+      "sha256": "968972b8034a299c2d85a843da468f67601228110865dcda67985cf564ae441c",
+      "n": 801,
+      "radius_exact": "18635391207614/1000000000000000",
+      "pairs_checked": 320400
+    },
+    {
+      "path": "certificates/baseline/n99.json",
+      "sha256": "fabb14a07a2e94f76cd2eed740d52f0e2f5d2c2877ed5db52dd348ebcfc56e63",
+      "n": 99,
+      "radius_exact": "51978606449403/1000000000000000",
+      "pairs_checked": 4851
+    },
+    {
+      "path": "certificates/external/minmax47.json",
+      "sha256": "cd3674cccd3da3a6ddd0897cbbb1cf0cae1d93d57cdd56dc7a4ac2c819310a5a",
+      "n": 47,
+      "radius_exact": "73113151000000/1000000000000000",
+      "pairs_checked": 1081
+    },
+    {
+      "path": "certificates/frontier/n100.json",
+      "sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "n": 100,
+      "radius_exact": "51401071774379/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "certificates/frontier/n106.json",
+      "sha256": "e900839b877b852e58775bb97bdec6a88bb767f499bc5e3bb3af168da9e7e633",
+      "n": 106,
+      "radius_exact": "50015200426096/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "certificates/frontier/n134.json",
+      "sha256": "51b1af652fc2addf87247e89317a0231d69c3870dc5dda7df568144deba93bed",
+      "n": 134,
+      "radius_exact": "44564244207095/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "certificates/frontier/n150.json",
+      "sha256": "e21e5ad83eb157ddcbe5fea29e422b4f76b9e0038a5a332d6594b7baeab9160b",
+      "n": 150,
+      "radius_exact": "42145465901232/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "certificates/frontier/n200.json",
+      "sha256": "941ef16137f6a9a5782fd3a304fce438c66f3a130e3b3f3a0e430b69cc7fa2b9",
+      "n": 200,
+      "radius_exact": "36612798903820/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "certificates/frontier/n250.json",
+      "sha256": "ee63b0716f4a95ac0dd8b522b7c69072d6dcf7e62ab4ae1bfdcdeb488105591f",
+      "n": 250,
+      "radius_exact": "32879800209483/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "certificates/frontier/n300.json",
+      "sha256": "f18578cff5862de099cadfa74b9e32d06ff695583e4689bdc681daef4552cc0f",
+      "n": 300,
+      "radius_exact": "30219555704457/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "certificates/frontier/n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "certificates/frontier/n500.json",
+      "sha256": "f10cbde233bd0e5ec97e40695812da9df69128bb3cc72e615284b46272d5dba6",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "certificates/frontier/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "certificates/frontier/n700.json",
+      "sha256": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "certificates/frontier/n800.json",
+      "sha256": "b0bb52fa7fe03974cc8e11cebf26244c0f937c3ebdcb7bff8354f8a6bd172251",
+      "n": 800,
+      "radius_exact": "18637592285890/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/continuation-setup-failure/best/n600.json",
+      "sha256": "815723d06fce9bb91e114fb12b66cd78400c962d561a55c265727e321b0205a1",
+      "n": 600,
+      "radius_exact": "21479792246411/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/continuation/best/n100.json",
+      "sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "n": 100,
+      "radius_exact": "51401071774379/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/continuation/best/n300.json",
+      "sha256": "f18578cff5862de099cadfa74b9e32d06ff695583e4689bdc681daef4552cc0f",
+      "n": 300,
+      "radius_exact": "30219555704457/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/continuation/best/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/continuation/best/n700.json",
+      "sha256": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0000-n600.json",
+      "sha256": "d104313e873c5e38d5797fb27d0f46ad60851f7e8842ed86585cd13cc563ced6",
+      "n": 600,
+      "radius_exact": "21479896578127/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0001-n700.json",
+      "sha256": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0002-n300.json",
+      "sha256": "d27dc512846c00972c92fd43698856012cfde6dac13614e846ee6209a33e95bb",
+      "n": 300,
+      "radius_exact": "30219555704417/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0003-n100.json",
+      "sha256": "31ac6311ff1a812bb1bc55ef431a636c19915f4311c889599a8a3fbbb0a5cd9a",
+      "n": 100,
+      "radius_exact": "51401071774379/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0004-n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0005-n700.json",
+      "sha256": "03fd3608f6351d89ce5db3086d069622fef48e85a22fb702e8fd61a23183e7c4",
+      "n": 700,
+      "radius_exact": "19902663741457/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0006-n300.json",
+      "sha256": "4a866acf4878587036083fe768172c500bfd2ec82f9700b29bf0da6c692c145a",
+      "n": 300,
+      "radius_exact": "30219229142012/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0007-n100.json",
+      "sha256": "49852ba9d05589f495c95755b79895c1c3a7d8a3f1a3a2c625c359cabd6c694d",
+      "n": 100,
+      "radius_exact": "51400168722380/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0008-n600.json",
+      "sha256": "0f49c075f783a5c08ea01a3160ee0e6c5d673963ec4b72693476d616bb5b8d81",
+      "n": 600,
+      "radius_exact": "21444079047031/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0009-n700.json",
+      "sha256": "105107d221983a27075ed838cb16ca92bb621616b3996e904b8f482af0046326",
+      "n": 700,
+      "radius_exact": "19875853589855/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0010-n300.json",
+      "sha256": "2d9e1ef8656e4df101b2e3f8e15ecf1decba4a730b7d830c4c1b39aac7f846c4",
+      "n": 300,
+      "radius_exact": "30219519387828/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0011-n100.json",
+      "sha256": "30b98aa79643df8039a268f9a9df5b1bb0e110025a4a573aa096f02d7264d443",
+      "n": 100,
+      "radius_exact": "51393853844830/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0012-n600.json",
+      "sha256": "37dc2cb206311c29e4ae94c8c9a33a77ece95ae8f7717db0c41ecfd517a1d632",
+      "n": 600,
+      "radius_exact": "21140945709125/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0013-n700.json",
+      "sha256": "8330327ff4d65d6cadbe388cdf75e24328454dc4608a08737d7c85e508cf2be8",
+      "n": 700,
+      "radius_exact": "19195341324901/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0014-n300.json",
+      "sha256": "71edb688367e66c90051452ac965b24c8b570df64afebbbde8d7c7d280b97278",
+      "n": 300,
+      "radius_exact": "29950979241409/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0015-n100.json",
+      "sha256": "03059078735d9e5c92923aaea6a104093e1324d7477bf698373f179afe48fc5f",
+      "n": 100,
+      "radius_exact": "50893170224416/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0016-n600.json",
+      "sha256": "a2012342dec9240b23e791f0417ea39972c8bf8ab05de82328222168d407af56",
+      "n": 600,
+      "radius_exact": "21479884634401/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0017-n700.json",
+      "sha256": "97c9bd764f9f1e0fe4d040e3211f287240b15329f3a7b09880b6ac1919a63cb2",
+      "n": 700,
+      "radius_exact": "19902513166323/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0018-n300.json",
+      "sha256": "f18578cff5862de099cadfa74b9e32d06ff695583e4689bdc681daef4552cc0f",
+      "n": 300,
+      "radius_exact": "30219555704457/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0019-n100.json",
+      "sha256": "782e864f1882214eaa59ebac43b815ca6fff64b93a6baf1a7d6e6de75657166b",
+      "n": 100,
+      "radius_exact": "51396271865605/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0020-n600.json",
+      "sha256": "6f33454662db75b2999daa62a7a80acd91412b9f6eee6e2158b9f607fedc7ccb",
+      "n": 600,
+      "radius_exact": "21479896577864/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0021-n700.json",
+      "sha256": "c04ecee1682f996263d805cd0cb69f528d283aa19d2ce5005acdc3d225fcf551",
+      "n": 700,
+      "radius_exact": "19879976145155/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0022-n300.json",
+      "sha256": "d1a56a8bad5973d1d07aa12b793e370df0c9402ab957765050531267c34576f7",
+      "n": 300,
+      "radius_exact": "30219517762504/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0023-n100.json",
+      "sha256": "0a6e0b558b3aa1e0cfe28db3384403dc295cc4135a9b723823eef367f8be2933",
+      "n": 100,
+      "radius_exact": "51394361153990/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0024-n600.json",
+      "sha256": "ecac8f6fb35c41eb27342fa413a59980877984307fa3dfe44b1ad45c7b1b5c0b",
+      "n": 600,
+      "radius_exact": "21231045821875/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0025-n700.json",
+      "sha256": "87732c81ac6158f502c03c7daec29c83367ade11b0b66627ec357e1b9c5b8082",
+      "n": 700,
+      "radius_exact": "19573708610884/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0026-n300.json",
+      "sha256": "d78d249ac6849254e297bc7029f0abd135596ee2a5b698d4fb212f65962f4b6a",
+      "n": 300,
+      "radius_exact": "30204331538746/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/continuation/candidates/trial-0027-n100.json",
+      "sha256": "30dee046f5d48043d5d766dce84a0962a3f902a593308844fe397003dabb436a",
+      "n": 100,
+      "radius_exact": "50649203789956/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/best/n100.json",
+      "sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "n": 100,
+      "radius_exact": "51401071774379/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/best/n106.json",
+      "sha256": "e900839b877b852e58775bb97bdec6a88bb767f499bc5e3bb3af168da9e7e633",
+      "n": 106,
+      "radius_exact": "50015200426096/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/best/n134.json",
+      "sha256": "51b1af652fc2addf87247e89317a0231d69c3870dc5dda7df568144deba93bed",
+      "n": 134,
+      "radius_exact": "44564244207095/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/best/n150.json",
+      "sha256": "e21e5ad83eb157ddcbe5fea29e422b4f76b9e0038a5a332d6594b7baeab9160b",
+      "n": 150,
+      "radius_exact": "42145465901232/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/best/n200.json",
+      "sha256": "941ef16137f6a9a5782fd3a304fce438c66f3a130e3b3f3a0e430b69cc7fa2b9",
+      "n": 200,
+      "radius_exact": "36612798903820/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/best/n250.json",
+      "sha256": "ee63b0716f4a95ac0dd8b522b7c69072d6dcf7e62ab4ae1bfdcdeb488105591f",
+      "n": 250,
+      "radius_exact": "32879800209483/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/best/n300.json",
+      "sha256": "a99776d70cad97f09b0464e183d8b05edc6fda4b5213d68c34960292a497f871",
+      "n": 300,
+      "radius_exact": "30219555704412/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/best/n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/best/n500.json",
+      "sha256": "f10cbde233bd0e5ec97e40695812da9df69128bb3cc72e615284b46272d5dba6",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/best/n600.json",
+      "sha256": "815723d06fce9bb91e114fb12b66cd78400c962d561a55c265727e321b0205a1",
+      "n": 600,
+      "radius_exact": "21479792246411/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/best/n700.json",
+      "sha256": "7d82dc310eab8e04e3c2b4175fb2720f2132906219af77c96f7ba804da43de02",
+      "n": 700,
+      "radius_exact": "19903696913008/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/best/n800.json",
+      "sha256": "b0bb52fa7fe03974cc8e11cebf26244c0f937c3ebdcb7bff8354f8a6bd172251",
+      "n": 800,
+      "radius_exact": "18637592285890/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0000-n100.json",
+      "sha256": "be899911cfe1bbac256d435cb9a33782610338ee0292b6823a223e38e78de493",
+      "n": 100,
+      "radius_exact": "51401071774320/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0001-n106.json",
+      "sha256": "e900839b877b852e58775bb97bdec6a88bb767f499bc5e3bb3af168da9e7e633",
+      "n": 106,
+      "radius_exact": "50015200426096/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0002-n134.json",
+      "sha256": "57c6435b2cd9773bcbfea7c1f5ee78a8fc329112c5489f4f2a01046efa1528a6",
+      "n": 134,
+      "radius_exact": "44564244207000/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0003-n150.json",
+      "sha256": "e21e5ad83eb157ddcbe5fea29e422b4f76b9e0038a5a332d6594b7baeab9160b",
+      "n": 150,
+      "radius_exact": "42145465901232/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0004-n200.json",
+      "sha256": "941ef16137f6a9a5782fd3a304fce438c66f3a130e3b3f3a0e430b69cc7fa2b9",
+      "n": 200,
+      "radius_exact": "36612798903820/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0005-n250.json",
+      "sha256": "ee63b0716f4a95ac0dd8b522b7c69072d6dcf7e62ab4ae1bfdcdeb488105591f",
+      "n": 250,
+      "radius_exact": "32879800209483/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0006-n300.json",
+      "sha256": "a99776d70cad97f09b0464e183d8b05edc6fda4b5213d68c34960292a497f871",
+      "n": 300,
+      "radius_exact": "30219555704412/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0007-n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0008-n500.json",
+      "sha256": "2d18851c35eade8b865b7690d4e280b95814ca552be7a9d5437570909594c01a",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0009-n600.json",
+      "sha256": "c400ab228167a88474c4b67a95a5533f333fe0d122a19c1409115a66844c2349",
+      "n": 600,
+      "radius_exact": "21479389317032/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0010-n700.json",
+      "sha256": "7d82dc310eab8e04e3c2b4175fb2720f2132906219af77c96f7ba804da43de02",
+      "n": 700,
+      "radius_exact": "19903696913008/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0011-n800.json",
+      "sha256": "fdfdca313c894c4950107466012fc5f0f7b9abf020a5911bb6d213cdb16d5d88",
+      "n": 800,
+      "radius_exact": "18637592285890/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0012-n100.json",
+      "sha256": "0f596f2e3f7e9b74393a9d34f441fa4fd8f579c7a0f2437bf77121e4f2493ece",
+      "n": 100,
+      "radius_exact": "51401069181497/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0013-n106.json",
+      "sha256": "eb3000df9e07edd208ae0b2b7ae40f0a1fe4e2756fe5ff25d3890df6da0a0183",
+      "n": 106,
+      "radius_exact": "50013467285393/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0014-n134.json",
+      "sha256": "58ef3a909830b62248e18027b2fe3e807d02e8bfabc7372dea0a6ceb5fb7419b",
+      "n": 134,
+      "radius_exact": "44564244001739/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0015-n150.json",
+      "sha256": "5aa8f14c0a4462cbc94d4e6845d46815af84eb12e1484ba507201d1ce8b2d716",
+      "n": 150,
+      "radius_exact": "42145343830294/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0016-n200.json",
+      "sha256": "022fdf4dabdc162b982c8b14f258c640d4dfebdb60b00c292e37355880e21400",
+      "n": 200,
+      "radius_exact": "36612734378462/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0017-n250.json",
+      "sha256": "02a6212f66e9962f4206de23389f615c37d0320b527bf96ae3bfd24dcca3e0c9",
+      "n": 250,
+      "radius_exact": "32879655888287/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0018-n300.json",
+      "sha256": "245e3af67954b13c2a7ef89038b67f47c02e47cfc78040bf34a7a1e5e05873f3",
+      "n": 300,
+      "radius_exact": "30219519387792/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0019-n400.json",
+      "sha256": "7f84d038377f27d8cb2c21954dec8abecafbeac5391e459625996bcab8b05cbb",
+      "n": 400,
+      "radius_exact": "26202169210707/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0020-n500.json",
+      "sha256": "8363dfb1feed4b10916b20d9708ba7752729fce78182b1b27ed6139e2b1bb7a8",
+      "n": 500,
+      "radius_exact": "23454863937083/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0021-n600.json",
+      "sha256": "412e38d8343ae99c89319d519191e0f3e8707bc9a24fcbdebfee30a0f9f7efd4",
+      "n": 600,
+      "radius_exact": "21478668138464/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0022-n700.json",
+      "sha256": "638093ae8433438db59f692208b61e20c86c274a3c9e3b4fa1c3d7452bcc7ac3",
+      "n": 700,
+      "radius_exact": "19864298369296/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0023-n800.json",
+      "sha256": "b9c450ca6a53dd216e9d32c3d7e62b9e0078a842501113e5b1c9748c6a7e8cca",
+      "n": 800,
+      "radius_exact": "18605831965129/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0024-n100.json",
+      "sha256": "d667750064406ddfb32848b7589ff583a596dd5ca57cd81b627904f238825aa0",
+      "n": 100,
+      "radius_exact": "51398085935400/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0025-n106.json",
+      "sha256": "9d9d9aa2ceb232688e1ca6c856c998da6a3e94c897ceebb36a4786781f983c0d",
+      "n": 106,
+      "radius_exact": "49999999999999/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0026-n134.json",
+      "sha256": "7c441f99a262e78d68a44b09a83bfff8f63eb4b1e26b7b1324ad643728360e8b",
+      "n": 134,
+      "radius_exact": "44307005649743/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0027-n150.json",
+      "sha256": "33797f29eeb43a942140e9b8784c4fc4f7d2746332e662b8fb088ad0275fd2a2",
+      "n": 150,
+      "radius_exact": "42144503054282/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0028-n200.json",
+      "sha256": "2e239141d437f235daff03d4a47e6bee5354d5905b39e5ba1c8dc3c3f4845990",
+      "n": 200,
+      "radius_exact": "36610385176130/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0029-n250.json",
+      "sha256": "7f25becfc16b753533d6fe0ee08c3df91d4e22acdc9e43ae82c742c695b0a425",
+      "n": 250,
+      "radius_exact": "32879799987037/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0030-n300.json",
+      "sha256": "a01e48727bc236cef98dda27d4687500ac4f9106232450b17a2220f043f00d7d",
+      "n": 300,
+      "radius_exact": "30194734105295/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0031-n400.json",
+      "sha256": "2d6988fdd29be721f458ad0298723d44129867df979fdaa3966b2e5f14251de2",
+      "n": 400,
+      "radius_exact": "26202499219396/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0032-n500.json",
+      "sha256": "baeb090754064d9cb77c1205e59343aaa6ddac39ae8782e174b40b32604d1169",
+      "n": 500,
+      "radius_exact": "23454467287411/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0033-n600.json",
+      "sha256": "4f674bc6e91f23ec4623570ff71009304e33975a85277470764743fb3590fd00",
+      "n": 600,
+      "radius_exact": "21471009772696/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0034-n700.json",
+      "sha256": "a72056768ec6a7d939113a46b6f5dc4967bf510aef6c4626625a4d27f65baf94",
+      "n": 700,
+      "radius_exact": "19790827053567/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0035-n800.json",
+      "sha256": "d2e48d49da064b84652f08c0af8cff52c8fa2542bb585776adf4fca1ce142d3a",
+      "n": 800,
+      "radius_exact": "18542403338078/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0036-n100.json",
+      "sha256": "f655272b3eee3a88250ffdaec5cab3df5f9d7e008a5b679046dd6368892f8a95",
+      "n": 100,
+      "radius_exact": "51079880309634/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0037-n106.json",
+      "sha256": "f923f04f0fba709dd5a40dd977dbe71e18fcdda409741f7c92fc05e038dc8348",
+      "n": 106,
+      "radius_exact": "49520345064742/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0038-n134.json",
+      "sha256": "c32da2ab9c1fe97f2274d76242d650911dbbe7d33ec7ef1b710177fe952900de",
+      "n": 134,
+      "radius_exact": "44463724807333/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0039-n150.json",
+      "sha256": "8873569c8a87fa0485af721b6ceb07a4ade1702cfe2d913427dcd8053201ee74",
+      "n": 150,
+      "radius_exact": "41977097109004/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0040-n200.json",
+      "sha256": "ea4474c7995febf67cca6d756b3857e68ad70965970b7f00efe83c946d796e96",
+      "n": 200,
+      "radius_exact": "36569597636948/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0041-n250.json",
+      "sha256": "a179312c6586dafe0b1b2c9b7a5d3ccf7e95ff551a73c028c3f8790102907796",
+      "n": 250,
+      "radius_exact": "32802044692468/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0042-n300.json",
+      "sha256": "fa4bac59a257b225977548287c67a7713166cd8590e3671159efb14598cbb1a5",
+      "n": 300,
+      "radius_exact": "30204922047976/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0043-n400.json",
+      "sha256": "3e6d01898e4954f3a7adc20112c46b5d2d5d2174a276160ce25a52e813c78ead",
+      "n": 400,
+      "radius_exact": "26183086801513/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0044-n500.json",
+      "sha256": "8a3844b4d186b3d3cc3a7106e535f282601f89d613d1461e89d0e9a1242f3a7f",
+      "n": 500,
+      "radius_exact": "23428988599350/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0045-n600.json",
+      "sha256": "6455a5d828d6dde08a01a46b2ace51f99af06bdc33d91af694e580b5a9a69a5e",
+      "n": 600,
+      "radius_exact": "21459398066577/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0046-n700.json",
+      "sha256": "f36b9b36609f97fa5d4baaf3a2af15ad4eee3b49e4a927d871476f467d73b88b",
+      "n": 700,
+      "radius_exact": "19898788287035/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0047-n800.json",
+      "sha256": "96acfd23b2c2facb990ab013e83384826aecf345c2c61f9c03bdef403eb1057d",
+      "n": 800,
+      "radius_exact": "18635391207614/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0048-n100.json",
+      "sha256": "0aec1259384385906c5a56a70734ab2a2b17a5b6c798ef9f72443398a86cabe5",
+      "n": 100,
+      "radius_exact": "51236495243164/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0049-n106.json",
+      "sha256": "71c29c2c65085368426653bac53f58945d0d69c7a4985ed7aa920e775a76f2ad",
+      "n": 106,
+      "radius_exact": "49611815055605/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0050-n134.json",
+      "sha256": "39e87756e90a4d0221a55598270b4cf8545b0601e501513baba6532cbafe12ae",
+      "n": 134,
+      "radius_exact": "44506895873567/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0051-n150.json",
+      "sha256": "0c0c1ca0224c8cfba5d1384646015e12116e15aafb66c4301ece4e9919bc3c17",
+      "n": 150,
+      "radius_exact": "41905076514830/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0052-n200.json",
+      "sha256": "729bf3c2e6027b257fd6e1488074084062b22fb054245f543adedbd4285713c2",
+      "n": 200,
+      "radius_exact": "36361200633857/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0053-n250.json",
+      "sha256": "b515ae9ecd59f9a53640d855071e3346c7f0ff74f2bdf0fd31c5e1e77ff7655f",
+      "n": 250,
+      "radius_exact": "32792020645575/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0054-n300.json",
+      "sha256": "fdb8c2243955c071197378ec168790329f2f840c597812dad75e520a2b102a9c",
+      "n": 300,
+      "radius_exact": "30208945466018/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0055-n400.json",
+      "sha256": "ef27e03ba5b96ca5880cafab3dcbe9a104fdaa6a2ef640beb7b581ebe3df763f",
+      "n": 400,
+      "radius_exact": "26185949444400/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0056-n500.json",
+      "sha256": "d523ceecd13bddab64960ed343875040e968a0940183d2cb7b201d615f4ae035",
+      "n": 500,
+      "radius_exact": "23395599713340/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0057-n600.json",
+      "sha256": "ce997e8b2edd0c7db69e6af94512552dbe9e957b2c9bc6fb9e2515cb2f7d390e",
+      "n": 600,
+      "radius_exact": "21287161170392/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0058-n700.json",
+      "sha256": "a3aa40a49d4cba857a62a06cf19cca288140766cfc49ebce7a9720c0d0f0139f",
+      "n": 700,
+      "radius_exact": "19793781347452/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0059-n800.json",
+      "sha256": "30ee20f9cc94ab4df781ea0f1edb966db353c47e1d0f211d6a22a2c6b05fab68",
+      "n": 800,
+      "radius_exact": "18577228339469/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0060-n100.json",
+      "sha256": "0db39e5d5f9327718abae2251b038205ce3404811c191bd9742fdff35e7aed8e",
+      "n": 100,
+      "radius_exact": "50000000000000/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0061-n106.json",
+      "sha256": "8d98306da99e8ec27a7c701b87a1606e16527dffdd0e49edd5b5c89bd1dc62ff",
+      "n": 106,
+      "radius_exact": "48785548336743/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0062-n134.json",
+      "sha256": "007e7c136d3874c1f2b1ec08dbe060f07cd4c86b19ab926f0b82ddc91720d2f2",
+      "n": 134,
+      "radius_exact": "43621217121929/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0063-n150.json",
+      "sha256": "4387053da3815d679bdc3fb19103caedcf5c69b764dc1d0882878a0418bc59e3",
+      "n": 150,
+      "radius_exact": "41711528951585/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0064-n200.json",
+      "sha256": "38d3abcf5b12469a3e54de034d4c2a144e7e7b99b577a1360dc48f8686d0d55b",
+      "n": 200,
+      "radius_exact": "36130645349878/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0065-n250.json",
+      "sha256": "1dcdfd30346a76c358b292954b022181c464440922cecb492bd951febd374a11",
+      "n": 250,
+      "radius_exact": "32447861585470/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0066-n300.json",
+      "sha256": "09f301bec5cc61b4c99b5c0c1f1330703a7b2ca405e21afce09a9ce1a061878a",
+      "n": 300,
+      "radius_exact": "30187228689147/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0067-n400.json",
+      "sha256": "712890ed2fe08eea52bfe2530f511e030dcc4e802b63a3616ef97cb09f1f6eba",
+      "n": 400,
+      "radius_exact": "25722649804486/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0068-n500.json",
+      "sha256": "893c1656e2dcdec79ecc3097b740213d5fb80f64aab274eb4e5f7838f69499b4",
+      "n": 500,
+      "radius_exact": "23309343619043/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0069-n600.json",
+      "sha256": "fbf1947753be9951ab653bf1406ca58edc0f0c63c01200e9a793309c0bf2c95a",
+      "n": 600,
+      "radius_exact": "21265604680566/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0070-n700.json",
+      "sha256": "083eb9fbd4fa80b253a7ae6ba793c8bfdc79263bc52bb12b3e47f30816223631",
+      "n": 700,
+      "radius_exact": "19664749411173/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0071-n800.json",
+      "sha256": "899dd5dbfc2a16ede895d9ad1a8256c4d5fd2d241c5ce829b62ba537bcb6f4d8",
+      "n": 800,
+      "radius_exact": "18591510079305/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0072-n100.json",
+      "sha256": "6c5e33f840cf9ade3d8dcfab878ed2962e13bb68409ee11db38802123085269c",
+      "n": 100,
+      "radius_exact": "50000000000000/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0073-n106.json",
+      "sha256": "7215bb56c2fc690c93fcb83c0ce27c3f9cfd74caab81f9ccbcd3023cbf1ff58f",
+      "n": 106,
+      "radius_exact": "50000000000000/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0074-n134.json",
+      "sha256": "3ddeaf3afd4a19aa7399f340784107d42871d183b1b8130c95999371cbda676e",
+      "n": 134,
+      "radius_exact": "44240645150630/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0075-n150.json",
+      "sha256": "5d4b4a8fae90156d733ba63626a3a0c89837bff59e6f1ad3c4003fc594a6dbb5",
+      "n": 150,
+      "radius_exact": "41551119149097/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0076-n200.json",
+      "sha256": "7100dd0a6df0b23368e9743be8793e3caaacb36a06b4f04952eb686fd77f9fb4",
+      "n": 200,
+      "radius_exact": "36417169792226/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0077-n250.json",
+      "sha256": "77dd7fd17688209a19b30180d0577e566d6a2f34fcc52d8e27eab0e895ef2202",
+      "n": 250,
+      "radius_exact": "32820382256665/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0078-n300.json",
+      "sha256": "7e4f620721e3425a4f04ff96ecb762354ea551900347b56caf3c5f3092a91776",
+      "n": 300,
+      "radius_exact": "29839742756841/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0079-n400.json",
+      "sha256": "445381769b3a4e8181baedd182e189f84a4924c7f37811cc7f30a2b19af1470d",
+      "n": 400,
+      "radius_exact": "26036903246448/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0080-n500.json",
+      "sha256": "b730c0946687ca98c8b7becc182380ce35c9347302b5ecc6662f08962c651e65",
+      "n": 500,
+      "radius_exact": "23269116535801/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0081-n600.json",
+      "sha256": "89392035ce0cf5fc7b0f23ffa466f58a9bc3d4e135a3783599e573b99e7c3a2c",
+      "n": 600,
+      "radius_exact": "20718990697902/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0082-n700.json",
+      "sha256": "b389583301c4e16d28d60fc3c1897d20cee98b723697b664e31e16ecee08bcc4",
+      "n": 700,
+      "radius_exact": "18889732179088/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0083-n800.json",
+      "sha256": "da1ae4477cb1171f6e944122e61f6b50403dc007b8792f9dce9843eb06ae6d49",
+      "n": 800,
+      "radius_exact": "17767590233460/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0084-n100.json",
+      "sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "n": 100,
+      "radius_exact": "51401071774379/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0085-n106.json",
+      "sha256": "b72ff447a436eaebbeb2290dd675569557894a8103fae58d6b7e8c98dd046202",
+      "n": 106,
+      "radius_exact": "50009932330890/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0086-n134.json",
+      "sha256": "568f2cf7c16af7dfac1482ebd6e6444f536e14140d9c8d32604d0fcff9edc9df",
+      "n": 134,
+      "radius_exact": "44564210780429/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0087-n150.json",
+      "sha256": "9099cc36ca9c53616c210e7820c1c07a2c7543b21a906bacde0b81c997a300a5",
+      "n": 150,
+      "radius_exact": "42145294803077/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0088-n200.json",
+      "sha256": "0830cd5ef0cb38d6ec20a5b85cf983c21abe6b2a2f857cfdb76fa3b7489787de",
+      "n": 200,
+      "radius_exact": "36612735992849/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0089-n250.json",
+      "sha256": "a6cd88b71c45743620dd675b1697ad9e108df06345510c027e6cab930fb9d5a6",
+      "n": 250,
+      "radius_exact": "32879688683543/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0090-n300.json",
+      "sha256": "c8404a79060d4f23768a7a242c98a4e1a1314c366c38baa5b95f273aaa509772",
+      "n": 300,
+      "radius_exact": "30219517762499/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0091-n400.json",
+      "sha256": "0761d91c5d215c168d6774ea8cc735dac9945401340ed2b709e3cd6e4b946315",
+      "n": 400,
+      "radius_exact": "26202499219381/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0092-n500.json",
+      "sha256": "34b0b4c7d0d009f25e2fbd6177c701a5d0cdc7190bd45f4f2806bd0936856411",
+      "n": 500,
+      "radius_exact": "23455496103527/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0093-n600.json",
+      "sha256": "815723d06fce9bb91e114fb12b66cd78400c962d561a55c265727e321b0205a1",
+      "n": 600,
+      "radius_exact": "21479792246411/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0094-n700.json",
+      "sha256": "fab10870186e6a693613fa07ac3e49c618ab5fd7db92c8f008e3deb80b51ac26",
+      "n": 700,
+      "radius_exact": "19866382101360/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0095-n800.json",
+      "sha256": "52430f82088b96336c36be5b3087a1d2541841a4b7408c3039fc9ef9e9176997",
+      "n": 800,
+      "radius_exact": "18605392017437/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0096-n100.json",
+      "sha256": "0e4735b90da9652351a97182563877ffe4dec2478f81c18c362ba30e64f3c6a3",
+      "n": 100,
+      "radius_exact": "50000000000000/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0097-n106.json",
+      "sha256": "667037ae2d066e3342f9593e282e4bc425a845870f6fb66d1a1150d13906d067",
+      "n": 106,
+      "radius_exact": "50000000000000/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0098-n134.json",
+      "sha256": "51b1af652fc2addf87247e89317a0231d69c3870dc5dda7df568144deba93bed",
+      "n": 134,
+      "radius_exact": "44564244207095/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0099-n150.json",
+      "sha256": "ea5cedb6d4362a1e5ca740f5fc0d9c1853621758846cab08b4608543c8abc0db",
+      "n": 150,
+      "radius_exact": "42145293486396/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0100-n200.json",
+      "sha256": "62362fcf11bad0e592365e00a1cbceaf35ee7d3820dfe51567c4003b20b72454",
+      "n": 200,
+      "radius_exact": "36609884690400/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0101-n250.json",
+      "sha256": "3454b7b2ff9fcc0ae255cab18c022de605a3dddd7484a684acd3b4dd7006105f",
+      "n": 250,
+      "radius_exact": "32879600056206/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0102-n300.json",
+      "sha256": "2bbd3cee0d654742295322aa3ecbfd5ae19dea09940f1fc95e6b76153f984f18",
+      "n": 300,
+      "radius_exact": "30218666000345/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0103-n400.json",
+      "sha256": "6848bc0a92566eb4644130a31e11fe1d5b52d2caf9770b2c8d2386410a9a861b",
+      "n": 400,
+      "radius_exact": "26182690803253/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0104-n500.json",
+      "sha256": "308e892f38eeedaccee498bd37d2bc58831fd338d1e858f9c12a497d110e6586",
+      "n": 500,
+      "radius_exact": "23427859702768/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0105-n600.json",
+      "sha256": "37a3f13562fcdab8a7e9816dfbad24a0abb2c904cb48bb244d5ec4b2150cdc41",
+      "n": 600,
+      "radius_exact": "21477087064326/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0106-n700.json",
+      "sha256": "76db98a7e8843a8e1d11e04d2dcc0807c5c745e031713d1c16e3525b763f9138",
+      "n": 700,
+      "radius_exact": "19843643673240/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0107-n800.json",
+      "sha256": "1afa4f862d27f48bb1edbc720f2a28b27055aa2b27f45ac939b49b4f496e19cb",
+      "n": 800,
+      "radius_exact": "18082151780425/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0108-n100.json",
+      "sha256": "a000ec87dce6ba92c1bf339e552621929c21512ab48236ed9828889db4956e6d",
+      "n": 100,
+      "radius_exact": "51117481609464/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0109-n106.json",
+      "sha256": "2444f7c3a683895ba7a7139b60820136004ce304c2e7a41f3096f6695029a34e",
+      "n": 106,
+      "radius_exact": "49506176242048/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0110-n134.json",
+      "sha256": "00ab3a5ae281bb5f8beaa00478a1cb7d7671113c083707afbc10605ce7dc92b2",
+      "n": 134,
+      "radius_exact": "44432787192578/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0111-n150.json",
+      "sha256": "517e0798b9589e5c0b6e1564d9bc4af9ea7409782cd1e94c0bfa699a0cdc84b1",
+      "n": 150,
+      "radius_exact": "41977097109051/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0112-n200.json",
+      "sha256": "6e9218d8f13496cd9afe50daadfe35bf7f7b4eb4ca31f4abde3ceaf195a6f636",
+      "n": 200,
+      "radius_exact": "36569597636937/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0113-n250.json",
+      "sha256": "e2dfcd88eb885fe529680def3df97a7770e29366878238a82c43898c48fb137e",
+      "n": 250,
+      "radius_exact": "32799128200398/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0114-n300.json",
+      "sha256": "402364b66845577fd64ac15cfaf49f0c05c721b6b18bf573505204c074a456da",
+      "n": 300,
+      "radius_exact": "30204922046082/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0115-n400.json",
+      "sha256": "d6ec2a065e6cc67b05596ca5784360600f047686fe9b366705d9de47bc98f36b",
+      "n": 400,
+      "radius_exact": "26184668677936/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0116-n500.json",
+      "sha256": "7c1366fbfbdbc150007f6a263d3a221e040e4f9bc5d5219191b2b4b665530c2c",
+      "n": 500,
+      "radius_exact": "23428988599380/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0117-n600.json",
+      "sha256": "ddba7fc2b5f7620c4fa6f2a586e1617957c15f86b483dfd8cb4de5c082edce0b",
+      "n": 600,
+      "radius_exact": "21458665109802/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0118-n700.json",
+      "sha256": "02879dd70a184114abbbb2c5242ceaf1f4e36838d26a569fd8770c4993730742",
+      "n": 700,
+      "radius_exact": "19898791643333/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0119-n800.json",
+      "sha256": "c7c7bf5e9a72b97d40ab2f331ee7bc344374287865c59b81a994aa5d3a14b51a",
+      "n": 800,
+      "radius_exact": "18635391207614/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0120-n100.json",
+      "sha256": "2cafa786d4e3294d8ed5ff8617cf27818ae6b5092834ec23ea865971a28ba9b8",
+      "n": 100,
+      "radius_exact": "51041672417811/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0121-n106.json",
+      "sha256": "172dcb8b85f6b5ad4917d61a422fcea70c75b5babff0c479049bfb319c48910e",
+      "n": 106,
+      "radius_exact": "49616752639181/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0122-n134.json",
+      "sha256": "e1a39f0cb5aaf9a55a74e79e3f1c2e6caac0428c4f3c0468956399b6f1bb53be",
+      "n": 134,
+      "radius_exact": "44506895873644/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0123-n150.json",
+      "sha256": "85b6c5ae482dc786a6bf2bf570e7c8b143e2155e85214fb75cc51e3786f0e432",
+      "n": 150,
+      "radius_exact": "41895008003579/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0124-n200.json",
+      "sha256": "a630301813e3a9c1e756578633145a62ee24cfa06c879ea2f831c25f99030a77",
+      "n": 200,
+      "radius_exact": "36540470777627/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0125-n250.json",
+      "sha256": "9b3d875da5465f60d45ab72c64344ffb344929cd955b286cc8cd68de857765a8",
+      "n": 250,
+      "radius_exact": "32790073290767/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0126-n300.json",
+      "sha256": "d5e22896aaa8557f42e64d34e87c0a7514edd4fec086486350258ee1721a5cc8",
+      "n": 300,
+      "radius_exact": "30203447183732/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0127-n400.json",
+      "sha256": "257c3b7fdf2f6495c55e06094fc08773cfd5d497a6bced0099d7b8bc9011ed19",
+      "n": 400,
+      "radius_exact": "26182969719379/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0128-n500.json",
+      "sha256": "f0c90945cc41a20adc049986d4b55550dcf8cc16cf7120693c7c9ede3bb1a99d",
+      "n": 500,
+      "radius_exact": "23320296768125/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0129-n600.json",
+      "sha256": "37ee2610bc2297132ef339d18ea8813025a01887df68ddc9582cac86a3fbebbb",
+      "n": 600,
+      "radius_exact": "21440313066696/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0130-n700.json",
+      "sha256": "6c90fd60ae036e57c6bb9cfcbda0824d60b8863ac640e5a14b0695beeadf9374",
+      "n": 700,
+      "radius_exact": "19875325238638/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0131-n800.json",
+      "sha256": "9b094bda0ed935fccf0be196e426648391e7c9b2f77cd8bc9b7827668337cfde",
+      "n": 800,
+      "radius_exact": "18517552022993/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0132-n100.json",
+      "sha256": "f92bf03aea154dbffe0d4403214de706c150a98867cb1060e7810aaa6c7bcd9a",
+      "n": 100,
+      "radius_exact": "50000000000000/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0133-n106.json",
+      "sha256": "3e9042992b4f5bc2baddff654e8d4a4200178bbe4bbfdfb2049a698d5810eeca",
+      "n": 106,
+      "radius_exact": "48876855583838/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0134-n134.json",
+      "sha256": "857e17f97df9f583cf2e0341971f2faf1fdcfb2b187a28e92269ee29e360841e",
+      "n": 134,
+      "radius_exact": "43632306356247/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0135-n150.json",
+      "sha256": "8d3055b30b9499e8a8bc05072221a56c03e6ca9be528fd454e7c1e97ae3ae389",
+      "n": 150,
+      "radius_exact": "41569330661106/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0136-n200.json",
+      "sha256": "142f01eb3168ed6df8835eaf316396eade05121f915df98bc19215bd489efcfd",
+      "n": 200,
+      "radius_exact": "36131338401851/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0137-n250.json",
+      "sha256": "5f212576f73dc030ca4b25e2f1397becfe3f5fad31906eb99ca3353de71ccc56",
+      "n": 250,
+      "radius_exact": "32436561392769/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0138-n300.json",
+      "sha256": "c1fb2050d3cd5105185e2dd9eba55a5baef8cef1f3321ad29fd86306e85c8a13",
+      "n": 300,
+      "radius_exact": "30183119989633/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0139-n400.json",
+      "sha256": "90f89b5aa4ddcaa919af0dd5c2b6adafd8abd993ffce7d0d913a12f135d9a37b",
+      "n": 400,
+      "radius_exact": "25751096292232/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0140-n500.json",
+      "sha256": "e55e34fa0958a3d1d301e9ad3b568eb3cba115b5ffac535f391850e45bc2b0b9",
+      "n": 500,
+      "radius_exact": "23316665016516/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0141-n600.json",
+      "sha256": "504da0fbc8a6fe7170e3121ba549266f8bd858e0cb436d496394f451b9f8ac97",
+      "n": 600,
+      "radius_exact": "21265710671400/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0142-n700.json",
+      "sha256": "0e671b7a386efed739aa05d7112996a34055527777865852df538248175a091c",
+      "n": 700,
+      "radius_exact": "19658168397655/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0143-n800.json",
+      "sha256": "5b0505896b9a3d8245fcfcd2534ac2a3e23df56d9343c1dc5b694f7777c49690",
+      "n": 800,
+      "radius_exact": "18591528276192/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0144-n100.json",
+      "sha256": "ecdbd875a5fb16999c8a212bc09bc0154bf5c484b3385248f5abc959791dd932",
+      "n": 100,
+      "radius_exact": "50652807679907/1000000000000000",
+      "pairs_checked": 4950
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0145-n106.json",
+      "sha256": "4c8cca0b74877c939f8481f0debda815f65575a1a7b5cc857d184d76e0264681",
+      "n": 106,
+      "radius_exact": "49999999999999/1000000000000000",
+      "pairs_checked": 5565
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0146-n134.json",
+      "sha256": "c1c5faf9eb42db9645beb12746b50b768832748cc0de633c296620467d3bfbe7",
+      "n": 134,
+      "radius_exact": "43938321421638/1000000000000000",
+      "pairs_checked": 8911
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0147-n150.json",
+      "sha256": "42a691d552888c44b553985324f1619d7d70003509c97d350e9aa6e4c34331b7",
+      "n": 150,
+      "radius_exact": "41666666666666/1000000000000000",
+      "pairs_checked": 11175
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0148-n200.json",
+      "sha256": "dd6a8e4353bb56bc884471064a27002cc8ee4a87be9c40aa0379e729e078b363",
+      "n": 200,
+      "radius_exact": "35714285714285/1000000000000000",
+      "pairs_checked": 19900
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0149-n250.json",
+      "sha256": "488b0033ffc164e198db5f3f08cb28641e3a9166d177f6d177e14be1cec5aec3",
+      "n": 250,
+      "radius_exact": "32778677447527/1000000000000000",
+      "pairs_checked": 31125
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0150-n300.json",
+      "sha256": "9be06f8be598865d5c1be48664aaebfb464989e00ed7b87913cf33ad33673442",
+      "n": 300,
+      "radius_exact": "30091609640088/1000000000000000",
+      "pairs_checked": 44850
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0151-n400.json",
+      "sha256": "13c51abef6fd51cf2e69b581c332053a328810c2fcee133031265e37af601fdc",
+      "n": 400,
+      "radius_exact": "26124560855924/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0152-n500.json",
+      "sha256": "4020c0f979ee8f3466c4605c155e347faffacadc40719a911a3a47d5d15a57aa",
+      "n": 500,
+      "radius_exact": "23205239204252/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0153-n600.json",
+      "sha256": "1f6db39e1db7d711d45b3e1ed370643073f1e5693d7550b4fe6de71527cc2bfd",
+      "n": 600,
+      "radius_exact": "20957409672286/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0154-n700.json",
+      "sha256": "e1569d0ca41638df5eb74ac14ab5422dcb8499c9242a35e63f61be1ff8a5fd45",
+      "n": 700,
+      "radius_exact": "19165841900723/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "experiments/stage1/candidates/trial-0155-n800.json",
+      "sha256": "5ac677f023abcc101e4558da75ccee8b4cc58bc8108ecd57e96453e7fbb191aa",
+      "n": 800,
+      "radius_exact": "17475869876778/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/aa-original-repeat-n500-000.json",
+      "sha256": "5d216bdd27eb583a80dcd3c43dd18a822f326e0a93f83589952d23dd90057ee7",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/aa-original-repeat-n500-001.json",
+      "sha256": "ab9d3d92d88aa5ad76db2b723e8f782410fe3c1b525d0b098f1aa73dc8f6881b",
+      "n": 500,
+      "radius_exact": "23455596952977/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/aa-original-repeat-n500-002.json",
+      "sha256": "99f3ad4722ebf53a886bc81ba316b58d246932f6949064fbfc55249fa608382f",
+      "n": 500,
+      "radius_exact": "23432967422176/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/aa-original-repeat-n500-003.json",
+      "sha256": "a35de8ed9c7d05264efbe567f634fc4dc9bbce10334322a0ceedf5c7916c0e05",
+      "n": 500,
+      "radius_exact": "23264098741902/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/aa-original-repeat-n500-004.json",
+      "sha256": "85591412a334f707526dde72b31df20da83b063d9f654b0ebbe8f97307e0dcf4",
+      "n": 500,
+      "radius_exact": "23455544134097/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/aa-original-repeat-n500-005.json",
+      "sha256": "9ba9b45a24661465e462ae95ddab92342578be31f3ea520900fa69bee6caa556",
+      "n": 500,
+      "radius_exact": "23455373560298/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/aa-original-repeat-n500-006.json",
+      "sha256": "57ade9c98519b2149aaf3ebbce3b5dfa1d2a0b5b1dab61eae26adf33fe32628a",
+      "n": 500,
+      "radius_exact": "23287508739919/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/aa-original-repeat-n500-007.json",
+      "sha256": "834096ab1b0df9e3708e5c42e55b57c9c2e1660d7a0284c0107c9a8c6975e9da",
+      "n": 500,
+      "radius_exact": "23455452085460/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/aa-original-repeat-n500-008.json",
+      "sha256": "a04f69292083b601ca6bff81935c541ad780e9fb3189b28ba4aa7be4837e4190",
+      "n": 500,
+      "radius_exact": "23229929117359/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/aa-original-repeat/n500.json",
+      "sha256": "ab9d3d92d88aa5ad76db2b723e8f782410fe3c1b525d0b098f1aa73dc8f6881b",
+      "n": 500,
+      "radius_exact": "23455596952977/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/best/n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/best/n500.json",
+      "sha256": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "n": 500,
+      "radius_exact": "23455596955367/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/best/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/best/n700.json",
+      "sha256": "6d02a08ed764ba28cc992fc0eee01d532f33ea54c0615082899b903da6e30179",
+      "n": 700,
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/best/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-original-n500-000.json",
+      "sha256": "416db951e40f04b02f75b808097dfcd630423dd1923a98890bbefa70939510dd",
+      "n": 500,
+      "radius_exact": "23455596955163/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-original-n500-001.json",
+      "sha256": "897a453a0d4d229f095c089d665673f2f47642c2b26ea3129c54a5e483ed8a4b",
+      "n": 500,
+      "radius_exact": "23455513194145/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-original-n500-002.json",
+      "sha256": "01533ff9b2850420095534f68d3d128395a20e7c17c2b515ae30ef05b22d53ac",
+      "n": 500,
+      "radius_exact": "23454775112319/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-original-n500-003.json",
+      "sha256": "5edb2399c73034badada7044763b26f8d0b66f921eaf267a646c143105bb8843",
+      "n": 500,
+      "radius_exact": "22837638704204/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-original-n500-004.json",
+      "sha256": "5dfce3c6ee59c5e37bc55e640bdd7db513f8f98a45adb1d0359126b1b23e9a6a",
+      "n": 500,
+      "radius_exact": "23455563068270/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-original-n500-005.json",
+      "sha256": "bf3cca30365985656e219fc633675c063c35b7a22be378087e4b0803f4b61e31",
+      "n": 500,
+      "radius_exact": "23295330285837/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-original-n500-006.json",
+      "sha256": "c45ec2a7278246652194614be7e6a871fbe64cef25cf2e7d0c1f383e6c83996a",
+      "n": 500,
+      "radius_exact": "21579021840425/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-original/n500.json",
+      "sha256": "4664a67bf1f911d0e9a34fce9152a5cb2cb666c10903705580f6ec2459e28eb9",
+      "n": 500,
+      "radius_exact": "23455596955163/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-targeted-n500-000.json",
+      "sha256": "5bd5875a7918862274521705998a16027b5b096775815d7ef9d734c6de058199",
+      "n": 500,
+      "radius_exact": "23455596955163/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-targeted-n500-001.json",
+      "sha256": "195e6a9764c7491775f7059dbbb1880e7f8e661410738c01b963931b39903f4e",
+      "n": 500,
+      "radius_exact": "23455596955320/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-targeted-n500-002.json",
+      "sha256": "114e18568305be50f0ff8fbde1701a8351a30160678dbd74d4dfe18d809640f7",
+      "n": 500,
+      "radius_exact": "23455596955109/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-targeted-n500-003.json",
+      "sha256": "52a1b0ff8059cd9694fc1d2eb1d476a4a9f0184c0e04d0c4d6cb0037dd18299d",
+      "n": 500,
+      "radius_exact": "23455596955194/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-targeted-n500-004.json",
+      "sha256": "a631ec0a1a1d0b81b47659b3baf7c25478ed6cdb8db9c58ced42e8dac53e1928",
+      "n": 500,
+      "radius_exact": "23427034254371/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-targeted-n500-005.json",
+      "sha256": "3bc0dcc90202f213fd514b17feb7a2b05c30ca97c47f700093f522e9f2325221",
+      "n": 500,
+      "radius_exact": "23307215387730/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-500-targeted/n500.json",
+      "sha256": "195e6a9764c7491775f7059dbbb1880e7f8e661410738c01b963931b39903f4e",
+      "n": 500,
+      "radius_exact": "23455596955320/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-800-original-n800-000.json",
+      "sha256": "8b1f52a66f7e9be13912c75635b8bd2e43f0e9c8f3f129e3e2bdbda3156685d5",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-800-original-n800-001.json",
+      "sha256": "0f0bbfc6c7a9b676ef070421ef20a500e3f5ea9482b6ab50ade0b4deda1b4cd8",
+      "n": 800,
+      "radius_exact": "15316293254970/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-800-original-n800-002.json",
+      "sha256": "9458e8762a6a6380c888e5c01c729cb5fd8e78c9a22cfb8470a3a9a2fd8e1f81",
+      "n": 800,
+      "radius_exact": "18152389566710/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-800-original-n800-003.json",
+      "sha256": "46790fbf83283115d951b9898ba0c507fa7f2266d63ca7e229f2da9cfb8a746f",
+      "n": 800,
+      "radius_exact": "17310773623984/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-800-original-n800-004.json",
+      "sha256": "939376f9e11e08f2c730aceb85cd678d8e8b0c2f8953866750394491fb916940",
+      "n": 800,
+      "radius_exact": "14902123336091/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-800-original/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-800-targeted-n800-000.json",
+      "sha256": "52a2e766a1470d9a8d2b7039c1ec23ed01e91057847e22895e0c8ea3a949bd87",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-800-targeted-n800-001.json",
+      "sha256": "03fc55fd031422d65af4566de228ad1cf1c9382598359e95fc622fde759f5d30",
+      "n": 800,
+      "radius_exact": "18638671862216/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-800-targeted-n800-002.json",
+      "sha256": "723d921ae23dbe218b90200a9fe52d1096a10dce9d25b54456190b575712542f",
+      "n": 800,
+      "radius_exact": "18638028839976/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-800-targeted-n800-003.json",
+      "sha256": "a6d83d8caa33d93f15790a27a6faa35b546340df0844af0a41a14a8591253f36",
+      "n": 800,
+      "radius_exact": "18637662637018/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-201-800-targeted/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-original-n500-000.json",
+      "sha256": "440c3cac04c3deedd0aa200b167f5764a513e4a573589e424899dc26b94df60b",
+      "n": 500,
+      "radius_exact": "23455596955163/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-original-n500-001.json",
+      "sha256": "15e4214bc3104105ba06164455c7f76050e83690736111134e4c742e326b08be",
+      "n": 500,
+      "radius_exact": "23455538342700/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-original-n500-002.json",
+      "sha256": "7e0b6fb2ba7c91d15ad3467f86e52d0a6e30cab87bc7a8dc8d93c03c613ee9de",
+      "n": 500,
+      "radius_exact": "23454747024022/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-original-n500-003.json",
+      "sha256": "310577e0e60d10f346c9ad8feb931c45c99ad364a709331abe36601db794c552",
+      "n": 500,
+      "radius_exact": "23247588678744/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-original-n500-004.json",
+      "sha256": "5c82f0c7389c46c67d8fd03027a867352753bf23d55cadc581b3605304f120bf",
+      "n": 500,
+      "radius_exact": "23455522698534/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-original-n500-005.json",
+      "sha256": "0ad188a736b8bdfae7bcb69ed27b953fa7980f9c67145e8284a8d0eafc4ae901",
+      "n": 500,
+      "radius_exact": "23455428378484/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-original-n500-006.json",
+      "sha256": "c775da1e62e9cbadaf3a5e094d8767c7d26fb35488771344b69a6f111a9d9de4",
+      "n": 500,
+      "radius_exact": "21444550140390/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-original/n500.json",
+      "sha256": "4664a67bf1f911d0e9a34fce9152a5cb2cb666c10903705580f6ec2459e28eb9",
+      "n": 500,
+      "radius_exact": "23455596955163/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-targeted-n500-000.json",
+      "sha256": "3f70f2cbf49aa785c32e6c30a27eca81f8845f5f04085cdf457da38aad4dc12d",
+      "n": 500,
+      "radius_exact": "23455596955163/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-targeted-n500-001.json",
+      "sha256": "9935664ce2d6400e72111807f312c999a1f5158e227ad25c05cf8d836ec68f37",
+      "n": 500,
+      "radius_exact": "23455596955301/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-targeted-n500-002.json",
+      "sha256": "c91e22ec81f29312ab482812a842dd14332f7ce71cc3417b865b28b71d77b58a",
+      "n": 500,
+      "radius_exact": "23455596955362/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-targeted-n500-003.json",
+      "sha256": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "n": 500,
+      "radius_exact": "23455596955367/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-targeted-n500-004.json",
+      "sha256": "a72e53920821ebe3e5f6a92c4c98bb939a0873df5caea81fb344f7a0fb48854c",
+      "n": 500,
+      "radius_exact": "23427294119886/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-targeted-n500-005.json",
+      "sha256": "28d59e86cd284864a9711ee45383e4cb200dccfe010b7f987a505e80feeaee1f",
+      "n": 500,
+      "radius_exact": "23427939035471/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-targeted-n500-006.json",
+      "sha256": "c2bd38026fd4062d89833cecec44d10cfc4c3e52b618f650b12a7c87af9d943c",
+      "n": 500,
+      "radius_exact": "23412003803405/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-500-targeted/n500.json",
+      "sha256": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "n": 500,
+      "radius_exact": "23455596955367/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-800-original-n800-000.json",
+      "sha256": "ef3304fab241c3f25b888e79844259af2bae96d12c1fcc77def9a5f9789e1966",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-800-original-n800-001.json",
+      "sha256": "7be4e63afa347099ab000ac18b80b06fdd595e65b0f04df67d7bffdbb57ce43b",
+      "n": 800,
+      "radius_exact": "15712194083232/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-800-original-n800-002.json",
+      "sha256": "7033edf475328ae640a51a46581e77f4f93dac735be910b276436e935adbe1df",
+      "n": 800,
+      "radius_exact": "18490968871817/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-800-original-n800-003.json",
+      "sha256": "86b3a1160a0fb20c4e181aefa31df77b0071f54f0f1bcfd6dc9b73f4ea341dbd",
+      "n": 800,
+      "radius_exact": "17048036655197/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-800-original-n800-004.json",
+      "sha256": "f2c72c430324076e6e38706cea14c39893c5eec88b63f06a4b7cbaf7eb32d724",
+      "n": 800,
+      "radius_exact": "15340917185573/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-800-original/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-800-targeted-n800-000.json",
+      "sha256": "33351ce2b9ddfa7138241c3764d169b23b57c7f3755806f4974366e4fb6ff14a",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-800-targeted-n800-001.json",
+      "sha256": "f7197df88277470febff2f5481cbf36a98daff0226d746c24846b041cf2e885f",
+      "n": 800,
+      "radius_exact": "18638060529159/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-800-targeted-n800-002.json",
+      "sha256": "36d35c4e59b0347c53a50c25c48dd9cd88efb7e622323bbde5f1a6438d5a2915",
+      "n": 800,
+      "radius_exact": "18632370587240/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-800-targeted-n800-003.json",
+      "sha256": "d937538c866b18ea58b39cd738dd72675aa5c906dfff29c6e584bed14b51f7f6",
+      "n": 800,
+      "radius_exact": "18632251514634/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-202-800-targeted/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-original-n700-000.json",
+      "sha256": "00b5d5b344071ed35499b337ffb78ae88d23a8565ad8a3d03925526d21f79f4b",
+      "n": 700,
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-original-n700-001.json",
+      "sha256": "0ff769cfd4bc5f29dbcf24143898f3bfcc827ca53f18e52671bc19571b6ba357",
+      "n": 700,
+      "radius_exact": "19905684597838/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-original-n700-002.json",
+      "sha256": "e463bf5a99e44df699810911e320ef0931d2c0863f65bd7965cbcc2e533bcb5f",
+      "n": 700,
+      "radius_exact": "19895232515061/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-original-n700-003.json",
+      "sha256": "8355761610eb86949082389b6d50a7fc24608e23379c3927a925864563b7c409",
+      "n": 700,
+      "radius_exact": "19393167079745/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-original-n700-004.json",
+      "sha256": "83928f4b0a2062faef1c3b91909ab1412a4fe39f0f6df564e5ab641e254bfb49",
+      "n": 700,
+      "radius_exact": "19687940839225/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-original-n700-005.json",
+      "sha256": "6372757d8a2bf1c7788d23f67ccadde7be7fb35314a2528c9e3cc54fc203d6a7",
+      "n": 700,
+      "radius_exact": "19785253952426/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-original/n700.json",
+      "sha256": "00b5d5b344071ed35499b337ffb78ae88d23a8565ad8a3d03925526d21f79f4b",
+      "n": 700,
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-targeted-n700-000.json",
+      "sha256": "6d02a08ed764ba28cc992fc0eee01d532f33ea54c0615082899b903da6e30179",
+      "n": 700,
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-targeted-n700-001.json",
+      "sha256": "ad0a350fa54cc050dff055e1cdc5a422f4ba5ae094b95dc99a8c04eefb5995a2",
+      "n": 700,
+      "radius_exact": "19906338885320/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-targeted-n700-002.json",
+      "sha256": "f6e73d1b1f2dff4772e3ff58b3f4c4387643d208e06af4a3c7ef545fdcdb6c9c",
+      "n": 700,
+      "radius_exact": "19906357272261/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-targeted-n700-003.json",
+      "sha256": "b35ee00d642a3f7f60c4b58c32cc0c9b9adf563ff8f1e98feadbea803caccad6",
+      "n": 700,
+      "radius_exact": "19906356384235/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-targeted-n700-004.json",
+      "sha256": "5fa1a267ef81062a0822be1bf9bc6d038b4cb1f276456d97a7f1fa9c039ce3de",
+      "n": 700,
+      "radius_exact": "19838169440090/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-203-700-targeted/n700.json",
+      "sha256": "6d02a08ed764ba28cc992fc0eee01d532f33ea54c0615082899b903da6e30179",
+      "n": 700,
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-original-n700-000.json",
+      "sha256": "0d1b436f3a3531061dea56a2a9fb2379fa8faa92f36db2007e17dfe6c2c9ae3f",
+      "n": 700,
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-original-n700-001.json",
+      "sha256": "320e2db34199fdf5931200359ad5728cfe55ee0d97107c3210faca92c02d5814",
+      "n": 700,
+      "radius_exact": "19906354754759/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-original-n700-002.json",
+      "sha256": "43b5522176e5d8d402bb57cb105c08904cc4fba248e7e0c00c005d334323483c",
+      "n": 700,
+      "radius_exact": "19902493590582/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-original-n700-003.json",
+      "sha256": "c306400a316bcc181dc6ad862982f67489f4eb4205f468676816713d4e645f99",
+      "n": 700,
+      "radius_exact": "19335151532152/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-original-n700-004.json",
+      "sha256": "9517e9a648f979ce32f8ac46d3530d90a2c2ebd8bfa46c93940f77e6660d61d1",
+      "n": 700,
+      "radius_exact": "19906355908726/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-original-n700-005.json",
+      "sha256": "7eee190dd50868e0753d7c681af44e074987b028effd497c8243b67c67f60a36",
+      "n": 700,
+      "radius_exact": "19800512411770/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-original/n700.json",
+      "sha256": "0d1b436f3a3531061dea56a2a9fb2379fa8faa92f36db2007e17dfe6c2c9ae3f",
+      "n": 700,
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-targeted-n700-000.json",
+      "sha256": "c948de58e17bc592433c61baf83b5059393e96b6fc59af24df9df203c94f6115",
+      "n": 700,
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-targeted-n700-001.json",
+      "sha256": "60d0d6956ca2b7ae1af97b635db197415afbaea496d65d7df9f90f276c07f65e",
+      "n": 700,
+      "radius_exact": "19906357272226/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-targeted-n700-002.json",
+      "sha256": "392f521bbe1e0b8e8d680476335c9e62ee662e374bf7bf40ae05dd0a6c3fc764",
+      "n": 700,
+      "radius_exact": "19906356068885/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-targeted-n700-003.json",
+      "sha256": "9ae5acbc362d58c834a0d3d2e4c33c0d8ec296baae9873bc59224cdcfde7c6fa",
+      "n": 700,
+      "radius_exact": "19906357120795/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-targeted-n700-004.json",
+      "sha256": "c31d1473f6350b680df989c8e0c8795159fff97194050a31c917d5c187caa8a1",
+      "n": 700,
+      "radius_exact": "19889592244082/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/continuation-204-700-targeted/n700.json",
+      "sha256": "c948de58e17bc592433c61baf83b5059393e96b6fc59af24df9df203c94f6115",
+      "n": 700,
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n400-000.json",
+      "sha256": "0b2e89f522d5d6dc11ef47d57c84ad129c8ef6f5ad5615c09446dc6ed174468a",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n400-001.json",
+      "sha256": "524d3f305abdb7d5844e6809cc635f84d3eb547765c21ad6825a20721d2bece1",
+      "n": 400,
+      "radius_exact": "26202499219442/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n400-002.json",
+      "sha256": "cd57630934d518fb29803c32d6d06a121374e8be71e489b29ced032373e4de46",
+      "n": 400,
+      "radius_exact": "26201567698672/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n400-003.json",
+      "sha256": "38c9e29821b886dbcc835d1f437fea24d8311b5a34a0b94d9e904c95779515a3",
+      "n": 400,
+      "radius_exact": "26030363127903/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n400-004.json",
+      "sha256": "ad2c8513abdd926b8d4a009774cb560427d75198072e57e4b22c1d442edb2f94",
+      "n": 400,
+      "radius_exact": "26202499219404/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n400-005.json",
+      "sha256": "24160147a1b79e8c5d226f18983507362fdb25258c992828baab7d886d638f54",
+      "n": 400,
+      "radius_exact": "26201538150181/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n400-006.json",
+      "sha256": "0def6b475d4071d746215c196073f73eaad5abcb0a363626a8c913bfb2b88dd7",
+      "n": 400,
+      "radius_exact": "26091794782044/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n400-007.json",
+      "sha256": "2ef136308ee64969dc761744cfec19b37182dba56868f1351135047e7f7cf15c",
+      "n": 400,
+      "radius_exact": "26202116468648/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n500-000.json",
+      "sha256": "39f8fdabfeae2847f1848dd3093d8ae8b2c1ca7d079332b09e195e376e395ef3",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n500-001.json",
+      "sha256": "1932edccaf07db2bac1adcdf7a86c44b3663c2be149c6d4dbea093831af5156a",
+      "n": 500,
+      "radius_exact": "23455596952977/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n500-002.json",
+      "sha256": "45cd68483af825998db775b6de1ff6fbcb8a497af98ed216447bfbce88336d96",
+      "n": 500,
+      "radius_exact": "23190177918099/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n500-003.json",
+      "sha256": "d5915d0c372a821b5d1879e9b360e87bac20af94b8176298ff1ec3c3d98fafac",
+      "n": 500,
+      "radius_exact": "22818542229908/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n500-004.json",
+      "sha256": "eae7f047499520a124a601d6252b6107f331ffa4bb59be829227c6a1a2355766",
+      "n": 500,
+      "radius_exact": "23455544124539/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n500-005.json",
+      "sha256": "e00d89c387df3a954bc0fc52fb00fca6d28a68bd543c17c39c28eba9b4a7b16a",
+      "n": 500,
+      "radius_exact": "23455373556896/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n500-006.json",
+      "sha256": "c59ec46e5b8e3685e3d16387dd936d87def5af8dedff6334bc31f2570d078b21",
+      "n": 500,
+      "radius_exact": "22455702985655/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n600-000.json",
+      "sha256": "a7050f73b16d7f995023e80395c5c4e4c1d7ff9ff56bfd8934a7ea40623fec2c",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n600-001.json",
+      "sha256": "bc0fbf138a170b4029ecfafb4be21340e97f3702cb1b4353963f1bba598324da",
+      "n": 600,
+      "radius_exact": "21479895708712/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n600-002.json",
+      "sha256": "5758fc179b64ddb488cd9e970dabb3f7b1360c42a30606d066e7020c2cbfa80f",
+      "n": 600,
+      "radius_exact": "21346539599611/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n600-003.json",
+      "sha256": "40102fe7f8708cee4bda7176f2077db0b934c4cecf5a941154f954207acd3a47",
+      "n": 600,
+      "radius_exact": "21049480095805/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n600-004.json",
+      "sha256": "7e6b996f940ea672a55ee7505c0acf0f91ffd1661a2bc524d248c14e55d0c190",
+      "n": 600,
+      "radius_exact": "21479881397913/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n600-005.json",
+      "sha256": "0c674ba4ee7778b02cbe36e97b7a4a1d08fafa6c2c8885f8d12bf336c679af0d",
+      "n": 600,
+      "radius_exact": "21479802183711/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n600-006.json",
+      "sha256": "9bc4fbe58b963f6ffdad22e26d3ec6e1c3acff5eceadfca60a571818e434fdea",
+      "n": 600,
+      "radius_exact": "19545502507081/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n700-000.json",
+      "sha256": "1640e75dcdf8f7d399df5f7f77a11f0717ae2ebe0ff6e386339db4b26497b079",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n700-001.json",
+      "sha256": "d383907cfacd5217f7a2f039535775df9857e5225006e78169d7d6f018d46aec",
+      "n": 700,
+      "radius_exact": "19865535475251/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n700-002.json",
+      "sha256": "0eec7a332088ef826e6126b2ec2447a1db05871f72181aa220e0f061bdf6b655",
+      "n": 700,
+      "radius_exact": "19843106020614/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n700-003.json",
+      "sha256": "217021d91d991450d36efcb004d0c567de00656cb4905aaec0f280d148797a16",
+      "n": 700,
+      "radius_exact": "18795861399689/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n700-004.json",
+      "sha256": "fa210148670b95c129c1f1b2924b193149e23958b2ca34aef7e6768bf6beabaa",
+      "n": 700,
+      "radius_exact": "19870651902921/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n700-005.json",
+      "sha256": "ca88b95e39dfaa1915e817b6353b5dd1245e12665ff04635595f6f415179b5c1",
+      "n": 700,
+      "radius_exact": "19745329952107/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n800-000.json",
+      "sha256": "109d73de251b5290dd9a31f9d7dc925899528a506c31ff3e18263a4928390df4",
+      "n": 800,
+      "radius_exact": "18637770245966/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n800-001.json",
+      "sha256": "b96fcb1f4a039edbbdb00fe3c319cbcc8426f7d86b2ecc70a55059313e6b8e88",
+      "n": 800,
+      "radius_exact": "18607348513951/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n800-002.json",
+      "sha256": "a3720664eaa33c2c1aa870795775347c82758ec375e5b4fb3c849870f29cd442",
+      "n": 800,
+      "radius_exact": "18612227303431/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n800-003.json",
+      "sha256": "4fbb180f959f2c846643d3c0c22a875b3d5db811509592d92d3c739b9aff9f95",
+      "n": 800,
+      "radius_exact": "17867676718848/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original-n800-004.json",
+      "sha256": "5744c69fed3a6d7ae388645827dd52bbdd5385e114e4cfbc0a568fb617425953",
+      "n": 800,
+      "radius_exact": "18600090745252/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original/n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original/n500.json",
+      "sha256": "1932edccaf07db2bac1adcdf7a86c44b3663c2be149c6d4dbea093831af5156a",
+      "n": 500,
+      "radius_exact": "23455596952977/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original/n700.json",
+      "sha256": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-original/n800.json",
+      "sha256": "109d73de251b5290dd9a31f9d7dc925899528a506c31ff3e18263a4928390df4",
+      "n": 800,
+      "radius_exact": "18637770245966/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-000.json",
+      "sha256": "9d408459e1245545005d45d6a8f97694433657953a2a30107c22e4350c1b142c",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-001.json",
+      "sha256": "2a9764d4b8777205126fb744932b9513ba7fb85b3f251ac9c7cf4ea6c325e5b5",
+      "n": 400,
+      "radius_exact": "26202507076527/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-002.json",
+      "sha256": "8fbec4f399b584daf8abd6af04de91855e97729bb695d0c6f1e8dd8c0e3ed193",
+      "n": 400,
+      "radius_exact": "26202507076512/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-003.json",
+      "sha256": "80c828deea7635058528a4936d57350ea5571ded5d6d910791252a6c4da5f608",
+      "n": 400,
+      "radius_exact": "26202507076592/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-004.json",
+      "sha256": "fab95dacb8c0b4682935896ca406648db3ec5e0b9ec9da368b0e2ef232a59931",
+      "n": 400,
+      "radius_exact": "26165022386700/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-005.json",
+      "sha256": "7f9c5fa8c24fd46914b89b11ac24a84aece14c31d0e6ddd74f7feeea09cc66af",
+      "n": 400,
+      "radius_exact": "26183001594991/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-006.json",
+      "sha256": "eaa3801ea3521f9c01b2f2d675cc073d85c9e3583133c4b5ce66453bc5096bdd",
+      "n": 400,
+      "radius_exact": "26199345938076/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-007.json",
+      "sha256": "2254f22a83ffe1387712df01558bcf1b62ab6a375eb64dc8afa44cb2fff11ef7",
+      "n": 400,
+      "radius_exact": "26202507076586/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-008.json",
+      "sha256": "33fd5e3ec332ff811ffb2e70e2481ecb496cfdcdbc96b72a7fd133fe5fd0ffcb",
+      "n": 400,
+      "radius_exact": "26202507076585/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-009.json",
+      "sha256": "f6136de19cf01813086c7ea24aff9f7469190d03656b5aeda521db82324756f9",
+      "n": 400,
+      "radius_exact": "26202507076565/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-010.json",
+      "sha256": "dc0b22c2d68bfdd7d16819c82a33a968b905b192bb7818cd661eb6b588c9d2ec",
+      "n": 400,
+      "radius_exact": "26165140809912/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-011.json",
+      "sha256": "a7ced10645ce02b253fd48ec4e3d221bea233303a3537341fc438054fb0b94a6",
+      "n": 400,
+      "radius_exact": "26183001594860/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-012.json",
+      "sha256": "826e67eb5aff3a3d54e1781e43c2621a646341223e489189ebe7d7bd25260950",
+      "n": 400,
+      "radius_exact": "26188936859877/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n400-013.json",
+      "sha256": "3f02c52e5dac18bbe4256f6a6e66ad56f19b95e0e0db67521457f31a74fde753",
+      "n": 400,
+      "radius_exact": "26202017516019/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n500-000.json",
+      "sha256": "3249e900f737ac4949fffb77737d223f869fe812205595bd95e0788a333dafd5",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n500-001.json",
+      "sha256": "c6904da1a3a3ae1982a19bdf02ac54a71a6fc8f99b219edd99c19951c341bac5",
+      "n": 500,
+      "radius_exact": "23455596954270/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n500-002.json",
+      "sha256": "0776ae3cc8c236754d912f16e60fe1885139daa9ba8ffd7379a22203dbad519a",
+      "n": 500,
+      "radius_exact": "23455596954294/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n500-003.json",
+      "sha256": "223811899d63ad32b76f8c6381cd4d64f077c9f891a0505b964294567b20ab12",
+      "n": 500,
+      "radius_exact": "23455596954888/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n500-004.json",
+      "sha256": "f905a43ede559024914a7fd77cb530bcc996645f5dcee353be836408536acfa9",
+      "n": 500,
+      "radius_exact": "23427241071111/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n500-005.json",
+      "sha256": "c890d5e3ed843f5623969e731ff38b68534acbfa005a160911d9b8c5ccc86da0",
+      "n": 500,
+      "radius_exact": "23427939035429/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n500-006.json",
+      "sha256": "7dd35014cdff259b6437c2230b0252d4d662ac591020903671f7ee1f277b7f2c",
+      "n": 500,
+      "radius_exact": "23407025220896/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n600-000.json",
+      "sha256": "5f15d952ed2f81c37d2db35a96f44aea6d347fda2fdd8a8326144d1f0c9aaf5e",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n600-001.json",
+      "sha256": "c3c3f68b0d461e6fb0a5b1fea6e04a604d19df06cffcedc379c094a5acef62cf",
+      "n": 600,
+      "radius_exact": "21479896578150/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n600-002.json",
+      "sha256": "ea213712a694a25833b71286d4fc5aa9d28b3ebba2ecb1a8b520a9b8173b77a3",
+      "n": 600,
+      "radius_exact": "21479896578159/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n600-003.json",
+      "sha256": "c2b7d63e06902506c216ab4657056c2b8014960cdde30f2797207dfe32366163",
+      "n": 600,
+      "radius_exact": "21479896578165/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n600-004.json",
+      "sha256": "d11695ecdeb25f109e17912252c507583140a304c4c4f0b5f58ef1ce6d7f2332",
+      "n": 600,
+      "radius_exact": "21452431890632/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n700-000.json",
+      "sha256": "06605d204f6de52ea988c0aba3872d7695db30c284810b916c31a497bad1a55b",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n700-001.json",
+      "sha256": "e05d7bf7c689eab2e8a5cc7ca1399c7257d19c15d8f190567785b9f423797d9c",
+      "n": 700,
+      "radius_exact": "19903696624497/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n700-002.json",
+      "sha256": "34c67d7b2326d72a891b30da8cbbf19a17eb6ba970cc5483d3c08dba02106c8e",
+      "n": 700,
+      "radius_exact": "19903696915159/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n700-003.json",
+      "sha256": "8c901dc91bfc29fe38f7ada35d624cb93d43d3d74acc6b6c4a7e7e046587b3a0",
+      "n": 700,
+      "radius_exact": "19903217353342/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n700-004.json",
+      "sha256": "16624c74f72860d4f97bfc16c237b14edf7eccd543370b9afb88807dd204ab31",
+      "n": 700,
+      "radius_exact": "19868641993050/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n800-000.json",
+      "sha256": "90ae71a628f3569d0c72c6a9b891f419db3485440cabe6e2a9021121a29366f7",
+      "n": 800,
+      "radius_exact": "18637770245966/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n800-001.json",
+      "sha256": "e527b79a1275bffb7cf14a5c306ab605874dadb5552e2bbbaa7350c45d4ef584",
+      "n": 800,
+      "radius_exact": "18637788070792/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n800-002.json",
+      "sha256": "8568b86628a47f7da57c7283efd2593f2a9adae535640dff250cad1b9ce7a30b",
+      "n": 800,
+      "radius_exact": "18638122137519/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n800-003.json",
+      "sha256": "7a0fdf45d787969806eaf1bd211222c1ca3fb5fb1f94603eb105f251940a0a06",
+      "n": 800,
+      "radius_exact": "18638516709010/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted-n800-004.json",
+      "sha256": "93417851b8421fee80fe7022e720831a333753df348c9f0522b1f768f502acb1",
+      "n": 800,
+      "radius_exact": "18615408806260/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted/n400.json",
+      "sha256": "80c828deea7635058528a4936d57350ea5571ded5d6d910791252a6c4da5f608",
+      "n": 400,
+      "radius_exact": "26202507076592/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted/n500.json",
+      "sha256": "223811899d63ad32b76f8c6381cd4d64f077c9f891a0505b964294567b20ab12",
+      "n": 500,
+      "radius_exact": "23455596954888/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted/n700.json",
+      "sha256": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/exploration-targeted/n800.json",
+      "sha256": "7a0fdf45d787969806eaf1bd211222c1ca3fb5fb1f94603eb105f251940a0a06",
+      "n": 800,
+      "radius_exact": "18638516709010/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-original-n400-000.json",
+      "sha256": "96cc32ef192826e4ed7eac91f16ccfd458f3de10aafd434973408fc86e0839ae",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-original-n400-001.json",
+      "sha256": "957587df7a5c6743a91eabe1c6643ce295b9c97cd8cb620d37d900a22713f8e1",
+      "n": 400,
+      "radius_exact": "26202331928425/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-original-n400-002.json",
+      "sha256": "763f80fb7817a179bb3a41350f3f9a9b756da5524cd06cdff0e02974986e237f",
+      "n": 400,
+      "radius_exact": "26201226744251/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-original-n400-003.json",
+      "sha256": "d1929635225c9a19e341e8c5ea49ffec9187b6cdb85ad3e4e62670ab463dc275",
+      "n": 400,
+      "radius_exact": "26081044335781/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-original-n400-004.json",
+      "sha256": "956f85da11c9950420d4562c0df38b898c3734efb28abadc6d22cc177408b27c",
+      "n": 400,
+      "radius_exact": "26202168065673/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-original-n400-005.json",
+      "sha256": "e2b4486c8902d0a1fb4bfc2bb9b95c08199a92cafd3225c7efd0abafafc38f28",
+      "n": 400,
+      "radius_exact": "26201538149875/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-original-n400-006.json",
+      "sha256": "ed4d67b51cf502fe93f9dddc727fa0f4e0a50ad00ab7f70f35d51af9628280dc",
+      "n": 400,
+      "radius_exact": "25573013793228/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-original/n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-targeted-n400-000.json",
+      "sha256": "4a248d0e98f3db8d70bb8e44342405d4ab88a9694381a09e705b6e5381217643",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-targeted-n400-001.json",
+      "sha256": "6976639ccdc51b9a65b888676423371bac9fc422c99ae884ec4d327cdb169c16",
+      "n": 400,
+      "radius_exact": "26202507076573/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-targeted-n400-002.json",
+      "sha256": "91bafed0a478fe5d2275f64d9bc5afdeb9cbe50c5818394bd735ab42c250292e",
+      "n": 400,
+      "radius_exact": "26202507076583/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-targeted-n400-003.json",
+      "sha256": "0d6d4bd7e1baa8d70d1695d19b2a57f27ee8adb6b3e4b4072c81744418d01a96",
+      "n": 400,
+      "radius_exact": "26202507076591/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-targeted-n400-004.json",
+      "sha256": "3e560cebdc3651b47a09b08d2121f213174195e6731ecde31ca2b10f3016b163",
+      "n": 400,
+      "radius_exact": "26164004903424/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-targeted-n400-005.json",
+      "sha256": "30a4413c17ba9ed6324683eaab73f1385457965b065abf2dd666758dd80e8652",
+      "n": 400,
+      "radius_exact": "26183001595008/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-400-targeted/n400.json",
+      "sha256": "0d6d4bd7e1baa8d70d1695d19b2a57f27ee8adb6b3e4b4072c81744418d01a96",
+      "n": 400,
+      "radius_exact": "26202507076591/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-original-n500-000.json",
+      "sha256": "32fbd8c39d94197561e9ee64f6ba7e2b54dc85b85986542ed40842a6cb0f0cf7",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-original-n500-001.json",
+      "sha256": "3e2a7a2ffa84ba8bc613c6647e059523dfe6d75580d64706debd087a549e080a",
+      "n": 500,
+      "radius_exact": "23455589971477/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-original-n500-002.json",
+      "sha256": "598742bd7fbbad7c3ae0a351bd31f101fd31ecd63151cac6f50d75db1a01c41a",
+      "n": 500,
+      "radius_exact": "23454799999220/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-original-n500-003.json",
+      "sha256": "6f285614b2edeb1f20d7b0f410fcb26ea44693e7ba028ce66ad663878e15f936",
+      "n": 500,
+      "radius_exact": "23144629803068/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-original-n500-004.json",
+      "sha256": "768c0d391df4b14a5ddac61b2b03ca9ec35478ade0a83653ede66bf2622aa3a1",
+      "n": 500,
+      "radius_exact": "23455496107709/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-original-n500-005.json",
+      "sha256": "42df049881f84c2b8947838d40994247fa8eba2a37cd0e8d1ec2e15b442d781f",
+      "n": 500,
+      "radius_exact": "23341791721852/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-original/n500.json",
+      "sha256": "3e2a7a2ffa84ba8bc613c6647e059523dfe6d75580d64706debd087a549e080a",
+      "n": 500,
+      "radius_exact": "23455589971477/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-targeted-n500-000.json",
+      "sha256": "22639536b101efb179cec30aca3997f8e2d92f9c5436cdd37e2cddef8eb95f12",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-targeted-n500-001.json",
+      "sha256": "2aca9b9fc3ad4a812ecaf39da19854e230b33d316c59b1c0ab4061086127d336",
+      "n": 500,
+      "radius_exact": "23455498993441/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-targeted-n500-002.json",
+      "sha256": "be98c8a4408d081f951bfd7968f41b8448bf021bfdc4c172af99a5c490c7c2f2",
+      "n": 500,
+      "radius_exact": "23455498998307/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-targeted-n500-003.json",
+      "sha256": "4664a67bf1f911d0e9a34fce9152a5cb2cb666c10903705580f6ec2459e28eb9",
+      "n": 500,
+      "radius_exact": "23455596955163/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-targeted-n500-004.json",
+      "sha256": "764c904136d435f9ad7564564f966f84b4fab7df1d15593e945d452692543ed9",
+      "n": 500,
+      "radius_exact": "23427241070930/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-targeted-n500-005.json",
+      "sha256": "dc18bcc1f6b756978e405646db1ff96644e6f863f80dabfb1917d278028d5e9c",
+      "n": 500,
+      "radius_exact": "23427939035470/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-targeted-n500-006.json",
+      "sha256": "354314fe1ddd57038e12901d1f688b4a2e66538102960c731c237b27b0d5b629",
+      "n": 500,
+      "radius_exact": "23427300805669/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-targeted-n500-007.json",
+      "sha256": "3150f00ba1753e8fbcd7e48d0ca47a6b71c3237fd432608cfcf6adbf984fa707",
+      "n": 500,
+      "radius_exact": "23455596925871/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-500-targeted/n500.json",
+      "sha256": "4664a67bf1f911d0e9a34fce9152a5cb2cb666c10903705580f6ec2459e28eb9",
+      "n": 500,
+      "radius_exact": "23455596955163/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-original-n600-000.json",
+      "sha256": "9cfd9b06baa21c97d5af569685a894ddf1dce631268f8a7fc39d283f0b8c5f11",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-original-n600-001.json",
+      "sha256": "47c1d81a53fe4676562224f7ae704a94bf6498f17c5ad21c3f8b1ba24635cf60",
+      "n": 600,
+      "radius_exact": "21479518672301/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-original-n600-002.json",
+      "sha256": "45ac67c3b0082d004dc92cf2a3bb8d40073db45dd30d7ce8e91fd66e9bac010e",
+      "n": 600,
+      "radius_exact": "21405167899442/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-original-n600-003.json",
+      "sha256": "d94b31fa4fc974cbd195b01f0d3006e6084da1e6e1151a9b9856fe7edcc5a2b2",
+      "n": 600,
+      "radius_exact": "20549644176208/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-original-n600-004.json",
+      "sha256": "cc627502462161bc1c888db74e9611fb2d083a1d6f0684c3039b9fd101a6e1e1",
+      "n": 600,
+      "radius_exact": "21431420699830/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-original/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-targeted-n600-000.json",
+      "sha256": "5446def2186e371c8bfdd59e191766f4d5e2d52d7b1d8b25c6547ace6bdb04cf",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-targeted-n600-001.json",
+      "sha256": "88150cf0e805b3b1ca4452b28c89946779af1a503201b227227694b356cbeed8",
+      "n": 600,
+      "radius_exact": "21479896577980/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-targeted-n600-002.json",
+      "sha256": "2abc6544abaa5d8ad88526a0f816eb6dae5fb358a2e7b405e601e84578906e50",
+      "n": 600,
+      "radius_exact": "21479896578113/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-targeted-n600-003.json",
+      "sha256": "1b841b9c36f7e1c138a335f86417a5070618e6cf8b7bd4d962a804e988d03341",
+      "n": 600,
+      "radius_exact": "21479896578178/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-targeted-n600-004.json",
+      "sha256": "f95464bb539339c99cdaed4e6510401f6687a07f0d3dc5a5efad254c69e9ac4a",
+      "n": 600,
+      "radius_exact": "21453174566679/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-targeted-n600-005.json",
+      "sha256": "fb57528d839a070fe8248de8b7c17392fe2123be59ee5fb3e83906e179221a2e",
+      "n": 600,
+      "radius_exact": "21370571804618/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-600-targeted/n600.json",
+      "sha256": "1b841b9c36f7e1c138a335f86417a5070618e6cf8b7bd4d962a804e988d03341",
+      "n": 600,
+      "radius_exact": "21479896578178/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-700-original-n700-000.json",
+      "sha256": "8255c582a0f930a941375651d92220978ac8e6ecf7c66973557cc9e4348bcd8f",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-700-original-n700-001.json",
+      "sha256": "a8a337c975e2f8a9c5a54e33515b6968409d04868e9c4b30241c792208934edc",
+      "n": 700,
+      "radius_exact": "19903634194907/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-700-original-n700-002.json",
+      "sha256": "7fe6cb9858b13a262698ca0b19733261db5bd3753bb33acd29d3a47874f9d1f8",
+      "n": 700,
+      "radius_exact": "19883104137645/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-700-original-n700-003.json",
+      "sha256": "6890da41a5c92d936016fa2c7bca2bcb0ace1a3c72c00a5e90691ef4dbed6bec",
+      "n": 700,
+      "radius_exact": "19230769230769/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-700-original-n700-004.json",
+      "sha256": "4c1d54b26109a9eab409ad2aa240a05add7fedce20a6e47bc703c62b0d4004bc",
+      "n": 700,
+      "radius_exact": "19903807317692/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-700-original/n700.json",
+      "sha256": "4c1d54b26109a9eab409ad2aa240a05add7fedce20a6e47bc703c62b0d4004bc",
+      "n": 700,
+      "radius_exact": "19903807317692/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-700-targeted-n700-000.json",
+      "sha256": "be9c375abae10f411542ff53f14af90bfb44ee93e3af3f18ab2c0f86855be7ab",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-700-targeted-n700-001.json",
+      "sha256": "16353f3bc8a8cd240419ee1278d463eca38a2bc8152355159799b74c045bd14d",
+      "n": 700,
+      "radius_exact": "19903696930142/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-700-targeted-n700-002.json",
+      "sha256": "036c25f1d46df3cb95bc971d1506b93ed9c5fca56fd8097406ba7947c0f9c235",
+      "n": 700,
+      "radius_exact": "19903696932802/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-700-targeted-n700-003.json",
+      "sha256": "4ca4b4f88b2b2fe74a2880bf19d48aa5eeabac9590b44d67c7bc808be9c23f18",
+      "n": 700,
+      "radius_exact": "19903696933814/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-700-targeted-n700-004.json",
+      "sha256": "c8dee9fad1058bc544f2e7bdb5d601360630bd8873d0c623400114cf4c6711f0",
+      "n": 700,
+      "radius_exact": "19898513534771/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-700-targeted/n700.json",
+      "sha256": "4ca4b4f88b2b2fe74a2880bf19d48aa5eeabac9590b44d67c7bc808be9c23f18",
+      "n": 700,
+      "radius_exact": "19903696933814/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-800-original-n800-000.json",
+      "sha256": "0c6627994f6bb84e7957ea6ebe0f42b5a7c7022bb4bffd836b2b4927131569ec",
+      "n": 800,
+      "radius_exact": "18638080112653/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-800-original-n800-001.json",
+      "sha256": "8ae19cbe36bf95c8c68087657212bfcf40321bd824316a93790d547ad6eb2e0b",
+      "n": 800,
+      "radius_exact": "18606154780676/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-800-original-n800-002.json",
+      "sha256": "21727abc5debf971e970e19bef01356f5c300370739725bf7699f1a691a7b073",
+      "n": 800,
+      "radius_exact": "18583996745297/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-800-original-n800-003.json",
+      "sha256": "3dd15dc5a41840ef88973629718cb8a668819944a350e06b6f26cf96f9918ef0",
+      "n": 800,
+      "radius_exact": "17429576116408/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-800-original/n800.json",
+      "sha256": "0c6627994f6bb84e7957ea6ebe0f42b5a7c7022bb4bffd836b2b4927131569ec",
+      "n": 800,
+      "radius_exact": "18638080112653/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-800-targeted-n800-000.json",
+      "sha256": "0091af934ca9c71ec2ea3c93387a70116b238d4ace163a382fc4d503f0a5c877",
+      "n": 800,
+      "radius_exact": "18638080112653/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-800-targeted-n800-001.json",
+      "sha256": "b6df1d71596a929354d3c896ecc03817923155d754225fb7a5409683f8d844e4",
+      "n": 800,
+      "radius_exact": "18638080623964/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-800-targeted-n800-002.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-101-800-targeted/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-original-n400-000.json",
+      "sha256": "a70a68fe3d6654c9657c71cdb1eddfb0b83ef04c70ad9b2bf57d45d0a60b6594",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-original-n400-001.json",
+      "sha256": "80e3d9654daa392a14ca43e9b38284cecb4641e0f2e09fe698c9e3182884d4d0",
+      "n": 400,
+      "radius_exact": "26202499580123/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-original-n400-002.json",
+      "sha256": "dfa25d1a22050ba1c00f920cdd167843e297c031cd4547410cfa5e5edf1cbd05",
+      "n": 400,
+      "radius_exact": "26201056820388/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-original-n400-003.json",
+      "sha256": "f22fe1100b0ee66a7ce671714e6cd11e7bc57c99e20eb1998757a43ad99c452b",
+      "n": 400,
+      "radius_exact": "26169486517432/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-original-n400-004.json",
+      "sha256": "3a4feb1f4a8e1f28266a5142afa0d99ab9d6496f7044d90f13bbb33c1cde9138",
+      "n": 400,
+      "radius_exact": "26201929960881/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-original-n400-005.json",
+      "sha256": "a6e27fc383838cc691c40df82578e280c0a6c91baacc49291a7af4a01365aea6",
+      "n": 400,
+      "radius_exact": "25363488032834/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-original/n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-targeted-n400-000.json",
+      "sha256": "4d71e13954cbbeb2c5b374851ffe56e325c1956cc299001dffbe32430d21e864",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-targeted-n400-001.json",
+      "sha256": "74349463aa9662eda1c7d20529de2fdddd9e53a8ed1b885ff38e2bddf37ac02a",
+      "n": 400,
+      "radius_exact": "26202507076582/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-targeted-n400-002.json",
+      "sha256": "c77108c427ae9bb13b3c523360e0272d337bb8cf467b5702b0b43725d8b92552",
+      "n": 400,
+      "radius_exact": "26202507076591/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-targeted-n400-003.json",
+      "sha256": "59cf050a8b981f01f0252dc985483dda52bf3bd4e7a20351e2c1c6a06e61b4d2",
+      "n": 400,
+      "radius_exact": "26202507076575/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-targeted-n400-004.json",
+      "sha256": "7cb0e3dd99d82253e42757c37753aa88e2e08a5d943e7fa40b6f58cdaefffb2a",
+      "n": 400,
+      "radius_exact": "26167012774156/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-400-targeted/n400.json",
+      "sha256": "c77108c427ae9bb13b3c523360e0272d337bb8cf467b5702b0b43725d8b92552",
+      "n": 400,
+      "radius_exact": "26202507076591/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-500-original-n500-000.json",
+      "sha256": "4d63129994df671810ff507e4322feba18c437179224315223c466afc6ce04b0",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-500-original-n500-001.json",
+      "sha256": "764234b1390681d863b012996503f8240c740048fd932f2a543f85dfbb522415",
+      "n": 500,
+      "radius_exact": "23455593403350/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-500-original-n500-002.json",
+      "sha256": "489021725c0a83ee6bd86e8780861d2cd46d938f70cca1c4221b81dfa6a07db3",
+      "n": 500,
+      "radius_exact": "23454794351352/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-500-original-n500-003.json",
+      "sha256": "9eaba988a7c7b81638d410575932ace5762edb340ce4a5116c9b29e3b8a90817",
+      "n": 500,
+      "radius_exact": "23294743849740/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-500-original-n500-004.json",
+      "sha256": "dbc5005208d3123c3e5337cdcfb1634384696d9ba9a785cd947d186a9d9232f4",
+      "n": 500,
+      "radius_exact": "23455577464359/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-500-original-n500-005.json",
+      "sha256": "15112a68691a67c990eee32360384dcde3a0d71e876ca2befa3a414ee7ed8b55",
+      "n": 500,
+      "radius_exact": "23341262479886/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-500-original/n500.json",
+      "sha256": "764234b1390681d863b012996503f8240c740048fd932f2a543f85dfbb522415",
+      "n": 500,
+      "radius_exact": "23455593403350/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-500-targeted-n500-000.json",
+      "sha256": "5c5b4b46b2b2a48b5255210dc56e62a0a4634edc8194d9058e393057fbd02d31",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-500-targeted-n500-001.json",
+      "sha256": "79c8bd2dcbd34df41e8c99efaedd7de5b5c36c98c54eac539a9c864b8b05e11d",
+      "n": 500,
+      "radius_exact": "23455596806403/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-500-targeted-n500-002.json",
+      "sha256": "2b0d11f818df462774fa2e56c909418f50539719f321a278981557302d24bc2b",
+      "n": 500,
+      "radius_exact": "23455596954435/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-500-targeted-n500-003.json",
+      "sha256": "039d28e6a8083d3e7ed34618c3bda5f26f8a2972327b82a013c3b291495886d0",
+      "n": 500,
+      "radius_exact": "23455569439470/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-500-targeted/n500.json",
+      "sha256": "2b0d11f818df462774fa2e56c909418f50539719f321a278981557302d24bc2b",
+      "n": 500,
+      "radius_exact": "23455596954435/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-original-n600-000.json",
+      "sha256": "718a97819ddd40243de6561e1df0122b47efde3833b2480494c5f4e58fa2e4cc",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-original-n600-001.json",
+      "sha256": "f671e6093471258f7108655b0afe994c3c36990f76ab356428257133b4c64cc5",
+      "n": 600,
+      "radius_exact": "21479896578124/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-original-n600-002.json",
+      "sha256": "f981e496ccd9ed9b2ecbdd350396b42cf8ac0e763feaca0a5801114c36b15faf",
+      "n": 600,
+      "radius_exact": "21479896578164/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-original-n600-003.json",
+      "sha256": "f78e29fc3cc38928bbad3118ef645eecbb10c30e383f254c63337376ba16d965",
+      "n": 600,
+      "radius_exact": "20933435217585/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-original-n600-004.json",
+      "sha256": "00d2fb3e1fc89dcc8e7224ad213823d898814350244e22a8f75216eccee89c92",
+      "n": 600,
+      "radius_exact": "21479896578140/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-original-n600-005.json",
+      "sha256": "176652ecf8e90bfe7b70a63198c87fd78c5d55321a8b4bd35a942c221044af07",
+      "n": 600,
+      "radius_exact": "21479826283247/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-original/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-targeted-n600-000.json",
+      "sha256": "f9c2aaf71016c65b7c948a8608057ab3b69c4c44d2fd0cc81e6660b1a5059d58",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-targeted-n600-001.json",
+      "sha256": "4e3b56d874b2eb648c325ab8a403d0d02d8eda90ba92d1a9f56211834c4f8363",
+      "n": 600,
+      "radius_exact": "21479896578055/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-targeted-n600-002.json",
+      "sha256": "0b3b046d716a4da630bfc8aa0082d5fe8beca2d8572fc7a0f7b24c1136438368",
+      "n": 600,
+      "radius_exact": "21479896578127/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-targeted-n600-003.json",
+      "sha256": "bfb7ad16dfb44ce66ddb4f55a32a8ad154de4312fd94b6e0477ef329393542bd",
+      "n": 600,
+      "radius_exact": "21479896578074/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-targeted-n600-004.json",
+      "sha256": "1856d973bb0f67fc676b923ab0540e7eb3cde89fef28fd665aef0102ba0f89b5",
+      "n": 600,
+      "radius_exact": "21452395499782/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-600-targeted/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-700-original-n700-000.json",
+      "sha256": "17e9a309df4f9c476085759d2dd98afe13a42f254afdd8b1f213a4aba6e74fbb",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-700-original-n700-001.json",
+      "sha256": "d204bb5c5c9ac42b74ddf2fd799eee9d198b7b17226e5f4f5191f51719752172",
+      "n": 700,
+      "radius_exact": "19903951387379/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-700-original-n700-002.json",
+      "sha256": "ea395baf299777ab8c3dce3e24782d1571ba5368ef3b1456bab64cc581f91cb0",
+      "n": 700,
+      "radius_exact": "19899988863123/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-700-original-n700-003.json",
+      "sha256": "60ef26dcb2eec30fc66d567e3424073b05502f292af741b8a15cfd84e746bb2a",
+      "n": 700,
+      "radius_exact": "19001072996731/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-700-original-n700-004.json",
+      "sha256": "24b88dc5b1e16feb2f004f623ac137a79a2bf94c161a08adcce34f92fbc9f906",
+      "n": 700,
+      "radius_exact": "19905923977280/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-700-original/n700.json",
+      "sha256": "24b88dc5b1e16feb2f004f623ac137a79a2bf94c161a08adcce34f92fbc9f906",
+      "n": 700,
+      "radius_exact": "19905923977280/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-700-targeted-n700-000.json",
+      "sha256": "39c67419480080dc15a9e3edd64231795e28cacb65cea0dc56f391912f0fada9",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-700-targeted-n700-001.json",
+      "sha256": "d703bb574b138972e84d7a6bf2a7782863588d8c1f06c8dd0492c59b068d4682",
+      "n": 700,
+      "radius_exact": "19903696923356/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-700-targeted-n700-002.json",
+      "sha256": "49a78ac7fab1af09a8ad58d18d31668e319889dce7c1399323d46b77e2e3e825",
+      "n": 700,
+      "radius_exact": "19903696931821/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-700-targeted-n700-003.json",
+      "sha256": "535c02a6134e485fee7b532e6aa38f0c82e1fb78ee6cdfb3f527f075de2b732b",
+      "n": 700,
+      "radius_exact": "19903662039987/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-700-targeted/n700.json",
+      "sha256": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-800-original-n800-000.json",
+      "sha256": "baf08703e65e36450bf8296a653d3d3678f436d5db24fbc0bb17e1d6ce1928e6",
+      "n": 800,
+      "radius_exact": "18638081785221/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-800-original-n800-001.json",
+      "sha256": "ac8e60a976b62d9aee6b11ff09dce79818fd3e37a089b719b8a5bdfdbbc18415",
+      "n": 800,
+      "radius_exact": "18638173610066/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-800-original-n800-002.json",
+      "sha256": "9f312a17c7eea844c1b59253b6cf2a41663e9e810e20713f55f9dc04a609000e",
+      "n": 800,
+      "radius_exact": "18575411054537/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-800-original-n800-003.json",
+      "sha256": "fa636da883ed130f122a413c0d4699328235230b72820126ad011b718148462d",
+      "n": 800,
+      "radius_exact": "17190856942148/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-800-original/n800.json",
+      "sha256": "ac8e60a976b62d9aee6b11ff09dce79818fd3e37a089b719b8a5bdfdbbc18415",
+      "n": 800,
+      "radius_exact": "18638173610066/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-800-targeted-n800-000.json",
+      "sha256": "597a647e2d209a4df4d2ad052d272f2bf159c13d0bc63c5dd6182450dbb60d73",
+      "n": 800,
+      "radius_exact": "18638081785221/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-800-targeted-n800-001.json",
+      "sha256": "b04029a40635c7f0deed6db6cf7163ae63cfe00e579ddb642a89b4a5c7f3314a",
+      "n": 800,
+      "radius_exact": "18638080630137/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-800-targeted-n800-002.json",
+      "sha256": "10f1cf344532b94f19482f3eceed094b3b67c5277cd33a7b7e3ac2ff242272eb",
+      "n": 800,
+      "radius_exact": "18638082179971/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-800-targeted-n800-003.json",
+      "sha256": "4fcde7023245062c29e1db6b07458a1b72234b459b70088dc68160a6f4d01505",
+      "n": 800,
+      "radius_exact": "18637489120874/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/heldout-102-800-targeted/n800.json",
+      "sha256": "10f1cf344532b94f19482f3eceed094b3b67c5277cd33a7b7e3ac2ff242272eb",
+      "n": 800,
+      "radius_exact": "18638082179971/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/long-polish-n500-000.json",
+      "sha256": "66775b7ede8ab17865c95a2ef3eb7d435e06d8931124e247f8f8a984b7ee3aeb",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/long-polish-n800-000.json",
+      "sha256": "76a8d40badf7ca208a007063f95475f3aee0c1d7a961a3a7f54fb617143a4cde",
+      "n": 800,
+      "radius_exact": "18638081785221/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/long-polish/n500.json",
+      "sha256": "f10cbde233bd0e5ec97e40695812da9df69128bb3cc72e615284b46272d5dba6",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/certificates/long-polish/n800.json",
+      "sha256": "76a8d40badf7ca208a007063f95475f3aee0c1d7a961a3a7f54fb617143a4cde",
+      "n": 800,
+      "radius_exact": "18638081785221/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/strong-polish-n700-000.json",
+      "sha256": "c0e8e634f97e7417e5953c0e4ddbac1fdf83c0bd989d2eb2c378a79d23762f6a",
+      "n": 700,
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/strong-polish-n800-000.json",
+      "sha256": "e3395e545d73ece2718a61a2821b3e16f27fd43ef442a47d317cadb76fa3576a",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/certificates/strong-polish/n700.json",
+      "sha256": "6d02a08ed764ba28cc992fc0eee01d532f33ea54c0615082899b903da6e30179",
+      "n": 700,
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/certificates/strong-polish/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/inputs/continuation-start/n500.json",
+      "sha256": "4664a67bf1f911d0e9a34fce9152a5cb2cb666c10903705580f6ec2459e28eb9",
+      "n": 500,
+      "radius_exact": "23455596955163/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/inputs/continuation-start/n700.json",
+      "sha256": "24b88dc5b1e16feb2f004f623ac137a79a2bf94c161a08adcce34f92fbc9f906",
+      "n": 700,
+      "radius_exact": "19905923977280/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/inputs/continuation-start/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/inputs/n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "n": 400,
+      "radius_exact": "26202507076218/1000000000000000",
+      "pairs_checked": 79800
+    },
+    {
+      "path": "research/contributor-20261020/inputs/n500.json",
+      "sha256": "f10cbde233bd0e5ec97e40695812da9df69128bb3cc72e615284b46272d5dba6",
+      "n": 500,
+      "radius_exact": "23455498993500/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/contributor-20261020/inputs/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "n": 600,
+      "radius_exact": "21479896578172/1000000000000000",
+      "pairs_checked": 179700
+    },
+    {
+      "path": "research/contributor-20261020/inputs/n700.json",
+      "sha256": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2",
+      "n": 700,
+      "radius_exact": "19903696933565/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/inputs/n800.json",
+      "sha256": "b0bb52fa7fe03974cc8e11cebf26244c0f937c3ebdcb7bff8354f8a6bd172251",
+      "n": 800,
+      "radius_exact": "18637592285890/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/inputs/strong-polish-start/n700.json",
+      "sha256": "6d02a08ed764ba28cc992fc0eee01d532f33ea54c0615082899b903da6e30179",
+      "n": 700,
+      "radius_exact": "19906357272343/1000000000000000",
+      "pairs_checked": 244650
+    },
+    {
+      "path": "research/contributor-20261020/inputs/strong-polish-start/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "n": 800,
+      "radius_exact": "18638671925985/1000000000000000",
+      "pairs_checked": 319600
+    },
+    {
+      "path": "research/contributor-20261020/replay-n500.json",
+      "sha256": "b48923cf141bc72e283baf7b3d17812bcc89198b7649a5d3a904f3ea27e7ce80",
+      "n": 500,
+      "radius_exact": "23455596952977/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/readiness-20261021/smoke/best/n500.json",
+      "sha256": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "n": 500,
+      "radius_exact": "23455596955367/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/readiness-20261021/smoke/certificates/n500-original-000.json",
+      "sha256": "f5a42014f72e285d46029b418f8ee4b5523c878433510dfad1b71eebb7ae34ab",
+      "n": 500,
+      "radius_exact": "23455596955367/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/readiness-20261021/smoke/certificates/n500-polish-000.json",
+      "sha256": "b8e3a8297423c99e8086c37f97d376ae535a5cb2e14418b44445ed6a218dfecb",
+      "n": 500,
+      "radius_exact": "23455596955367/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/readiness-20261021/smoke/certificates/n500-targeted-000.json",
+      "sha256": "2d0195566a0d3750d1f45d9929de4d516bd0248074c394d247a63b628a38b264",
+      "n": 500,
+      "radius_exact": "23455596955367/1000000000000000",
+      "pairs_checked": 124750
+    },
+    {
+      "path": "research/readiness-20261021/smoke/inputs/n500.json",
+      "sha256": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "n": 500,
+      "radius_exact": "23455596955367/1000000000000000",
+      "pairs_checked": 124750
+    }
+  ],
+  "elapsed_seconds": 65.515,
+  "not_checked": [
+    "Untracked/non-JSON archives, arbitrary encodings or all resource behavior",
+    "Other tools that parse JSON before calling the in-memory verifier",
+    "Solver correctness, external novelty, optimality or scientific acceptance"
+  ]
+}

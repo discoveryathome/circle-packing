@@ -5,6 +5,8 @@ import json
 import re
 from pathlib import Path
 
+FILE_LIMIT = 10_000_000
+
 
 def integer(s, field):
     if not isinstance(s, str) or not re.fullmatch(r'-?(0|[1-9][0-9]*)', s) or len(s) > 200:
@@ -13,6 +15,8 @@ def integer(s, field):
 
 
 def verify(c, expected_n=None):
+    if not isinstance(c, dict):
+        raise ValueError('certificate must be a JSON object')
     if c.get('schema') != 'equal-circle-square/v1':
         raise ValueError('wrong schema')
     n = c.get('n')
@@ -54,11 +58,28 @@ def verify(c, expected_n=None):
             'pairs_checked': n*(n-1)//2}
 
 
+def _json_object(pairs):
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError(f'duplicate JSON key: {key}')
+        result[key] = value
+    return result
+
+
+def _reject_json_constant(value):
+    raise ValueError(f'non-finite JSON constant: {value}')
+
+
 def load_verify(path, n=None):
-    raw = Path(path).read_bytes()
-    if len(raw) > 10_000_000:
+    with Path(path).open('rb') as stream:
+        raw = stream.read(FILE_LIMIT+1)
+    if len(raw) > FILE_LIMIT:
         raise ValueError('certificate exceeds 10 MB')
-    c = json.loads(raw)
+    try:
+        c = json.loads(raw, object_pairs_hook=_json_object, parse_constant=_reject_json_constant)
+    except RecursionError as error:
+        raise ValueError('certificate JSON nesting is too deep') from error
     report = verify(c, n)
     report['sha256'] = hashlib.sha256(raw).hexdigest()
     return report

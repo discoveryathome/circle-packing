@@ -15,6 +15,12 @@ Fred Glover; other contributors as identified in the Packomania reference list.
 The N=47 external control is credited to MinMax Arena user Ἀθηνᾶ, who attributes its
 method to Claude Opus 5 and explicitly describes it as lattice refinement.
 
+The OpenAI coding-agent session in `research/loader-check-20261023/` added bounded
+certificate reads, structured object-shape errors, explicit unambiguous-JSON
+checks and adversarial regressions. Stored-witness compatibility and the declared
+count cap were author-checked; original construction and prior audit credit remain
+unchanged. No independent scientific review or record acceptance is implied.
+
 Any local refinement inherits its parent construction's credit. The pilot's numerical
 work does not create a claim to earlier authors' constructions or pending submissions.
 
