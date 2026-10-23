@@ -1,0 +1,894 @@
+{
+  "status": "author-checked; no independent review or acceptance",
+  "base_commit": "978d4bd925ba4ab62e5ceb2a3b3a108d3e283f1a",
+  "seed": "c68557875f8ed1f9b2d61ce46a7dc42e",
+  "python": "3.12.11",
+  "audit_sha256": "c4e9fba28a86c589d09f9d420e52ddd3564b0baec7adeaaba1cf267231837edb",
+  "baseline_certifier_sha256": "660ee7bacb23b4554cfe5f7ebd3f1ba2e5106fd2c29c26ef623b2c4e41d603e4",
+  "candidate_certifier_sha256": "76f48c3358ed67dd71c90fc0f5d647ef49c86168706a5e7ae3b5851fc77c5576",
+  "verifier_sha256": "3b065d9d5140c63dcf33cad2c0ac93a0ad7afde8eb94136fb935a7e3ce5d6976",
+  "working_index_sha256": "889c6d4bad7cceec20319f7f30dc03746018910e58efe074b4ee95e4f9dce903",
+  "summary": {
+    "baseline": {
+      "grids": {
+        "cases": 736250,
+        "expected_feasible": 381367,
+        "expected_rejected": 354883,
+        "matches": 736250,
+        "failures": 0,
+        "first_failures": []
+      },
+      "scalar": {
+        "cases": 31031,
+        "expected_feasible": 27939,
+        "expected_rejected": 3092,
+        "matches": 31031,
+        "failures": 0,
+        "first_failures": []
+      },
+      "precision": {
+        "cases": 72,
+        "expected_feasible": 72,
+        "expected_rejected": 0,
+        "matches": 60,
+        "failures": 12,
+        "first_failures": [
+          {
+            "label": "k=250000000000000,digits=81,offset=1",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.250000000000000500000000000000000000000000000000000000000000000000000000000000001",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "250000000000001",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "250000000000001",
+            "observed": {
+              "centers": [
+                [
+                  "250000000000000",
+                  "500000000000000"
+                ]
+              ],
+              "radius_numerator": "250000000000000",
+              "reason": "rounding or maximal radius differs"
+            }
+          },
+          {
+            "label": "k=250000000000000,digits=100,offset=1",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.2500000000000005000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "250000000000001",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "250000000000001",
+            "observed": {
+              "centers": [
+                [
+                  "250000000000000",
+                  "500000000000000"
+                ]
+              ],
+              "radius_numerator": "250000000000000",
+              "reason": "rounding or maximal radius differs"
+            }
+          },
+          {
+            "label": "k=250000000000000,digits=200,offset=1",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.25000000000000050000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "250000000000001",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "250000000000001",
+            "observed": {
+              "centers": [
+                [
+                  "250000000000000",
+                  "500000000000000"
+                ]
+              ],
+              "radius_numerator": "250000000000000",
+              "reason": "rounding or maximal radius differs"
+            }
+          },
+          {
+            "label": "k=250000000000001,digits=81,offset=-1",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.250000000000001499999999999999999999999999999999999999999999999999999999999999999",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "250000000000001",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "250000000000001",
+            "observed": {
+              "centers": [
+                [
+                  "250000000000002",
+                  "500000000000000"
+                ]
+              ],
+              "radius_numerator": "250000000000002",
+              "reason": "rounding or maximal radius differs"
+            }
+          },
+          {
+            "label": "k=250000000000001,digits=100,offset=-1",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.2500000000000014999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "250000000000001",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "250000000000001",
+            "observed": {
+              "centers": [
+                [
+                  "250000000000002",
+                  "500000000000000"
+                ]
+              ],
+              "radius_numerator": "250000000000002",
+              "reason": "rounding or maximal radius differs"
+            }
+          },
+          {
+            "label": "k=250000000000001,digits=200,offset=-1",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.25000000000000149999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "250000000000001",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "250000000000001",
+            "observed": {
+              "centers": [
+                [
+                  "250000000000002",
+                  "500000000000000"
+                ]
+              ],
+              "radius_numerator": "250000000000002",
+              "reason": "rounding or maximal radius differs"
+            }
+          },
+          {
+            "label": "k=499999999999998,digits=81,offset=1",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.499999999999998500000000000000000000000000000000000000000000000000000000000000001",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "499999999999999",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "499999999999999",
+            "observed": {
+              "centers": [
+                [
+                  "499999999999998",
+                  "500000000000000"
+                ]
+              ],
+              "radius_numerator": "499999999999998",
+              "reason": "rounding or maximal radius differs"
+            }
+          },
+          {
+            "label": "k=499999999999998,digits=100,offset=1",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.4999999999999985000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "499999999999999",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "499999999999999",
+            "observed": {
+              "centers": [
+                [
+                  "499999999999998",
+                  "500000000000000"
+                ]
+              ],
+              "radius_numerator": "499999999999998",
+              "reason": "rounding or maximal radius differs"
+            }
+          },
+          {
+            "label": "k=499999999999998,digits=200,offset=1",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.49999999999999850000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "499999999999999",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "499999999999999",
+            "observed": {
+              "centers": [
+                [
+                  "499999999999998",
+                  "500000000000000"
+                ]
+              ],
+              "radius_numerator": "499999999999998",
+              "reason": "rounding or maximal radius differs"
+            }
+          },
+          {
+            "label": "k=499999999999999,digits=81,offset=-1",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.499999999999999499999999999999999999999999999999999999999999999999999999999999999",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "499999999999999",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "499999999999999",
+            "observed": {
+              "centers": [
+                [
+                  "500000000000000",
+                  "500000000000000"
+                ]
+              ],
+              "radius_numerator": "500000000000000",
+              "reason": "rounding or maximal radius differs"
+            }
+          },
+          {
+            "label": "k=499999999999999,digits=100,offset=-1",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.4999999999999994999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "499999999999999",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "499999999999999",
+            "observed": {
+              "centers": [
+                [
+                  "500000000000000",
+                  "500000000000000"
+                ]
+              ],
+              "radius_numerator": "500000000000000",
+              "reason": "rounding or maximal radius differs"
+            }
+          },
+          {
+            "label": "k=499999999999999,digits=200,offset=-1",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.49999999999999949999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "499999999999999",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "499999999999999",
+            "observed": {
+              "centers": [
+                [
+                  "500000000000000",
+                  "500000000000000"
+                ]
+              ],
+              "radius_numerator": "500000000000000",
+              "reason": "rounding or maximal radius differs"
+            }
+          }
+        ]
+      },
+      "additional_controls": {
+        "cases": 3,
+        "expected_feasible": 3,
+        "expected_rejected": 0,
+        "matches": 0,
+        "failures": 3,
+        "first_failures": [
+          {
+            "label": "above coarse tie",
+            "scale": "2",
+            "input": [
+              [
+                "0.25000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "1",
+                "1"
+              ]
+            ],
+            "expected_radius_numerator": "1",
+            "observed": {
+              "exception": "ValueError",
+              "message": "invalid scale or radius"
+            }
+          },
+          {
+            "label": "below coarse tie",
+            "scale": "2",
+            "input": [
+              [
+                "0.74999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "1",
+                "1"
+              ]
+            ],
+            "expected_radius_numerator": "1",
+            "observed": {
+              "exception": "ValueError",
+              "message": "invalid scale or radius"
+            }
+          },
+          {
+            "label": "ambient Decimal Emax=9",
+            "scale": "1000000000000000",
+            "input": [
+              [
+                "0.5",
+                "0.5"
+              ]
+            ],
+            "expected_centers": [
+              [
+                "500000000000000",
+                "500000000000000"
+              ]
+            ],
+            "expected_radius_numerator": "500000000000000",
+            "observed": {
+              "exception": "Overflow",
+              "message": "[<class 'decimal.Overflow'>]"
+            }
+          }
+        ]
+      },
+      "working": {
+        "cases": 12,
+        "expected_feasible": 12,
+        "expected_rejected": 0,
+        "matches": 12,
+        "failures": 0,
+        "first_failures": []
+      }
+    },
+    "candidate": {
+      "grids": {
+        "cases": 736250,
+        "expected_feasible": 381367,
+        "expected_rejected": 354883,
+        "matches": 736250,
+        "failures": 0,
+        "first_failures": []
+      },
+      "scalar": {
+        "cases": 31031,
+        "expected_feasible": 27939,
+        "expected_rejected": 3092,
+        "matches": 31031,
+        "failures": 0,
+        "first_failures": []
+      },
+      "precision": {
+        "cases": 72,
+        "expected_feasible": 72,
+        "expected_rejected": 0,
+        "matches": 72,
+        "failures": 0,
+        "first_failures": []
+      },
+      "additional_controls": {
+        "cases": 3,
+        "expected_feasible": 3,
+        "expected_rejected": 0,
+        "matches": 3,
+        "failures": 0,
+        "first_failures": []
+      },
+      "working": {
+        "cases": 12,
+        "expected_feasible": 12,
+        "expected_rejected": 0,
+        "matches": 12,
+        "failures": 0,
+        "first_failures": []
+      }
+    }
+  },
+  "grid_rows": [
+    {
+      "scale": 2,
+      "cases": 23750,
+      "expected_feasible": 9,
+      "expected_rejected": 23741,
+      "oracle_sha256": "5afc139f40f196cc2230b2c9b5bfa55bd440389f49b640ae239df21b40016b90"
+    },
+    {
+      "scale": 3,
+      "cases": 23750,
+      "expected_feasible": 9,
+      "expected_rejected": 23741,
+      "oracle_sha256": "182e5e70a1775ac2d6ac95ddd71a574b2e92db60a836a3105b9f5427d51d4819"
+    },
+    {
+      "scale": 4,
+      "cases": 23750,
+      "expected_feasible": 34,
+      "expected_rejected": 23716,
+      "oracle_sha256": "85bd0fc250c825b296d198abd4fa5e8649c5943097fc01ed88ec2c6b9d64f2d3"
+    },
+    {
+      "scale": 5,
+      "cases": 23750,
+      "expected_feasible": 624,
+      "expected_rejected": 23126,
+      "oracle_sha256": "ecb1f1829cd9457d45c076e78e0e987260a3ae6f7a1e73e396aa8f804b13ba56"
+    },
+    {
+      "scale": 6,
+      "cases": 23750,
+      "expected_feasible": 3204,
+      "expected_rejected": 20546,
+      "oracle_sha256": "bc4948377e751fc90f9bdcfb358d83f75b184c9b325a2e637515673fb62fccde"
+    },
+    {
+      "scale": 7,
+      "cases": 23750,
+      "expected_feasible": 5418,
+      "expected_rejected": 18332,
+      "oracle_sha256": "ac8d7cb39ebd6add4005d6b98534109b038499a9e3212c91dbbe1e02d318431c"
+    },
+    {
+      "scale": 8,
+      "cases": 23750,
+      "expected_feasible": 8561,
+      "expected_rejected": 15189,
+      "oracle_sha256": "44140b0c2df2599ff556335741300ace8505cc42ddc5f938410a440561960485"
+    },
+    {
+      "scale": 9,
+      "cases": 23750,
+      "expected_feasible": 12183,
+      "expected_rejected": 11567,
+      "oracle_sha256": "12ce68baba138506a15736665f673b3b7e90aa6a3a0b53790a8e689115bd014d"
+    },
+    {
+      "scale": 10,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "9fc0eeeae885ec664f1aa8aa4af765a6f30f4d75f3f79748e9c0cf3155bacbc2"
+    },
+    {
+      "scale": 11,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "c6f5a5021320337528f8932ff082a8e198f2ac2c8490cc511d109d94ab5a6988"
+    },
+    {
+      "scale": 12,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "4bd1cbb835e9a6bfbd9018af242076673de4f0102d5c9e2094138e6a47e8a215"
+    },
+    {
+      "scale": 13,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "159650690655a784b967a520ad87df217c4fbf81418c59156f6efa2dff871316"
+    },
+    {
+      "scale": 14,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "1be9d5c9729e105cef819567b2cec31c64cdae53d2cd70197af3a7de2cd95565"
+    },
+    {
+      "scale": 15,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "a5af3d1a37bb0a4e1394a7ccb7e8745c126843b7950da3ecdcb9745b53c66693"
+    },
+    {
+      "scale": 16,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "bd74abb38d647c3f28a7dc2e1fdf005217bec81b007b4a0e4f0563fced287c0e"
+    },
+    {
+      "scale": 17,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "0481a213b64e968e27b5ed3a81f488c22c63080d99a9e877cdde3407f010383f"
+    },
+    {
+      "scale": 18,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "7eff98c14482ad748411eb70aab72ad3029af32b7367213f91c97966d8fc8105"
+    },
+    {
+      "scale": 19,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "f1f02300bcbf26264e9054c0523e17e554b52419cb5ff7b66e8da472778f1a8b"
+    },
+    {
+      "scale": 20,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "f33b6afbba823eefb954981f6bb1162c6eef7f61ac399aad4d0a0e226494f3ab"
+    },
+    {
+      "scale": 21,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "d2da19502b3b6b2d82bc375cc21dfa255f47192dda6bf24d0d6c3650824d655d"
+    },
+    {
+      "scale": 22,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "736cd41b30b98e4288b76db8a973f5afb0491f51a414fe148d5ff4fc220a091d"
+    },
+    {
+      "scale": 23,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "d94b1e61530c3f0af551b3c7cba93360bfc5a753bd787a19bda6b6b1bc8f1d64"
+    },
+    {
+      "scale": 24,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "a03170abe0bc02400d2f06aa9b65a00445590f08cbb9c28a285d36669fc3ab4e"
+    },
+    {
+      "scale": 25,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "1dbb8090b5e653591b576bffa578bc74566ca44bbf69723914a52817ffa4f2c6"
+    },
+    {
+      "scale": 26,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "d27bfb14b2715cd88ad3637f1dedb3ae82c141ff5e8458d903efe1c4c1195a8d"
+    },
+    {
+      "scale": 27,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "4de97a2e9b0e7c01247aafebbd72e6ffc87fbf58f5ca760acc34d2c752bd1df9"
+    },
+    {
+      "scale": 28,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "b1280193b6b5323292623c9c6ee8a423bfbf246a92829d6cf747cbb138eb1bc7"
+    },
+    {
+      "scale": 29,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "cc24f4d748378f8d2c15a04bfa4711e22f6c6da8580aa03d8e6d0e1422fa8108"
+    },
+    {
+      "scale": 30,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "37cfb39ca3748cea5687b1a4ed2b11089bc88b031f02aa34260f829c2da1a4a3"
+    },
+    {
+      "scale": 31,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "6245153583892053f691369148174796f317f63f67226a66e053055dd9d0f573"
+    },
+    {
+      "scale": 32,
+      "cases": 23750,
+      "expected_feasible": 15275,
+      "expected_rejected": 8475,
+      "oracle_sha256": "2918534163cd9086c0944010bdf69021317afece3d59955d42c15ac050baa5c3"
+    }
+  ],
+  "working_starts": [
+    {
+      "n": 100,
+      "certificate": "certificates/frontier/n100.json",
+      "sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "radius_exact": "51401071774379/1000000000000000",
+      "previous_certificate": "certificates/frontier/n100.json",
+      "previous_sha256": "91476229f9fb07967fff4e5a944cef1ab494d54817f6983554ff703ee6656440",
+      "construction_credit": "Bernardetta Addis, Marco Locatelli, Fabio Schoen (Packomania reference [20])",
+      "source": "https://packomania.com/csq/csq100.html",
+      "rebuilt_radius_numerator": "51401071774379",
+      "stored_geometry_preserved": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "n": 106,
+      "certificate": "certificates/frontier/n106.json",
+      "sha256": "e900839b877b852e58775bb97bdec6a88bb767f499bc5e3bb3af168da9e7e633",
+      "radius_exact": "3125950026631/62500000000000",
+      "previous_certificate": "certificates/frontier/n106.json",
+      "previous_sha256": "e900839b877b852e58775bb97bdec6a88bb767f499bc5e3bb3af168da9e7e633",
+      "construction_credit": "Xiangjing Lai, Jin-Kao Hao, Renbin Xiao, Fred Glover",
+      "source": "https://packomania.com/csq/csq106.html",
+      "rebuilt_radius_numerator": "50015200426096",
+      "stored_geometry_preserved": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "n": 134,
+      "certificate": "certificates/frontier/n134.json",
+      "sha256": "51b1af652fc2addf87247e89317a0231d69c3870dc5dda7df568144deba93bed",
+      "radius_exact": "8912848841419/200000000000000",
+      "previous_certificate": "certificates/frontier/n134.json",
+      "previous_sha256": "51b1af652fc2addf87247e89317a0231d69c3870dc5dda7df568144deba93bed",
+      "construction_credit": "Wenqi Huang, Tao Ye; David W. Cantrell",
+      "source": "https://packomania.com/csq/csq134.html",
+      "rebuilt_radius_numerator": "44564244207095",
+      "stored_geometry_preserved": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "n": 150,
+      "certificate": "certificates/frontier/n150.json",
+      "sha256": "e21e5ad83eb157ddcbe5fea29e422b4f76b9e0038a5a332d6594b7baeab9160b",
+      "radius_exact": "2634091618827/62500000000000",
+      "previous_certificate": "certificates/frontier/n150.json",
+      "previous_sha256": "e21e5ad83eb157ddcbe5fea29e422b4f76b9e0038a5a332d6594b7baeab9160b",
+      "construction_credit": "Wenqi Huang, Tao Ye; David W. Cantrell",
+      "source": "https://packomania.com/csq/csq150.html",
+      "rebuilt_radius_numerator": "42145465901232",
+      "stored_geometry_preserved": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "n": 200,
+      "certificate": "certificates/frontier/n200.json",
+      "sha256": "941ef16137f6a9a5782fd3a304fce438c66f3a130e3b3f3a0e430b69cc7fa2b9",
+      "radius_exact": "1830639945191/50000000000000",
+      "previous_certificate": "certificates/frontier/n200.json",
+      "previous_sha256": "941ef16137f6a9a5782fd3a304fce438c66f3a130e3b3f3a0e430b69cc7fa2b9",
+      "construction_credit": "Wenqi Huang, Tao Ye; David W. Cantrell",
+      "source": "https://packomania.com/csq/csq200.html",
+      "rebuilt_radius_numerator": "36612798903820",
+      "stored_geometry_preserved": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "n": 250,
+      "certificate": "certificates/frontier/n250.json",
+      "sha256": "ee63b0716f4a95ac0dd8b522b7c69072d6dcf7e62ab4ae1bfdcdeb488105591f",
+      "radius_exact": "32879800209483/1000000000000000",
+      "previous_certificate": "certificates/frontier/n250.json",
+      "previous_sha256": "ee63b0716f4a95ac0dd8b522b7c69072d6dcf7e62ab4ae1bfdcdeb488105591f",
+      "construction_credit": "Xiangjing Lai, Jin-Kao Hao, Renbin Xiao, Fred Glover",
+      "source": "https://packomania.com/csq/csq250.html",
+      "rebuilt_radius_numerator": "32879800209483",
+      "stored_geometry_preserved": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "n": 300,
+      "certificate": "certificates/frontier/n300.json",
+      "sha256": "f18578cff5862de099cadfa74b9e32d06ff695583e4689bdc681daef4552cc0f",
+      "radius_exact": "30219555704457/1000000000000000",
+      "previous_certificate": "certificates/frontier/n300.json",
+      "previous_sha256": "f18578cff5862de099cadfa74b9e32d06ff695583e4689bdc681daef4552cc0f",
+      "construction_credit": "Packomania reference [25]",
+      "source": "https://packomania.com/csq/csq300.html",
+      "rebuilt_radius_numerator": "30219555704457",
+      "stored_geometry_preserved": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "n": 400,
+      "certificate": "certificates/frontier/n400.json",
+      "sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "radius_exact": "13101253538109/500000000000000",
+      "previous_certificate": "certificates/frontier/n400.json",
+      "previous_sha256": "aea7cabca3b4053377d45d68562f5500dea7014227051ae9e6a686dc4e47fbfc",
+      "construction_credit": "Xiangjing Lai, Jin-Kao Hao, Renbin Xiao, Fred Glover",
+      "source": "https://packomania.com/csq/csq400.html",
+      "rebuilt_radius_numerator": "26202507076218",
+      "stored_geometry_preserved": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "n": 500,
+      "certificate": "research/contributor-20261020/certificates/best/n500.json",
+      "sha256": "282038e184f3588df97bd2bd043d1ea97d32f73db2af4c43afe6671edaf15979",
+      "radius_exact": "23455596955367/1000000000000000",
+      "previous_certificate": "certificates/frontier/n500.json",
+      "previous_sha256": "f10cbde233bd0e5ec97e40695812da9df69128bb3cc72e615284b46272d5dba6",
+      "construction_credit": "Packntile team (Packomania reference [26])",
+      "source": "https://packomania.com/csq/csq500.html",
+      "rebuilt_radius_numerator": "23455596955367",
+      "stored_geometry_preserved": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "n": 600,
+      "certificate": "certificates/frontier/n600.json",
+      "sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "radius_exact": "5369974144543/250000000000000",
+      "previous_certificate": "certificates/frontier/n600.json",
+      "previous_sha256": "30caca8fd70237e71cf34b4d377de1c6f4dcfc8a85af41fba4828e1eea35bba0",
+      "construction_credit": "Eckard Specht",
+      "source": "https://packomania.com/csq/csq600.html",
+      "rebuilt_radius_numerator": "21479896578172",
+      "stored_geometry_preserved": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "n": 700,
+      "certificate": "research/contributor-20261020/certificates/best/n700.json",
+      "sha256": "6d02a08ed764ba28cc992fc0eee01d532f33ea54c0615082899b903da6e30179",
+      "radius_exact": "19906357272343/1000000000000000",
+      "previous_certificate": "certificates/frontier/n700.json",
+      "previous_sha256": "da47cb1cc7b9808ce50935e5370c9a9627b63b94c1a1c4c2049658a5583a20b2",
+      "construction_credit": "Eckard Specht",
+      "source": "https://packomania.com/csq/csq700.html",
+      "rebuilt_radius_numerator": "19906357272343",
+      "stored_geometry_preserved": {
+        "baseline": true,
+        "candidate": true
+      }
+    },
+    {
+      "n": 800,
+      "certificate": "research/contributor-20261020/certificates/best/n800.json",
+      "sha256": "5fadc7c2e5ddb4e89c9513be3b62e92ee84f91c336c356737c8f83c71ba82685",
+      "radius_exact": "3727734385197/200000000000000",
+      "previous_certificate": "certificates/frontier/n800.json",
+      "previous_sha256": "b0bb52fa7fe03974cc8e11cebf26244c0f937c3ebdcb7bff8354f8a6bd172251",
+      "construction_credit": "Eckard Specht",
+      "source": "https://packomania.com/csq/csq800.html",
+      "rebuilt_radius_numerator": "18638671925985",
+      "stored_geometry_preserved": {
+        "baseline": true,
+        "candidate": true
+      }
+    }
+  ],
+  "candidate_disagreements": 0,
+  "elapsed_seconds": 129.13,
+  "not_checked": [
+    "Unbounded inputs, all JSON/Decimal encodings or resource limits",
+    "Solver correctness, external records, novelty or optimal packing radii",
+    "Independent human review or scientific acceptance"
+  ]
+}
