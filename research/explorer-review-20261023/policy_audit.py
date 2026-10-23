@@ -25,11 +25,15 @@ def payload(text):
     return text[start:text.index(';\n', start)]
 
 
-def status(text):
+def status_markup(text):
     match = re.search(r'<span class="status">(.*?)</span>', text, re.S)
     if match is None:
         raise ValueError('missing participation-status element')
-    return html.unescape(match.group(1))
+    return match.group(1)
+
+
+def status(text):
+    return html.unescape(status_markup(text))
 
 
 def main():
@@ -54,16 +58,19 @@ def main():
             (fixture/name).symlink_to(ROOT/name, target_is_directory=True)
         shutil.copyfile(ROOT/'gallery/template.html', fixture/'gallery/template.html')
         module.ROOT = fixture
-        for intake in ('open', 'closed', '<open & review>'):
+        for intake, escaped in [('open', 'open'), ('closed', 'closed'),
+                                ('<open & review>', '&lt;open &amp; review&gt;')]:
             (fixture/'PARTICIPATION.json').write_text(json.dumps(dict(policy, intake=intake)))
             module.build()
             generated = (fixture/'gallery/index.html').read_text()
             rendered = status(generated)
             same_payload = digest(payload(generated).encode()) == expected_payload
             matched = rendered == 'Pre-release research preview · Contributor intake '+intake
+            markup_matches = status_markup(generated) == 'Pre-release research preview · Contributor intake '+escaped
             fixtures.append({'intake': intake, 'status': rendered, 'matches': matched,
+                             'escaped_markup_matches': markup_matches,
                              'scientific_payload_unchanged': same_payload})
-            if not matched or not same_payload:
+            if not matched or not markup_matches or not same_payload:
                 failures.append('generation fixture: '+intake)
     current = (ROOT/'gallery/index.html').read_text()
     expected = baseline.replace('Contributor intake closed', 'Contributor intake '+html.escape(policy['intake']))

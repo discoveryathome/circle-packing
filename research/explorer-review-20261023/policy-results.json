@@ -7,18 +7,21 @@
       "intake": "open",
       "status": "Pre-release research preview \u00b7 Contributor intake open",
       "matches": true,
+      "escaped_markup_matches": true,
       "scientific_payload_unchanged": true
     },
     {
       "intake": "closed",
       "status": "Pre-release research preview \u00b7 Contributor intake closed",
       "matches": true,
+      "escaped_markup_matches": true,
       "scientific_payload_unchanged": true
     },
     {
       "intake": "<open & review>",
       "status": "Pre-release research preview \u00b7 Contributor intake <open & review>",
       "matches": true,
+      "escaped_markup_matches": true,
       "scientific_payload_unchanged": true
     }
   ],
@@ -27,7 +30,7 @@
   "template_sha256": "e65af162e6d97dfda2ca3a3d726c943456506e99642058da8bfa616745453213",
   "generator_sha256": "730bcd0e9376f6df5d01d2c77558097b94f91a9b7207c06557c0d9eebd735921",
   "index_sha256": "ac49e36da441087189581366be199f83be85627412060bbe794d624ab202b70f",
-  "audit_sha256": "e61307c19e0c0cfa35e523b7c3ca0230e486b812a769568ce15be7e5bcfd5367",
+  "audit_sha256": "7d21ed91a856c4d442ee2d57f56636c8e7f1ff00d4c32c686ba32a831efcbc87",
   "scientific_payload_sha256": "a47673178006035dd1838eec5d7371fe162eafc16997718ee1f2497159ac3faf",
   "displayed_counts": [
     100,

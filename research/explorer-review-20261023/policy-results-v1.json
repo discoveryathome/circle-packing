@@ -1,0 +1,54 @@
+{
+  "status": "author-checked generation audit; rendered checks are in the separate browser report",
+  "base_commit": "978d4bd925ba4ab62e5ceb2a3b3a108d3e283f1a",
+  "seed": "c68557875f8ed1f9b2d61ce46a7dc42e",
+  "fixtures": [
+    {
+      "intake": "open",
+      "status": "Pre-release research preview \u00b7 Contributor intake open",
+      "matches": true,
+      "scientific_payload_unchanged": true
+    },
+    {
+      "intake": "closed",
+      "status": "Pre-release research preview \u00b7 Contributor intake closed",
+      "matches": true,
+      "scientific_payload_unchanged": true
+    },
+    {
+      "intake": "<open & review>",
+      "status": "Pre-release research preview \u00b7 Contributor intake <open & review>",
+      "matches": true,
+      "scientific_payload_unchanged": true
+    }
+  ],
+  "policy_sha256": "4b2f4da8bedfa4cfd4ffc0329596b55c0448fc1b2f1503cb3bb819ca944bd3c9",
+  "policy_unchanged_from_base": true,
+  "template_sha256": "e65af162e6d97dfda2ca3a3d726c943456506e99642058da8bfa616745453213",
+  "generator_sha256": "730bcd0e9376f6df5d01d2c77558097b94f91a9b7207c06557c0d9eebd735921",
+  "index_sha256": "ac49e36da441087189581366be199f83be85627412060bbe794d624ab202b70f",
+  "audit_sha256": "e61307c19e0c0cfa35e523b7c3ca0230e486b812a769568ce15be7e5bcfd5367",
+  "scientific_payload_sha256": "a47673178006035dd1838eec5d7371fe162eafc16997718ee1f2497159ac3faf",
+  "displayed_counts": [
+    100,
+    106,
+    134,
+    150,
+    200,
+    250,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+  ],
+  "production_status_matches_policy": true,
+  "scientific_payload_unchanged": true,
+  "production_change_is_status_only": false,
+  "failures": [],
+  "not_checked": [
+    "Real browser rendering, pointer mapping, linked zoom or narrow viewport behavior",
+    "External record standing, novelty, optimality or scientific acceptance"
+  ]
+}
