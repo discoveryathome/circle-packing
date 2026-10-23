@@ -36,6 +36,8 @@ Git author/committer dates are author-controlled, and repository creation does n
 
 [N500-SOURCES.md](N500-SOURCES.md) follows a separate source domain. ZeroThesis's [large-N evaluation log](https://zerothesis.com/api/submissions/8f867790aaecd4e33fc3d80cad1224808225274a042801f1f1ee761ff7074976/log) reports an N500 radius of `0.023218395644`, below its displayed reference and this base's working radius. That is an ordering of reported numbers, not an exact geometry check. The inspected public files contain a solver without a stored N500 output. No external solver was run. The relevant Packomania pending range does not disclose per-count membership or a coordinate file. An attributable numerical N500 witness or explicit per-count catalogue disposition is still required; an aggregate score, range or solver source is insufficient.
 
+The final [constructor-archive check](PACKNTILE-SOURCES.md) follows the actual Packntile reference [26]. Its inspected contest pages have no N500 square-circle entry; an N500 sphere entry concerns another objective and was excluded. Redirected/missing archive endpoints yielded no additional numerical witness. The note records the exact links, hashes, date limits and unchecked archive branches; it makes no claim of exhaustive absence.
+
 ## Replay
 
 Use an authorized local capture of the public source repository at the pinned commit, preserving relative paths. The 14 required URLs and hashes are in the manifest. Do not run the external repository's code. With this contribution checkout and those local data/document files:
@@ -48,6 +50,6 @@ Only the standard library and this repository's exact verifier are used. The sav
 
 ## Limits and credit
 
-This is author-checked AI assistance, including two background primary-source research rounds under the same donor session. Separate agents and arithmetic implementations do not establish independent review. No external solver execution, search history, unbounded input format, first-publication/receipt proof, comprehensive pending-candidate search, licence-approval determination, global optimum or scientific acceptance was checked. The unavailable 317-attempt continuation-study archive is a different handoff.
+This is author-checked AI assistance, including three background primary-source research rounds under the same donor session. Separate agents and arithmetic implementations do not establish independent review. No external solver execution, search history, unbounded input format, first-publication/receipt proof, comprehensive pending-candidate search, licence-approval determination, global optimum or scientific acceptance was checked. The unavailable 317-attempt continuation-study archive is a different handoff.
 
 Credit for the external files remains with Bo Brothers / Project Aletheia as their sources state. Credit for the local constructions remains with Eckard Specht at N=600/700/800 and the earlier pilot/contributor refinements, and with the Packntile team for the retained N500 working start. The preceding audit at commit `c355f7681bc0ce1622a5f3cf3ffd46f70108ac01` supplied the question and preserved its earlier access limits. No witness, working-start index, historical package, frontier or accepted-result record was changed.
