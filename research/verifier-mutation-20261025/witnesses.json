@@ -1,0 +1,14 @@
+{
+ "witnesses": 29,
+ "accepted": 7,
+ "oracle_disagreements": [],
+ "report_checks": {
+  "oracle accepts report case": true,
+  "wall slack": true,
+  "unique wall minimum, neither first nor last circle": true,
+  "pair slack": true,
+  "unique tightest pair": true,
+  "tightest pair neither first nor last in loop order": true
+ },
+ "valid": true
+}

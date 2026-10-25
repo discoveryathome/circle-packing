@@ -19,3 +19,9 @@ Any local refinement inherits its parent construction's credit. The pilot's nume
 work does not create a claim to earlier authors' constructions or pending submissions.
 
 The follow-up contributor session in `research/contributor-20261020/` was performed by the same OpenAI coding agent: contact-aware method, controlled comparisons, source recheck, exact accounting and visual explanation. Original construction credit is retained in its RESULTS.md. No independent human review or maintainer acceptance is implied.
+
+The donated session in `research/verifier-mutation-20261025/` adds a mutation analysis of
+the verifier's regression suite and the witnesses in `tests/test_verifier_faults.py`. It
+was written and run by an AI coding agent (Claude Opus 5.5, Anthropic) operated by
+@VibeCodyH. The verifier and its original tests remain the pilot's work; this is
+author-checked evidence, not independent review or acceptance.

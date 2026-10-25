@@ -1,0 +1,1643 @@
+{
+ "kill_matrix_sha256": "6054ff8b5b37dad241c28b3918e116f12a5471ef89b077644e699083ad193d2c",
+ "suite": "test_verifier.py",
+ "corpus_cases": 32563,
+ "corpus_sha256": "a979031638650d339b2ba14ab8a96cd6d6bb807b4e45ba0c42c06c6a62377f2f",
+ "oracle_accepts": 1045,
+ "base_disagrees_with_oracle": [],
+ "hashes": {
+  "src/verify.py": "3b065d9d5140c63dcf33cad2c0ac93a0ad7afde8eb94136fb935a7e3ce5d6976",
+  "classify.py": "a883a36b85cded2b52bb5f5451fa0dd333e59b7db75f9dd84d547885b75fff56",
+  "spec_oracle.py": "44ca373fe513d8d9ac122dfd1ebd21ab69cc3a02c3887f9049509514b3c205f7"
+ },
+ "mutants": [
+  {
+   "id": "M004",
+   "operator": "OPD",
+   "description": "integer:10 drop operand `not re.fullmatch(r'-?(0|[1-9][0-9]*)', s)` of boolean test",
+   "category": "decision",
+   "decision_cases": 108,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid denominator='+4'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid denominator=' 4'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid denominator='4 '",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M005",
+   "operator": "OPD",
+   "description": "integer:10 drop operand `len(s) > 200` of boolean test",
+   "category": "decision",
+   "decision_cases": 3,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid scaled to 201 digits",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "single scaled to 201 digits",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "pair scaled to 201 digits",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M008",
+   "operator": "RGX",
+   "description": "integer:10 re.fullmatch -> re.match",
+   "category": "decision",
+   "decision_cases": 49,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid denominator='4 '",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid denominator='4\\n'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid denominator='04'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M009",
+   "operator": "RGX",
+   "description": "integer:10 re.fullmatch -> re.search",
+   "category": "decision",
+   "decision_cases": 89,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid denominator='+4'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid denominator=' 4'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid denominator='4 '",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M010",
+   "operator": "RGX",
+   "description": "integer:10 regex: drop optional minus sign",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M011",
+   "operator": "RGX",
+   "description": "integer:10 regex: allow leading zeros",
+   "category": "decision",
+   "decision_cases": 20,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid denominator='04'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid radius_numerator='01'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[0][0]='01'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M012",
+   "operator": "RGX",
+   "description": "integer:10 regex: reject zero",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M013",
+   "operator": "RGX",
+   "description": "integer:10 regex: allow leading zeros via second branch",
+   "category": "decision",
+   "decision_cases": 20,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid denominator='04'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid radius_numerator='01'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[0][0]='01'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M014",
+   "operator": "RGX",
+   "description": "integer:10 regex: allow trailing whitespace",
+   "category": "decision",
+   "decision_cases": 26,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid denominator='4 '",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid denominator='4\\n'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid radius_numerator='1 '",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M015",
+   "operator": "ROR",
+   "description": "integer:10 > -> >= in `len(s) > 200`",
+   "category": "decision",
+   "decision_cases": 3,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid scaled to 200 digits",
+     "oracle_accepts": true,
+     "mutant_accepts": false
+    },
+    {
+     "case": "single scaled to 200 digits",
+     "oracle_accepts": true,
+     "mutant_accepts": false
+    },
+    {
+     "case": "pair scaled to 200 digits",
+     "oracle_accepts": true,
+     "mutant_accepts": false
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M017",
+   "operator": "CRP",
+   "description": "integer:10 constant 200 -> 201",
+   "category": "decision",
+   "decision_cases": 3,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid scaled to 201 digits",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "single scaled to 201 digits",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "pair scaled to 201 digits",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M018",
+   "operator": "CRP",
+   "description": "integer:10 constant 200 -> 199",
+   "category": "decision",
+   "decision_cases": 3,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid scaled to 200 digits",
+     "oracle_accepts": true,
+     "mutant_accepts": false
+    },
+    {
+     "case": "single scaled to 200 digits",
+     "oracle_accepts": true,
+     "mutant_accepts": false
+    },
+    {
+     "case": "pair scaled to 200 digits",
+     "oracle_accepts": true,
+     "mutant_accepts": false
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M019",
+   "operator": "GRD",
+   "description": "verify:16 remove guard `if c.get('schema') != 'equal-circle-square/v1'`",
+   "category": "decision",
+   "decision_cases": 15,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid schema=None",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid schema='equal-circle-square/v2'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid schema='equal-circle-square/v1 '",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M022",
+   "operator": "GRD",
+   "description": "verify:19 remove guard `if type(n) is not int or not 1 <= n <= 10000`",
+   "category": "decision",
+   "decision_cases": 7,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid n=4.0",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid empty n=0",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "single n=True",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M023",
+   "operator": "LCR",
+   "description": "verify:19 or -> and in `type(n) is not int or not 1 <= n <= 10000`",
+   "category": "decision",
+   "decision_cases": 7,
+   "report_cases": 0,
+   "error_type_cases": 6,
+   "first_decision": [
+    {
+     "case": "grid n=4.0",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid empty n=0",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "single n=True",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": [
+    {
+     "case": "grid n='4'",
+     "base": "ValueError",
+     "mutant": "TypeError"
+    },
+    {
+     "case": "grid n=None",
+     "base": "ValueError",
+     "mutant": "TypeError"
+    }
+   ]
+  },
+  {
+   "id": "M024",
+   "operator": "OPD",
+   "description": "verify:19 drop operand `type(n) is not int` of boolean test",
+   "category": "decision",
+   "decision_cases": 4,
+   "report_cases": 0,
+   "error_type_cases": 6,
+   "first_decision": [
+    {
+     "case": "grid n=4.0",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "single n=True",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "single n=1.0",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": [
+    {
+     "case": "grid n='4'",
+     "base": "ValueError",
+     "mutant": "TypeError"
+    },
+    {
+     "case": "grid n=None",
+     "base": "ValueError",
+     "mutant": "TypeError"
+    }
+   ]
+  },
+  {
+   "id": "M025",
+   "operator": "OPD",
+   "description": "verify:19 drop operand `not 1 <= n <= 10000` of boolean test",
+   "category": "decision",
+   "decision_cases": 3,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid empty n=0",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "single empty n=0",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "pair empty n=0",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M027",
+   "operator": "TYPE",
+   "description": "verify:19 exact type test -> isinstance in `type(n) is not int`",
+   "category": "decision",
+   "decision_cases": 1,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "single n=True",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M031",
+   "operator": "ROR",
+   "description": "verify:19 <= -> < in `n <= 10000`",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M034",
+   "operator": "CRP",
+   "description": "verify:19 constant 1 -> 0",
+   "category": "decision",
+   "decision_cases": 3,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid empty n=0",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "single empty n=0",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "pair empty n=0",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M035",
+   "operator": "CRP",
+   "description": "verify:19 constant 10000 -> 10001",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M036",
+   "operator": "CRP",
+   "description": "verify:19 constant 10000 -> 9999",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M047",
+   "operator": "OPD",
+   "description": "verify:25 drop operand `q <= 0` of boolean test",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M049",
+   "operator": "OPD",
+   "description": "verify:25 drop operand `2*r > q` of boolean test",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M050",
+   "operator": "ROR",
+   "description": "verify:25 <= -> < in `q <= 0`",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M052",
+   "operator": "CRP",
+   "description": "verify:25 constant 0 -> 1",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M053",
+   "operator": "CRP",
+   "description": "verify:25 constant 0 -> -1",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M060",
+   "operator": "AOR",
+   "description": "verify:25 * -> + in `2*r`",
+   "category": "decision",
+   "decision_cases": 4,
+   "report_cases": 0,
+   "error_type_cases": 1,
+   "first_decision": [
+    {
+     "case": "single expected_n=None",
+     "oracle_accepts": true,
+     "mutant_accepts": false
+    },
+    {
+     "case": "single expected_n=1",
+     "oracle_accepts": true,
+     "mutant_accepts": false
+    },
+    {
+     "case": "single expected_n=True",
+     "oracle_accepts": true,
+     "mutant_accepts": false
+    }
+   ],
+   "first_report": [],
+   "first_error_type": [
+    {
+     "case": "single centers missing",
+     "base": "KeyError",
+     "mutant": "ValueError"
+    }
+   ]
+  },
+  {
+   "id": "M061",
+   "operator": "OPD",
+   "description": "verify:25 `2*r` -> `2`",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M062",
+   "operator": "OPD",
+   "description": "verify:25 `2*r` -> `r`",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M064",
+   "operator": "CRP",
+   "description": "verify:25 constant 2 -> 1",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M067",
+   "operator": "OPD",
+   "description": "verify:27 drop operand `not isinstance(c['centers'], list)` of boolean test",
+   "category": "decision",
+   "decision_cases": 3,
+   "report_cases": 0,
+   "error_type_cases": 3,
+   "first_decision": [
+    {
+     "case": "grid centers=tuple:(['1', '1'], ['1', '3'], ['3', '1'], ['3', '3'])",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "single centers=tuple:(['1', '1'],)",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "pair centers=tuple:(['2', '2'], ['6', '2'])",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": [
+    {
+     "case": "grid centers=NoneType:None",
+     "base": "ValueError",
+     "mutant": "TypeError"
+    },
+    {
+     "case": "single centers=NoneType:None",
+     "base": "ValueError",
+     "mutant": "TypeError"
+    }
+   ]
+  },
+  {
+   "id": "M073",
+   "operator": "GRD",
+   "description": "verify:32 remove guard `if not isinstance(p, list) or len(p) != 2`",
+   "category": "decision",
+   "decision_cases": 17,
+   "report_cases": 0,
+   "error_type_cases": 7,
+   "first_decision": [
+    {
+     "case": "grid center[0]='11'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[0]=('1', '1')",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[1]='13'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": [
+    {
+     "case": "grid center[0]=None",
+     "base": "ValueError",
+     "mutant": "TypeError"
+    },
+    {
+     "case": "grid center[1]=None",
+     "base": "ValueError",
+     "mutant": "TypeError"
+    }
+   ]
+  },
+  {
+   "id": "M074",
+   "operator": "LCR",
+   "description": "verify:32 or -> and in `not isinstance(p, list) or len(p) != 2`",
+   "category": "decision",
+   "decision_cases": 17,
+   "report_cases": 0,
+   "error_type_cases": 7,
+   "first_decision": [
+    {
+     "case": "grid center[0]='11'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[0]=('1', '1')",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[1]='13'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": [
+    {
+     "case": "grid center[0]=None",
+     "base": "ValueError",
+     "mutant": "TypeError"
+    },
+    {
+     "case": "grid center[1]=None",
+     "base": "ValueError",
+     "mutant": "TypeError"
+    }
+   ]
+  },
+  {
+   "id": "M075",
+   "operator": "OPD",
+   "description": "verify:32 drop operand `not isinstance(p, list)` of boolean test",
+   "category": "decision",
+   "decision_cases": 17,
+   "report_cases": 0,
+   "error_type_cases": 7,
+   "first_decision": [
+    {
+     "case": "grid center[0]='11'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[0]=('1', '1')",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[1]='13'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [],
+   "first_error_type": [
+    {
+     "case": "grid center[0]=None",
+     "base": "ValueError",
+     "mutant": "TypeError"
+    },
+    {
+     "case": "grid center[1]=None",
+     "base": "ValueError",
+     "mutant": "TypeError"
+    }
+   ]
+  },
+  {
+   "id": "M076",
+   "operator": "OPD",
+   "description": "verify:32 drop operand `len(p) != 2` of boolean test",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M084",
+   "operator": "ARG",
+   "description": "verify:35 drop `y-r` from `min(x-r, y-r, q-r-x, q-r-y)`",
+   "category": "decision",
+   "decision_cases": 220,
+   "report_cases": 228,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid center[0][1]='-1'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[0][1]='-0'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[1][1]='-3'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M085",
+   "operator": "ARG",
+   "description": "verify:35 drop `q-r-x` from `min(x-r, y-r, q-r-x, q-r-y)`",
+   "category": "decision",
+   "decision_cases": 223,
+   "report_cases": 242,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=2",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M086",
+   "operator": "ARG",
+   "description": "verify:35 drop `q-r-y` from `min(x-r, y-r, q-r-x, q-r-y)`",
+   "category": "decision",
+   "decision_cases": 196,
+   "report_cases": 203,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=2",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M090",
+   "operator": "AOR",
+   "description": "verify:35 - -> + in `y-r`",
+   "category": "decision",
+   "decision_cases": 216,
+   "report_cases": 228,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid center[0][1]='-1'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[0][1]='-0'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[2][1]='-1'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M091",
+   "operator": "OPD",
+   "description": "verify:35 `y-r` -> `y`",
+   "category": "decision",
+   "decision_cases": 118,
+   "report_cases": 228,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid center[0][1]='-0'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[2][1]='-0'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "single center[0][1]='-0'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M092",
+   "operator": "OPD",
+   "description": "verify:35 `y-r` -> `r`",
+   "category": "decision",
+   "decision_cases": 220,
+   "report_cases": 537,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "grid center[0][1]='-1'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[0][1]='-0'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "grid center[1][1]='-3'",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M093",
+   "operator": "AOR",
+   "description": "verify:35 - -> + in `q-r-x`",
+   "category": "decision",
+   "decision_cases": 223,
+   "report_cases": 242,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=2",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M094",
+   "operator": "OPD",
+   "description": "verify:35 `q-r-x` -> `q-r`",
+   "category": "decision",
+   "decision_cases": 223,
+   "report_cases": 242,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=2",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M095",
+   "operator": "OPD",
+   "description": "verify:35 `q-r-x` -> `x`",
+   "category": "decision",
+   "decision_cases": 223,
+   "report_cases": 242,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=2",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M096",
+   "operator": "AOR",
+   "description": "verify:35 - -> + in `q-r`",
+   "category": "decision",
+   "decision_cases": 221,
+   "report_cases": 242,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=2",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M097",
+   "operator": "OPD",
+   "description": "verify:35 `q-r` -> `q`",
+   "category": "decision",
+   "decision_cases": 116,
+   "report_cases": 242,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=3 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=3 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M099",
+   "operator": "AOR",
+   "description": "verify:35 - -> + in `q-r-y`",
+   "category": "decision",
+   "decision_cases": 196,
+   "report_cases": 203,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=2",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M100",
+   "operator": "OPD",
+   "description": "verify:35 `q-r-y` -> `q-r`",
+   "category": "decision",
+   "decision_cases": 196,
+   "report_cases": 203,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=2",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M101",
+   "operator": "OPD",
+   "description": "verify:35 `q-r-y` -> `y`",
+   "category": "decision",
+   "decision_cases": 196,
+   "report_cases": 203,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=2",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M102",
+   "operator": "AOR",
+   "description": "verify:35 - -> + in `q-r`",
+   "category": "decision",
+   "decision_cases": 196,
+   "report_cases": 203,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=2 r=1 n=2",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M103",
+   "operator": "OPD",
+   "description": "verify:35 `q-r` -> `q`",
+   "category": "decision",
+   "decision_cases": 106,
+   "report_cases": 203,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=2 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=3 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    },
+    {
+     "case": "small q=3 r=1 n=1",
+     "oracle_accepts": false,
+     "mutant_accepts": true
+    }
+   ],
+   "first_report": [
+    {
+     "case": "small q=4 r=1 n=1",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M110",
+   "operator": "SDL",
+   "description": "verify:38 delete statement `min_wall = min(min_wall, wall)`",
+   "category": "report-only",
+   "decision_cases": 0,
+   "report_cases": 1045,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [
+    {
+     "case": "grid expected_n=None",
+     "fields": [
+      "wall_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M132",
+   "operator": "CRP",
+   "description": "verify:45 constant 2 -> 3",
+   "category": "decision",
+   "decision_cases": 830,
+   "report_cases": 222,
+   "error_type_cases": 0,
+   "first_decision": [
+    {
+     "case": "small q=4 r=1 n=2",
+     "oracle_accepts": true,
+     "mutant_accepts": false
+    },
+    {
+     "case": "small q=4 r=1 n=2",
+     "oracle_accepts": true,
+     "mutant_accepts": false
+    },
+    {
+     "case": "small q=4 r=1 n=2",
+     "oracle_accepts": true,
+     "mutant_accepts": false
+    }
+   ],
+   "first_report": [
+    {
+     "case": "pair expected_n=None",
+     "fields": [
+      "pair_squared_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M153",
+   "operator": "CRP",
+   "description": "verify:46 constant 0 -> -1",
+   "category": "no-difference",
+   "decision_cases": 0,
+   "report_cases": 0,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [],
+   "first_error_type": []
+  },
+  {
+   "id": "M154",
+   "operator": "GRD",
+   "description": "verify:48 remove guard `if min_pair is None or slack < min_pair`",
+   "category": "report-only",
+   "decision_cases": 0,
+   "report_cases": 1025,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [
+    {
+     "case": "grid expected_n=None",
+     "fields": [
+      "pair_squared_slack_numerator",
+      "tightest_pair"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M157",
+   "operator": "OPD",
+   "description": "verify:48 drop operand `slack < min_pair` of boolean test",
+   "category": "report-only",
+   "decision_cases": 0,
+   "report_cases": 390,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [
+    {
+     "case": "random 3 q=1000000 n=4",
+     "fields": [
+      "pair_squared_slack_numerator",
+      "tightest_pair"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M159",
+   "operator": "ROR",
+   "description": "verify:48 < -> <= in `slack < min_pair`",
+   "category": "report-only",
+   "decision_cases": 0,
+   "report_cases": 10,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [
+    {
+     "case": "grid expected_n=None",
+     "fields": [
+      "tightest_pair"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M160",
+   "operator": "ROR",
+   "description": "verify:48 < -> >= in `slack < min_pair`",
+   "category": "report-only",
+   "decision_cases": 0,
+   "report_cases": 673,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [
+    {
+     "case": "grid expected_n=None",
+     "fields": [
+      "pair_squared_slack_numerator",
+      "tightest_pair"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M161",
+   "operator": "SDL",
+   "description": "verify:49 delete statement `min_pair, worst_pair = slack, [j,i]`",
+   "category": "report-only",
+   "decision_cases": 0,
+   "report_cases": 1025,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [
+    {
+     "case": "grid expected_n=None",
+     "fields": [
+      "pair_squared_slack_numerator",
+      "tightest_pair"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M162",
+   "operator": "ROR",
+   "description": "verify:52 is -> is not in `min_pair is None`",
+   "category": "report-only",
+   "decision_cases": 0,
+   "report_cases": 1045,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [
+    {
+     "case": "grid expected_n=None",
+     "fields": [
+      "pair_squared_slack_numerator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M163",
+   "operator": "AOR",
+   "description": "verify:53 * -> + in `q*q`",
+   "category": "report-only",
+   "decision_cases": 0,
+   "report_cases": 1041,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [
+    {
+     "case": "grid expected_n=None",
+     "fields": [
+      "pair_squared_slack_denominator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  },
+  {
+   "id": "M164",
+   "operator": "OPD",
+   "description": "verify:53 `q*q` -> `q`",
+   "category": "report-only",
+   "decision_cases": 0,
+   "report_cases": 1045,
+   "error_type_cases": 0,
+   "first_decision": [],
+   "first_report": [
+    {
+     "case": "grid expected_n=None",
+     "fields": [
+      "pair_squared_slack_denominator"
+     ]
+    }
+   ],
+   "first_error_type": []
+  }
+ ]
+}
