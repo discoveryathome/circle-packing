@@ -1,0 +1,3601 @@
+{
+ "target": "src/verify.py",
+ "functions": [
+  "integer",
+  "verify"
+ ],
+ "suites": [
+  "test_verifier_faults.py",
+  "test_verifier*.py"
+ ],
+ "sandbox": "bwrap",
+ "python": "3.12.3",
+ "hashes": {
+  "src/verify.py": "3b065d9d5140c63dcf33cad2c0ac93a0ad7afde8eb94136fb935a7e3ce5d6976",
+  "tests/test_verifier.py": "e431f7b36c99a0f4a7d17b0cbf33763ac3d9deb3b374efe04094bdcc8e6c66d8",
+  "tests/test_verifier_faults.py": "9f233cd86921db282545ef45ad422d862a53d2c6500c8f2e0d3343c2dca996b0",
+  "harness": "719d5d546c955e9c824d467fea07cfa8e3b17efff858675a80b1de57814da8c5"
+ },
+ "mutants": [
+  {
+   "id": "C-unmutated",
+   "operator": "CONTROL",
+   "description": "control: ast round-trip of the unmodified source",
+   "source_sha256": "8d013f10b27a8457a3a2984eb12ca3d3ab5d508a7a82e4e4d26a081cedc49294",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "C-always-accept",
+   "operator": "CONTROL",
+   "description": "control: verify() returns valid without any check",
+   "source_sha256": "10d124bc1fbbddbbd21393b3a0abd01480d646e295ef0e83d2c4431870694d59",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=22, errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=29, errors=1)"
+    }
+   }
+  },
+  {
+   "id": "M001",
+   "operator": "GRD",
+   "description": "integer:10 remove guard `if not isinstance(s, str) or not re.fullmatch(r'-?(0|[1-9][0-9]*)', s) or len(s) > 200`",
+   "source_sha256": "9c366582072da1ffcea179476144711ac70f7ad492bf7d23d30a4e4b0a5fddd2",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=7)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=8)"
+    }
+   }
+  },
+  {
+   "id": "M002",
+   "operator": "LCR",
+   "description": "integer:10 or -> and in `not isinstance(s, str) or not re.fullmatch(r'-?(0|[1-9][0-9]*)', s) or len(s) > 200`",
+   "source_sha256": "c61249610d74890249e1e1b246ae92b95986b766bb88df9cbdd2f43fb2d9c0ec",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=7)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=7, errors=1)"
+    }
+   }
+  },
+  {
+   "id": "M003",
+   "operator": "OPD",
+   "description": "integer:10 drop operand `not isinstance(s, str)` of boolean test",
+   "source_sha256": "f2c799aba127f509e461a6028ef9864e2fc5a0f15f337095b521ece05c30e9b1",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=1)"
+    }
+   }
+  },
+  {
+   "id": "M004",
+   "operator": "OPD",
+   "description": "integer:10 drop operand `not re.fullmatch(r'-?(0|[1-9][0-9]*)', s)` of boolean test",
+   "source_sha256": "9aec8120ba8a5c449942551552e3770ffc1c765627d89b8f88f27f0f8e073ae0",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=6)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=6)"
+    }
+   }
+  },
+  {
+   "id": "M005",
+   "operator": "OPD",
+   "description": "integer:10 drop operand `len(s) > 200` of boolean test",
+   "source_sha256": "5de501de9a08b6aaa9cbc0c1b6dc22903c2d6b78cf324ea129de0a3cf8685eac",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M006",
+   "operator": "NOT",
+   "description": "integer:10 remove `not` in `not isinstance(s, str)`",
+   "source_sha256": "43036811169121e3e609d2ed069b9acdbbd5d57be50dff9ff7658594f3ee9d86",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M007",
+   "operator": "NOT",
+   "description": "integer:10 remove `not` in `not re.fullmatch(r'-?(0|[1-9][0-9]*)', s)`",
+   "source_sha256": "5ea4bab579779d8e5e3b305e8b0693f87e85b4f62b1ba7a42ff3bc60d7edc790",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M008",
+   "operator": "RGX",
+   "description": "integer:10 re.fullmatch -> re.match",
+   "source_sha256": "f94fc487944fbebe347b21fb40232da139f0dcb176d0364b96900f23a3808b0a",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=3)"
+    }
+   }
+  },
+  {
+   "id": "M009",
+   "operator": "RGX",
+   "description": "integer:10 re.fullmatch -> re.search",
+   "source_sha256": "27ce123c0867799abe18d4215df77660e89ca31175c185a6c2491077953fcb13",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=5)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=5)"
+    }
+   }
+  },
+  {
+   "id": "M010",
+   "operator": "RGX",
+   "description": "integer:10 regex: drop optional minus sign",
+   "source_sha256": "749fe2b1027ea3482378510e1928ca4d5794699f98e10bcf2b2ab0bc90f13b03",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M011",
+   "operator": "RGX",
+   "description": "integer:10 regex: allow leading zeros",
+   "source_sha256": "f8f0513d84413444212727f466ee96310e6ff470870ac5e7eee55b995de8a37f",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M012",
+   "operator": "RGX",
+   "description": "integer:10 regex: reject zero",
+   "source_sha256": "f34e5a8a84fa8f81b88482cf92ed1727b1ca3f544f6a5ba72352152b05ab6097",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M013",
+   "operator": "RGX",
+   "description": "integer:10 regex: allow leading zeros via second branch",
+   "source_sha256": "9197675aab4ccc5e448505481edf91bfd56bafe81a86b0b7e77588596b26c505",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M014",
+   "operator": "RGX",
+   "description": "integer:10 regex: allow trailing whitespace",
+   "source_sha256": "28d26cca1a3fe1a755c009985a26afa8dd6d1c0662bebf667963bc691897e017",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M015",
+   "operator": "ROR",
+   "description": "integer:10 > -> >= in `len(s) > 200`",
+   "source_sha256": "f1b66c196b613e08324d99c750045e9a4429b410cfd666785c2ddf9b621e1694",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=1)"
+    }
+   }
+  },
+  {
+   "id": "M016",
+   "operator": "ROR",
+   "description": "integer:10 > -> <= in `len(s) > 200`",
+   "source_sha256": "6c56e825cd2fcb50923e8352280910072257d25b44961921a5843a4409d94360",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1, errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1, errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M017",
+   "operator": "CRP",
+   "description": "integer:10 constant 200 -> 201",
+   "source_sha256": "24e36ce9dc3b1b6f4346aa95e18c651cd56b5ec80245ceb151013c9ceb22e4df",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M018",
+   "operator": "CRP",
+   "description": "integer:10 constant 200 -> 199",
+   "source_sha256": "dd7975ebf4dbff0e42bb69faeb9a5cfba8f21adf11892d91d2e32164a4a97316",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=1)"
+    }
+   }
+  },
+  {
+   "id": "M019",
+   "operator": "GRD",
+   "description": "verify:16 remove guard `if c.get('schema') != 'equal-circle-square/v1'`",
+   "source_sha256": "cd6c3d3730eca96e9898e344599e13d021931b2a889cb3c77d8c28b78955a7c4",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M020",
+   "operator": "ROR",
+   "description": "verify:16 != -> == in `c.get('schema') != 'equal-circle-square/v1'`",
+   "source_sha256": "6d2142cfd823d1e6a9838f1645a5a0764b5f7aa50783ad80c186d0f7855486e4",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2, errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2, errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M021",
+   "operator": "SDL",
+   "description": "verify:18 delete statement `n = c.get('n')`",
+   "source_sha256": "1feda6b242e205e393cc8422b03bfccb019271172a5ab9450a99ab282599fa37",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=28)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=36)"
+    }
+   }
+  },
+  {
+   "id": "M022",
+   "operator": "GRD",
+   "description": "verify:19 remove guard `if type(n) is not int or not 1 <= n <= 10000`",
+   "source_sha256": "5bd2af4f482923733f2c785580eb9295b189570a65ee7099b809c9158aa8ca8c",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=4)"
+    }
+   }
+  },
+  {
+   "id": "M023",
+   "operator": "LCR",
+   "description": "verify:19 or -> and in `type(n) is not int or not 1 <= n <= 10000`",
+   "source_sha256": "cbe5a5db3948fa73d34e4055641ceefbad82c857e800130269878eaf525aacc1",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=4)"
+    }
+   }
+  },
+  {
+   "id": "M024",
+   "operator": "OPD",
+   "description": "verify:19 drop operand `type(n) is not int` of boolean test",
+   "source_sha256": "9559a0179543df9e61de37d74a9362e9d3b19632843ad6d6f92e48b30bbe0e58",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M025",
+   "operator": "OPD",
+   "description": "verify:19 drop operand `not 1 <= n <= 10000` of boolean test",
+   "source_sha256": "b67a3ec7616003e7beb425f7e125f770458347e183d734791565ffb5ebbed1f5",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M026",
+   "operator": "ROR",
+   "description": "verify:19 is not -> is in `type(n) is not int`",
+   "source_sha256": "730e2be45779d4b64bf37787cf1c3a1c306163d3a75ad9f23ef490f02a2992ec",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2, errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2, errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M027",
+   "operator": "TYPE",
+   "description": "verify:19 exact type test -> isinstance in `type(n) is not int`",
+   "source_sha256": "13550d258e52b41bfafcd7616431fbb7a2c6711ec3a1c2b7531116be03239ce4",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M028",
+   "operator": "NOT",
+   "description": "verify:19 remove `not` in `not 1 <= n <= 10000`",
+   "source_sha256": "5f00f2120b5b3148fd9a835e2d605ebaee445eddebc5c1dfde555e709e83a1bf",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2, errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2, errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M029",
+   "operator": "ROR",
+   "description": "verify:19 <= -> < in `1 <= n`",
+   "source_sha256": "9a66a413632988a27be072a732f6ddd0140d9aa211d4f7a49915016989d09fe8",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M030",
+   "operator": "ROR",
+   "description": "verify:19 <= -> > in `1 <= n`",
+   "source_sha256": "317806e21f7cd71b6ddc24d7323c09412cd3ce6a889dbb3cee989a4ba341c7cf",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1, errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1, errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M031",
+   "operator": "ROR",
+   "description": "verify:19 <= -> < in `n <= 10000`",
+   "source_sha256": "2503bfa44efe7a59501c5177309aa27807524f9eb417e387322ae4e03cbcae6b",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M032",
+   "operator": "ROR",
+   "description": "verify:19 <= -> > in `n <= 10000`",
+   "source_sha256": "ded4cc40182adafe320e8dc50a17b66facae2e29e2025eabebb88e03031e4e6c",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1, errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1, errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M033",
+   "operator": "CRP",
+   "description": "verify:19 constant 1 -> 2",
+   "source_sha256": "cbe1cec94d0b1c64276f3c558765f3a22d581f79c5713736066bbae21b46d0da",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M034",
+   "operator": "CRP",
+   "description": "verify:19 constant 1 -> 0",
+   "source_sha256": "f1ce4833d3f88f570f9cfc8f4b019ef4ae502bd36219d52ead4df9b853e4a11f",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M035",
+   "operator": "CRP",
+   "description": "verify:19 constant 10000 -> 10001",
+   "source_sha256": "7616059e6862dba97a7681b4387da6a95163881a52c8eddf18f66a48eb829e4e",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M036",
+   "operator": "CRP",
+   "description": "verify:19 constant 10000 -> 9999",
+   "source_sha256": "7895b7076a0de8d968318150665b058ddfbd44e922db879b0d9c88bce0789a07",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M037",
+   "operator": "GRD",
+   "description": "verify:21 remove guard `if expected_n is not None and n != expected_n`",
+   "source_sha256": "9ef42855395ba86e748d7100ac012eb9db57f9dcca1ea9e4bb78a61c4c7d758d",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M038",
+   "operator": "LCR",
+   "description": "verify:21 and -> or in `expected_n is not None and n != expected_n`",
+   "source_sha256": "374eb4a3ea647c01ae08a73f6b1ada8e40700c7eab478da8011624932154cd09",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M039",
+   "operator": "OPD",
+   "description": "verify:21 drop operand `expected_n is not None` of boolean test",
+   "source_sha256": "fde48ddb7c34c2b9745d0e43bc180557989c2a4be0545eb8a50bf2b6e3be80e7",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=7)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=9)"
+    }
+   }
+  },
+  {
+   "id": "M040",
+   "operator": "OPD",
+   "description": "verify:21 drop operand `n != expected_n` of boolean test",
+   "source_sha256": "bf0d4e5e0c7d207ad038cc6f6bc2ad321c941324115d5234b87f9bb88c491e1a",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=2)"
+    }
+   }
+  },
+  {
+   "id": "M041",
+   "operator": "ROR",
+   "description": "verify:21 is not -> is in `expected_n is not None`",
+   "source_sha256": "ffb1f36da8793121c34e7b4b4a697a592804e28c8050e6a47544fa542828988a",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=7)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1, errors=9)"
+    }
+   }
+  },
+  {
+   "id": "M042",
+   "operator": "ROR",
+   "description": "verify:21 != -> == in `n != expected_n`",
+   "source_sha256": "abab3352740ef90a5fe83d44f1072a7db52701593d3d1a9a413db47609c647c8",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1, errors=2)"
+    }
+   }
+  },
+  {
+   "id": "M043",
+   "operator": "SDL",
+   "description": "verify:23 delete statement `q = integer(c['denominator'], 'denominator')`",
+   "source_sha256": "cfe023c68d6487657fd289da1f68bff9e4f2293b4453d5e93f2e615242ceab60",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=22)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=30)"
+    }
+   }
+  },
+  {
+   "id": "M044",
+   "operator": "SDL",
+   "description": "verify:24 delete statement `r = integer(c['radius_numerator'], 'radius')`",
+   "source_sha256": "43c78f4d8ea1a2bd09c4986155c3848c20832826bbdf125ade34ccf69392ce69",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=19)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=27)"
+    }
+   }
+  },
+  {
+   "id": "M045",
+   "operator": "GRD",
+   "description": "verify:25 remove guard `if q <= 0 or r <= 0 or 2*r > q`",
+   "source_sha256": "bf617d5895aff5927fa2d2020bce43c663f7e7c694ca421600125c4b6afb6011",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M046",
+   "operator": "LCR",
+   "description": "verify:25 or -> and in `q <= 0 or r <= 0 or 2*r > q`",
+   "source_sha256": "cb3f24a249f3c1885efae33d7fe293426cdcb875336634d5a1887e22be1334b3",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M047",
+   "operator": "OPD",
+   "description": "verify:25 drop operand `q <= 0` of boolean test",
+   "source_sha256": "aa3905558fcabeadbc52d626c8e6fa31b4b8f96abec1ce982142468ba219a8a9",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M048",
+   "operator": "OPD",
+   "description": "verify:25 drop operand `r <= 0` of boolean test",
+   "source_sha256": "bf2a35d2462c00daa5a370c65d71d1a5f9b480db50fe3e99caa46058d8143eec",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M049",
+   "operator": "OPD",
+   "description": "verify:25 drop operand `2*r > q` of boolean test",
+   "source_sha256": "f97f9818e7429ce6ffba3f3edd9d47a6468b121c1c67f35680847162c54cb18a",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M050",
+   "operator": "ROR",
+   "description": "verify:25 <= -> < in `q <= 0`",
+   "source_sha256": "eedfe0035d00c8a0de2918ea06c381af50efba64fee76078eeb8da13d182ed8f",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M051",
+   "operator": "ROR",
+   "description": "verify:25 <= -> > in `q <= 0`",
+   "source_sha256": "0a3f49408a9258b48bc40264bb5067fc78077dabeea773176fa90d767d691116",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M052",
+   "operator": "CRP",
+   "description": "verify:25 constant 0 -> 1",
+   "source_sha256": "7fcbbf0175e3c4e0be0bd390bd6305225c5ff15d2539a930e03c1fb8997d83f7",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M053",
+   "operator": "CRP",
+   "description": "verify:25 constant 0 -> -1",
+   "source_sha256": "0061e950f4c0dd2f0ec7ce64dd914d7d87609a368c67f3082e65cbdb7cbe7c2f",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M054",
+   "operator": "ROR",
+   "description": "verify:25 <= -> < in `r <= 0`",
+   "source_sha256": "93ab61356baf9a977830b7fdda7f30065f47fdeeff02f9b59757f18daa81be4b",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M055",
+   "operator": "ROR",
+   "description": "verify:25 <= -> > in `r <= 0`",
+   "source_sha256": "1a1232d1cdc008f26db685105ce75f6cac136915db9d98659971b95abf5f7e4f",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1, errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M056",
+   "operator": "CRP",
+   "description": "verify:25 constant 0 -> 1",
+   "source_sha256": "b87cdaf6e428ce6b60784ccd283c8e08ba050b335aee4904ff02badd9baeb191",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=5)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=6)"
+    }
+   }
+  },
+  {
+   "id": "M057",
+   "operator": "CRP",
+   "description": "verify:25 constant 0 -> -1",
+   "source_sha256": "ebe3c08df20de11aa7591b6a0da79b7105d78d9753fa218551f760e7a9ed16f0",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M058",
+   "operator": "ROR",
+   "description": "verify:25 > -> >= in `2*r > q`",
+   "source_sha256": "9c6456f8d30e65f51202480d31f0e75f05567353259b08417751dfc20efe5e42",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=3)"
+    }
+   }
+  },
+  {
+   "id": "M059",
+   "operator": "ROR",
+   "description": "verify:25 > -> <= in `2*r > q`",
+   "source_sha256": "fa6f7492fc68f561b7589c1dc0fb4138b7b3bf8c9faa2064be2e2199bc4fdd2a",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M060",
+   "operator": "AOR",
+   "description": "verify:25 * -> + in `2*r`",
+   "source_sha256": "f05086ceeb650bb84a877658bfbb823d39ff39f1125eebabd9b4e81361388a5b",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=1)"
+    }
+   }
+  },
+  {
+   "id": "M061",
+   "operator": "OPD",
+   "description": "verify:25 `2*r` -> `2`",
+   "source_sha256": "fccf092262271b1b16862ef3b586873f50581fea4a598ee8633e6d6a0485dabc",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M062",
+   "operator": "OPD",
+   "description": "verify:25 `2*r` -> `r`",
+   "source_sha256": "223dfa86cbd8c6742034fcf1481717682a7319e9883ab1d906d9a6d2036ff801",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M063",
+   "operator": "CRP",
+   "description": "verify:25 constant 2 -> 3",
+   "source_sha256": "54c01657944c5e9c2ba06b545224356130eb0b0504746efbb1b5f69a434f31af",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=3)"
+    }
+   }
+  },
+  {
+   "id": "M064",
+   "operator": "CRP",
+   "description": "verify:25 constant 2 -> 1",
+   "source_sha256": "0f781ba31755ff5b30f57e2c0497ad1860671569a4a2c49b03ba7fdd6623950c",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M065",
+   "operator": "GRD",
+   "description": "verify:27 remove guard `if not isinstance(c['centers'], list) or len(c['centers']) != n`",
+   "source_sha256": "5924b8c168835e4a3c07d54a35ab23e5ef44fb0fd39c0b5573bd232e61b9bcc1",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M066",
+   "operator": "LCR",
+   "description": "verify:27 or -> and in `not isinstance(c['centers'], list) or len(c['centers']) != n`",
+   "source_sha256": "1e87c9909fe01a5e57b100a2e735472ab22a7233c100f5e1355c00ff8cc56f1c",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M067",
+   "operator": "OPD",
+   "description": "verify:27 drop operand `not isinstance(c['centers'], list)` of boolean test",
+   "source_sha256": "705ea7358989d70be106a5d3897aa6af33744ee14d753147e37fa8a5c84b5d44",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M068",
+   "operator": "OPD",
+   "description": "verify:27 drop operand `len(c['centers']) != n` of boolean test",
+   "source_sha256": "a21977240d833de70d8b3cc73baa4d60fb74d50f5844e4210223d949e4065250",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M069",
+   "operator": "NOT",
+   "description": "verify:27 remove `not` in `not isinstance(c['centers'], list)`",
+   "source_sha256": "266bde2cb4014b097cfb625f0de5813a940b17d3f62cd3c07b0661762aa93768",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M070",
+   "operator": "ROR",
+   "description": "verify:27 != -> == in `len(c['centers']) != n`",
+   "source_sha256": "9d7828cc7aa5887c5c82b7cf425f7bbd6e8a0382c1e72486293c6b6dc88d0375",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1, errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M071",
+   "operator": "SDL",
+   "description": "verify:29 delete statement `points = []`",
+   "source_sha256": "98ae6e889c41b4344099678baf6e961edf00438d573e702703ece860d5bf9600",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=12)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=17)"
+    }
+   }
+  },
+  {
+   "id": "M072",
+   "operator": "SDL",
+   "description": "verify:30 delete statement `min_wall = q`",
+   "source_sha256": "1ced30b3307042ffcfc11041beed010b8c1a8dd38d285804cdf78cbad3d055b1",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=12)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=17)"
+    }
+   }
+  },
+  {
+   "id": "M073",
+   "operator": "GRD",
+   "description": "verify:32 remove guard `if not isinstance(p, list) or len(p) != 2`",
+   "source_sha256": "1a8958cce7f50b52320a802a59d14c16e6b44429ba9e8f79e9a0a165b3fd5ba0",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M074",
+   "operator": "LCR",
+   "description": "verify:32 or -> and in `not isinstance(p, list) or len(p) != 2`",
+   "source_sha256": "1840a3f5e5a89d2da3da8743efecda18f3e62189191be7170023cb095172b602",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M075",
+   "operator": "OPD",
+   "description": "verify:32 drop operand `not isinstance(p, list)` of boolean test",
+   "source_sha256": "be06df6f7ac47bb14dac34b21613afde1a823fbd4445098d0ad60293d34f7351",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M076",
+   "operator": "OPD",
+   "description": "verify:32 drop operand `len(p) != 2` of boolean test",
+   "source_sha256": "f2cdbdc620a9517fff63b311d613083162c0800af385c1527ee87d806b52c883",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M077",
+   "operator": "NOT",
+   "description": "verify:32 remove `not` in `not isinstance(p, list)`",
+   "source_sha256": "a5e8478b075c4438e670bb5281951b0bf609457dd844a1a550fd535ff3118819",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1, errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1, errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M078",
+   "operator": "ROR",
+   "description": "verify:32 != -> == in `len(p) != 2`",
+   "source_sha256": "f055dab11cd1dc7f13bb08bd1d21ed5acaf893bba22fad29bc3acd67cc45d0c3",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M079",
+   "operator": "CRP",
+   "description": "verify:32 constant 2 -> 3",
+   "source_sha256": "3c71e71391292ddc53037f2552ae591c8f8a60b010df671e4ec0569ba728447e",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M080",
+   "operator": "CRP",
+   "description": "verify:32 constant 2 -> 1",
+   "source_sha256": "5a8ce7e31fb3cc02f5b4a683a1fa0f13262f37da6636e9f467123a968da68ff6",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M081",
+   "operator": "SDL",
+   "description": "verify:34 delete statement `x, y = [integer(v, 'coordinate') for v in p]`",
+   "source_sha256": "377edca13c54acaa27bde5de42f8ce95a1fb6d9c139285d037ccfec8cee14e32",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=17)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=23)"
+    }
+   }
+  },
+  {
+   "id": "M082",
+   "operator": "SDL",
+   "description": "verify:35 delete statement `wall = min(x-r, y-r, q-r-x, q-r-y)`",
+   "source_sha256": "cc1b01e85bd4a3d2483c7704d7040238fc9e16787577967eecff0dca123ea329",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=16)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=22)"
+    }
+   }
+  },
+  {
+   "id": "M083",
+   "operator": "ARG",
+   "description": "verify:35 drop `x-r` from `min(x-r, y-r, q-r-x, q-r-y)`",
+   "source_sha256": "5ce9c17d9c89b03a80389e60870fc27979f1058dd349805b2d8bdc60589854d2",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M084",
+   "operator": "ARG",
+   "description": "verify:35 drop `y-r` from `min(x-r, y-r, q-r-x, q-r-y)`",
+   "source_sha256": "96ac45c8ce51b477cfb162ce3018055728086186ca64207f90a39d77a530d870",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M085",
+   "operator": "ARG",
+   "description": "verify:35 drop `q-r-x` from `min(x-r, y-r, q-r-x, q-r-y)`",
+   "source_sha256": "a5ff637d54d6c0fe1f6c949f86bf39f9aeb5c0564b16e27f90485799af45e713",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M086",
+   "operator": "ARG",
+   "description": "verify:35 drop `q-r-y` from `min(x-r, y-r, q-r-x, q-r-y)`",
+   "source_sha256": "e8544b0f397d01299c21a8229a7311eee7c6c8d9ed26ea273a1939075301d0b3",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M087",
+   "operator": "AOR",
+   "description": "verify:35 - -> + in `x-r`",
+   "source_sha256": "0d3af87936802f7651923379e4cf3af16071d1ac8f5c8a13bbc040c46acb3627",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M088",
+   "operator": "OPD",
+   "description": "verify:35 `x-r` -> `x`",
+   "source_sha256": "f8640ae0436204be5f31a0b973db9bc38b7e0061faaae1398c0ba3a9e2c2c0a5",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M089",
+   "operator": "OPD",
+   "description": "verify:35 `x-r` -> `r`",
+   "source_sha256": "cca4128bc244eb0e8fad511a67b6eab41a755b1969addffc3be1eb05beaa7f72",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M090",
+   "operator": "AOR",
+   "description": "verify:35 - -> + in `y-r`",
+   "source_sha256": "8973cdeada2a72dc35c72c9a317ca7d1467bf1774bb1a0be1259fdd1124743dd",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M091",
+   "operator": "OPD",
+   "description": "verify:35 `y-r` -> `y`",
+   "source_sha256": "73e1cb236985a8a3b725bdf1af2c56fa49526a2ddd8b84f0616845c57e609e35",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M092",
+   "operator": "OPD",
+   "description": "verify:35 `y-r` -> `r`",
+   "source_sha256": "9774a0df1e9c74ab727bbdcd070810046db719125651a77febcdf340949b7e61",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M093",
+   "operator": "AOR",
+   "description": "verify:35 - -> + in `q-r-x`",
+   "source_sha256": "10b411dd5059c00eb159ea83960b37c982867b976644c134a8bfaf947db97b2b",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M094",
+   "operator": "OPD",
+   "description": "verify:35 `q-r-x` -> `q-r`",
+   "source_sha256": "9f0858a29fb6e36e6324fad0ddafa25d500906d89a2e4a383c5c6b2a5767ffa3",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M095",
+   "operator": "OPD",
+   "description": "verify:35 `q-r-x` -> `x`",
+   "source_sha256": "1cd358dc01c5b189056e2f81a0a891e6151bd57f4eb656037287da2397abbb44",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M096",
+   "operator": "AOR",
+   "description": "verify:35 - -> + in `q-r`",
+   "source_sha256": "8566030e3606b7e3317afee4cd746e6f14459c4e2c69df563bb25c5c5a0b78b0",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M097",
+   "operator": "OPD",
+   "description": "verify:35 `q-r` -> `q`",
+   "source_sha256": "0e2e2907d8fb3ab57375550b5498608df20606c8bbc359ddf7b4ea449894613d",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2)"
+    }
+   }
+  },
+  {
+   "id": "M098",
+   "operator": "OPD",
+   "description": "verify:35 `q-r` -> `r`",
+   "source_sha256": "5bc95c1cb93a2ffe22decc782f46b0812e28a217a863ba08347f6e6e2014df41",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=6)"
+    }
+   }
+  },
+  {
+   "id": "M099",
+   "operator": "AOR",
+   "description": "verify:35 - -> + in `q-r-y`",
+   "source_sha256": "28b4607422878e26e4d5f62e91f60d0dc7a2878e301b72df3d0b4ad2ed079bc3",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M100",
+   "operator": "OPD",
+   "description": "verify:35 `q-r-y` -> `q-r`",
+   "source_sha256": "4f85bd682cd1b60e488d4f580fc8b1765b76fdb565c4c6ebe1c2b195070322dc",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M101",
+   "operator": "OPD",
+   "description": "verify:35 `q-r-y` -> `y`",
+   "source_sha256": "9d2349d1396e8b868885f88d87551afd8a5a2053c887e1f49fc7673796558d37",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M102",
+   "operator": "AOR",
+   "description": "verify:35 - -> + in `q-r`",
+   "source_sha256": "653cfc3283e72aa09658b43e8e2a572ee8193fd18bfbc6fc6074a5acecb3c191",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M103",
+   "operator": "OPD",
+   "description": "verify:35 `q-r` -> `q`",
+   "source_sha256": "af19336effb1bb9594195944fd5e461ef05f85feb096e71e59d0a13a03152eed",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M104",
+   "operator": "OPD",
+   "description": "verify:35 `q-r` -> `r`",
+   "source_sha256": "9e5a16801b56858279b33a193f21ce959e7b39c9845b39cb6df04ab052dca935",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=6)"
+    }
+   }
+  },
+  {
+   "id": "M105",
+   "operator": "GRD",
+   "description": "verify:36 remove guard `if wall < 0`",
+   "source_sha256": "40542098584b58910966905c842b7f24b1761a1d733d13005e943d21bd1271ac",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=6)"
+    }
+   }
+  },
+  {
+   "id": "M106",
+   "operator": "ROR",
+   "description": "verify:36 < -> <= in `wall < 0`",
+   "source_sha256": "420faa040702cfe043056f3f43356c615c61a177d4b7abc9a8ea08d79000f8d6",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=7)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=10)"
+    }
+   }
+  },
+  {
+   "id": "M107",
+   "operator": "ROR",
+   "description": "verify:36 < -> >= in `wall < 0`",
+   "source_sha256": "9803ba1f9c774b4a59116dad06c3162369b87b88b64754b7326343040221e237",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4, errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=4, errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M108",
+   "operator": "CRP",
+   "description": "verify:36 constant 0 -> 1",
+   "source_sha256": "bb9d0be81cffd0c12d4898ac41aecf67a57128342dae5a3096ba9b049274e58f",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=7)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=10)"
+    }
+   }
+  },
+  {
+   "id": "M109",
+   "operator": "CRP",
+   "description": "verify:36 constant 0 -> -1",
+   "source_sha256": "6cb4600bcd654c482a6274cdd8418ab96bd0688eb909af731417ae623f11f180",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=6)"
+    }
+   }
+  },
+  {
+   "id": "M110",
+   "operator": "SDL",
+   "description": "verify:38 delete statement `min_wall = min(min_wall, wall)`",
+   "source_sha256": "964c8a4d4bb7b039bcd3a0d687fc73acfa2b15e8cf3fa91c4aa7be098b9cb995",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M111",
+   "operator": "ARG",
+   "description": "verify:38 drop `min_wall` from `min(min_wall, wall)`",
+   "source_sha256": "20e97f16b4d8a92398a5251a2de69d8836d00622d13b2e9f8502862926d7ac1e",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=12)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=17)"
+    }
+   }
+  },
+  {
+   "id": "M112",
+   "operator": "ARG",
+   "description": "verify:38 drop `wall` from `min(min_wall, wall)`",
+   "source_sha256": "f85616ca7348a2924309c5e4e466e557e917164f7e824458d3c8b3f59109ae49",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=12)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=17)"
+    }
+   }
+  },
+  {
+   "id": "M113",
+   "operator": "SDL",
+   "description": "verify:39 delete statement `points.append((x,y))`",
+   "source_sha256": "c3c15fa7370928b471f0214b96535925131073f48b151709474f4ae74af58b4a",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=3, errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=5, errors=1)"
+    }
+   }
+  },
+  {
+   "id": "M114",
+   "operator": "SDL",
+   "description": "verify:40 delete statement `min_pair = None`",
+   "source_sha256": "46ef85364692ffa09498f870cd79242dedb39cc0d344f10067e9a38c973fd495",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M115",
+   "operator": "SDL",
+   "description": "verify:41 delete statement `worst_pair = None`",
+   "source_sha256": "fba186daef4cd665e3e50061cc007bcb09c7e46b9733948c8641c5e8e6ea53c2",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M116",
+   "operator": "ARG",
+   "description": "verify:43 `range(i)` bound -1",
+   "source_sha256": "a982092f8acf298f7d0e98362678229346eebc03cfa65d99eca164409e4ba4bf",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=6)"
+    }
+   }
+  },
+  {
+   "id": "M117",
+   "operator": "ARG",
+   "description": "verify:43 `range(i)` bound +1",
+   "source_sha256": "6bc64884bf784d800fcf71eae657c1db8c01750a4bf165de33dfa23a03ce5288",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=8)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M118",
+   "operator": "SDL",
+   "description": "verify:44 delete statement `u,v = points[j]`",
+   "source_sha256": "a1d956bd693eaa01a06c1b4eb0a60d2365c9fef37475d384b5d47f0df6526fbe",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=7)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M119",
+   "operator": "SDL",
+   "description": "verify:45 delete statement `slack = (x-u)**2+(y-v)**2-4*r*r`",
+   "source_sha256": "5c2087d3e74b9919e70517b091b0c318b84c235e93f8df40d816d699122ea844",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=7)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=11)"
+    }
+   }
+  },
+  {
+   "id": "M120",
+   "operator": "AOR",
+   "description": "verify:45 - -> + in `(x-u)**2+(y-v)**2-4*r*r`",
+   "source_sha256": "4ad56cf552c064e95ed38e79f01dcb363ffb146b330925c6d8d66cde1443efd2",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=6)"
+    }
+   }
+  },
+  {
+   "id": "M121",
+   "operator": "OPD",
+   "description": "verify:45 `(x-u)**2+(y-v)**2-4*r*r` -> `(x-u)**2+(y-v)**2`",
+   "source_sha256": "b38e3651f5c9857d04947346d5df8dfeb9fe14487ceabe0f8e370e9ff01073f7",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=6)"
+    }
+   }
+  },
+  {
+   "id": "M122",
+   "operator": "OPD",
+   "description": "verify:45 `(x-u)**2+(y-v)**2-4*r*r` -> `4*r*r`",
+   "source_sha256": "baa76e06c5fd2004e505e286f5f4e75d6dd7d00f5608cefd881797fd3742318b",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=6)"
+    }
+   }
+  },
+  {
+   "id": "M123",
+   "operator": "AOR",
+   "description": "verify:45 + -> - in `(x-u)**2+(y-v)**2`",
+   "source_sha256": "f4ec1b1721c7cf51b2cc4c514dce5ea9b0e200663dbd0b57024357840183142b",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M124",
+   "operator": "OPD",
+   "description": "verify:45 `(x-u)**2+(y-v)**2` -> `(x-u)**2`",
+   "source_sha256": "cacee09533af5bc0fd97bce0e372c1b163ef730c6ae74547f74088322e3246fb",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M125",
+   "operator": "OPD",
+   "description": "verify:45 `(x-u)**2+(y-v)**2` -> `(y-v)**2`",
+   "source_sha256": "0c4add905676fb3b3f14f3da71a508c0eaf00030610c68086cc1fbf3bac42a8f",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M126",
+   "operator": "AOR",
+   "description": "verify:45 ** -> * in `(x-u)**2`",
+   "source_sha256": "06bee0a473d195324fef44ad2af232a383b99cf477cc76ba8dcb770a86e4ed55",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=4)"
+    }
+   }
+  },
+  {
+   "id": "M127",
+   "operator": "OPD",
+   "description": "verify:45 `(x-u)**2` -> `x-u`",
+   "source_sha256": "d15b100a2fcef22c221746efcab753ab452a947c938e5daea753e125f75b7d92",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M128",
+   "operator": "OPD",
+   "description": "verify:45 `(x-u)**2` -> `2`",
+   "source_sha256": "0c9c6489ba3f463fc0271bf0aa138acddf98c03138319234b4140791d08aab0a",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M129",
+   "operator": "AOR",
+   "description": "verify:45 - -> + in `x-u`",
+   "source_sha256": "d59cd71ce22c83e624ed9b4e23a0c8ce3058d2c610cf80a987937dd06f3e9bbc",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=6)"
+    }
+   }
+  },
+  {
+   "id": "M130",
+   "operator": "OPD",
+   "description": "verify:45 `x-u` -> `x`",
+   "source_sha256": "8e8de188ad81698eb8ad3f0936a18abb41c52b1bae3d3a1f08bc44c3bb247100",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=3, errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=4, errors=1)"
+    }
+   }
+  },
+  {
+   "id": "M131",
+   "operator": "OPD",
+   "description": "verify:45 `x-u` -> `u`",
+   "source_sha256": "94f5f9a2e0b33e81a951b56a1dd4ee92061d674c9035a39aad0e3cc6499cee23",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2, errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2, errors=3)"
+    }
+   }
+  },
+  {
+   "id": "M132",
+   "operator": "CRP",
+   "description": "verify:45 constant 2 -> 3",
+   "source_sha256": "4ba6b43599567aa8d6abfdd7a573428e07dc256a38904625dd3a62f4f216c0a0",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2, errors=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=2, errors=2)"
+    }
+   }
+  },
+  {
+   "id": "M133",
+   "operator": "CRP",
+   "description": "verify:45 constant 2 -> 1",
+   "source_sha256": "4cebe588ae4a14186d72a7a3f9819738bb6bca5fc44d5b8324cb0cdc1aaf238a",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M134",
+   "operator": "AOR",
+   "description": "verify:45 ** -> * in `(y-v)**2`",
+   "source_sha256": "e3961baf7317611bd833e3156dffd20f74e0333f96bba8e6e306127728c1903a",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=4)"
+    }
+   }
+  },
+  {
+   "id": "M135",
+   "operator": "OPD",
+   "description": "verify:45 `(y-v)**2` -> `y-v`",
+   "source_sha256": "3495f3c499fad426dbd4fa6f5f8f7ef63ae2a8e5c2ec34b6c17500a6db24aac9",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M136",
+   "operator": "OPD",
+   "description": "verify:45 `(y-v)**2` -> `2`",
+   "source_sha256": "5db2fa73c22c1258f57cdf2a2e2e5132cdb03d5f06fc6f02a62f8671bfeb75c9",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M137",
+   "operator": "AOR",
+   "description": "verify:45 - -> + in `y-v`",
+   "source_sha256": "4b2bd6bb591c42415ebcf981c0f9525dbbf6f2b2ce04a273c16e859217fb69c7",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=6)"
+    }
+   }
+  },
+  {
+   "id": "M138",
+   "operator": "OPD",
+   "description": "verify:45 `y-v` -> `y`",
+   "source_sha256": "74df99d6805cd61b9d9b8d36326a156716e56ae2ac52ac5faf29cac14ead2618",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2, errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=3, errors=1)"
+    }
+   }
+  },
+  {
+   "id": "M139",
+   "operator": "OPD",
+   "description": "verify:45 `y-v` -> `v`",
+   "source_sha256": "e4063c5bfcbd432f06722be349132ae088592196d3e4999b5fe830dce624b67c",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1, errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1, errors=3)"
+    }
+   }
+  },
+  {
+   "id": "M140",
+   "operator": "CRP",
+   "description": "verify:45 constant 2 -> 3",
+   "source_sha256": "5bc94caf0dd6e94e04151bd28bed84aa7915f9fca335ba940d4045bd25a97935",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1, errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1, errors=2)"
+    }
+   }
+  },
+  {
+   "id": "M141",
+   "operator": "CRP",
+   "description": "verify:45 constant 2 -> 1",
+   "source_sha256": "e307627d40e0aea94fa1f7b13407680ee1e67177825d7963bbde78945e090d58",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M142",
+   "operator": "AOR",
+   "description": "verify:45 * -> + in `4*r*r`",
+   "source_sha256": "fda0cf66f2c36fca6be78b5a7f3c5b3f04565372afae3889335d27657ae13610",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2, errors=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=3, errors=3)"
+    }
+   }
+  },
+  {
+   "id": "M143",
+   "operator": "OPD",
+   "description": "verify:45 `4*r*r` -> `4*r`",
+   "source_sha256": "809641e382b26f56363575059e686bbe314c0842ddd1fe41d789de5d15b7fd59",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=5)"
+    }
+   }
+  },
+  {
+   "id": "M144",
+   "operator": "OPD",
+   "description": "verify:45 `4*r*r` -> `r`",
+   "source_sha256": "6b9bdc4b51438f520c8746d53782f6b1ef409b0d0875ce852cc2f619ddddd722",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=5)"
+    }
+   }
+  },
+  {
+   "id": "M145",
+   "operator": "AOR",
+   "description": "verify:45 * -> + in `4*r`",
+   "source_sha256": "950ab5b6385916b145bca4bb5724ab03afc7714a28e3485b6dd1cd3a90f9456e",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2, errors=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=3, errors=3)"
+    }
+   }
+  },
+  {
+   "id": "M146",
+   "operator": "OPD",
+   "description": "verify:45 `4*r` -> `r`",
+   "source_sha256": "12666731861a3b074ecc3f27bd6b61496686df599a778cacfeadae6486a30070",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=5)"
+    }
+   }
+  },
+  {
+   "id": "M147",
+   "operator": "CRP",
+   "description": "verify:45 constant 4 -> 5",
+   "source_sha256": "bfad3c6c86b30484fbe68b7c3502958701728895d9a1dbf7bc891332d8a6b532",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1, errors=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1, errors=5)"
+    }
+   }
+  },
+  {
+   "id": "M148",
+   "operator": "CRP",
+   "description": "verify:45 constant 4 -> 3",
+   "source_sha256": "ac307cac2593fc972a4a7632d349c750c47a11f9f420c2a40bd64f6d06f2d28d",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=3)"
+    }
+   }
+  },
+  {
+   "id": "M149",
+   "operator": "GRD",
+   "description": "verify:46 remove guard `if slack < 0`",
+   "source_sha256": "2455017005f35962c27baee4038f68c690bfe789b1210020659075eef2adab01",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=3)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=5)"
+    }
+   }
+  },
+  {
+   "id": "M150",
+   "operator": "ROR",
+   "description": "verify:46 < -> <= in `slack < 0`",
+   "source_sha256": "daed593f57c8919891d01ff521da82beb2f1b145971b4c8efaf0609f223f6bb2",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=3)"
+    }
+   }
+  },
+  {
+   "id": "M151",
+   "operator": "ROR",
+   "description": "verify:46 < -> >= in `slack < 0`",
+   "source_sha256": "e8bb8412fc88198739a09af6dd815246f19f966cb78c5d8d0dde5bf99dc86ecd",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=3, errors=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=3, errors=6)"
+    }
+   }
+  },
+  {
+   "id": "M152",
+   "operator": "CRP",
+   "description": "verify:46 constant 0 -> 1",
+   "source_sha256": "d3e4010e6f7347e9825fba9b654a17e732658b675a27d42f78f6d9715afecfa2",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=2)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=3)"
+    }
+   }
+  },
+  {
+   "id": "M153",
+   "operator": "CRP",
+   "description": "verify:46 constant 0 -> -1",
+   "source_sha256": "9de72d4b770be3f3e8843dddb409c40c02030778cf791de4e49eb5872dd42743",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M154",
+   "operator": "GRD",
+   "description": "verify:48 remove guard `if min_pair is None or slack < min_pair`",
+   "source_sha256": "d93304271a4f6763883a27529336886f7e419bc6ba0153048b631e14d8b9d98b",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=1)"
+    }
+   }
+  },
+  {
+   "id": "M155",
+   "operator": "LCR",
+   "description": "verify:48 or -> and in `min_pair is None or slack < min_pair`",
+   "source_sha256": "54c54b365a62b2285ea058f38eb99d1701028b12a358a8c2f4d28ab874cb7c28",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=6)"
+    }
+   }
+  },
+  {
+   "id": "M156",
+   "operator": "OPD",
+   "description": "verify:48 drop operand `min_pair is None` of boolean test",
+   "source_sha256": "a925cd71b5c73e05eeee42fd94d2dfc7140a25d79f45053795067e83e331c0db",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=6)"
+    }
+   }
+  },
+  {
+   "id": "M157",
+   "operator": "OPD",
+   "description": "verify:48 drop operand `slack < min_pair` of boolean test",
+   "source_sha256": "c9cc4ba35a281a1569940cdd979c671dd017dbca105bbfb0b68c205af7e37e4d",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M158",
+   "operator": "ROR",
+   "description": "verify:48 is -> is not in `min_pair is None`",
+   "source_sha256": "5f51efab7eed0be24508e2465797e510327f14f8a6a36fde7318dd5d06fb62bf",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=4)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=6)"
+    }
+   }
+  },
+  {
+   "id": "M159",
+   "operator": "ROR",
+   "description": "verify:48 < -> <= in `slack < min_pair`",
+   "source_sha256": "172eee3b27df038317fac4bd0d0086fd01fb365bdc42dde0b6ec56b746b7ad2a",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 14,
+     "summary": "OK"
+    }
+   }
+  },
+  {
+   "id": "M160",
+   "operator": "ROR",
+   "description": "verify:48 < -> >= in `slack < min_pair`",
+   "source_sha256": "d2272e1603c3a7719863d6f3573b96d9bfd5952f3e5fb0f6c103de03eddbcb6e",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M161",
+   "operator": "SDL",
+   "description": "verify:49 delete statement `min_pair, worst_pair = slack, [j,i]`",
+   "source_sha256": "6eca7c3a7820350e4f3efa194d3ee44fdae3b136df20f8368c04e48c80d09522",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=1)"
+    }
+   }
+  },
+  {
+   "id": "M162",
+   "operator": "ROR",
+   "description": "verify:52 is -> is not in `min_pair is None`",
+   "source_sha256": "476379fed62fde151397b62becc318a86e861a2334ee2a4c47906fa6163762e3",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (errors=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (errors=1)"
+    }
+   }
+  },
+  {
+   "id": "M163",
+   "operator": "AOR",
+   "description": "verify:53 * -> + in `q*q`",
+   "source_sha256": "75309fc626e5e7c630ab1d74f7f430480190bbd461a4c8731916ef3f2cc0d62e",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M164",
+   "operator": "OPD",
+   "description": "verify:53 `q*q` -> `q`",
+   "source_sha256": "3fc6fca3ecd1775d8e8510f37fe42b319f36fb918e0c226802c646fd39bde1cb",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 6,
+     "summary": "FAILED (failures=1)"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M165",
+   "operator": "AOR",
+   "description": "verify:54 // -> * in `n*(n-1)//2`",
+   "source_sha256": "eab1caf8d4013e629c224bafd2da7892f870502d181f4fd72b7c15b9417ca75a",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M166",
+   "operator": "OPD",
+   "description": "verify:54 `n*(n-1)//2` -> `n*(n-1)`",
+   "source_sha256": "8e701a9adc5e1436575257e4257dc2d8d0fcf5ac49d791e84ae5943ef1880dda",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M167",
+   "operator": "OPD",
+   "description": "verify:54 `n*(n-1)//2` -> `2`",
+   "source_sha256": "c56304442216e83505ed3067005760ca8fe62d086b3edb7c78be37793d4fe774",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M168",
+   "operator": "AOR",
+   "description": "verify:54 * -> + in `n*(n-1)`",
+   "source_sha256": "2c1e3fb18a89543307b58bb73a7f71a46420be3ec2d8016957e3e3e2b63e61e7",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M169",
+   "operator": "OPD",
+   "description": "verify:54 `n*(n-1)` -> `n`",
+   "source_sha256": "a96662766efef4281c838502eddb2f94cf0eded88f50a4348bab6f06cda4a903",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M170",
+   "operator": "OPD",
+   "description": "verify:54 `n*(n-1)` -> `n-1`",
+   "source_sha256": "ac0453d5763f8d0eac302d6d8f8cf4228241f874e4f62895c5dc1ba1174aaec6",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M171",
+   "operator": "AOR",
+   "description": "verify:54 - -> + in `n-1`",
+   "source_sha256": "6183a9828f05c7b69799a7ea9891957dfdf806a5fea0e5c360b854ffa775185c",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M172",
+   "operator": "OPD",
+   "description": "verify:54 `n-1` -> `n`",
+   "source_sha256": "5c8faa5c10f9bcc489c160227c656a0244d77097d5dee551b568774b8b7045d5",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M173",
+   "operator": "OPD",
+   "description": "verify:54 `n-1` -> `1`",
+   "source_sha256": "4e74785daa51e020ea19646c473abb2b002621129e72aa793b18c542a64ae715",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M174",
+   "operator": "CRP",
+   "description": "verify:54 constant 1 -> 2",
+   "source_sha256": "c4ae8f75c634ff83c1bbe08f5221c49da4920d036de8246674c5a5b4ad373b4b",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M175",
+   "operator": "CRP",
+   "description": "verify:54 constant 1 -> 0",
+   "source_sha256": "e25ef7240c6b9554ea90e1e34424bfe96f42dbc836f222b4ffa81169f36fba68",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M176",
+   "operator": "CRP",
+   "description": "verify:54 constant 2 -> 3",
+   "source_sha256": "e67a5ebe31130d4af1f11de6c163701b44514d81056346bb6d7a16c62dabc158",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  },
+  {
+   "id": "M177",
+   "operator": "CRP",
+   "description": "verify:54 constant 2 -> 1",
+   "source_sha256": "fa04bcb04e4ac7ece7f8196bec2430d6c213dddd87a59b145d7935420593bb3f",
+   "suites": {
+    "test_verifier_faults.py": {
+     "killed": false,
+     "returncode": 0,
+     "tests_run": 6,
+     "summary": "OK"
+    },
+    "test_verifier*.py": {
+     "killed": true,
+     "returncode": 1,
+     "tests_run": 14,
+     "summary": "FAILED (failures=1)"
+    }
+   }
+  }
+ ]
+}
